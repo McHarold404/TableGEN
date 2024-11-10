@@ -1,0 +1,3824 @@
+{
+    "Test_pt0": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 85.71428571428571,
+                    "f1": 92.3076923076923
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 85.95350102406553,
+                    "f1": 92.44623042933911
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 75.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 79.62691202692007,
+                    "f1": 88.65810933162027
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 100.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 77.31973471877829,
+                    "recall": 100.0,
+                    "f1": 87.20939588749573
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        }
+    },
+    "Test_pt1": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 100.0,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 85.21554901542993,
+                    "recall": 100.0,
+                    "f1": 92.01770528275766
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 100.0,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 92.03184082792718,
+                    "recall": 100.0,
+                    "f1": 95.85060522373851
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 75.55555555555556,
+                    "recall": 68.0,
+                    "f1": 71.57894736842104
+                },
+                "chrf(%)": {
+                    "precision": 91.1916131033943,
+                    "recall": 82.96568998687556,
+                    "f1": 86.88438518386783
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 75.0,
+                    "f1": 75.0
+                },
+                "chrf(%)": {
+                    "precision": 92.59195054111288,
+                    "recall": 92.59195054111288,
+                    "f1": 92.59195054111288
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 76.92307692307693,
+                    "f1": 86.95652173913044
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 82.12617434641203,
+                    "f1": 90.18602036871913
+                }
+            }
+        }
+    },
+    "Test_pt2": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 85.71428571428571,
+                    "recall": 92.3076923076923,
+                    "f1": 88.8888888888889
+                },
+                "chrf(%)": {
+                    "precision": 87.42794506117829,
+                    "recall": 93.35831510310678,
+                    "f1": 90.29586248890219
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 87.5,
+                    "f1": 87.5
+                },
+                "chrf(%)": {
+                    "precision": 92.66656725805404,
+                    "recall": 89.95089022954679,
+                    "f1": 91.28853652936314
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        }
+    },
+    "Test_pt3": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 83.33333333333334,
+                    "f1": 83.33333333333334
+                },
+                "chrf(%)": {
+                    "precision": 84.9867724867725,
+                    "recall": 84.9867724867725,
+                    "f1": 84.9867724867725
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 78.72340425531915,
+                    "recall": 77.08333333333334,
+                    "f1": 77.89473684210526
+                },
+                "chrf(%)": {
+                    "precision": 82.23926765317712,
+                    "recall": 82.07433221193634,
+                    "f1": 82.15671715273875
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 77.77777777777779,
+                    "recall": 87.5,
+                    "f1": 82.3529411764706
+                },
+                "chrf(%)": {
+                    "precision": 86.85527566702444,
+                    "recall": 96.20968837132202,
+                    "f1": 91.29348206223993
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 88.88888888888889,
+                    "recall": 61.53846153846154,
+                    "f1": 72.72727272727273
+                },
+                "chrf(%)": {
+                    "precision": 89.50617283950618,
+                    "recall": 72.72558144139497,
+                    "f1": 80.24801915260315
+                }
+            }
+        }
+    },
+    "Test_pt4": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 90.9090909090909,
+                    "recall": 100.0,
+                    "f1": 95.23809523809523
+                },
+                "chrf(%)": {
+                    "precision": 91.52050241762637,
+                    "recall": 100.0,
+                    "f1": 95.57253793962832
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 85.71428571428571,
+                    "recall": 100.0,
+                    "f1": 92.3076923076923
+                },
+                "chrf(%)": {
+                    "precision": 96.5666880624865,
+                    "recall": 100.0,
+                    "f1": 98.25336023547281
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "chrf(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "chrf(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "chrf(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                }
+            }
+        }
+    },
+    "Test_pt5": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 66.66666666666666,
+                    "recall": 47.05882352941176,
+                    "f1": 55.172413793103445
+                },
+                "chrf(%)": {
+                    "precision": 66.94421115871886,
+                    "recall": 50.93987074210311,
+                    "f1": 57.855639342828326
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 100.0,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 84.63541666666666,
+                    "recall": 100.0,
+                    "f1": 91.67842031029619
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 33.33333333333333,
+                    "f1": 46.15384615384615
+                },
+                "chrf(%)": {
+                    "precision": 76.38888888888889,
+                    "recall": 48.28950519600912,
+                    "f1": 59.17274879889035
+                }
+            }
+        }
+    },
+    "Test_pt6": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 42.857142857142854,
+                    "recall": 85.71428571428571,
+                    "f1": 57.14285714285714
+                },
+                "chrf(%)": {
+                    "precision": 51.6878992927857,
+                    "recall": 86.29658385093167,
+                    "f1": 64.65203961741963
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 57.14285714285714,
+                    "recall": 80.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 85.00562190688241,
+                    "recall": 81.90236439418399,
+                    "f1": 83.42514429972763
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 28.57142857142857,
+                    "f1": 44.44444444444445
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 28.57142857142857,
+                    "f1": 44.44444444444445
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 71.42857142857143,
+                    "recall": 83.33333333333334,
+                    "f1": 76.92307692307692
+                },
+                "chrf(%)": {
+                    "precision": 80.09160287941268,
+                    "recall": 91.33009375045705,
+                    "f1": 85.34244781621835
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 20.0,
+                    "f1": 33.333333333333336
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 29.058592453363346,
+                    "f1": 45.031627729651504
+                }
+            }
+        }
+    },
+    "Test_pt7": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 90.9090909090909,
+                    "f1": 95.23809523809523
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 91.10813142059975,
+                    "f1": 95.34720552532085
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 83.33333333333334,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 84.91161616161617,
+                    "f1": 91.84021850460908
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 78.94736842105263,
+                    "recall": 63.829787234042556,
+                    "f1": 70.58823529411764
+                },
+                "chrf(%)": {
+                    "precision": 91.22371299559944,
+                    "recall": 76.27914142211358,
+                    "f1": 83.08475134744677
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 87.5,
+                    "f1": 87.5
+                },
+                "chrf(%)": {
+                    "precision": 97.71327052577053,
+                    "recall": 97.71327052577053,
+                    "f1": 97.71327052577053
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 63.63636363636363,
+                    "f1": 73.68421052631578
+                },
+                "chrf(%)": {
+                    "precision": 89.28952991452992,
+                    "recall": 72.60663230906783,
+                    "f1": 80.08852067289871
+                }
+            }
+        }
+    },
+    "Test_pt8": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 73.91304347826086,
+                    "recall": 68.0,
+                    "f1": 70.83333333333334
+                },
+                "chrf(%)": {
+                    "precision": 77.76743300711104,
+                    "recall": 72.66422194071336,
+                    "f1": 75.12926735730231
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 78.57142857142857,
+                    "recall": 91.66666666666666,
+                    "f1": 84.61538461538461
+                },
+                "chrf(%)": {
+                    "precision": 85.3675273354322,
+                    "recall": 98.12068257587438,
+                    "f1": 91.30090762797367
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 50.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 67.58175032325481,
+                    "f1": 80.65526251264687
+                }
+            }
+        }
+    },
+    "Test_pt9": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 20.0,
+                    "recall": 33.33333333333333,
+                    "f1": 25.0
+                },
+                "chrf(%)": {
+                    "precision": 25.70679456221128,
+                    "recall": 41.2640021777617,
+                    "f1": 31.6784413038114
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 33.33333333333333,
+                    "recall": 33.33333333333333,
+                    "f1": 33.33333333333333
+                },
+                "chrf(%)": {
+                    "precision": 53.75850768892426,
+                    "recall": 49.58449348986769,
+                    "f1": 51.5872065668923
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 78.57142857142857,
+                    "recall": 84.61538461538461,
+                    "f1": 81.48148148148148
+                },
+                "chrf(%)": {
+                    "precision": 90.19398969077902,
+                    "recall": 92.23203979157645,
+                    "f1": 91.20163026872842
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 80.0,
+                    "recall": 80.0,
+                    "f1": 80.00000000000001
+                },
+                "chrf(%)": {
+                    "precision": 89.90165172904939,
+                    "recall": 89.90165172904939,
+                    "f1": 89.90165172904939
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 100.0,
+                    "f1": 93.33333333333333
+                },
+                "chrf(%)": {
+                    "precision": 95.46241729755153,
+                    "recall": 100.0,
+                    "f1": 97.678539554977
+                }
+            }
+        }
+    },
+    "Test_pt10": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 85.71428571428571,
+                    "f1": 80.0
+                },
+                "chrf(%)": {
+                    "precision": 75.60096153846155,
+                    "recall": 85.94132789771857,
+                    "f1": 80.44019987133557
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 75.0,
+                    "f1": 75.0
+                },
+                "chrf(%)": {
+                    "precision": 82.51318601827326,
+                    "recall": 81.59276181655736,
+                    "f1": 82.05039271690954
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 76.47058823529412,
+                    "recall": 65.0,
+                    "f1": 70.27027027027027
+                },
+                "chrf(%)": {
+                    "precision": 87.63993880211072,
+                    "recall": 66.58013290341978,
+                    "f1": 75.67210556397187
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 45.45454545454545,
+                    "f1": 62.5
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 52.26968944785138,
+                    "f1": 68.65409608095702
+                }
+            }
+        }
+    },
+    "Test_pt11": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 66.66666666666666,
+                    "recall": 100.0,
+                    "f1": 80.0
+                },
+                "chrf(%)": {
+                    "precision": 71.47151063343054,
+                    "recall": 100.0,
+                    "f1": 83.36254852996701
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 100.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 78.82906380058333,
+                    "recall": 100.0,
+                    "f1": 88.16135601815547
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "chrf(%)": {
+                    "precision": 6.86802227887755,
+                    "recall": 12.154191140307079,
+                    "f1": 8.776608031237538
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 81.81818181818183,
+                    "recall": 100.0,
+                    "f1": 90.0
+                },
+                "chrf(%)": {
+                    "precision": 85.06146490219456,
+                    "recall": 100.0,
+                    "f1": 91.9277980936223
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "chrf(%)": {
+                    "precision": 27.5516163601091,
+                    "recall": 27.023220277377142,
+                    "f1": 27.284860341134316
+                }
+            }
+        }
+    },
+    "Test_pt12": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 100.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 75.67589147142833,
+                    "recall": 100.0,
+                    "f1": 86.15398599953727
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 95.23809523809523,
+                    "recall": 81.63265306122449,
+                    "f1": 87.91208791208791
+                },
+                "chrf(%)": {
+                    "precision": 95.67317161647837,
+                    "recall": 83.21172558514286,
+                    "f1": 89.00840514711183
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 90.9090909090909,
+                    "recall": 83.33333333333334,
+                    "f1": 86.95652173913044
+                },
+                "chrf(%)": {
+                    "precision": 92.17004555707115,
+                    "recall": 88.17019213228606,
+                    "f1": 90.1257615020668
+                }
+            }
+        }
+    },
+    "Test_pt13": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 82.35294117647058,
+                    "recall": 82.35294117647058,
+                    "f1": 82.35294117647058
+                },
+                "chrf(%)": {
+                    "precision": 93.18886995357585,
+                    "recall": 93.18886995357585,
+                    "f1": 93.18886995357585
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 87.5,
+                    "f1": 87.5
+                },
+                "chrf(%)": {
+                    "precision": 95.17544955044956,
+                    "recall": 95.17544955044956,
+                    "f1": 95.17544955044956
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        }
+    },
+    "Test_pt14": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 85.71428571428571,
+                    "f1": 92.3076923076923
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 85.95350102406553,
+                    "f1": 92.44623042933911
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 75.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 79.62691202692007,
+                    "f1": 88.65810933162027
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 84.61538461538461,
+                    "recall": 73.33333333333333,
+                    "f1": 78.57142857142856
+                },
+                "chrf(%)": {
+                    "precision": 93.78041764734941,
+                    "recall": 79.47013213298152,
+                    "f1": 86.03426876706115
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 62.5,
+                    "f1": 71.42857142857143
+                },
+                "chrf(%)": {
+                    "precision": 97.6684712346477,
+                    "recall": 77.65952019782686,
+                    "f1": 86.52225526075476
+                }
+            }
+        }
+    },
+    "Test_pt15": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 97.82608695652173,
+                    "recall": 68.18181818181817,
+                    "f1": 80.35714285714285
+                },
+                "chrf(%)": {
+                    "precision": 97.95236985058807,
+                    "recall": 69.5138145937239,
+                    "f1": 81.31842138045344
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 80.0,
+                    "f1": 88.8888888888889
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 82.48596074124424,
+                    "f1": 90.4025278505727
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 60.0,
+                    "f1": 74.99999999999999
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 72.83127114092098,
+                    "f1": 84.28020075318052
+                }
+            }
+        }
+    },
+    "Test_pt16": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 80.0,
+                    "recall": 100.0,
+                    "f1": 88.8888888888889
+                },
+                "chrf(%)": {
+                    "precision": 80.97590489384565,
+                    "recall": 100.0,
+                    "f1": 89.48805084449599
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 80.0,
+                    "recall": 100.0,
+                    "f1": 88.8888888888889
+                },
+                "chrf(%)": {
+                    "precision": 87.59678576089755,
+                    "recall": 100.0,
+                    "f1": 93.38836527033514
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 100.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 50.696359034505534,
+                    "recall": 100.0,
+                    "f1": 67.28279217800795
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 100.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 58.18425003020802,
+                    "recall": 100.0,
+                    "f1": 73.5651621689223
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        }
+    },
+    "Test_pt17": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 100.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 76.20786260023054,
+                    "recall": 100.0,
+                    "f1": 86.49768685194964
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 60.0,
+                    "recall": 100.0,
+                    "f1": 74.99999999999999
+                },
+                "chrf(%)": {
+                    "precision": 70.82244889806569,
+                    "recall": 100.0,
+                    "f1": 82.91936962023924
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 80.0,
+                    "recall": 57.14285714285714,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 87.10063446615305,
+                    "recall": 64.83622807155184,
+                    "f1": 74.33714909076697
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 50.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 62.07566077835174,
+                    "f1": 76.60084244634851
+                }
+            }
+        }
+    },
+    "Test_pt18": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 71.42857142857143,
+                    "recall": 83.33333333333334,
+                    "f1": 76.92307692307692
+                },
+                "chrf(%)": {
+                    "precision": 72.02305677613717,
+                    "recall": 83.36478462157811,
+                    "f1": 77.28000546146527
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 80.0,
+                    "f1": 88.8888888888889
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 81.35270961973514,
+                    "f1": 89.71766651881575
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 11.76470588235294,
+                    "recall": 21.052631578947366,
+                    "f1": 15.09433962264151
+                },
+                "chrf(%)": {
+                    "precision": 28.50743437968921,
+                    "recall": 43.61565002435005,
+                    "f1": 34.47912110999552
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 91.66666666666666,
+                    "recall": 100.0,
+                    "f1": 95.65217391304348
+                },
+                "chrf(%)": {
+                    "precision": 92.93410651540803,
+                    "recall": 100.0,
+                    "f1": 96.33766490942975
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 70.0,
+                    "recall": 53.84615384615385,
+                    "f1": 60.8695652173913
+                },
+                "chrf(%)": {
+                    "precision": 81.10709664305082,
+                    "recall": 66.81052535249965,
+                    "f1": 73.26791309153401
+                }
+            }
+        }
+    },
+    "Test_pt19": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 100.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 53.90962036238136,
+                    "recall": 100.0,
+                    "f1": 70.05360709155251
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 65.0,
+                    "f1": 78.7878787878788
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 67.96370478023125,
+                    "f1": 80.92665599292062
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 100.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 77.22067471371092,
+                    "recall": 100.0,
+                    "f1": 87.1463499825358
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 63.63636363636363,
+                    "f1": 77.77777777777779
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 70.29566393202758,
+                    "f1": 82.55719765135727
+                }
+            }
+        }
+    },
+    "Test_pt20": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 75.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 75.99410564829599,
+                    "f1": 86.35983048223386
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 16.666666666666664,
+                    "recall": 16.666666666666664,
+                    "f1": 16.666666666666664
+                },
+                "chrf(%)": {
+                    "precision": 22.620163667443723,
+                    "recall": 23.0541914452215,
+                    "f1": 22.835115347556833
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 88.88888888888889,
+                    "recall": 88.88888888888889,
+                    "f1": 88.88888888888889
+                },
+                "chrf(%)": {
+                    "precision": 94.2200625003047,
+                    "recall": 94.2200625003047,
+                    "f1": 94.2200625003047
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 60.0,
+                    "recall": 60.0,
+                    "f1": 60.0
+                },
+                "chrf(%)": {
+                    "precision": 69.49394798179411,
+                    "recall": 64.41958239271692,
+                    "f1": 66.86062409509105
+                }
+            }
+        }
+    },
+    "Test_pt21": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 100.0,
+                    "f1": 93.33333333333333
+                },
+                "chrf(%)": {
+                    "precision": 87.79658564814815,
+                    "recall": 100.0,
+                    "f1": 93.50179114826086
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 88.0,
+                    "recall": 55.00000000000001,
+                    "f1": 67.6923076923077
+                },
+                "chrf(%)": {
+                    "precision": 88.58964656757516,
+                    "recall": 56.34888265011787,
+                    "f1": 68.88337594421142
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 38.46153846153847,
+                    "f1": 55.55555555555556
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 48.12345733170943,
+                    "f1": 64.97749674305966
+                }
+            }
+        }
+    },
+    "Test_pt22": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 33.33333333333333,
+                    "recall": 100.0,
+                    "f1": 50.0
+                },
+                "chrf(%)": {
+                    "precision": 34.21164546155408,
+                    "recall": 100.0,
+                    "f1": 50.98163478124446
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 100.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 51.953125,
+                    "recall": 100.0,
+                    "f1": 68.38046272493573
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 100.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 57.10046015235297,
+                    "recall": 100.0,
+                    "f1": 72.6929254019728
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 58.82352941176471,
+                    "recall": 83.33333333333334,
+                    "f1": 68.96551724137932
+                },
+                "chrf(%)": {
+                    "precision": 70.03741795577629,
+                    "recall": 89.42283448620523,
+                    "f1": 78.55179378923019
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 80.0,
+                    "recall": 100.0,
+                    "f1": 88.8888888888889
+                },
+                "chrf(%)": {
+                    "precision": 92.37283913189835,
+                    "recall": 100.0,
+                    "f1": 96.0352194714597
+                }
+            }
+        }
+    },
+    "Test_pt23": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 85.71428571428571,
+                    "recall": 85.71428571428571,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 86.36773904897164,
+                    "recall": 85.94455190199871,
+                    "f1": 86.15562581620733
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 75.0,
+                    "f1": 75.0
+                },
+                "chrf(%)": {
+                    "precision": 81.40384267992215,
+                    "recall": 78.12608825082286,
+                    "f1": 79.73129255510797
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 12.5,
+                    "recall": 10.526315789473683,
+                    "f1": 11.428571428571429
+                },
+                "chrf(%)": {
+                    "precision": 19.570276962639397,
+                    "recall": 18.072120413013344,
+                    "f1": 18.79138558871915
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 88.88888888888889,
+                    "recall": 88.88888888888889,
+                    "f1": 88.88888888888889
+                },
+                "chrf(%)": {
+                    "precision": 96.26989424843292,
+                    "recall": 96.26989424843292,
+                    "f1": 96.26989424843292
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 40.0,
+                    "f1": 44.44444444444445
+                },
+                "chrf(%)": {
+                    "precision": 71.50270685197155,
+                    "recall": 61.50744032008239,
+                    "f1": 66.12951820484889
+                }
+            }
+        }
+    },
+    "Test_pt24": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 85.71428571428571,
+                    "f1": 92.3076923076923
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 85.7294703595724,
+                    "f1": 92.31649688506631
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 75.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 76.77304964539007,
+                    "f1": 86.8605817452357
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 90.0,
+                    "recall": 75.0,
+                    "f1": 81.81818181818183
+                },
+                "chrf(%)": {
+                    "precision": 90.81277383255187,
+                    "recall": 76.54823191908959,
+                    "f1": 83.07260393578068
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 69.23076923076923,
+                    "f1": 81.81818181818181
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 82.41026241428122,
+                    "f1": 90.35704606039663
+                }
+            }
+        }
+    },
+    "Test_pt25": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 88.88888888888889,
+                    "f1": 94.11764705882352
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 88.88888888888889,
+                    "f1": 94.11764705882352
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 83.33333333333334,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 84.87394715587862,
+                    "f1": 91.81818039976845
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        }
+    },
+    "Test_pt26": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 27.27272727272727,
+                    "recall": 29.268292682926827,
+                    "f1": 28.235294117647054
+                },
+                "chrf(%)": {
+                    "precision": 36.153036724781145,
+                    "recall": 39.32083486358993,
+                    "f1": 37.67045619775666
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 100.0,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 86.22014052421996,
+                    "recall": 100.0,
+                    "f1": 92.60023140515898
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 50.0,
+                    "f1": 50.0
+                },
+                "chrf(%)": {
+                    "precision": 65.82324663632352,
+                    "recall": 55.8994792200514,
+                    "f1": 60.4568322251515
+                }
+            }
+        }
+    },
+    "Test_pt27": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 71.42857142857143,
+                    "recall": 83.33333333333334,
+                    "f1": 76.92307692307692
+                },
+                "chrf(%)": {
+                    "precision": 72.62930154310155,
+                    "recall": 84.90292214600665,
+                    "f1": 78.28798184938134
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 71.42857142857143,
+                    "recall": 71.42857142857143,
+                    "f1": 71.42857142857143
+                },
+                "chrf(%)": {
+                    "precision": 78.90803258253992,
+                    "recall": 82.19146614404558,
+                    "f1": 80.51628887447049
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 97.36842105263158,
+                    "recall": 94.87179487179486,
+                    "f1": 96.10389610389612
+                },
+                "chrf(%)": {
+                    "precision": 97.4343286705733,
+                    "recall": 95.570783887528,
+                    "f1": 96.49355962835993
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 91.66666666666666,
+                    "f1": 95.65217391304348
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 93.23684873404389,
+                    "f1": 96.50007164251349
+                }
+            }
+        }
+    },
+    "Test_pt28": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 75.0,
+                    "f1": 75.0
+                },
+                "chrf(%)": {
+                    "precision": 76.72766891913831,
+                    "recall": 78.06340043313996,
+                    "f1": 77.38977149262679
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 71.42857142857143,
+                    "f1": 76.92307692307692
+                },
+                "chrf(%)": {
+                    "precision": 92.03184082792718,
+                    "recall": 89.38168857286503,
+                    "f1": 90.68740752511208
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 60.86956521739131,
+                    "recall": 77.77777777777779,
+                    "f1": 68.29268292682927
+                },
+                "chrf(%)": {
+                    "precision": 77.72633945286572,
+                    "recall": 93.62514638762853,
+                    "f1": 84.93815940671938
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 83.33333333333334,
+                    "f1": 83.33333333333334
+                },
+                "chrf(%)": {
+                    "precision": 95.2188597907214,
+                    "recall": 95.2188597907214,
+                    "f1": 95.2188597907214
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 91.66666666666666,
+                    "recall": 100.0,
+                    "f1": 95.65217391304348
+                },
+                "chrf(%)": {
+                    "precision": 95.62247832574755,
+                    "recall": 100.0,
+                    "f1": 97.76226039475736
+                }
+            }
+        }
+    },
+    "Test_pt29": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 66.66666666666666,
+                    "recall": 100.0,
+                    "f1": 80.0
+                },
+                "chrf(%)": {
+                    "precision": 67.72330446692449,
+                    "recall": 100.0,
+                    "f1": 80.75598639338722
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 60.0,
+                    "recall": 100.0,
+                    "f1": 74.99999999999999
+                },
+                "chrf(%)": {
+                    "precision": 63.39912280701755,
+                    "recall": 100.0,
+                    "f1": 77.60032210441551
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        }
+    },
+    "Test_pt30": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 90.0,
+                    "recall": 78.26086956521739,
+                    "f1": 83.72093023255815
+                },
+                "chrf(%)": {
+                    "precision": 90.20433133586828,
+                    "recall": 79.05235838362809,
+                    "f1": 84.26095465220719
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 72.72727272727273,
+                    "recall": 100.0,
+                    "f1": 84.21052631578948
+                },
+                "chrf(%)": {
+                    "precision": 74.9830476180809,
+                    "recall": 100.0,
+                    "f1": 85.70321369843708
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 77.77777777777779,
+                    "f1": 87.50000000000001
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 87.4100904916428,
+                    "f1": 93.28216027465255
+                }
+            }
+        }
+    },
+    "Test_pt31": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 60.0,
+                    "recall": 75.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 63.29496119300793,
+                    "recall": 76.74242518578298,
+                    "f1": 69.37302886891236
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 60.0,
+                    "recall": 75.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 75.75614013498733,
+                    "recall": 84.9620573433067,
+                    "f1": 80.09544187584166
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 36.36363636363637,
+                    "recall": 30.76923076923077,
+                    "f1": 33.333333333333336
+                },
+                "chrf(%)": {
+                    "precision": 41.234174259062556,
+                    "recall": 37.55456267933132,
+                    "f1": 39.30844539247419
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 88.88888888888889,
+                    "recall": 88.88888888888889,
+                    "f1": 88.88888888888889
+                },
+                "chrf(%)": {
+                    "precision": 99.38733185793048,
+                    "recall": 99.38733185793048,
+                    "f1": 99.38733185793048
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 42.857142857142854,
+                    "recall": 50.0,
+                    "f1": 46.15384615384615
+                },
+                "chrf(%)": {
+                    "precision": 53.07782172311904,
+                    "recall": 55.98329255789592,
+                    "f1": 54.49185516672246
+                }
+            }
+        }
+    },
+    "Test_pt32": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 83.33333333333334,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 83.49408436213992,
+                    "f1": 91.00466061604233
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 83.33333333333334,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 84.61934156378601,
+                    "f1": 91.66898857620507
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 39.6551724137931,
+                    "recall": 56.09756097560976,
+                    "f1": 46.46464646464647
+                },
+                "chrf(%)": {
+                    "precision": 52.977707281903584,
+                    "recall": 73.31257246455642,
+                    "f1": 61.50801173151228
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 77.77777777777779,
+                    "recall": 77.77777777777779,
+                    "f1": 77.77777777777779
+                },
+                "chrf(%)": {
+                    "precision": 90.65003684694572,
+                    "recall": 90.65003684694572,
+                    "f1": 90.65003684694572
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 64.28571428571429,
+                    "f1": 78.26086956521739
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 75.3340700185622,
+                    "f1": 85.9320382063643
+                }
+            }
+        }
+    },
+    "Test_pt33": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 37.5,
+                    "recall": 50.0,
+                    "f1": 42.857142857142854
+                },
+                "chrf(%)": {
+                    "precision": 48.1793025435843,
+                    "recall": 63.66022099447514,
+                    "f1": 54.84832106317954
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 50.0,
+                    "f1": 50.0
+                },
+                "chrf(%)": {
+                    "precision": 63.66022099447514,
+                    "recall": 63.66022099447514,
+                    "f1": 63.66022099447514
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 100.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 81.99327771708937,
+                    "recall": 100.0,
+                    "f1": 90.10583110058478
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 92.85714285714286,
+                    "recall": 92.85714285714286,
+                    "f1": 92.85714285714286
+                },
+                "chrf(%)": {
+                    "precision": 94.00939190089764,
+                    "recall": 94.00939190089764,
+                    "f1": 94.00939190089764
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 80.0,
+                    "recall": 80.0,
+                    "f1": 80.00000000000001
+                },
+                "chrf(%)": {
+                    "precision": 83.2262973225134,
+                    "recall": 83.2262973225134,
+                    "f1": 83.2262973225134
+                }
+            }
+        }
+    },
+    "Test_pt34": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 33.33333333333333,
+                    "recall": 75.0,
+                    "f1": 46.15384615384615
+                },
+                "chrf(%)": {
+                    "precision": 36.97493951617357,
+                    "recall": 81.25,
+                    "f1": 50.82199826844685
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 60.0,
+                    "recall": 100.0,
+                    "f1": 74.99999999999999
+                },
+                "chrf(%)": {
+                    "precision": 62.811708521141874,
+                    "recall": 100.0,
+                    "f1": 77.15871185392723
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 88.23529411764706,
+                    "recall": 88.23529411764706,
+                    "f1": 88.23529411764706
+                },
+                "chrf(%)": {
+                    "precision": 97.12675899637823,
+                    "recall": 97.12675899637823,
+                    "f1": 97.12675899637823
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 87.5,
+                    "f1": 87.5
+                },
+                "chrf(%)": {
+                    "precision": 96.94718143365186,
+                    "recall": 96.94718143365186,
+                    "f1": 96.94718143365186
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        }
+    },
+    "Test_pt35": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 85.71428571428571,
+                    "f1": 80.0
+                },
+                "chrf(%)": {
+                    "precision": 75.53617312279144,
+                    "recall": 86.31518338011949,
+                    "f1": 80.56674686948247
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 80.0,
+                    "f1": 88.8888888888889
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 92.75236718619071,
+                    "f1": 96.23992539255906
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 85.29411764705883,
+                    "recall": 61.702127659574465,
+                    "f1": 71.60493827160494
+                },
+                "chrf(%)": {
+                    "precision": 89.85624684576824,
+                    "recall": 67.44647327508036,
+                    "f1": 77.05508139752617
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 81.81818181818183,
+                    "f1": 90.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 83.78453633607784,
+                    "f1": 91.17691619371624
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 61.53846153846154,
+                    "f1": 76.1904761904762
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 72.19193352572077,
+                    "f1": 83.8505405538492
+                }
+            }
+        }
+    },
+    "Test_pt36": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 80.0,
+                    "f1": 88.8888888888889
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 80.7738050958681,
+                    "f1": 89.36450173522881
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 66.66666666666666,
+                    "f1": 80.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 74.14644922898495,
+                    "f1": 85.15413269378794
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 12.5,
+                    "recall": 11.11111111111111,
+                    "f1": 11.76470588235294
+                },
+                "chrf(%)": {
+                    "precision": 19.617800289990488,
+                    "recall": 18.994448629626955,
+                    "f1": 19.30109280141857
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 100.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 77.33641250617895,
+                    "recall": 100.0,
+                    "f1": 87.22000339719776
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 28.57142857142857,
+                    "f1": 36.36363636363637
+                },
+                "chrf(%)": {
+                    "precision": 55.55780299983283,
+                    "recall": 35.565133042056495,
+                    "f1": 43.36823945850662
+                }
+            }
+        }
+    },
+    "Test_pt38": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 69.23076923076923,
+                    "f1": 81.81818181818181
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 70.63115013356628,
+                    "f1": 82.78810765593244
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 71.42857142857143,
+                    "f1": 83.33333333333333
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 81.87940865563841,
+                    "f1": 90.03702976697586
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 60.0,
+                    "recall": 60.0,
+                    "f1": 60.0
+                },
+                "chrf(%)": {
+                    "precision": 74.82661885315063,
+                    "recall": 74.56935224289964,
+                    "f1": 74.69776403566351
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 71.42857142857143,
+                    "recall": 83.33333333333334,
+                    "f1": 76.92307692307692
+                },
+                "chrf(%)": {
+                    "precision": 80.19146300525047,
+                    "recall": 91.91076155816255,
+                    "f1": 85.65209954691852
+                }
+            }
+        }
+    },
+    "Test_pt39": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 71.42857142857143,
+                    "f1": 76.92307692307692
+                },
+                "chrf(%)": {
+                    "precision": 90.94619402201634,
+                    "recall": 78.04550916021225,
+                    "f1": 84.00343786082566
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 70.0,
+                    "f1": 77.77777777777777
+                },
+                "chrf(%)": {
+                    "precision": 93.20964551651227,
+                    "recall": 81.66835087936285,
+                    "f1": 87.05815702681629
+                }
+            }
+        }
+    },
+    "Test_pt40": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 50.0,
+                    "f1": 50.0
+                },
+                "chrf(%)": {
+                    "precision": 50.03945707070707,
+                    "recall": 50.03945707070707,
+                    "f1": 50.03945707070707
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 33.33333333333333,
+                    "f1": 40.0
+                },
+                "chrf(%)": {
+                    "precision": 63.986555434178726,
+                    "recall": 41.95237394545811,
+                    "f1": 50.67802585462853
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 33.33333333333333,
+                    "recall": 25.0,
+                    "f1": 28.571428571428577
+                },
+                "chrf(%)": {
+                    "precision": 34.175818824941636,
+                    "recall": 25.329571737727225,
+                    "f1": 29.09514067335624
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 40.0,
+                    "recall": 100.0,
+                    "f1": 57.14285714285715
+                },
+                "chrf(%)": {
+                    "precision": 47.25259323454263,
+                    "recall": 100.0,
+                    "f1": 64.17896241634145
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 25.0,
+                    "f1": 33.33333333333333
+                },
+                "chrf(%)": {
+                    "precision": 61.757825507825515,
+                    "recall": 33.89139823591043,
+                    "f1": 43.76531197111061
+                }
+            }
+        }
+    },
+    "Test_pt41": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 90.0,
+                    "recall": 75.0,
+                    "f1": 81.81818181818183
+                },
+                "chrf(%)": {
+                    "precision": 90.95388269432684,
+                    "recall": 75.65997032121388,
+                    "f1": 82.60499281065262
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 71.42857142857143,
+                    "f1": 76.92307692307692
+                },
+                "chrf(%)": {
+                    "precision": 92.03184082792718,
+                    "recall": 82.19146614404558,
+                    "f1": 86.83375446202068
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 85.36585365853658,
+                    "recall": 74.46808510638297,
+                    "f1": 79.54545454545455
+                },
+                "chrf(%)": {
+                    "precision": 92.97879530898813,
+                    "recall": 81.682226970232,
+                    "f1": 86.96519650167046
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 92.85714285714286,
+                    "recall": 92.85714285714286,
+                    "f1": 92.85714285714286
+                },
+                "chrf(%)": {
+                    "precision": 98.20848274343902,
+                    "recall": 98.20848274343902,
+                    "f1": 98.20848274343902
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 83.33333333333334,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 85.64508352129711,
+                    "f1": 92.26754826660621
+                }
+            }
+        }
+    },
+    "Test_pt42": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "chrf(%)": {
+                    "precision": 10.311464867828803,
+                    "recall": 57.65812760116666,
+                    "f1": 17.494286356812317
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 100.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 55.952380952380956,
+                    "recall": 100.0,
+                    "f1": 71.7557251908397
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0
+                },
+                "chrf(%)": {
+                    "precision": 26.026190551781326,
+                    "recall": 57.65812760116666,
+                    "f1": 35.86386192605963
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 81.81818181818183,
+                    "recall": 100.0,
+                    "f1": 90.0
+                },
+                "chrf(%)": {
+                    "precision": 86.50316186903429,
+                    "recall": 100.0,
+                    "f1": 92.76321216449756
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 100.0,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 91.2449566514951,
+                    "recall": 100.0,
+                    "f1": 95.4220788344975
+                }
+            }
+        }
+    },
+    "Test_pt43": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 58.333333333333336,
+                    "recall": 100.0,
+                    "f1": 73.68421052631578
+                },
+                "chrf(%)": {
+                    "precision": 61.1220401430585,
+                    "recall": 100.0,
+                    "f1": 75.87048933688885
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 66.66666666666666,
+                    "recall": 100.0,
+                    "f1": 80.0
+                },
+                "chrf(%)": {
+                    "precision": 80.45736557961959,
+                    "recall": 100.0,
+                    "f1": 89.17049777513347
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 86.04651162790698,
+                    "recall": 100.0,
+                    "f1": 92.5
+                },
+                "chrf(%)": {
+                    "precision": 91.87849420264833,
+                    "recall": 100.0,
+                    "f1": 95.76737047520588
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 90.0,
+                    "recall": 100.0,
+                    "f1": 94.73684210526316
+                },
+                "chrf(%)": {
+                    "precision": 94.74697399089706,
+                    "recall": 100.0,
+                    "f1": 97.30264049733144
+                }
+            }
+        }
+    },
+    "Test_pt44": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 60.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 91.7485298463285,
+                    "recall": 74.18057758434841,
+                    "f1": 82.03453923066417
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 60.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 91.7485298463285,
+                    "recall": 75.21398944850978,
+                    "f1": 82.6625398912674
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 68.88888888888889,
+                    "recall": 73.80952380952381,
+                    "f1": 71.26436781609196
+                },
+                "chrf(%)": {
+                    "precision": 80.13833084766931,
+                    "recall": 85.495347477432,
+                    "f1": 82.73020935555203
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 91.66666666666666,
+                    "recall": 91.66666666666666,
+                    "f1": 91.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 97.92027383898065,
+                    "recall": 97.92027383898065,
+                    "f1": 97.92027383898065
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 85.71428571428571,
+                    "recall": 85.71428571428571,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 92.23959487601402,
+                    "recall": 92.23959487601402,
+                    "f1": 92.23959487601402
+                }
+            }
+        }
+    },
+    "Test_pt45": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 81.81818181818183,
+                    "recall": 81.81818181818183,
+                    "f1": 81.81818181818183
+                },
+                "chrf(%)": {
+                    "precision": 82.58797501603438,
+                    "recall": 82.2546423351921,
+                    "f1": 82.42097165513303
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 81.81818181818183,
+                    "recall": 100.0,
+                    "f1": 90.0
+                },
+                "chrf(%)": {
+                    "precision": 83.76426689185617,
+                    "recall": 100.0,
+                    "f1": 91.1649128621407
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 50.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 56.475182983759595,
+                    "f1": 72.1842044301953
+                }
+            }
+        }
+    },
+    "Test_pt46": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 28.57142857142857,
+                    "recall": 100.0,
+                    "f1": 44.44444444444445
+                },
+                "chrf(%)": {
+                    "precision": 31.674766090457723,
+                    "recall": 100.0,
+                    "f1": 48.1106092395833
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 50.0,
+                    "recall": 100.0,
+                    "f1": 66.66666666666666
+                },
+                "chrf(%)": {
+                    "precision": 55.97379239465571,
+                    "recall": 100.0,
+                    "f1": 71.7733300387118
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 40.0,
+                    "recall": 100.0,
+                    "f1": 57.14285714285715
+                },
+                "chrf(%)": {
+                    "precision": 58.9767395546977,
+                    "recall": 100.0,
+                    "f1": 74.19543226247397
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 35.294117647058826,
+                    "recall": 35.294117647058826,
+                    "f1": 35.294117647058826
+                },
+                "chrf(%)": {
+                    "precision": 41.46019882830071,
+                    "recall": 41.55212343166772,
+                    "f1": 41.50611023312653
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 83.33333333333334,
+                    "recall": 100.0,
+                    "f1": 90.9090909090909
+                },
+                "chrf(%)": {
+                    "precision": 84.77011494252874,
+                    "recall": 100.0,
+                    "f1": 91.75738724727837
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 87.5,
+                    "f1": 87.5
+                },
+                "chrf(%)": {
+                    "precision": 87.5,
+                    "recall": 88.90874549201443,
+                    "f1": 88.1987478438638
+                }
+            }
+        }
+    },
+    "Test_pt47": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 92.3076923076923,
+                    "recall": 80.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 93.99800522288893,
+                    "recall": 82.76521727956798,
+                    "f1": 88.02470577283387
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 75.0,
+                    "f1": 85.71428571428571
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 82.65968322024912,
+                    "f1": 90.50676291886364
+                }
+            }
+        }
+    },
+    "Test_pt48": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 40.0,
+                    "recall": 100.0,
+                    "f1": 57.14285714285715
+                },
+                "chrf(%)": {
+                    "precision": 40.355324133677364,
+                    "recall": 100.0,
+                    "f1": 57.50451489142243
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 33.33333333333333,
+                    "recall": 100.0,
+                    "f1": 50.0
+                },
+                "chrf(%)": {
+                    "precision": 37.449967066930135,
+                    "recall": 100.0,
+                    "f1": 54.492507879167675
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 28.57142857142857,
+                    "recall": 28.57142857142857,
+                    "f1": 28.57142857142857
+                },
+                "chrf(%)": {
+                    "precision": 45.64568273900946,
+                    "recall": 45.64568273900945,
+                    "f1": 45.64568273900946
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 75.0,
+                    "recall": 75.0,
+                    "f1": 75.0
+                },
+                "chrf(%)": {
+                    "precision": 87.37706466131175,
+                    "recall": 87.37706466131175,
+                    "f1": 87.37706466131175
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            }
+        }
+    },
+    "Test_pt49": {
+        "Team": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 87.5,
+                    "recall": 87.5,
+                    "f1": 87.5
+                },
+                "chrf(%)": {
+                    "precision": 87.70032051282051,
+                    "recall": 87.70148291424887,
+                    "f1": 87.70090170968304
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                },
+                "chrf(%)": {
+                    "precision": 100.0,
+                    "recall": 100.0,
+                    "f1": 100.0
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 80.0,
+                    "recall": 80.0,
+                    "f1": 80.00000000000001
+                },
+                "chrf(%)": {
+                    "precision": 86.01054881461862,
+                    "recall": 81.75155650127785,
+                    "f1": 83.82699093915024
+                }
+            }
+        },
+        "Player": {
+            "cells": {
+                "exact_match(%)": {
+                    "precision": 65.45454545454545,
+                    "recall": 80.0,
+                    "f1": 72.00000000000001
+                },
+                "chrf(%)": {
+                    "precision": 76.39882813462921,
+                    "recall": 83.37968295514787,
+                    "f1": 79.73675589492693
+                }
+            },
+            "row_header": {
+                "exact_match(%)": {
+                    "precision": 92.3076923076923,
+                    "recall": 92.3076923076923,
+                    "f1": 92.3076923076923
+                },
+                "chrf(%)": {
+                    "precision": 96.87464224715619,
+                    "recall": 96.87464224715619,
+                    "f1": 96.87464224715619
+                }
+            },
+            "col_header": {
+                "exact_match(%)": {
+                    "precision": 80.0,
+                    "recall": 80.0,
+                    "f1": 80.00000000000001
+                },
+                "chrf(%)": {
+                    "precision": 89.49394798179412,
+                    "recall": 82.77410022555654,
+                    "f1": 86.00295988620461
+                }
+            }
+        }
+    }
+}

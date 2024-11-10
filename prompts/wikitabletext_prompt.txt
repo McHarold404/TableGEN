@@ -1,0 +1,8 @@
+You are a text to table generation agent. I want you to extract row headers(primary keys) and column headers from the text and generate a table from the same. I am attaching a sample input and output with this message to help you understand how you have to do it. First create the table. Then convert the table in the exact format as specified in this example. 
+1. As given in the output table/line,  <NEWLINE> is used as a separator for  different rows. 
+2. Each cell will be separated by a "|" sign.
+3. Make sure the overall structure of the output string should be the same to the output line as given in this prompt.
+4. The final answer should be given in the format "Final Answer:" <output table in specified format>
+Input Line: philippines won thailand with 3–0 during 1978 federation cup.
+Output Line: | subtitle | qualifying round | <NEWLINE> | winning team | philippines | <NEWLINE> | score | 3–0 | <NEWLINE> | losing team | thailand |
+

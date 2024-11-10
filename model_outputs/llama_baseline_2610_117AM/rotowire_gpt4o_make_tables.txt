@@ -1,0 +1,106 @@
+You are an expert in transforming unstructured text into organized, structured tables. Given a set of headers in JSON format and the input statements your task is to generate tables that comprehensively and accurately represent all the information contained in the statements using the exact headers given. Follow the detailed steps and formatting guidelines below:
+
+Steps to Follow
+Parse the Input Statements
+
+Read Carefully: Thoroughly read and understand the table headers
+Identify Structure of Tables: Process the dictionary given and understand all the header values provided for the tables. The dictionary will have row and column headers for more than one table.
+Populate the table in going row by row. For every row, identify the row header and extract all the values sequentially to find the column values for the row.
+If the value of particular column for a row is not present in the statements, return "Not found".
+
+Ensure Structural Integrity
+Equal Number of Cells: Ensure each row, including headers, has an equal number of cells.
+Completeness: Include all relevant dat from the input without omissions.
+Consistent Formatting: Maintain uniform data formats (e.g., percentages, whole numbers).
+Prune Empty Rows and Columns
+
+Remove any rows or columns that do not contain data to maintain clarity.
+Generate the Final Table Output
+
+After processing all the statements, convert the tables to the specified format using the guidelines below.
+Formatting Guidelines
+Cell Separation: Use the pipe symbol | to separate cells.
+Row Separation: Use <NEWLINE> to separate lines.
+Multiple Tables: If multiple tables are required, separate them using the <TABLE END> literal.
+
+Illustration 1: Example
+Table Headers:
+
+{
+    "Team": {
+        "row_headers": ["Toronto Raptors", "Philadelphia 76ers"],
+        "col_headers": ["Percentage of 3 points", "Percentage of field goals", "Losses", "Total Points", "Wins", "Defensive Rebounds", "Fastbreak Points"]
+    },
+    "Player": {
+        "row_headers": ["Ersan Ilyasova", "Robert Covington", "Jahlil Okafor", "Sergio Rodriguez", "Nik Stauskas", "Richaun Holmes", "Kyle Lowry", "Terrence Ross", "DeMar DeRozan", "Jonas Valanciunas"],
+        "col_headers": ["Assists", "Field goals attempted", "Field goals made", "Points", "Total rebounds", "Steals"]
+    },
+    "Upcoming Games": {
+        "row_headers": ["76ers", "Raptors"],
+        "col_headers": ["Team", "Next Opponent", "Day"]
+    }
+}
+
+Input Statements:
+The Toronto Raptors defeated the Philadelphia 76ers with a score of 122-95 at Air Canada Center on Monday.
+The Toronto Raptors entered the game as a monster favorite.
+Toronto won each quarter by at least four points.
+The Toronto Raptors shot 55% from the field.
+The Toronto Raptors shot 68% from three-point range.
+The Toronto Raptors held the Philadelphia 76ers to 42% shooting from the field.
+Toronto dominated defensive rebounding with 34 defensive rebounds compared to the Philadelphia 76ers' 26 defensive rebounds.
+The Toronto Raptors won fastbreak points with 21 fastbreak points compared to the Philadelphia 76ers' 6 fastbreak points.
+The Philadelphia 76ers who are on a 4 wins to 14 losses record played without Joel Embiid due to rest.
+Robert Covington scored 20 points.
+Robert Covington grabbed five rebounds.
+Robert Covington provided two assists.
+Robert Covington recorded two steals.
+Robert Covington shot 7-of-11 from the field.
+Jahlil Okafor started in place of Joel Embiid.
+Jahlil Okafor finished with 15 points.
+Jahlil Okafor grabbed five rebounds.
+Sergio Rodriguez scored 11 points.
+Ersan Ilyasova scored 11 points.
+Nik Stauskas scored 11 points.
+Richaun Holmes scored 11 points.
+The Philadelphia 76ers will play their next game on Wednesday against the Sacramento Kings.
+The Toronto Raptors have a wins-to-losses record of 11 to 6.
+Kyle Lowry scored 24 points.
+Kyle Lowry grabbed four rebounds.
+Kyle Lowry provided eight assists.
+Terrence Ross scored 22 points.
+Terrence Ross shot 8-of-11 from the field.
+DeMar DeRozan scored 14 points.
+DeMar DeRozan grabbed five rebounds.
+DeMar DeRozan provided five assists.
+Jonas Valanciunas recorded a double-double.
+Jonas Valanciunas scored 12 points.
+Jonas Valanciunas grabbed 11 rebounds.
+The Toronto Raptors' next game is on Wednesday against the Memphis Grizzlies.
+
+
+Run this symbolic algorithm to get the final table:
+Final Table:
+{
+    for table in tables:
+        Team = {
+            
+            row_headers =,
+            col_headers = [],
+            for row in row_headers:
+                for col in col_headers:
+                    cell_value = QA on Text(row,col) <This is a symbolic function>
+                    cells.append(cell_value)
+        }
+
+        ..... and so on for every table.
+}
+Finally, convert the table in the required format given the guidelines:
+
+Final Answer: <NEWLINE> Team: | Team Name | Percentage of 3 points | Percentage of field goals | Losses | Total Points | Wins | Defensive Rebounds | Fastbreak Points | <NEWLINE> | Raptors | 68% | 55% | 6 | 122 | 11 | 34 | 21 | <NEWLINE>| 76ers |  | 42% | 14 | 95 | 4 | 26 | 6 | <TABLE END>  Player: <NEWLINE> | Player Name | Assists | Field goals attempted | Field goals made | Points | Total rebounds | Steals |  <NEWLINE>| Ersan Ilyasova | Not found | Not found | Not found | 11 | Not found | Not found | <NEWLINE>| Jahlil Okafor | Not found | Not found | Not found | 15 | 5 | Not found | <NEWLINE>| Robert Covington | 2 | 11 | 7 | 20 | 5 | 2 | <NEWLINE>| Sergio Rodriguez | Not found | Not found| Not found | 11 | Not found | Not found | <NEWLINE>| Nik Stauskas | Not found | Not found | Not found | 11 | Not found | Not found | <NEWLINE>| Richaun Holmes | Not found | Not found | Not found | 11 | Not found | Not found | <NEWLINE>| Jonas Valanciunas | Not found | Not found | Not found | 12 | 11 | Not found | <NEWLINE>| DeMar DeRozan | 5 | Not found | Not found | 14 | 5 | Not found | <NEWLINE>| Kyle Lowry | 8 | Not found | Not found | 24 | 4 | Not found | <NEWLINE>| Terrence Ross | Not found | 11 | 8 | 22 | Not found | Not found | <TABLE END> Upcoming Games: <NEWLINE> | Team | Next Opponent | Day | <NEWLINE>| 76ers | Sacramento Kings | Wednesday | <NEWLINE> | Raptors | Memphis Grizzlies | Wednesday |<TABLE END>
+
+Final Note:
+Structural Integrity: Each table maintains an equal number of cells per row, matching the headers precisely. Ensure that every cell value is mapped to the correct row and column value.
+Consistency: Data is placed under the correct columns as defined in the headers.
+Completeness: All relevant data from the input statements is included without omissions.
+Formatting: Tables are separated using <TABLE END>, and cells are properly separated by | with rows separated by <NEWLINE>.

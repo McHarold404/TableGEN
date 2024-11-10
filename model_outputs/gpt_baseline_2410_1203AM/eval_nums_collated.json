@@ -1,0 +1,53 @@
+{
+    "Cells": {
+        "exact_match(%)": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "BERT_score(%)": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "chrf(%)": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    "Row Header": {
+        "exact_match(%)": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "BERT_score(%)": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "chrf(%)": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    "Column Header": {
+        "exact_match(%)": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "BERT_score(%)": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "chrf(%)": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    }
+}
