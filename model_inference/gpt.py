@@ -148,10 +148,8 @@ class GPT4MiniBot:
 
 def ask_chatgpt(text: str, prompt_path=None):
     # Check if a prompt path is provided and read prompt text
-    print('jere')
     load_dotenv()
     api_key =os.getenv("OPENAI_API_KEY")
-    print(api_key if api_key is not None else "None")
     client = OpenAI(api_key = api_key)
     if prompt_path and text:
         with open(prompt_path, 'r') as file:

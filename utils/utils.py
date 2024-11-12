@@ -71,13 +71,11 @@ def read_file(file_path):
         # Read and return JSON data as a dictionary
         with open(file_path, 'r') as file:
             return json.load(file)
-    elif file_path.endswith('.txt'):
+    else:
         # Read and return text data as a list of lines
         with open(file_path, 'r') as file:
             return file.readlines()
-    else:
-        raise ValueError("Unsupported file format. Only .txt and .json are supported.")
-
+    
 def write_file(file_path, data):
     """
     Writes data to a file. If it's a JSON file, writes data as JSON. 
