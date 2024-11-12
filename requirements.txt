@@ -1,0 +1,11 @@
+pandas
+numpy
+python-dotenv
+pprintpp
+bert-score
+sacrebleu
+tqdm
+torch
+groq
+openai
+google-generativeai
