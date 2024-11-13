@@ -1,0 +1,26 @@
+{
+  "row_headers": [
+    "Player",
+    "Team",
+    "Event",
+    "Foul",
+    "Free Kick",
+    "Shot",
+    "Corner Kick",
+    "Injury",
+    "Yellow Card",
+    "Score"
+  ],
+  "column_headers": [
+    "Player Name",
+    "Team Name",
+    "Event Type",
+    "Foul Committed",
+    "Free Kick Awarded",
+    "Shot Attempted",
+    "Corner Kick Earned",
+    "Injury Status",
+    "Yellow Card Received",
+    "Final Score"
+  ]
+}
