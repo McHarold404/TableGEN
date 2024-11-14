@@ -2,25 +2,27 @@
   "row_headers": [
     "Player",
     "Team",
-    "Event",
-    "Foul",
-    "Free Kick",
-    "Shot",
+    "Action",
+    "Result",
+    "Assisted By",
+    "Foul Committed",
+    "Free Kick Earned",
+    "Card Received",
+    "Shot Outcome",
     "Corner Kick",
-    "Injury",
-    "Yellow Card",
-    "Score"
+    "Penalty Awarded"
   ],
   "column_headers": [
     "Player Name",
     "Team Name",
-    "Event Type",
-    "Foul Committed",
-    "Free Kick Awarded",
-    "Shot Attempted",
-    "Corner Kick Earned",
-    "Injury Status",
-    "Yellow Card Received",
-    "Final Score"
+    "Action Type",
+    "Result Type",
+    "Assisting Player",
+    "Foul Player",
+    "Free Kick Player",
+    "Card Type",
+    "Shot Type",
+    "Corner Kick Team",
+    "Penalty Team"
   ]
 }

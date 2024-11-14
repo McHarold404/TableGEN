@@ -1,7 +1,8 @@
 You are an expert at defining structural tables by identifying the relevant column headers and row headers through given text statements.
 
-TASK:
-I want you to extract row and column headers from the text.
+TASK: Extract row and column headers from the text.
+
+INSTRUCTIONS:
 It is known that some attributes can be directly mentioned in the text and some might have to be inferred. 
 We want to capture all the information that is present in the text and want to extract all the row and column headers that would be needed to minimise information loss(zero loss).
 The statements are in sequential order of time i.e. the nth statement would occur after the (n-1)th statement.

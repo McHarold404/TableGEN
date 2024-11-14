@@ -1,7 +1,10 @@
-You are an expert at converting unstructured, detailed textual inputs into structured and organized atomic statements. Your task is to take long paragraphs or sentences and break them down into clear, self-contained, and detailed atomic statements without losing any information.
-Provide only the atomic statements as output, with no additional explanations, commentary, or numbering.
+You are an expert at converting unstructured, detailed textual inputs into highly structured and organized atomic statements. Your task is to take long paragraphs or sentences and decompose them into clear, self-contained, and highly detailed atomic statements without losing any information. Each atomic statement should capture a single fact or action with maximum granularity.
+Provide only the atomic statements as output, with no additional explanations, commentary, additional text, or numbering.
+
+Task: Generate atomic statements of the given paragraphs with increased granularity.
 
 Ensure:
+Resolving Ambiguity: Infer the type of data and its context to resolve any ambiguity.
 Complete Coverage of the Input Text: All information from the text is captured.
 No Detail is Lost: Every fact, statistic, and detail is represented accurately.
 Clarity and Conciseness: Statements are clear and free from redundancy.
@@ -9,121 +12,27 @@ Consistent Formatting: Numerical data and units are presented uniformly.
 Maintain Context: Necessary context is preserved for each statement to be meaningful.
 Eliminate Ambiguity: Resolve pronouns and ensure each statement can be interpreted correctly on its own.
 Provide Detailed Information: Expand statements to include necessary details that enhance understanding.
-Group Related Information: Combine related statistics or figures where appropriate to maintain readability without losing information.
+Readability: Ensure that each atomic statement has only one entity and one action or fact. Maintain readability without losing information.
+Step-by-Step Breakdown: Further decompose each atomic statement into even more granular statements if they contain multiple pieces of information.
+Single Key Entity and Action: Ensure each atomic statement contains only one key entity and one action or attribute.
 
-Example:
-Input Text:
-And we're off for the first half. Player27(Away Team)'s shot from close range is blocked. Player27(Away Team)'s shot from the center of the box is blocked with the assistance of Player26(Away Team). The Away Team earns a corner kick. Offside called against the Away Team as Player24(Away Team) attempts a pass to Player32(Away Team), but Player28(Away Team) is caught in an offside position. The Away Team wins a corner kick. Player29(Away Team) narrowly misses with a right-footed shot from outside the box, assisted by Player23(Away Team) after a corner, as Player6(Home Team) is down with an injury causing a delay in the match. The delay is finished and they are prepared to resume play. Player28(Away Team) earns a free kick after being fouled by Player8(Home Team) on the left wing. Player20(Away Team) is causing a delay in the match due to an injury. The delay has ended and they are prepared to resume play. Player26(Away Team)'s shot from outside the box is saved in the middle of the goal. Player20(Away Team) commits a foul, resulting in Player7(Home Team) winning a free kick in their own defensive half. Player21(Away Team) earns a free kick in their own half. Player9(Home Team) commits a foul. Player20(Away Team) attempts a pass to Player28(Away Team), but Player28(Away Team) is offside. Player7(Home Team)'s right-footed shot from the center of the box was blocked with an assist from Player11(Home Team), while Player11(Home Team)'s header from the center of the box missed to the left with a cross from Player2(Home Team). Player22(Away Team) commits a foul. Player11(Home Team) earns a free kick in the opponent's half. Player27(Away Team) misses the target with a shot from the left side of the box, assisted by Player22(Away Team). Player25(Away Team) earns a free kick in the opponent's half. Player11(Home Team) commits a foul. Player7(Home Team)'s shot from the center of the box is blocked. Player28(Away Team) earns a free kick in their own half after a foul by Player10(Home Team), . Player20(Away Team) is causing a delay in the match due to an injury. Play is about to resume as the delay has ended. Player11(Home Team)'s shot from distance goes high and wide to the right, with an assist from Player10(Home Team). Player22(Away Team) commits a foul. Player7(Home Team) earns a free kick in the opponent's half. Player6(Home Team) misses the goal with a right-footed shot from the right side of the box, assisted by Player11(Home Team) with a cross after a set piece. Player22(Away Team) earns a free kick in the attacking half after a foul by Player7(Home Team). Player29(Away Team) commits a foul, resulting in Player11(Home Team) winning a free kick in the attacking half, . Player26(Away Team)'s shot from outside the box is saved in the top center of the goal with an assist from Player21(Away Team). The Away Team earns a corner kick. Player21(Away Team) earns a free kick on the left side of the field. Player11(Home Team) commits a foul. Player29(Away Team)'s shot from the center of the box is blocked by a defender after being set up by Player28(Away Team). Player11(Home Team)'s shot from outside the box with his left foot was blocked with the help of Player9(Home Team). Home team is awarded a corner kick. The Home Team earns a corner kick. Offside called against the Home Team as Player5(Home Team) attempts a pass to Player32(Away Team), but Player7(Home Team) is offside. At the end of the first half, the score is tied at 0-0 between the Home Team and the Away Team. The second half has started with the score tied at 0-0 between the Home Team and the Away Team. Player21(Away Team) earns a free kick in their own half after being fouled by Player11(Home Team). Player11(Home Team) receives a yellow card for a foul on Player32(Away Team). Player6(Home Team)’s left footed shot from the center of the box, assisted by Player9(Home Team) with a headed pass, is blocked after the Home Team obtains a corner kick. Player5(Home Team)'s shot from close range is blocked. Player9(Home Team)'s shot with his right foot from the left side of the six yard box is saved in the middle of the goal. Player28(Away Team) earns a free kick on the left side of the field. Player2(Home Team) commits a foul. Player25(Away Team) attempts a through pass to Player28(Away Team), but Player28(Away Team) is ruled offside for the Away Team. The Home Team wins a corner kick. Away Team earns a corner kick. Player8(Home Team) has been given a yellow card. Player31(Away Team) falls to the ground, but it looks like he intentionally dove. Player31(Away Team) receives a yellow card. The Home Team earns a corner kick. Player28(Away Team) earns a free kick in their own half. Player12(Home Team) commits a foul. The Away Team earns a corner kick. Player27(Away Team) scores with a close-range header to give the Away Team a 1-0 lead over the Home Team. Player14(Home Team)'s attempt from long range with his right foot, assisted by Player11(Home Team), was high and wide to the right, following a foul by Player31(Away Team). Player6(Home Team) earns a free kick in their own half. Player6(Home Team) commits a foul on Player28(Away Team), who earns a free kick on the right wing. Player6(Home Team) receives a yellow card for fouling Player32(Away Team). The Away Team wins a corner kick. Player14(Home Team)'s header from the center of the box is saved by the goalkeeper after a cross from Player12(Home Team). The Home Team wins a corner kick. Offside called against the Away Team as Player28(Away Team) attempts a pass to Player32(Away Team), but Player26(Away Team) is flagged offside. Player24(Away Team) earns a free kick in the opponent's half. Player14(Home Team) commits a foul. Player33(Away Team) scores with a right-footed shot from outside the box, assisted by Player31(Away Team), Home Team is now behind 0-2 against the Away Team. Player31(Away Team) commits a foul, resulting in Player12(Home Team) being awarded a free kick in their own defensive half. The Away Team wins a corner kick. The Away Team earns a corner kick. Player22(Away Team) attempts a pass to Player27(Away Team), but Player27(Away Team) is offside. Player20(Away Team) attempts a pass to Player27(Away Team), but Player27(Away Team) is offside. Player26(Away Team) misses the target with a left footed shot from the center of the box with an assist from Player31(Away Team). Player31(Away Team) scores with a left-footed shot from the center of the box, assisted by Player28(Away Team), making it 3-0 for the Away Team against the Home Team. Player31(Away Team) commits a foul on Player9(Home Team), who earns a free kick on the left wing, This results in a set piece opportunity for Player9(Home Team). Player20(Away Team) earns a free kick on the right side of the field. Player12(Home Team) commits a foul. Player12(Home Team) receives a yellow card for a foul on Player32(Away Team). Offside called against the Away Team as Player26(Away Team) attempts a pass to Player32(Away Team), but Player27(Away Team) is caught offside. Player21(Away Team) earns a free kick in their own half. Player14(Home Team) commits a foul. Player26(Away Team) commits a foul, resulting in Player9(Home Team) winning a free kick on the left wing. Player26(Away Team) committed a foul. Player15(Home Team) wins a free kick in the defensive half, with Player11(Home Team) missing a close left-footed shot from the center of the box, just narrowly missing the top left corner with an assist from Player7(Home Team). The home team finishes the second half with a score of 0 while the away team leads with 3 goals. Final score, Home Team loses to Away Team by three. 
-
-Output Statements:
-The first half of the match begins.
-Player27 (Away Team) takes a close-range shot, which is blocked.
-Player27 (Away Team) takes a shot from the center of the box, which is blocked with assistance from Player26 (Away Team).
-The Away Team earns a corner kick.
-Offside is called against the Away Team as Player24 (Away Team) attempts a pass to Player32 (Away Team), but Player28 (Away Team) is caught in an offside position.
-The Away Team wins a corner kick.
-Player29 (Away Team) narrowly misses a right-footed shot from outside the box, assisted by Player23 (Away Team), following a corner.
-Player6 (Home Team) is injured, causing a delay in the match.
-The delay due to Player6's injury ends, and play is prepared to resume.
-Player28 (Away Team) earns a free kick after being fouled by Player8 (Home Team) on the left wing.
-Player20 (Away Team) causes a delay in the match due to an injury.
-The delay caused by Player20's injury ends, and play is prepared to resume.
-Player26 (Away Team) takes a shot from outside the box, which is saved in the middle of the goal.
-Player20 (Away Team) commits a foul, resulting in Player7 (Home Team) earning a free kick in their own defensive half.
-Player21 (Away Team) earns a free kick in their own half.
-Player9 (Home Team) commits a foul.
-Player20 (Away Team) attempts a pass to Player28 (Away Team), but Player28 is offside.
-Player7 (Home Team) takes a right-footed shot from the center of the box, which is blocked with an assist from Player11 (Home Team).
-Player11 (Home Team) takes a header from the center of the box, which misses to the left, assisted by a cross from Player2 (Home Team).
-Player22 (Away Team) commits a foul.
-Player11 (Home Team) earns a free kick in the opponent's half.
-Player27 (Away Team) misses the target with a shot from the left side of the box, assisted by Player22 (Away Team).
-Player25 (Away Team) earns a free kick in the opponent's half.
-Player11 (Home Team) commits a foul.
-Player7 (Home Team)'s shot from the center of the box is blocked.
-Player28 (Away Team) earns a free kick in their own half after being fouled by Player10 (Home Team).
-Player20 (Away Team) causes a delay in the match due to an injury.
-The delay caused by Player20's injury ends, and play is prepared to resume.
-Player11 (Home Team)'s shot from distance goes high and wide to the right, assisted by Player10 (Home Team).
-Player22 (Away Team) commits a foul.
-Player7 (Home Team) earns a free kick in the opponent's half.
-Player6 (Home Team) misses the goal with a right-footed shot from the right side of the box, assisted by Player11 (Home Team) with a cross after a set piece.
-Player22 (Away Team) earns a free kick in the attacking half after being fouled by Player7 (Home Team).
-Player29 (Away Team) commits a foul, resulting in Player11 (Home Team) earning a free kick in the attacking half.
-Player26 (Away Team) takes a shot from outside the box, which is saved in the top center of the goal, assisted by Player21 (Away Team).
-The Away Team earns a corner kick.
-Player21 (Away Team) earns a free kick on the left side of the field.
-Player11 (Home Team) commits a foul.
-Player29 (Away Team)'s shot from the center of the box is blocked by a defender, set up by Player28 (Away Team).
-Player11 (Home Team)'s shot from outside the box with his left foot is blocked with assistance from Player9 (Home Team).
-The Home Team is awarded a corner kick.
-The Home Team earns a corner kick.
-Offside is called against the Home Team as Player5 (Home Team) attempts a pass to Player32 (Away Team), but Player7 (Home Team) is offside.
-The first half ends with the score tied at 0-0 between the Home Team and the Away Team.
-The second half begins with the score tied at 0-0.
-Player21 (Away Team) earns a free kick in their own half after being fouled by Player11 (Home Team).
-Player11 (Home Team) receives a yellow card for a foul on Player32 (Away Team).
-Player6 (Home Team) takes a left-footed shot from the center of the box, assisted by Player9 (Home Team) with a headed pass, which is blocked after the Home Team earns a corner kick.
-Player5 (Home Team) takes a close-range shot, which is blocked.
-Player9 (Home Team) takes a right-footed shot from the left side of the six-yard box, which is saved in the middle of the goal.
-Player28 (Away Team) earns a free kick on the left side of the field.
-Player2 (Home Team) commits a foul.
-Player25 (Away Team) attempts a through pass to Player28 (Away Team), but Player28 is ruled offside.
-The Home Team earns a corner kick.
-The Away Team earns a corner kick.
-Player8 (Home Team) is given a yellow card.
-Player31 (Away Team) falls to the ground, appearing to dive intentionally.
-Player31 (Away Team) receives a yellow card.
-The Home Team earns a corner kick.
-Player28 (Away Team) earns a free kick in their own half.
-Player12 (Home Team) commits a foul.
-The Away Team earns a corner kick.
-Player27 (Away Team) scores with a close-range header, giving the Away Team a 1-0 lead.
-Player14 (Home Team) takes a long-range right-footed shot, assisted by Player11 (Home Team), which is high and wide to the right following a foul by Player31 (Away Team).
-Player6 (Home Team) earns a free kick in their own half.
-Player6 (Home Team) commits a foul on Player28 (Away Team), resulting in Player28 earning a free kick on the right wing.
-Player6 (Home Team) receives a yellow card for fouling Player32 (Away Team).
-The Away Team earns a corner kick.
-Player14 (Home Team)'s header from the center of the box is saved by the goalkeeper after a cross from Player12 (Home Team).
-The Home Team earns a corner kick.
-Offside is called against the Away Team as Player28 (Away Team) attempts a pass to Player32 (Away Team), but Player26 (Away Team) is flagged offside.
-Player24 (Away Team) earns a free kick in the opponent's half.
-Player14 (Home Team) commits a foul.
-Player33 (Away Team) scores with a right-footed shot from outside the box, assisted by Player31 (Away Team), making the score 0-2 in favor of the Away Team.
-Player31 (Away Team) commits a foul, resulting in Player12 (Home Team) being awarded a free kick in their own defensive half.
-The Away Team earns a corner kick.
-The Away Team earns a corner kick.
-Player22 (Away Team) attempts a pass to Player27 (Away Team), but Player27 is offside.
-Player20 (Away Team) attempts a pass to Player27 (Away Team), but Player27 is offside.
-Player26 (Away Team) misses the target with a left-footed shot from the center of the box, assisted by Player31 (Away Team).
-Player31 (Away Team) scores with a left-footed shot from the center of the box, assisted by Player28 (Away Team), making the score 3-0 in favor of the Away Team.
-Player31 (Away Team) commits a foul on Player9 (Home Team), resulting in Player9 earning a free kick on the left wing.
-This foul results in a set piece opportunity for Player9 (Home Team).
-Player20 (Away Team) earns a free kick on the right side of the field.
-Player12 (Home Team) commits a foul.
-Player12 (Home Team) receives a yellow card for a foul on Player32 (Away Team).
-Offside is called against the Away Team as Player26 (Away Team) attempts a pass to Player32 (Away Team), but Player27 (Away Team) is caught offside.
-Player21 (Away Team) earns a free kick in their own half.
-Player14 (Home Team) commits a foul.
-Player26 (Away Team) commits a foul, resulting in Player9 (Home Team) earning a free kick on the left wing.
-Player26 (Away Team) commits a foul.
-Player15 (Home Team) earns a free kick in the defensive half.
-Player11 (Home Team) takes a close left-footed shot from the center of the box, assisted by Player7 (Home Team), which narrowly misses the top left corner.
-The Home Team finishes the second half with a score of 0.
-The Away Team leads with 3 goals.
-The final score is Home Team 0 - 3 Away Team.
-
-
-Final Checklist for Self-Contained Detailed Atomic Statements
+Final Checklist for Self-Contained Detailed Atomic Statements:
 Complete Coverage: All information from the input text is captured in the statements.
 No Detail Loss: Every fact, statistic, and detail is represented without omission.
 Clarity and Conciseness: Statements are clear, direct, and free from unnecessary complexity.
 Consistent Formatting: Numerical data and units are presented uniformly.
 Avoid Redundancy: Each statement conveys unique information without overlapping with others.
 Maintain Context: Necessary context is preserved to ensure each statement is meaningful on its own.
-Eliminate Ambiguity: All pronouns are resolved to their corresponding nouns to ensure each statement is fully interpretable independently.
+Eliminate Ambiguity: All pronouns are resolved to their corresponding nouns and ensure each statement is fully interpretable independently.
 Provide Detailed Information: Comparative data includes both entities involved. Exact figures and percentages are included where applicable. Roles and actions are clearly stated.
-No Additional Commentary: Only atomic statements are provided without explanations or numbering.
+No Additional Commentary: Only atomic statements are provided without reasoning, explanation, additional text, or numbering.
 Validation Against Summary: Regularly cross-reference the atomic statements with the summary to ensure all relevant data points are captured accurately.
+Single Key Entity-Value Pair: Ensure that each atomic statement contains only one key entity and one associated value or action.
 
-Now, generate atomic statements for these paragraphs:
+Output Format:
+<ATOMIC STATEMENT 1>
+<ATOMIC STATEMENT 2>
+...
+
+Provide output in the given format only.
+
