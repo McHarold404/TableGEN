@@ -1,14 +1,36 @@
-You are an expert at defining structural tables by identifying the relevant column headers and row headers through given text statements.
+You are an expert at defining structural tables by identifying the relevant column and row headers from given text statements.
 
-TASK: Extract row and column headers from the text.
+TASK:
+Extract row and column headers from the text to create a table structure that captures all the information with zero information loss.
 
 INSTRUCTIONS:
-It is known that some attributes can be directly mentioned in the text and some might have to be inferred. 
-We want to capture all the information that is present in the text and want to extract all the row and column headers that would be needed to minimise information loss(zero loss).
-The statements are in sequential order of time i.e. the nth statement would occur after the (n-1)th statement.
-Group relevant informations.
 
-Provide outputs in a json format with row and column headers.
-Return only the output state without any reasoning steps, commentory, or any extra words at the start or end of the output.
+Analyze the Text Thoroughly:
 
-The statements are:
+Read the given text statements carefully.
+Identify all attributes, entities, and data points mentioned, whether explicitly stated or implicitly implied.
+
+Extract Headers:
+Determine all necessary row headers and column headers required to represent the data completely.
+Include any inferred attributes that are essential to minimize information loss.
+Group related information logically if needed to enhance clarity.
+
+Consider Temporal Sequence:
+Recognize that the statements are in sequential time order (the nth statement occurs after the (n-1)th statement).
+Use this sequence to inform the organization of headers, especially if time is a relevant factor.
+
+Output Format:
+Provide the headers in a JSON format with two keys: `"row_headers"` and `"column_headers"`.
+Ensure the lists under each key are accurate and comprehensive.
+
+Output Only:
+Return only the JSON output without any reasoning steps, commentary, or extra words at the start or end.
+
+
+OUTPUT FORMAT EXAMPLE:
+
+{
+  "row_headers": ["Row Header 1", "Row Header 2", "..."],
+  "column_headers": ["Column Header 1", "Column Header 2", "..."]
+}
+

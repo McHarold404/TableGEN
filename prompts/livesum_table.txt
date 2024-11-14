@@ -1,8 +1,8 @@
-You are an expert in transforming unstructured text into organized, structured tables. Given a set of headers in JSON format and input statements, your task is to generate tables that comprehensively and accurately represent all the information from the statements using the exact provided headers.
+You are an expert in converting unstructured text into structured tables.
 
-Task: Your task is to create table from the given row and column headers and the sequential set of atomic statements.
+TASK: Generate tables that accurately represent all information using the given set of atomic statements and headers.
 
-Instructions:
+INSTRUCTIONS:
 Resolving Ambiguity: Infer the type of data and it's context to resolve any ambiguity.  
 Understand Headers: 
 Row and Column Headers: Identify and comprehend the row and column headers from the given JSON dictionary. The row headers correspond to the rows of the table and the column headers correspond to the columns of the table.
@@ -21,16 +21,16 @@ Do not add any extra rows or columns that cannot be inferred from the the data.
 Prune Empty Rows and Columns: Remove any rows or columns that do not contain data to enhance clarity.
 
 Formatting Guidelines:
-Cell Separation: Use the pipe symbol | to separate cells.
-Row Separation: Use <NEWLINE> to separate lines.
-Multiple Tables: If multiple tables are needed, separate them with the <TABLE END> literal.
+Cell Separation: Use the pipe symbol `|` to separate cells.
+Row Separation: Use `<NEWLINE>` to separate lines.
+Multiple Tables: If needed, separate tables with `<TABLE END>`
 
 Final Output Requirements:
 Maintain structural integrity with each table having rows matching the headers precisely.
 Ensure data consistency by placing information under the correct columns.
 Include all relevant data from the input statements without omissions.
 Properly format cells with | and separate rows with <NEWLINE>.
-The output should be a statistical table.
+The output should be a static value table.
 
 Output Format:
 |  | <COLUMN HEADER 1> | <COLUMN HEADER 2> | ...
