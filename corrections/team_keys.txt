@@ -1,1 +1,3 @@
-{'', 'Percentage of field goals', 'Total points', 'Points in 1st quarter', 'Number of team assists', 'Points in 2nd quarter', 'Points in 4th quarter', 'Percentage of 3 points', 'Rebounds', 'Points in 3rd quarter', 'Wins', 'Turnovers', 'Losses'}
+{'', 'Percentage of field goals', 'Total points', 
+'Points in 1st quarter', 'Number of team assists', 
+'Points in 2nd quarter', 'Points in 4th quarter', 'Percentage of 3 points', 'Rebounds', 'Points in 3rd quarter', 'Wins', 'Turnovers', 'Losses'}
