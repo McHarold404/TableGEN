@@ -115,53 +115,6 @@ def extract_tables_from_responses(ai_responses):
     return extracted_tables
 
 
-# def extract_tables_from_responses(ai_responses):  ## FOR ROTOWIRE DATASET
-#     """
-#     Extracts team and player table strings from a list of AI responses.
-
-#     Parameters:
-#     - ai_responses: List of dictionaries, each containing at least a 'response' key.
-
-#     Returns:
-#     - A list of dictionaries, each containing 'data_point', 'team_table', and 'player_table' keys.
-#     """
-#     extracted_tables = []
-#     cnt = 0 
-#     for response_dict in ai_responses:
-#         data_point = cnt
-#         cnt+=1
-#         response_text = response_dict.get('response', '')
-
-#         # Replace all variations of '<NEWLINE>' with actual newline characters
-#         response = re.sub(r'\s*<NEWLINE>\s*', '\n', response_text).strip()
-
-#         # Initialize variables to hold team and player tables
-#         team_table = ''
-#         player_table = ''
-
-#         # Use regular expressions to extract the tables
-#         # Patterns to match the 'Team:' and 'Player:' sections
-#         team_pattern = r'Team:\s*\n((?:^\|.*\n?)+)'
-#         player_pattern = r'Player:\s*\n((?:^\|.*\n?)+)'
-
-#         # Try to extract the team table
-#         team_match = re.search(team_pattern, response, re.MULTILINE)
-#         if team_match:
-#             team_table = team_match.group(1).strip()
-
-#         # Try to extract the player table
-#         player_match = re.search(player_pattern, response, re.MULTILINE)
-#         if player_match:
-#             player_table = player_match.group(1).strip()
-
-#         # Append the extracted tables to the list
-#         extracted_tables.append({
-#             'data_point': data_point,
-#             'team_table': team_table,
-#             'player_table': player_table
-#         })
-
-#     return extracted_tables
 
 
 
@@ -231,6 +184,11 @@ def parse_text_to_table(text, strict=False):  ### UPDATED BY NA.
             raise ValueError("Failed to convert the data to a numpy array.") from e
         data = None
     
+    if(len(data) == 0):
+        return None
+    df = pd.DataFrame(data, columns=['Attribute','Value'])
+    return df
+
     return data
 
 
@@ -303,7 +261,6 @@ def convert_to_df(satring):
 
 
 
-import re
 
 def extract_tables(data_list): ## For wikibio
     """
