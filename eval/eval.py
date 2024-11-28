@@ -350,3 +350,36 @@ def evaluate_rotowire(model_output_team,model_output_player,gold_table_team,gold
             json.dump(eval_dict, json_file, indent=4) 
 
     return eval_dict
+
+#### Evaluate dictionary on the correct dataset.
+def evaluate_rotowire_corrected(model_output_team,model_output_player,gold_table_team,gold_table_player,output_path):
+    eval_dict = dict()
+    try:
+        for i, (player_pred, player_gold, team_pred, team_gold) in enumerate(
+            zip(model_output_player, gold_table_player, model_output_team, gold_table_team)):
+            print('Evaluating point',i)
+            if player_gold == '' :
+                player_gold = player_pred
+            if team_gold == '':        
+                team_gold = team_pred
+            if team_pred == '':
+                continue
+            metrics_team = evaluate_table(model_output=convert_markdown_table_to_numpy_array(team_pred), gold_label=team_gold,eval_bert=False,eval_chrf=True,eval_exact_match=True)
+            metrics_players = evaluate_table(model_output=convert_markdown_table_to_numpy_array(player_pred), gold_label=player_gold,eval_bert=False,eval_chrf=True,eval_exact_match=True)
+            
+            # Initialize the nested dictionary
+            eval_dict['Test_pt' + str(i)] = {}
+            
+            # Store the metrics
+            eval_dict['Test_pt' + str(i)]['Team'] = metrics_team
+            eval_dict['Test_pt' + str(i)]['Player'] = metrics_players
+    except Exception as e:
+        print(e)
+        return eval_dict
+        
+    import json
+    if output_path is not None:
+        with open(output_path, 'w') as json_file:
+            json.dump(eval_dict, json_file, indent=4) 
+
+    return eval_dict
