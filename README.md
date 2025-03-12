@@ -1,99 +1,80 @@
-# Map & Make: Schema Guided Text to Table Generation
+# Map & Make: Schema Guided Text to-Table Generation
 
-This project generates tables from textual data using models like GPT, Gemini, and Llama. It includes scripts for data processing, atomic statement generation, header creation, table generation, and evaluation of outputs.
+This project focuses on converting unstructured textual data into structured tables using state-of-the-art models like GPT, Gemini, and Llama. Our approach, **Map&Make (M&M)**, is a structured summarization framework that **dynamically infers table schema** rather than relying on predefined templates. It follows a **three-step process** that extracts key information, structures it into a schema, and fills the tables accurately.
 
 ---
 
 ## Table of Contents
 
-- [Project Structure](#project-structure)
+- [Approach](#approach)
+- [Datasets](#datasets)
 - [Setup](#setup)
 - [Usage](#usage)
   - [Generating Atomic Statements and Headers](#generating-atomic-statements-and-headers)
-  - [Generating Tables from Atomic Statements](#generating-tables-from-atomic-statements)
-  - [Generating Tables in Two Steps](#generating-tables-in-two-steps)
-  - [Evaluation](#evaluation)
-- [Directory Overview](#directory-overview)
+  - [Generating Tables](#generating-tables)
+  - [Evaluating Results](#evaluating-results)
+- [Evaluation Methods](#evaluation-methods)
 - [Contributing](#contributing)
 - [License](#license)
 
 ---
 
-## Project Structure
+## Approach
 
-Below is the directory structure of the project:
+The **Map&Make** framework follows a **three-step methodology** to transform text into tables:
 
-```plaintext
-.
-├── __pycache__/
-├── .DS_Store
-├── .env
-├── .gitignore
-├── batch_scripts/
-│   ├── __init__.py
-│   ├── __pycache__/
-│   ├── Gemini_Livesum_generate_schema_and_atomic.py
-│   ├── Gemini_Livesum_TabGen_1step_from_OG.py
-│   ├── GPT_Livesum_TabGen_1step.py
-│   ├── GPT_Livesum_TabGen_2step.py
-│   ├── Llama_Livesum_generate_schema_and_atomic.py
-│   ├── Llama_Livesum_TabGen_1step.py
-│   ├── Llama_Livesum_TabGen_1step_from_OG.py
-│   ├── GPT_Rotowire_Divide_And_Generate.py
-│   ├── Rotowire_Gemini_Zero_Shot_T3_D.py
-│   ├── Rotowire_Llama_Zero_Shot_T3_D.py
-│   ├── Rotowire_GPT_One_Shot_T3.py
-│   ├── Rotowire_Llama_One_Shot_T3.py
-│   └── Rotowire_Gemini_One_Shot_T3.py
-├── corrections/
-│   └── player_keys.txt
-├── data/
-│   └── Data_Analysis.ipynb
-├── data_building/
-│   └── Definitions.csv
-├── eval/
-│   ├── livesum_eval.ipynb
-│   ├── livesum.ipynb
-│   └── strucbench/
-│       └── p-score_strucbench.txt
-├── metrics/
-├── model_inference/
-├── model_outputs/
-├── outputs/
-│   └── logs/
-│       └── process.log
-├── post_processing/
-├── prompts/
-├── requirements.txt
-├── rotowire.ipynb
-├── utils/
-├── vizzer.ipynb
-├── vizzler-analysis Wikibio.ipynb
-├── vizzler-analysis.ipynb
-└── vizzler.ipynb
-```
+1. **Propositional Atomization**  
+   - Extracts atomic, self-contained facts from unstructured text.
+   - Ensures key properties: grammatical correctness, atomicity, and contextual independence.
+   - Eliminates ambiguities, redundant information, and hallucinations.
+
+2. **Schema Extraction**  
+   - Identifies and infers the **structure of tables dynamically**.
+   - Iteratively maps entities to row headers and attributes to column headers.
+   - Adapts schema to diverse datasets without relying on predefined formats.
+
+3. **Table Generation**  
+   - Populates extracted schemas using relevant atomic statements.
+   - Handles numerical aggregation, categorical attributes, and multi-view information.
+   - Ensures consistency and correctness by validating row-column relationships.
+
+This methodology enhances adaptability across different domains and eliminates reliance on predefined schemas.
+
+---
+
+## Datasets
+
+We evaluate our approach on two challenging datasets:
+
+1. **Rotowire**  
+   - Contains **NBA post-game summaries (2014–2017)**.
+   - Requires extracting performance statistics to generate **Player and Team Tables**.
+   - Challenges include **long text, multi-table schema, and sparse data extraction**.
+
+2. **Livesum**  
+   - Consists of **live football commentary** that requires **event aggregation**.
+   - Tables summarize team performance, tracking goals, assists, and other actions.
+   - Columns are labeled **Easy, Medium, or Hard** based on inference difficulty.
+   - Challenges include **identifying and aggregating scattered event information**.
+
+Each dataset presents unique challenges in schema induction and table construction.
 
 ---
 
 ## Setup
 
-Follow these steps to set up the project on your local machine:
-
 1. **Clone the Repository:**
-
     ```bash
     git clone <repository_url>
     cd <repository_name>
     ```
 
 2. **Install Dependencies:**
-
     ```bash
     pip install -r requirements.txt
     ```
 
 3. **Configure Environment Variables:**
-
     - Create a `.env` file in the root directory.
     - Add the necessary environment variables required for the project.
 
@@ -103,52 +84,52 @@ Follow these steps to set up the project on your local machine:
 
 ### Generating Atomic Statements and Headers
 
-To generate atomic statements and headers using the Gemini model, run:
+To generate atomic statements and headers using the Gemini model:
 
 ```bash
 python batch_scripts/Gemini_Livesum_generate_schema_and_atomic.py
 ```
 
-### Generating Tables from Atomic Statements
+### Generating Tables
 
-To generate tables using the GPT model in one step, run:
+To generate tables from atomic statements:
 
 ```bash
 python batch_scripts/GPT_Livesum_TabGen_1step.py --model_dir <model_dir> --model_name <model_name>
 ```
 
-### Generating Tables in Two Steps
-
-To generate tables using the GPT model in two steps, run:
+For a two-step generation process:
 
 ```bash
 python batch_scripts/GPT_Livesum_TabGen_2step.py --model_dir <model_dir> --model_name <model_name>
 ```
 
-### Evaluation
+### Evaluating Results
 
-To evaluate the generated tables, open and run the following Jupyter notebooks found in the `eval` directory:
+Run the following notebooks for evaluation:
 
-- `livesum_eval.ipynb`
-- `livesum.ipynb`
+- `eval/livesum_eval.ipynb`
+- `eval/livesum.ipynb`
 
 ---
 
-## Directory Overview
+## Evaluation Methods
 
-- **batch_scripts/**: Contains scripts for data processing and table generation.
-- **corrections/**: Files with corrections (e.g., player keys).
-- **data/**: Data files and analysis notebooks.
-- **data_building/**: Data definition files.
-- **eval/**: Evaluation scripts and notebooks.
-- **metrics/**: Scripts for calculating metrics.
-- **model_inference/**: Scripts for model inference.
-- **model_outputs/**: Outputs generated by the models.
-- **outputs/**: Log files and other outputs.
-- **post_processing/**: Post-processing scripts.
-- **prompts/**: Prompt files for model inference.
-- **utils/**: Utility scripts.
-- **Notebooks**: Various notebooks for analysis and visualization (e.g., `vizzer.ipynb`, `vizzler-analysis.ipynb`).
+We employ **both reference-based and referenceless evaluation metrics** to assess the quality of generated tables.
+
+1. **Rotowire Evaluation**
+   - **Exact Match (EM)**: Measures the number of correctly extracted table values.
+   - **CHRF (Character n-gram F-score)**: Evaluates similarity between generated and reference tables.
+   - **BERTScore**: Computes semantic similarity between generated and reference tables.
+   - **TabEval**: A specialized metric that evaluates structural correctness.
+   - **Auto-QA**: Uses LLMs to answer questions about the generated tables, testing their completeness.
+
+2. **Livesum Evaluation**
+   - **Root Mean Squared Error (RMSE)**: Measures numerical aggregation errors.
+   - **Error Rate (ER %)**: Percentage of incorrect cell values in the table.
+   - **TabEval & Auto-QA**: Used to assess structured correctness and coverage.
+
+These metrics ensure comprehensive evaluation across **accuracy, completeness, and fidelity**.
 
 ---
 
@@ -167,7 +148,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-*Note: Replace the placeholders `<repository_url>`, `<repository_name>`, and `<model_dir>` with your actual details before using.*
+*Note: Replace placeholders `<repository_url>`, `<repository_name>`, and `<model_dir>` with your actual details before using.*
 ```
-
-Just copy the entire block above and paste it into your `README.md` file. Enjoy!
