@@ -84,16 +84,7 @@ Each dataset presents unique challenges in schema induction and table constructi
 The repository is organized into the following directories:
 
 - **`batch_scripts/`**  
-  Contains scripts for different **table generation methods** using models like **GPT, Gemini, and Llama**. Includes **schema extraction, atomic statement generation, and one-step/two-step table generation**.
-
-- **`corrections/`**  
-  Stores correction files, such as **mappings for player names** to ensure consistency in datasets like Rotowire.
-
-- **`data/`**  
-  Holds raw and processed **dataset files**, as well as notebooks for **data analysis**.
-
-- **`data_building/`**  
-  Contains **data definition files** and scripts for creating structured datasets from unstructured text.
+  Contains scripts for different **table generation methods** (multi-threaded inference)using models like **GPT, Gemini, and Llama**. Includes **schema extraction, atomic statement generation, and one-step/two-step table generation**.
 
 - **`eval/`**  
   Includes evaluation scripts and Jupyter notebooks for **benchmarking** the generated tables using metrics like **Exact Match (EM), CHRF, BERTScore, and TabEval**.
@@ -102,7 +93,7 @@ The repository is organized into the following directories:
   Stores scripts used to compute different **quantitative evaluation metrics** for generated tables.
 
 - **`model_inference/`**  
-  Contains helper functions and scripts to **run inference** using trained LLM models.
+  Contains helper functions and scripts to **run inference** using LLM models.
 
 - **`model_outputs/`**  
   Stores the **outputs of generated tables** for different models and configurations.
@@ -119,8 +110,6 @@ The repository is organized into the following directories:
 - **`utils/`**  
   Includes utility functions used across multiple scripts for **data loading, text processing, and visualization**.
 
-- **Notebooks (`.ipynb` files)**  
-  Various Jupyter notebooks for **visualizing and analyzing results**, including **vizzler.ipynb, vizzer-analysis.ipynb**, and others.
 
 ---
 
