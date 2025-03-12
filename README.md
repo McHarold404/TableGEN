@@ -87,19 +87,13 @@ The repository is organized into the following directories:
   Contains scripts for different **table generation methods** (multi-threaded inference)using models like **GPT, Gemini, and Llama**. Includes **schema extraction, atomic statement generation, and one-step/two-step table generation**.
 
 - **`eval/`**  
-  Includes evaluation scripts and Jupyter notebooks for **benchmarking** the generated tables using metrics like **Exact Match (EM), CHRF, BERTScore, and TabEval**.
-
-- **`metrics/`**  
-  Stores scripts used to compute different **quantitative evaluation metrics** for generated tables.
+  Includes evaluation scripts to compute different **quantitative evaluation metrics** using metrics like **Exact Match (EM), CHRF, BERTScore, and TabEval**.
 
 - **`model_inference/`**  
   Contains helper functions and scripts to **run inference** using LLM models.
 
 - **`model_outputs/`**  
   Stores the **outputs of generated tables** for different models and configurations.
-
-- **`outputs/`**  
-  Contains logs and debugging information, including the **process logs**.
 
 - **`post_processing/`**  
   Scripts for **refining and cleaning** generated tables after inference.
