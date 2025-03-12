@@ -1,0 +1,34 @@
+To create a summary table of the game statistics, we need to consider the following key statistics based on the provided text:
+
+1. Goals
+2. Red Cards
+3. Yellow Cards
+4. Fouls
+5. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Let's process the text to fill in these statistics:
+
+- **Goals**:
+  - Home Team: 2 (Player8 scored twice)
+  - Away Team: 1 (Player28 scored)
+
+- **Red Cards**:
+  - Home Team: 0
+  - Away Team: 1 (Player27 received a red card)
+
+- **Yellow Cards**:
+  - Home Team: 1 (Player2 received a yellow card)
+  - Away Team: 1 (Player29 received a yellow card)
+
+- **Fouls**:
+  - Home Team: 12 (fouls committed by Player7, Player4, Player3, Player8, Player2, Player5, Player13)
+  - Away Team: 11 (fouls committed by Player25, Player24, Player21, Player29, Player27, Player28, Player32, Player22, Player33)
+
+- **Shots**:
+  - Home Team: 12 (Player2, Player10, Player9, Player11 [2], Player6, Player13)
+  - Away Team: 11 (Player23, Player24, Player29 [2], Player26, Player32 [2], Player25, Player33 [2])
+
+### Final Table:
+| Team       | Goals | Red Cards | Yellow Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 2     | 0         | 1            | 12    | 12    | <NEWLINE>
+| Away Team  | 1     | 1         | 1            | 11    | 11    | <NEWLINE>

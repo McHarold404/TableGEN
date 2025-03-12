@@ -1,0 +1,25 @@
+To generate a summary table with the important statistics of the game, we need to first define the table schema. The important statistics from the text include:
+
+1. Goals
+2. Red Cards
+3. Fouls (including handball and dangerous play)
+4. Shots (including goals, saved attempts, blocked attempts, missed attempts)
+5. Free Kicks (including penalties)
+6. Offsides
+7. Corner Kicks
+
+Now, let's process the text to fill in the table for both teams.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | Offsides | Corner Kicks | <NEWLINE>
+| Home Team  | 2     | 0         | 9     | 20    | 9          | 1        | 10           | <NEWLINE>
+| Away Team  | 1     | 0         | 9     | 15    | 9          | 6        | 9            | <NEWLINE>
+
+Explanation:
+- **Goals:** Home Team scored 2 goals, Away Team scored 1 goal.
+- **Red Cards:** No red cards were issued.
+- **Fouls:** Home Team committed 9 fouls (including handballs), Away Team committed 9 fouls.
+- **Shots:** Home Team had 20 shots (including goals, saved, blocked, and missed attempts), Away Team had 15 shots.
+- **Free Kicks:** Both teams earned 9 free kicks (including fouls leading to free kicks).
+- **Offsides:** Home Team was caught offside 1 time, Away Team was caught offside 6 times.
+- **Corner Kicks:** Home Team won 10 corner kicks, Away Team won 9 corner kicks.

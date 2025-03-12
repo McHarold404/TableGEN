@@ -1,0 +1,27 @@
+To generate the summary table, we need to extract and count specific statistics from the provided live text. The statistics we will focus on are: Goals, Red Cards, Fouls, and Shots.
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+
+Now, let's extract and count these statistics for each team:
+
+1. **Goals:**
+   - Home Team: 1 goal (Player9 scores in statement 63)
+   - Away Team: 2 goals (Player26 scores in statement 24, Player27 scores in statement 25)
+
+2. **Red Cards:**
+   - Home Team: 0 red cards
+   - Away Team: 0 red cards
+
+3. **Fouls:**
+   - Home Team: 12 fouls (committed by Player7 in statement 2, Player9 in statement 17, Player7 in statement 18, Player8 in statement 26, Player11 in statement 28, Player9 in statement 30, Player11 in statement 52, Player12 in statement 46, Player10 in statement 68, Player9 in statement 55, Player10 in statement 68)
+   - Away Team: 8 fouls (committed by Player27 in statement 10, Player25 in statement 20, Player21 in statement 22, Player26 in statement 48, Player22 in statement 60, Player32 in statement 71, Player29 in statement 34)
+
+4. **Shots:**
+   - Home Team: 11 shots (Player8 in statement 11, Player7 in statement 16, Player7 in statement 33, Player12 in statement 45, Player12 in statement 49, Player11 in statement 58, Player9 in statement 62, Player9 in statement 72, Player8 in statement 66)
+   - Away Team: 10 shots (Player27 in statement 5, Player27 in statement 8, Player25 in statement 12, Player26 in statement 24, Player27 in statement 25, Player27 in statement 61, Player29 in statement 56, Player29 in statement 74)
+
+### Final Table:
+| Team | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team | 1 | 0 | 12 | 11 | <NEWLINE>
+| Away Team | 2 | 0 | 8 | 10 | <NEWLINE>

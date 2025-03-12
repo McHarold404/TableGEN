@@ -1,0 +1,43 @@
+To create a comprehensive summary table of the game's statistics, we'll first define the table schema and then process the text to fill it in. 
+
+### Table Schema:
+| Team | Goals | Shots | Red Cards | Yellow Cards | Fouls | Free Kicks | Corner Kicks | Offsides | 
+
+Now, let's fill in the table by analyzing the text:
+
+1. **Goals**:
+   - Home Team: 2 (Player10 and Player13)
+   - Away Team: 0
+
+2. **Shots** (including goals, saved attempts, blocked attempts, and missed attempts):
+   - Home Team: 10 (Player2 blocked, Player10 saved, Player9 blocked, Player8 missed, Player10 goal, Player10 blocked, Player7 blocked, Player12 post, Player13 goal, Player8 blocked, Player10 missed)
+   - Away Team: 9 (Player25 saved, Player25 blocked, Player24 blocked, Player27 saved, Player26 saved, Player28 blocked, Player35 blocked, Player31 saved, Player23 saved)
+
+3. **Red Cards**:
+   - Home Team: 0
+   - Away Team: 0
+
+4. **Yellow Cards**:
+   - Home Team: 2 (Player1, Player8)
+   - Away Team: 1 (Player29)
+
+5. **Fouls** (including handball and dangerous play):
+   - Home Team: 11 (Player11, Player3, Player2, Player14, Player9, Player5, Player8, Player13, Player4, Player8)
+   - Away Team: 13 (Player26, Player29, Player25, Player29, Player29, Player24, Player26, Player21, Player28, Player31, Player31)
+
+6. **Free Kicks** (including penalties):
+   - Home Team: 14 (Player9, Player9, Player2, Player2, Player9, Player5, Player11, Player2, Player7, Player8, Player10, Player10, Player10)
+   - Away Team: 13 (Player22, Player29, Player28, Player29, Player27, Player22, Player21, Player21, Player35, Player24)
+
+7. **Corner Kicks**:
+   - Home Team: 6
+   - Away Team: 6
+
+8. **Offsides**:
+   - Home Team: 0
+   - Away Team: 1 (Player26)
+
+### Final Table:
+| Team | Goals | Shots | Red Cards | Yellow Cards | Fouls | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+| Home Team | 2 | 10 | 0 | 2 | 11 | 14 | 6 | 0 | <NEWLINE>
+| Away Team | 0 | 9 | 0 | 1 | 13 | 13 | 6 | 1 | <NEWLINE>

@@ -1,0 +1,56 @@
+To generate the final table, we need to summarize the statistics from the provided live text. Let's define the table schema first:
+
+### Table Schema:
+| Team | Goals | Red Cards | Yellow Cards | Fouls | Shots on Target | Shots off Target | Blocked Shots | Saves | Free Kicks | Corner Kicks | Offsides | 
+
+Now, let's process the text to fill in the table:
+
+1. **Goals**:
+   - Home Team: 2 goals (Player10, Player9)
+   - Away Team: 1 goal (Player25)
+
+2. **Red Cards**:
+   - None mentioned for either team.
+
+3. **Yellow Cards**:
+   - Home Team: 1 yellow card (Player7)
+   - Away Team: 3 yellow cards (Player23, Player28, Player22)
+
+4. **Fouls**:
+   - Home Team: 8 fouls (Player9, Player2, Player7, Player4, Player11, Player18, Player4, Player10)
+   - Away Team: 10 fouls (Player29, Player23, Player28, Player29, Player22, Player20, Player29, Player24, Player29, Player25)
+
+5. **Shots on Target**:
+   - Home Team: 5 shots on target (Player11, Player4, Player11, Player9, Player10)
+   - Away Team: 5 shots on target (Player25, Player26, Player36, Player32, Player36)
+
+6. **Shots off Target**:
+   - Home Team: 6 shots off target (Player5, Player11, Player8, Player9, Player11, Player8)
+   - Away Team: 6 shots off target (Player29, Player26, Player25, Player36, Player25, Player24)
+
+7. **Blocked Shots**:
+   - Home Team: 2 blocked shots (Player7, Player11)
+   - Away Team: 10 blocked shots (Player28, Player26, Player25, Player20, Player29, Player25, Player20, Player36, Player20, Player36)
+
+8. **Saves**:
+   - Home Team: 5 saves (against Player11, Player26, Player32, Player36, Player25)
+   - Away Team: 2 saves (against Player11, Player4)
+
+9. **Free Kicks**:
+   - Home Team: 9 free kicks
+   - Away Team: 9 free kicks
+
+10. **Corner Kicks**:
+    - Home Team: 5 corner kicks
+    - Away Team: 12 corner kicks
+
+11. **Offsides**:
+    - Home Team: 2 offsides (Player11, Player9)
+    - Away Team: 1 offside (Player25)
+
+Now, let's fill the table with these statistics:
+
+### Final Table:
+| Team       | Goals | Red Cards | Yellow Cards | Fouls | Shots on Target | Shots off Target | Blocked Shots | Saves | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+| Home Team  | 2     | 0         | 1            | 8     | 5              | 6               | 2             | 5     | 9          | 5            | 2        | <NEWLINE>
+| Away Team  | 1     | 0         | 3            | 10    | 5              | 6               | 10            | 2     | 9          | 12           | 1        | <NEWLINE>

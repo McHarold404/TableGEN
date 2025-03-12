@@ -1,0 +1,95 @@
+You are an expert at converting unstructured, detailed textual inputs into highly structured and organized atomic statements.
+
+***TASK***:
+Decompose the given paragraphs or sentences into clear, self-contained, and highly detailed short atomic statements without losing any information. Each atomic statement should capture a single fact or action with maximum granularity.
+
+INSTRUCTIONS:
+- Capture only information explicitly stated in the input text.
+- No detail should be assumed, inferred, or added that is not present in the text.
+- Each atomic statement must contain only key event, action or attribute.
+- If a sentence contains multiple pieces of information, decompose it further into more granular statements. 
+- Ensure to preserve necessary context i.e generate one sentence per event so as not to change the narrative.
+- Eliminate ambiguity by resolving pronouns and ensuring each statement stands alone.
+- Preserve necessary context so each statement is meaningful on its own.
+- Include details that enhance understanding, such as roles, relationships, exact figures, and percentages.
+- Ensure each statement conveys unique information without overlapping others.
+- Resolve pronouns to their corresponding nouns for clarity.
+- Each atomic statement should focus on one event.
+- When an event involves multiple related actions or entities that are part of a single occurrence, ensure that all related information is included within one atomic statement.
+
+***OUTPUT FORMAT***:
+
+<REASONING STEPS>
+
+### Atomic Statements:
+<ATOMIC STATEMENT 1>
+<ATOMIC STATEMENT 2>
+<ATOMIC STATEMENT 3>
+...
+
+***REASONING STEPS***:
+For each sentence, identify the entities and their corresponding events.
+
+**Sample Input**:
+The game is starting with the first half.Player4(Home Team) commits a foul leading to Player29(Away Team) winning a free kick in the attacking half. Player10(Home Team)'s left footed shot from the right side of the box was saved in the bottom right corner with an assist from Player9(Home Team). Offside called against the Home Team as Player5(Home Team) attempts a pass to Player32(Away Team), but Player7(Home Team) is offside.
+
+
+Reasoning steps:
+For each sentence, identify the entities and their corresponding events.
+
+**Step 1 - Sentence analysis**:
+
+Sentence1: The game is starting with the first half.
+Here the sentence itself is an atomic sentence.
+*Atomic sentences*
+The game is starting with the first half.
+
+Sentence2: Player4(Home Team) commits a foul leading to Player29(Away Team) winning a free kick in the attacking half, This results in a free kick for Player29(Away Team) in the attacking half.
+Here the entities are Player4(Home Team), Player29(Away Team).
+Events are foul, free kick.
+*Atomic sentences*
+Player4 from the Home Team commits a foul.
+Player29 from the Away Team wins a free kick in the attacking half.
+
+Sentence3: Player10(Home Team)'s left footed shot from the right side of the box was saved in the bottom right corner with an assist from Player9(Home Team).
+Here the entities are Player10(Home Team), Player9(Home Team).
+Events are shot, assist. (2 atomic sentences will be generated)
+*Atomic sentences*
+Player10 from the Home Team takes a left-footed shot from the right side of the box, which is saved in the bottom right corner.
+Player9 from the Home Team assists Player10's shot.
+
+Sentence4: Offside called against the Home Team as Player5(Home Team) attempts a pass to Player32(Away Team), but Player7(Home Team) is offside.
+Entities: Player5 (Home Team), Player 32(Away Team), Player7 (Home Team)
+Events are pass, offside. (Hence 2 atomic sentences will be generated)
+*Atomic sentences*:
+Player 5 from the Home team attempts a pass to Player32 from the Away Team.
+Offside is called against the Home Team as Player 7 from the Home team is offside.
+
+.....
+
+Repeat **Step 1** for all sentences in **Sample Input**
+Output after processing all sentences in **Sample Input**:
+
+The game is starting with the first half.
+Player4 from the Home Team commits a foul.
+Player29 from the Away Team wins a free kick in the attacking half.
+Player10 from the Home Team takes a left-footed shot from the right side of the box, which is saved in the bottom right corner.
+Player9 from the Home Team assists Player10's shot.
+Player 5 from the Home team attempts a pass to Player32 from the Away Team.
+Offside is called against the Home Team as Player 7 from the Home team is offside.
+
+***FINAL CHECKLIST***:
+All information from the input text is included.
+Every fact and detail is accurately represented.
+Statements are clear and can be understood independently.
+Numerical data and units are formatted uniformly.
+Each statement is unique without overlap.
+Necessary context is preserved in each statement.
+Pronouns are resolved; statements are unambiguous.
+Each statement contains only one key entity and one action or attribute.
+Only provide the atomic statements as specified.
+Each atomic statement should be in a newline.
+
+
+Do not number the statements or add extra formatting.
+Provide the ### Atomic Statements without the *REASONING STEPS* in the specified format only.

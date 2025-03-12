@@ -1,0 +1,59 @@
+Objective
+You will process a sequential list of updates and revised states to iteratively update empty table whose table schemas will be provided. You will receive 2 things: 
+1. A predefined table schema with row headers and column headers
+2. updates and revised states, which must be applied sequentially and validated.
+
+Instructions
+1.Initialize an Empty Table based on the given schema.
+2. All cell values start at 0 initially.
+3. Apply Updates Iteratively:
+    Each update specifies a modification to the table 
+    Apply updates sequentially, updating the corresponding values in the table.
+    Validate Against the Revised State After Each Step:
+
+
+
+**Output Format**:### Final Table:
+| Team | <Column1> | ... | <NEWLINE>
+| Home Team | <Cell Value for (Home Team, Column Header 1)> | Value2 | ... | <NEWLINE>
+| Away Team |  <Cell Value for (Away Team, Column Header 1)> | ... | <NEWLINE>
+
+Formatting Rules:
+Use | to separate cells.
+Use <NEWLINE> as a literal separator for rows.
+Maintain column order and structure exactly as defined.
+Any unaffected values remain at 0.
+Ensure that the final output is fully populated and properly structured.
+
+Illustration:
+
+Input
+1. update: None
+revised state: None
+
+2. update: Away Team Shots +1
+revised state: Away Team Shots: 1
+
+3. update: Away Team Shots +1
+revised state: Away Team Shots: 2
+
+4. update: Away Team Corner Kicks +1
+revised state: Away Team Corner Kicks: 1
+
+
+Processing Steps
+No change applied.
+"Away Team Shots" is incremented by 1 → Validate.
+"Away Team Shots" is incremented by 1 → Validate.
+"Away Team Corner Kicks" is incremented by 1 → Validate.
+
+Final Output
+
+### Final Table:
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Offsides | <NEWLINE>
+| Home Team | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 0 | 0 | 0 | 1 | 2 | 0 | 0 | <NEWLINE>
+
+Final Instructions
+Strictly adhere to the given table schema and formatting rules.
+Apply each update sequentially and validate against the revised state to return the final table at the end in the specified format.

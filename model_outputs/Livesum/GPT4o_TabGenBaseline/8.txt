@@ -1,0 +1,68 @@
+To generate the final table, we need to extract and tally the statistics from the provided live text. Here's the step-by-step breakdown:
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Fouls
+- Shots
+- Free Kicks
+- Offsides
+- Corner Kicks
+
+### Statistics Extraction:
+
+- **Goals:** 
+  - Home Team: 1 (Player10 scored)
+  - Away Team: 0
+
+- **Red Cards:** 
+  - None mentioned.
+
+- **Fouls:** 
+  - Home Team: 
+    - Player3 (3 fouls)
+    - Player2 (1 foul)
+    - Player8 (1 foul)
+    - Player7 (2 fouls)
+    - Player5 (1 foul)
+    - Player10 (1 foul)
+    - Total: 9 fouls
+  - Away Team:
+    - Player28 (3 fouls including handball)
+    - Player29 (3 fouls)
+    - Player24 (2 fouls including handball)
+    - Player20 (1 foul)
+    - Player22 (1 foul)
+    - Player33 (1 foul)
+    - Total: 11 fouls
+
+- **Shots:** 
+  - Home Team: 
+    - Player11, Player2, Player3, Player10 (3 shots), Player16, Player17
+    - Total: 7 shots
+  - Away Team: 
+    - Player27 (4 shots), Player26 (3 shots), Player22, Player20, Player34
+    - Total: 10 shots
+
+- **Free Kicks:** 
+  - Home Team: 
+    - Player7, Player9, Player5 (2), Player8, Player10 (2), Player2
+    - Total: 9 free kicks
+  - Away Team:
+    - Player29, Player26, Player33, Player25, Player20
+    - Total: 5 free kicks
+
+- **Offsides:** 
+  - Home Team: 0
+  - Away Team: 4 (Player26 twice, Player23, Player28)
+
+- **Corner Kicks:**
+  - Home Team: 8
+  - Away Team: 6
+
+### Final Table:
+
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | Offsides | Corner Kicks | <NEWLINE>
+| Home Team  | 1     | 0         | 9     | 7     | 9          | 0        | 8            | <NEWLINE>
+| Away Team  | 0     | 0         | 11    | 10    | 5          | 4        | 6            | <NEWLINE>

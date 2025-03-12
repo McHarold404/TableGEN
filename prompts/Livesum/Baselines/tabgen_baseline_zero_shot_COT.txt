@@ -1,0 +1,21 @@
+According to the live text, please generate a summary table counting the different number of events of both teams in a step-by-step manner.
+The second yellow card is also considered a red card. Penalty is also considered as free kicks.
+
+
+Output Format and Instructions:
+1. The first row of the table should contain the headers.
+2. The first column header is Team and contains Home Team and Away Team as rows.
+3. The values of all the cells should be strictly positive numbers.
+4. Use "|" as a separator between cells.
+5. Use "<NEWLINE>" literal as the end of every row.
+6. Return the final table with the heading ### Final Table
+
+Here is a sample output format:
+
+### Final Table:
+| Team | Column1 | Column2 | Column3 | <NEWLINE>
+| Home Team | Value1 | Value2 | Value3 | Value4 | <NEWLINE>
+| Away Team | Value5 | Value6 | Value7 | Value8 | <NEWLINE>
+
+Think step by step and please output a table with 2 rows in the specified CSV format according to the following text:
+

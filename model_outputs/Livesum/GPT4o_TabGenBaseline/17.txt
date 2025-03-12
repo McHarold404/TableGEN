@@ -1,0 +1,30 @@
+To generate the table, we first need to identify and collect all the relevant statistics from the provided text. The key statistics to track are:
+
+1. Goals
+2. Red Cards
+3. Fouls
+4. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Let's extract these statistics step-by-step:
+
+- **Goals:**
+  - Away Team: 3 goals (mentioned in events 4, 60, and 79)
+  - Home Team: 0 goals
+
+- **Red Cards:**
+  - No red cards are mentioned in the text for either team.
+
+- **Fouls:**
+  - Home Team: 9 fouls (events 9, 12, 17, 30, 40, 47, 52, 64, 70)
+  - Away Team: 9 fouls (events 8, 15, 22, 38, 44, 54, 71, 72, 76)
+
+- **Shots:**
+  - Home Team: 10 shots (events 24, 26, 27, 28, 36, 63, 67, 68, 75, 77)
+  - Away Team: 14 shots (events 2, 4, 11, 22, 49, 51, 56, 59, 66, 74, 79)
+
+Now, we can construct the table using this data.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 9     | 10    | <NEWLINE>
+| Away Team  | 3     | 0         | 9     | 14    | <NEWLINE>

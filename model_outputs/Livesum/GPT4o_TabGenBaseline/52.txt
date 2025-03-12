@@ -1,0 +1,33 @@
+To generate the summary table, we need to extract and categorize the relevant statistics from the provided text. Let's first define the table schema and then fill in the table with the extracted data.
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Fouls
+- Shots
+
+Now, let's process the text to fill in the statistics:
+
+1. **Goals**: 
+   - Home Team: 0
+   - Away Team: 0
+
+2. **Red Cards**: 
+   - Home Team: 0
+   - Away Team: 1 (Player24 received a second yellow card)
+
+3. **Fouls**: 
+   - Home Team: 12 (Player7, Player10, Player8, Player5, Player6, Player15, Player18 committed fouls multiple times)
+   - Away Team: 15 (Player20, Player25, Player24, Player28, Player29, Player22, Player27, Player33, Player23 committed fouls multiple times)
+
+4. **Shots** (includes goals, saved attempts, blocked attempts, and missed attempts):
+   - Home Team: 16 (shots by Player11, Player10, Player8, Player5, Player7, Player6, Player4, Player9, Player18)
+   - Away Team: 8 (shots by Player29, Player24, Player27)
+
+Now, let's construct the final table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 12    | 16    | <NEWLINE>
+| Away Team  | 0     | 1         | 15    | 8     | <NEWLINE>

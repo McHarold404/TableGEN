@@ -1,0 +1,161 @@
+You are a table generation agent tasked with generating a statistics table from a live football commentory.
+
+Please read the live text carefully apply a three-step pipeline:
+
+
+Step 1: Part1 : Decompose the given paragraphs or sentences into clear, self-contained, and highly detailed short atomic statements without losing any information. 
+Each atomic statement should capture a single fact or action with maximum granularity.
+
+INSTRUCTIONS:
+
+Capture all information from the input text.
+No detail should be lost; represent every fact, statistic, and detail accurately.
+Each atomic statement must contain only one key entity and one action or attribute.
+If a sentence contains multiple pieces of information, decompose it further into more granular statements.
+Eliminate ambiguity by resolving pronouns and ensuring each statement stands alone.
+Preserve necessary context so each statement is meaningful on its own.
+Include details that enhance understanding, such as roles, relationships, exact figures, and percentages.
+Present numerical data and units uniformly.
+Ensure each statement conveys unique information without overlapping others.
+Do not include reasoning, explanations, additional text, or numbering.
+Ensure statements are clear, direct, and free from unnecessary complexity.
+Resolve pronouns to their corresponding nouns for clarity.
+Each atomic statement should focus on one entity performing one action or possessing one attribute.
+
+Part 2: From these atomic statements, extract and unify all possible attributes into clear, concise column headers. The row headers of the table will be "Home Team" and "Away Team". For example, 'Shots' or 'Corner Kicks' —only add new columns if the commentary references them.  Note that these atomic statements don't have any other usage except for generating column headers. 
+Your goals is to:
+Identify all attributes, entities, and data points mentioned, whether explicitly stated or implicitly implied.
+Determine all necessary row headers and column headers required to represent the data completely.
+The column headers are selected based on the attributes or data points associated with the actions or events carried out by the entities. 
+Do not include any actions or events in the column headers.
+The column headers should only include the values associated as a consequence of those actions or events.
+The headers should be concise and summarized i.e. keep the number of rows and columns as small as possible.
+
+ALGORITHM for generating schema
+Initialise schema:
+{
+  "row_headers": ["Home Team", "Away Team"],
+  "column_headers": ["Team"]
+}
+For each statement in input:
+  Generate set of column headers required to represent stats in the statement: "column_header_1", "column_header_2".... etc.
+  Update column headers in schema state. (Add new headers if not present, update for better clarity) 
+  After processing all the statements and generating the schema, reiterate and clean the column headers to enhance clarity. Group similar headers together if necessary.
+
+Output Format:
+Provide the headers in a JSON format with two keys: `"row_headers"` and `"column_headers"`.
+Ensure the lists under each key are accurate and comprehensive.
+OUTPUT FORMAT EXAMPLE:
+
+Sample Illustration for Step 1; Part 1 and Part 2:
+
+  Original Statements:
+  1.Player26 (Away Team) earns a free kick in their defensive half as Player7 (Home Team) commits a foul.
+  2.Player7 (Home Team) receives a yellow card for a rough tackle, while the Away Team earns a corner kick.
+  3.Player27 (Away Team) shoots from the center of the box, scoring the first goal for his team.
+  4.Player 9 (Home Team) commits a foul resulting in Player26 (Away Team) earning a free kick. 
+
+  Atomic Statements:
+  1. Player26 (Away Team) earns a free kick in their defensive half.
+  2. Player7 (Home Team) commits a foul.
+  3. Player7 (Home Team) receives a yellow card for a rough tackle
+  4. Away Team earns a corner kick
+  5. Player27 (Away Team) shoots from the center of the box.
+  6. Player27 (Away Team) scores the first goal for his team.
+  7. Player 9 (Home Team) commits a foul.
+  8. Player26 (Away Team) earning a free kick. 
+
+  Schema Generation:
+  Initialise empty schema:
+    {
+      "row_headers": ["Home Team", "Away Team"],
+      "column_headers": ["Team","Column Header 1", "..."]
+    }
+
+  Atomic statement 1: Player26 (Away Team) earns a free kick in their defensive half.
+    Update: Add column header "Free Kicks"
+  Atomic Statement 2: Player7 (Home Team) commits a foul.
+    Update: Add column header "Fouls"
+  Atomic Statement 3: Player7 (Home Team) receives a yellow card for a rough tackle
+    Update: Add column header "Yellow Cards"
+  Atomic Statement 4: Away Team earns a corner kick
+    Update : Add column header "Corner Kick"
+  Atomic Statement 5: Player27 (Away Team) shoots from the center of the box.
+    Update : Add column header "Shots Taken"
+  Atomic Statement6. Player27 (Away Team) scores the first goal for his team.
+    Update: Add column header "Goals"
+  ......
+  ....
+  Final Schema:
+    {
+      "row_headers": ["Home Team", "Away Team"],
+      "column_headers": ["Team","Fouls", "Yellow Cards","Shots Taken","Goals","Corner Kicks","Free Kicks"]
+    }
+
+The final schema will be the output of ### Step 1.
+
+### Step 1:
+  {
+    "row_headers": ["Home Team", "Away Team"],
+    "column_headers": ["Team","Fouls", "Yellow Cards","Shots Taken","Goals","Corner Kicks","Free Kicks"]
+  }
+
+Step 2: For every sentence in the original text, decide which row (Home Team or Away Team) is affected and which columns to update. Increment or initialize any values as needed. If there’s no mention of a particular statistic, keep it at 0.     Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card.
+Populate the table by incrementing or setting values for each relevant column based on the original text. If a team commits a foul, increment the 'Fouls' column for that team. If a team scores, increment the 'Goals' column for that team, and so on. Note that goals and saved attempts, blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card. Penalty is also considered as free kicks.
+When you have finished processing all statements, output the final table as follows:
+1.Use "|" for separating cells and <NEWLINE> at the end of every row.
+2.Start with ### Final Table.
+3.Ensure each column is listed in the header row in a consistent order, and each row (Home Team, Away Team) reflects the final tallies.
+4.Here is a sample illustration of the same:
+
+
+Illustration:
+
+Original Statements:
+1.Player26 (Away Team) earns a free kick in their defensive half as Player7 (Home Team) commits a foul.
+2.Player7 (Home Team) receives a yellow card for a rough tackle.
+3.The Away Team earns a corner kick.
+4.Player27 (Away Team) shoots from the center of the box, scoring the first goal for his team.
+5.Player 9 (Home Team) commits a foul resulting in Player26 (Away Team) earning a free kick. 
+
+Table Schema (From step 1):
+{
+    "row_headers": ["Home Team", "Away Team"],
+    "col_headers": ["Team","Free Kicks", "Fouls", "Yellow Cards", "Corner Kicks", "Shots", "Goals"]
+}
+
+Step-by-Step Table Updates
+
+Initial Table (Empty Table):
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | <NEWLINE>
+| Home Team | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+
+Statement 1: "Player26 (Away Team) earns a free kick in their defensive half as Player7 (Home Team) commits a foul."
+Update: Add 1 to Free Kicks for Away Team and add 1 to foul to Home Team.
+Revised state: Away Team Free Kicks: 1, Home Team Fouls: 1
+
+Statement 2: "Player7 (Home Team) receives a yellow card for a rough tackle."
+Update: Add 1 to Yellow Cards for Home Team.
+Revised State: Home Team Yellow Cards: 1.
+
+
+Statement 3: "The Away Team earns a corner kick."
+Update: Add 1 to Corner Kicks for Away Team.
+Revised State: Away Team Corner Kicks: 1.
+
+Statement 4: "Player27 (Away Team) shoots from the center of the box, scoring the first goal for his team."
+Update: Add 1 to Shots for Away Team, 1 Goal to Away Team 
+Revised State: Away Team Shots 1, Away Team Goals 1.
+
+Statement 5: "Player 9 (Home Team) commits a foul resulting in Player26 (Away Team) earning a free kick."
+Update: Increment Free Kicks for Away Team by 1, increment Fouls for Home Team by 1.
+Revised State: Away Team Free Kicks:2, Home Team Fouls:2. 
+
+### Final Table:
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | <NEWLINE>
+| Home Team | 0 | 1 | 1 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 2 | 0 | 0 | 1 | 1 | 1 |<NEWLINE>
+
+
+Provide the final table in exact specified response by following the steps given above. For step 2, show the update and revised state with every statement.

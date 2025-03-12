@@ -1,0 +1,58 @@
+To create the final table, we need to extract and count the relevant statistics from the text: goals, red cards, fouls, and shots. 
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+
+Let's go through the text and extract the necessary statistics:
+
+1. **Goals:**
+   - Home Team: 1 goal (Player9 scores in line 13).
+   - Away Team: 1 goal (Player26 scores in line 54).
+
+2. **Red Cards:**
+   - No red cards are mentioned for either team.
+
+3. **Fouls:**
+   - Home Team: 
+     - Player8 (line 8)
+     - Player9 (lines 16, 55, 62, 78)
+     - Player5 (lines 26, 73)
+     - Player3 (lines 44, 48)
+     - Player4 (line 51)
+     - Player16 (line 79)
+     - Total = 10 fouls
+
+   - Away Team:
+     - Player21 (lines 4, 40)
+     - Player23 (line 28)
+     - Player22 (lines 39, 60, 85)
+     - Player27 (lines 27, 88)
+     - Player28 (line 60)
+     - Total = 8 fouls
+
+4. **Shots:**
+   - Home Team:
+     - Player10 (lines 6, 29, 58, 67, 81)
+     - Player8 (line 65)
+     - Player9 (goal in line 13)
+     - Player13 (lines 66, 77)
+     - Total = 9 shots
+
+   - Away Team:
+     - Player28 (saved shot in line 9)
+     - Player27 (lines 11, 25, 46, 47, 83)
+     - Player25 (lines 18, 19, 46, 87)
+     - Player26 (goal in line 54)
+     - Player29 (lines 32, 45, 69)
+     - Player21 (line 53)
+     - Player24 (line 75)
+     - Player20 (line 50)
+     - Player22 (line 72)
+     - Total = 17 shots
+
+Now, let's create the final table based on these statistics:
+
+### Final Table:
+| Team      | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team | 1     | 0         | 10    | 9     | <NEWLINE>
+| Away Team | 1     | 0         | 8     | 17    | <NEWLINE>

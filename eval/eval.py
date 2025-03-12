@@ -358,14 +358,16 @@ def evaluate_rotowire_corrected(model_output_team,model_output_player,gold_table
         for i, (player_pred, player_gold, team_pred, team_gold) in enumerate(
             zip(model_output_player, gold_table_player, model_output_team, gold_table_team)):
             print('Evaluating point',i)
-            if player_gold == '' :
-                player_gold = player_pred
-            if team_gold == '':        
-                team_gold = team_pred
+            if player_gold is None or player_gold.size == 0:
+                player_gold = convert_markdown_table_to_numpy_array(player_pred)
+            if team_gold is None or team_gold.size == 0:
+                team_gold = convert_markdown_table_to_numpy_array(team_pred)
+            if player_pred == '':
+                continue
             if team_pred == '':
                 continue
-            metrics_team = evaluate_table(model_output=convert_markdown_table_to_numpy_array(team_pred), gold_label=team_gold,eval_bert=False,eval_chrf=True,eval_exact_match=True)
-            metrics_players = evaluate_table(model_output=convert_markdown_table_to_numpy_array(player_pred), gold_label=player_gold,eval_bert=False,eval_chrf=True,eval_exact_match=True)
+            metrics_team = evaluate_table(model_output=convert_markdown_table_to_numpy_array(team_pred), gold_label=team_gold,eval_bert=True,eval_chrf=True,eval_exact_match=True)
+            metrics_players = evaluate_table(model_output=convert_markdown_table_to_numpy_array(player_pred), gold_label=player_gold,eval_bert=True,eval_chrf=True,eval_exact_match=True)
             
             # Initialize the nested dictionary
             eval_dict['Test_pt' + str(i)] = {}

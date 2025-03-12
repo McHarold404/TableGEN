@@ -1,0 +1,27 @@
+To generate the final table, we need to extract the following statistics from the text:
+
+1. Goals
+2. Red Cards
+3. Fouls
+4. Free Kicks
+5. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 13    | 10         | 11    | <NEWLINE>
+| Away Team  | 2     | 0         | 10    | 12         | 13    | <NEWLINE>
+
+Explanation:
+- **Goals**: The Away Team scored 2 goals (events 3 and 49). The Home Team scored 0 goals.
+- **Red Cards**: There were no red cards issued in the game.
+- **Fouls**: 
+  - Home Team committed fouls in events 13, 18, 26, 27, 30, 39, 50, 51, 53, 63, 66.
+  - Away Team committed fouls in events 5, 11, 15, 34, 42, 46, 61, 68.
+- **Free Kicks**: 
+  - Home Team earned free kicks in events 4, 8, 15, 19, 33, 42, 46, 60, 68.
+  - Away Team earned free kicks in events 14, 20, 28, 31, 40, 52, 63, 66.
+- **Shots**:
+  - Home Team had shots in events 6, 7, 8, 12, 17, 21, 24, 44, 47, 48, 59.
+  - Away Team had shots in events 3, 10, 29, 35, 40, 41, 49, 54, 55, 56, 57.
+
+These statistics have been calculated by carefully analyzing each event described in the live text.

@@ -1,0 +1,39 @@
+To create a summary table of the game statistics, we need to identify and count the relevant events from the live text. Let's define the table schema and then fill it with the data extracted from the text.
+
+### Table Schema:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | Corner Kicks | Offsides |
+|------------|-------|-----------|-------|-------|------------|--------------|----------|
+
+Now, let's process the text to fill in the table:
+
+1. **Goals**: 
+   - Home Team: 8 goals (including 2 own goals by the Away Team)
+   - Away Team: 0 goals
+
+2. **Red Cards**: 
+   - There are no red cards mentioned in the text for either team.
+
+3. **Fouls** (including handball and dangerous play):
+   - Home Team: Fouls by Player3, Player9, Player4, Player10, Player7, Player8, Player9 (handball), Player7, Player4, totaling 9 fouls.
+   - Away Team: Fouls by Player29, Player28, Player24, Player28 (handball), Player26, Player31, totaling 6 fouls.
+
+4. **Shots** (including goals, saved attempts, blocked attempts, and missed attempts):
+   - Home Team: Goals (8) + Misses (Player10, Player10, Player6, Player10, Player16, Player10, Player7) + Saves (Player10, Player15) + Blocks (Player11, Player3) = 18 shots.
+   - Away Team: Blocks (Player31, Player33) + Misses (Player28, Player29, Player23, Player29, Player20, Player27, Player26) + Saves (Player26) = 10 shots.
+
+5. **Free Kicks** (including penalties):
+   - Home Team: Free kicks earned by Player5, Player2, Player9, Player7, Player15, Player8, Player9, Player15, totaling 8 free kicks.
+   - Away Team: Free kicks earned by Player29, Player27, Player25, Player23, Player29, Player24, totaling 6 free kicks.
+
+6. **Corner Kicks**:
+   - Home Team: 5 corner kicks.
+   - Away Team: 5 corner kicks.
+
+7. **Offsides**:
+   - Home Team: Offside by Player10, Player9, Player17, totaling 3 offsides.
+   - Away Team: 0 offsides.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+| Home Team  | 8     | 0         | 9     | 18    | 8          | 5            | 3        | <NEWLINE>
+| Away Team  | 0     | 0         | 6     | 10    | 6          | 5            | 0        | <NEWLINE>

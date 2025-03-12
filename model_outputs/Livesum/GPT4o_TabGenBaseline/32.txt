@@ -1,0 +1,38 @@
+To generate the final table, we will first define a table schema that captures all the important statistics from the game text. The schema will include the following columns:
+
+1. Team
+2. Goals
+3. Red Cards
+4. Fouls
+5. Shots
+6. Free Kicks
+
+Now, let's process the live text to fill in the table:
+
+### Processing the Text:
+
+- **Goals**:  
+  - Home Team: 0 goals (as per the final score).
+  - Away Team: 2 goals (Player24 and Player29 scored).
+
+- **Red Cards**:  
+  - No red cards were mentioned in the text for either team.
+
+- **Fouls**:  
+  - Home Team: Player10 (3 fouls), Player5 (1 foul), Player9 (3 fouls), Player3 (1 foul) = 8 fouls.
+  - Away Team: Player28 (1 foul), Player24 (2 fouls), Player22 (2 fouls), Player29 (1 foul), Player33 (1 foul) = 7 fouls.
+
+- **Shots**:  
+  - Home Team: Player10 (1 shot), Player6 (2 shots), Player11 (1 shot), Player9 (1 shot), Player12 (1 shot), Player8 (1 shot), Player3 (1 shot), Player13 (2 shots), Player4 (1 shot) = 11 shots.
+  - Away Team: Player24 (2 shots), Player28 (2 shots), Player26 (1 shot), Player29 (3 shots), Player27 (1 shot), Player20 (1 shot), Player23 (1 shot) = 11 shots.
+
+- **Free Kicks**:  
+  - Home Team: Earned free kicks from fouls committed by the Away Team (total fouls by Away Team = 7).
+  - Away Team: Earned free kicks from fouls committed by the Home Team (total fouls by Home Team = 8).
+
+### Final Table:
+
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | <NEWLINE>
+|------------|-------|-----------|-------|-------|------------| <NEWLINE>
+| Home Team  | 0     | 0         | 8     | 11    | 7          | <NEWLINE>
+| Away Team  | 2     | 0         | 7     | 11    | 8          | <NEWLINE>

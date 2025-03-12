@@ -1,0 +1,42 @@
+To create a summary table of the game statistics, we need to identify and count the relevant events from the text. Here is the schema for the table:
+
+| Team | Goals | Shots (Total) | Yellow Cards | Red Cards | Fouls | Offsides | Corner Kicks | Free Kicks | <NEWLINE>
+
+Now, let's process the text and fill in the table:
+
+1. **Goals**: 
+   - Home Team: 3 goals (Player6, Player15 twice)
+   - Away Team: 3 goals (Player29, Player27, Player28)
+
+2. **Shots (Total)**: (Goals + Saved Attempts + Blocked Attempts + Missed Attempts)
+   - Home Team: 3 (goals) + 2 (saved) + 2 (blocked) + 2 (missed) = 9 shots
+   - Away Team: 3 (goals) + 5 (saved) + 8 (blocked) + 8 (missed) = 24 shots
+
+3. **Yellow Cards**:
+   - Home Team: 2 yellow cards (Player2, Player5)
+   - Away Team: 2 yellow cards (Player29, Player23)
+
+4. **Red Cards**: 
+   - Home Team: 0 red cards
+   - Away Team: 0 red cards
+
+5. **Fouls**:
+   - Home Team: 6 fouls (Player9, Player6, Player11, Player2, Player4, Player15)
+   - Away Team: 10 fouls (Player29, Player26 four times, Player27, Player23, Player28, Player20, Player22)
+
+6. **Offsides**:
+   - Home Team: 0 offsides
+   - Away Team: 3 offsides (Player28 twice, Player21)
+
+7. **Corner Kicks**:
+   - Home Team: 6 corner kicks
+   - Away Team: 7 corner kicks
+
+8. **Free Kicks**: (Fouls committed by opponent + Penalties)
+   - Home Team: 10 free kicks
+   - Away Team: 6 free kicks
+
+### Final Table:
+| Team | Goals | Shots (Total) | Yellow Cards | Red Cards | Fouls | Offsides | Corner Kicks | Free Kicks | <NEWLINE>
+| Home Team | 3 | 9 | 2 | 0 | 6 | 0 | 6 | 10 | <NEWLINE>
+| Away Team | 3 | 24 | 2 | 0 | 10 | 3 | 7 | 6 | <NEWLINE>

@@ -1,0 +1,33 @@
+To create a summary table of the game statistics, we need to extract and organize the relevant data from the text. Let's break down the events and compile the statistics for both teams.
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+
+Now, let's extract the statistics from the text:
+
+1. **Goals:**
+   - Home Team: 3 goals (Player10 scored twice; Player13 scored once)
+   - Away Team: 1 goal (Player29 scored)
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 1 (Player19 received a red card)
+
+3. **Fouls:**
+   - Home Team: 11 fouls (Player11, Player10 (3 times), Player7 (2 times), Player13 (2 times), Player6, Player4)
+   - Away Team: 13 fouls (Player29 (3 times), Player27 (2 times), Player22, Player23 (2 times), Player24, Player26 (2 times), Player19, Player34, Player25)
+
+4. **Free Kicks:**
+   - Home Team: 12 free kicks (Player6, Player3 (3 times), Player10, Player4 (3 times), Player13, Player7 (2 times))
+   - Away Team: 9 free kicks (Player21 (3 times), Player25, Player29, Player20, Player34, Player23, Player19)
+
+5. **Shots:**
+   - Home Team: 13 shots (Player9 (2 times), Player3, Player11 (2 times), Player5, Player10 (2 times), Player13 (3 times), Player6, Player4)
+   - Away Team: 11 shots (Player29 (4 times), Player27 (4 times), Player21, Player34, Player23)
+
+Now, let's compile these into the final table:
+
+### Final Table:
+| Team | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+| Home Team | 3 | 0 | 11 | 12 | 13 | <NEWLINE>
+| Away Team | 1 | 1 | 13 | 9 | 11 | <NEWLINE>

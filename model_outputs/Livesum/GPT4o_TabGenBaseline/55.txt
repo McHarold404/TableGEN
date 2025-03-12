@@ -1,0 +1,40 @@
+To generate a summary table of the game statistics, let's first outline the table schema that will capture all the important statistics:
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Yellow Cards
+- Fouls
+- Free Kicks
+- Shots (including goals, saved attempts, blocked attempts, missed attempts)
+
+Now, let's process the text to fill the table based on the events described:
+
+1. **Goals**: 
+   - Home Team: 2 goals (Player9 at event 82, Player14 at event 84)
+   - Away Team: 1 goal (Player27 at event 68)
+
+2. **Red Cards**: 
+   - No red cards were mentioned.
+
+3. **Yellow Cards**: 
+   - Home Team: 4 yellow cards (Player5 at event 30, Player6 at event 35, Player4 at event 53, Player7 at event 69, Player18 at event 94)
+   - Away Team: 5 yellow cards (Player24 at event 44, Player21 at event 57, Player20 at event 67, Player23 at event 80, Player27 at event 91)
+
+4. **Fouls**: 
+   - Home Team: 11 fouls (events 27, 29, 34, 51, 58, 60, 63, 86, 93, 97)
+   - Away Team: 16 fouls (events 5, 7, 9, 20, 36, 37, 42, 51, 55, 56, 78, 83, 90, 92, 96, 101)
+
+5. **Free Kicks**: 
+   - Home Team: 13 free kicks (events 4, 6, 10, 38, 43, 55, 56, 79, 83, 90, 95, 101)
+   - Away Team: 10 free kicks (events 26, 28, 34, 50, 58, 62, 85, 93, 97, 101)
+
+6. **Shots**: 
+   - Home Team: 10 shots (events 12, 15, 17, 25, 27, 64, 70, 77, 82, 84, 88)
+   - Away Team: 11 shots (events 18, 21, 31, 39, 41, 46, 49, 61, 65, 68, 99, 102)
+
+### Final Table:
+| Team | Goals | Red Cards | Yellow Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+| Home Team | 2 | 0 | 5 | 11 | 13 | 10 | <NEWLINE>
+| Away Team | 1 | 0 | 5 | 16 | 10 | 11 | <NEWLINE>

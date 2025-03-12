@@ -1,0 +1,35 @@
+To construct the summary table, we need to identify and count the relevant statistics for both teams based on the provided live text. Let's break down the statistics:
+
+1. **Goals**: 
+   - Home Team: 4 goals (Player11, Player7, Player8, and Player11 from penalty)
+   - Away Team: 1 goal (Player28)
+
+2. **Red Cards**: 
+   - No red cards were issued to either team.
+
+3. **Fouls**: 
+   - Home Team: 12 fouls (Player7, Player3, Player2, Player8, Player5, Player3, Player11, Player8, Player11, Player8, Player11, Player18)
+   - Away Team: 10 fouls (Player20, Player28, Player25, Player39, Player22, Player34, Player25, Player27, Player22, Player22)
+
+4. **Shots** (including goals, saved attempts, blocked attempts, and missed attempts):
+   - Home Team: 9 shots (Player11 scored, Player11 saved, Player9 missed, Player8 blocked, Player8 scored, Player7 saved, Player11 missed, Player8 saved, Player11 scored from penalty)
+   - Away Team: 11 shots (Player20 blocked, Player28 missed, Player27 blocked, Player27 blocked, Player29 saved, Player26 missed, Player25 blocked, Player25 saved, Player27 missed)
+
+5. **Offsides**:
+   - Home Team: 4 offsides (Player9, Player10, Player11, Player11)
+   - Away Team: 1 offside (Player34)
+
+6. **Free Kicks** (including penalties):
+   - Home Team: 13 free kicks (Player10, Player8, Player11, Player11, Player9, Player11, Player5, Player18, Player11 from penalty)
+   - Away Team: 14 free kicks (Player28, Player23, Player25, Player27, Player25, Player25, Player28, Player25, Player21, Player22, Player22, Player34, Player22, Player21)
+
+7. **Yellow Cards**:
+   - Home Team: 1 yellow card (Player3)
+   - Away Team: 3 yellow cards (Player27, Player22, Player35)
+
+Now, let's format this data into the final table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Offsides | Free Kicks | Yellow Cards | <NEWLINE>
+| Home Team  | 4     | 0         | 12    | 9     | 4        | 13         | 1            | <NEWLINE>
+| Away Team  | 1     | 0         | 10    | 11    | 1        | 14         | 3            | <NEWLINE>

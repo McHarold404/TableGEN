@@ -1,0 +1,48 @@
+To create a summary table of the important statistics from the game, we need to consider the following statistics for both the Home and Away teams:
+
+1. Goals
+2. Red Cards
+3. Yellow Cards
+4. Fouls
+5. Free Kicks
+6. Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts)
+7. Offsides
+8. Corner Kicks
+
+### Final Table:
+| Team       | Goals | Red Cards | Yellow Cards | Fouls | Free Kicks | Shots | Offsides | Corner Kicks | <NEWLINE>
+| Home Team  | 2     | 0         | 3            | 13    | 13         | 8     | 3        | 6            | <NEWLINE>
+| Away Team  | 0     | 0         | 1            | 12    | 15         | 13    | 3        | 3            | <NEWLINE>
+
+Now, let's break down how these numbers were derived from the text:
+
+- **Goals**: 
+  - Home Team scored 2 goals (events 19 and 30).
+  - Away Team scored 0 goals.
+
+- **Red Cards**: 
+  - No red cards were issued to either team.
+
+- **Yellow Cards**: 
+  - Home Team received yellow cards for Player10 and Player8 (events 52 and 69).
+  - Away Team received a yellow card for Player25 (event 78).
+
+- **Fouls**: 
+  - Home Team committed fouls in events 4, 13, 16, 20, 25, 37, 39, 43, 50, 63, and 67 (10 fouls).
+  - Away Team committed fouls in events 8, 14, 22, 32, 35, 37, 53, 55, 59, 63, 71, and 76 (12 fouls).
+
+- **Free Kicks**: 
+  - Home Team earned free kicks in events 7, 9, 14, 22, 33, 35, 37, 54, 58, 65, 70, 73, and 75 (13 free kicks).
+  - Away Team earned free kicks in events 5, 12, 15, 24, 38, 44, 51, 53, 68 (9 free kicks).
+
+- **Shots**: 
+  - Home Team had shots in events 21, 29, 42, 48, 56, 72 (6 shots).
+  - Away Team had shots in events 2, 17, 26, 31, 34, 36, 44, 45, 46, 49, 62, 64, 75 (13 shots).
+
+- **Offsides**: 
+  - Home Team was offside in events 23, 27, 60 (3 offsides).
+  - Away Team was offside in events 6, 28, 61 (3 offsides).
+
+- **Corner Kicks**: 
+  - Home Team won corner kicks in events 3, 47, 57, 66, 67 (5 corner kicks).
+  - Away Team won corner kicks in events 46, 74 (2 corner kicks).

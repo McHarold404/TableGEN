@@ -1,0 +1,34 @@
+To create a summary table of the important statistics from the game, we first need to identify and categorize the key events from the live text. Based on the text, the important statistics include goals, red cards, fouls, and shots (which include goals, saved attempts, blocked attempts, and missed attempts).
+
+Let's first outline the table schema:
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Fouls
+- Shots
+
+Now, let's process the text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 2 goals (Player7 and Player8)
+   - Away Team: 1 goal (Player24)
+
+2. **Red Cards:**
+   - No red cards were mentioned for either team.
+
+3. **Fouls:**
+   - Home Team: 9 fouls (Player9, Player11, Player7, Player9, Player11, Player5)
+   - Away Team: 14 fouls (Player22, Player20, Player28, Player29, Player21, Player23, Player26, Player20, Player35, Player22)
+
+4. **Shots:**
+   - Home Team: 10 shots (Player9, Player7, Player3, Player7, Player5, Player11, Player10, Player11, Player7, Player10)
+   - Away Team: 6 shots (Player24, Player27, Player29, Player32, Player29, Player22)
+
+Now, let's fill in the table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 2     | 0         | 9     | 10    | <NEWLINE>
+| Away Team  | 1     | 0         | 14    | 6     | <NEWLINE>

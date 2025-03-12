@@ -1,0 +1,4 @@
+Instruction: According to the live text, please count the number of different events of both teams.
+Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card. Penalty is also considered as free kicks.
+
+Task: According to instruction,  please generate executable python code to consolidate these tuples. Donot return any reasoning steps or extra characters.

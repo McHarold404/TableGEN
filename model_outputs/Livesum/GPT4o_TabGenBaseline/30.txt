@@ -1,0 +1,43 @@
+To generate the summary table, we need to extract and count the relevant statistics from the game text. Let's outline the table schema first and then fill it with the statistics.
+
+### Table Schema:
+| Team | Goals | Shots | Red Cards | Yellow Cards | Fouls | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+
+Now, let's process the text to fill the table:
+
+1. **Goals:**
+   - Home Team: 1
+   - Away Team: 0
+
+2. **Shots:**
+   - Home Team: 12 (Player11 missed, Player7 blocked twice, Player9 goal, Player7 missed, Player4 blocked, Player7 saved, Player4 saved, Player11 blocked, Player10 missed, Player11 hit post, Player11 blocked, Player10 saved)
+   - Away Team: 12 (Player27 blocked, Player26 missed, Player29 saved, Player27 missed, Player20 missed, Player25 blocked, Player20 missed, Player20 blocked, Player24 missed, Player33 blocked)
+
+3. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+4. **Yellow Cards:**
+   - Home Team: 1 (Player9)
+   - Away Team: 1 (Player29)
+
+5. **Fouls:**
+   - Home Team: 8 (Player8, Player4, Player11, Player6, Player9, Player3, Player8 handball, Player11)
+   - Away Team: 7 (Player26, Player27, Player28, Player22, Player29, Player27, Player33)
+
+6. **Free Kicks:**
+   - Home Team: 8 (Player11, Player2, Player4, Player10, Player5, Player10, Player3, Player10)
+   - Away Team: 8 (Player28, Player22, Player26, Player25, Player28, Player24, Player26, Player27)
+
+7. **Corner Kicks:**
+   - Home Team: 8
+   - Away Team: 9
+
+8. **Offsides:**
+   - Home Team: 0
+   - Away Team: 2 (Player27 twice)
+
+### Final Table:
+| Team | Goals | Shots | Red Cards | Yellow Cards | Fouls | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 12 | 0 | 1 | 8 | 8 | 8 | 0 | <NEWLINE>
+| Away Team | 0 | 12 | 0 | 1 | 7 | 8 | 9 | 2 | <NEWLINE>

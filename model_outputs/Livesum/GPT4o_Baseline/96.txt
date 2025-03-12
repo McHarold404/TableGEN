@@ -1,0 +1,4 @@
+### Final Table:
+| Team | Goals | Red Cards | Fouls | Yellow Cards | Shots Taken | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 0 | 10 | 1 | 11 | 12 | 2 | 1 | <NEWLINE>
+| Away Team | 0 | 0 | 11 | 0 | 22 | 14 | 5 | 1 | <NEWLINE>

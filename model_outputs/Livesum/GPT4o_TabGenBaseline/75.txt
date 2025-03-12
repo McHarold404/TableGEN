@@ -1,0 +1,43 @@
+To generate the summary table, we first need to identify the important statistics from the live text. The key statistics to track are:
+
+1. Goals
+2. Red Cards
+3. Fouls
+4. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Now, let's process the text to fill in these statistics for both the Home Team and the Away Team.
+
+### Processing the Text:
+
+#### Goals:
+- Home Team: 2 goals (Player11, Player9)
+- Away Team: 0 goals
+
+#### Red Cards:
+- Home Team: 0 red cards
+- Away Team: 0 red cards
+
+#### Fouls (including handball and dangerous play):
+- Home Team: Player10, Player5, Player6, Player2, Player8, Player7, Player11, Player10 (8 fouls)
+- Away Team: Player26, Player25, Player21, Player22, Player23, Player29, Player24, Player32 (8 fouls)
+
+#### Shots:
+- Home Team: 
+  - Blocked: Player11, Player7, Player10, Player9
+  - Saved: Player2, Player9
+  - Missed: Player10, Player3, Player9
+  - Goals: Player11, Player9
+  - Total shots = 10
+
+- Away Team:
+  - Blocked: Player32
+  - Saved: Player29, Player26
+  - Missed: Player29, Player21, Player27, Player25, Player24
+  - Total shots = 9
+
+Now, let's construct the table using the above statistics.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 2     | 0         | 8     | 10    | <NEWLINE>
+| Away Team  | 0     | 0         | 8     | 9     | <NEWLINE>

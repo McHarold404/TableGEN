@@ -1,0 +1,34 @@
+To generate the summary table of important statistics from the live text, we will first define a table schema that captures the key statistics of the game. Then, we'll process the text to fill in the table.
+
+### Table Schema:
+1. Team
+2. Goals
+3. Red Cards
+4. Yellow Cards
+5. Fouls
+6. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Now, let's process the text to extract these statistics for both the Home Team and the Away Team.
+
+### Extracted Statistics:
+
+#### Home Team:
+- Goals: 1
+- Red Cards: 0
+- Yellow Cards: 3 (Player2, Player9, Player11)
+- Fouls: 10 (Player3, Player2, Player8, Player9, Player5, Player4, Player11, Player10)
+- Shots: 16 (Player11's blocked shot, Player9's saved shot, Player7's missed shot, Player11's saved shot, Player11's saved shot, Player3's missed header, Player10's missed shot, Player8's missed shot, Player9's missed shot, Player3's missed shot, Player11's missed shot, Player11's saved shot, Player10's missed shot, Player18's missed header, Player7's saved shot, Player9's saved header, Player11's goal)
+
+#### Away Team:
+- Goals: 1
+- Red Cards: 1 (Player20 received a second yellow card)
+- Yellow Cards: 5 (Player29, Player25, Player24, Player27, Player20, Player28)
+- Fouls: 14 (Player3, Player25, Player29, Player24, Player27, Player20, Player23, Player28)
+- Shots: 14 (Player27's blocked shot, Player27's blocked shot, Player29's missed header, Player29's saved shot, Player28's saved shot, Player29's goal, Player26's saved shot, Player20's missed shot, Player26's missed shot)
+
+Now, let's format these statistics into the final table.
+
+### Final Table:
+| Team       | Goals | Red Cards | Yellow Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 1     | 0         | 3            | 10    | 16    | <NEWLINE>
+| Away Team  | 1     | 1         | 5            | 14    | 14    | <NEWLINE>

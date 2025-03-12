@@ -1,0 +1,64 @@
+To generate the final table, we need to collect the statistics from the live text. We will count the goals, red cards, fouls, and shots for both teams. 
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Shots | 
+
+Now, let's process the text to fill this table:
+
+1. **Goals:**
+   - Home Team: 1 goal (Player6 scored from a free kick).
+   - Away Team: 1 goal (Player22 scored).
+
+2. **Red Cards:**
+   - No red cards were issued to either team.
+
+3. **Fouls:**
+   - Home Team: 
+     - Player4 fouled Player22 (1)
+     - Player10 fouled Player27 (2)
+     - Player5 fouled Player27 (3)
+     - Player6 committed a reckless foul (4)
+     - Player11 fouled by Player23 resulting in a free kick (5)
+     - Player11 fouled by Player26 resulting in a free kick (6)
+   - Away Team:
+     - Player25 fouled Player9 (1)
+     - Player25 fouled again (2)
+     - Player20 committed a foul (3)
+     - Player23 fouled Player11 (4)
+     - Player24 fouled Player11 (5)
+     - Player33 committed a foul (6)
+
+4. **Shots:**
+   - Home Team: 
+     - Player11's shot blocked (1)
+     - Player10's shot saved (2)
+     - Player5's shot blocked (3)
+     - Player10's shot blocked (4)
+     - Player11's shot saved (5)
+     - Player9's header saved (6)
+     - Player3's header missed (7)
+     - Player11's shot blocked (8)
+     - Player7's shot saved (9)
+     - Player11's shot saved (10)
+     - Player10's shot saved (11)
+     - Player4's header missed (12)
+     - Player11's shot blocked (13)
+     - Player16's shot blocked (14)
+     - Player7's shot saved (15)
+     - Player11's shot missed (16)
+     - Player11's shot wide (17)
+   - Away Team:
+     - Player26's shot missed (1)
+     - Player27's shot saved (2)
+     - Player33's shot blocked (3)
+     - Player28's shot saved (4)
+     - Player27's header saved (5)
+     - Player24's shot missed (6)
+     - Player32's shot missed (7)
+     - Player33's shot missed (8)
+     - Player25's shot missed (9)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 1     | 0         | 6     | 17    | <NEWLINE>
+| Away Team  | 1     | 0         | 6     | 9     | <NEWLINE>

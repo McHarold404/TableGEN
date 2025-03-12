@@ -1,0 +1,28 @@
+To create the final table with all the important statistics, we need to first identify and count the relevant events from the live text. Let's break down the statistics:
+
+1. **Goals**: 
+   - Home Team: 0
+   - Away Team: 0
+
+2. **Red Cards**:
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls** (including handball and dangerous play):
+   - Home Team: 12 (Player7 - 4 fouls, Player10 - 1 foul, Player11 - 1 foul, Player12 - 2 fouls, Player6 - 1 foul)
+   - Away Team: 11 (Player26 - 2 fouls, Player23 - 1 foul, Player28 - 3 fouls, Player29 - 2 fouls, Player27 - 1 foul, Player20 - 1 foul, Player22 - 1 foul, Player24 - 1 foul)
+
+4. **Shots** (including goals, saved attempts, blocked attempts, and missed attempts):
+   - Home Team: 13 (Player10 - 4 shots, Player11 - 2 shots, Player2 - 2 shots, Player6 - 4 shots, Player7 - 1 shot)
+   - Away Team: 8 (Player25 - 2 shots, Player28 - 2 shots, Player24 - 2 shots, Player23 - 1 shot, Player28 - 1 shot)
+
+5. **Free Kicks** (including penalties):
+   - Home Team: 13
+   - Away Team: 10
+
+Now, let's put these statistics into the table format:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | <NEWLINE>
+| Home Team  | 0     | 0         | 12    | 13    | 13         | <NEWLINE>
+| Away Team  | 0     | 0         | 11    | 8     | 10         | <NEWLINE>

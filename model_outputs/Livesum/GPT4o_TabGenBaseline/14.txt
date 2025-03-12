@@ -1,0 +1,39 @@
+To generate a summary table for the game statistics, we need to identify the key statistics from the text:
+- Goals
+- Red Cards
+- Fouls
+- Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Let's extract and count these statistics from the provided live text:
+
+1. **Goals:**
+   - Home Team: 3 goals (Player9 - twice, Player2) + 1 own goal by Player24 (Away Team) = 4 goals
+   - Away Team: 1 goal (Player28)
+
+2. **Red Cards:**
+   - No red cards were mentioned for either team.
+
+3. **Fouls:**
+   - Home Team: Fouls committed by Player6, Player10 (twice), Player9, Player11 (twice), Player4, Player7 (twice) = 9 fouls
+   - Away Team: Fouls committed by Player28, Player25 (three times), Player22, Player23, Player27 (handball), Player20, Player34 = 9 fouls
+
+4. **Shots:**
+   - Home Team: 
+     - Goals: 3 (Player9 - twice, Player2)
+     - Saved Attempts: 2 (Player11's header and Player11's left-footed shot)
+     - Blocked Attempts: 2 (Player9's shot and Player7's shot)
+     - Missed Attempts: 2 (Player11's left-footed shot, Player6's header)
+     - Total = 9 shots
+   - Away Team:
+     - Goals: 1 (Player28)
+     - Saved Attempts: 3 (Player29's shot, Player28's left-footed shot, Player27's shot)
+     - Blocked Attempts: 2 (Player28's header, Player29's shot)
+     - Missed Attempts: 2 (Player28's shot, Player34's shot)
+     - Total = 8 shots
+
+Now, we can compile these statistics into the final table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 4     | 0         | 9     | 9     | <NEWLINE>
+| Away Team  | 1     | 0         | 9     | 8     | <NEWLINE>

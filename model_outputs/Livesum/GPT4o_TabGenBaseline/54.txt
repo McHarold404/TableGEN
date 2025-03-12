@@ -1,0 +1,36 @@
+To create a summary table encapsulating all important statistics from the game, we need to identify and categorize the events mentioned in the live text. Here's how we can break it down:
+
+1. **Goals:** Count the number of goals scored by each team.
+2. **Red Cards:** Count the number of red cards given to each team.
+3. **Fouls:** Count the number of fouls committed by each team.
+4. **Free Kicks:** Count the number of free kicks awarded to each team.
+5. **Shots:** Count the number of shots taken by each team, including goals, saved attempts, blocked attempts, and missed attempts.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+| Home Team  | 1     | 1         | 18    | 12         | 12    | <NEWLINE>
+| Away Team  | 2     | 0         | 14    | 17         | 16    | <NEWLINE>
+
+**Explanation:**
+
+- **Goals:** 
+  - Home Team: 1 goal (Player10)
+  - Away Team: 2 goals (Player27, Player26)
+
+- **Red Cards:**
+  - Home Team: 1 red card (Player2)
+  - Away Team: 0 red cards
+
+- **Fouls:**
+  - Home Team: 18 fouls (Player6, Player5, Player3, Player7, Player11, Player4, Player2, Player15, Player14)
+  - Away Team: 14 fouls (Player25, Player24, Player34, Player28, Player29, Player23, Player30, Player21)
+
+- **Free Kicks:**
+  - Home Team: 12 free kicks
+  - Away Team: 17 free kicks
+
+- **Shots:**
+  - Home Team: 12 shots (Player11, Player8, Player9, Player7, Player6, Player10, Player15, Player14)
+  - Away Team: 16 shots (Player27, Player28, Player22, Player21, Player26, Player29, Player31, Player24)
+
+These statistics are based on the events described in the live text, ensuring that each category is accurately represented in the final table.

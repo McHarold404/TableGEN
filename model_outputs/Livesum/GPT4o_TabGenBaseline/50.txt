@@ -1,0 +1,43 @@
+To generate the final table, we first need to determine the schema for the table based on the statistics mentioned in the live text. The key statistics to track are:
+
+1. Goals
+2. Red Cards
+3. Yellow Cards
+4. Fouls
+5. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+6. Free Kicks (including penalties)
+
+Now, let's process the text to fill in these statistics for both the Home Team and the Away Team.
+
+### Processing the Text:
+
+1. **Goals**: 
+   - Home Team: 1 goal (Player11)
+   - Away Team: 3 goals (Player27 scored twice, Player29)
+
+2. **Red Cards**: 
+   - Home Team: 0 
+   - Away Team: 0 
+
+3. **Yellow Cards**: 
+   - Home Team: 3 (Player6, Player7, Player5, Player18)
+   - Away Team: 2 (Player29, Player26)
+
+4. **Fouls**: 
+   - Home Team: 11 (Player9, Player6, Player10 twice, Player7, Player5, Player2, Player18 twice, Player15 twice)
+   - Away Team: 7 (Player29, Player25 twice, Player26, Player28 twice, Player24)
+
+5. **Shots**: 
+   - Home Team: 15 (Player10 twice, Player5, Player8 twice, Player7 four times, Player11, Player2, Player14)
+   - Away Team: 16 (Player27 four times, Player29 twice, Player24, Player26 three times, Player35, Player28, Player20)
+
+6. **Free Kicks**: 
+   - Home Team: 7 (Player4, Player9, Player7, Player6, Player5, Player2, Player18)
+   - Away Team: 8 (Player24, Player23, Player28, Player22, Player20, Player25, Player26, Player21)
+
+### Final Table:
+
+| Team       | Goals | Red Cards | Yellow Cards | Fouls | Shots | Free Kicks | <NEWLINE>
+|------------|-------|-----------|--------------|-------|-------|------------| <NEWLINE>
+| Home Team  | 1     | 0         | 4            | 11    | 15    | 7          | <NEWLINE>
+| Away Team  | 3     | 0         | 2            | 7     | 16    | 8          | <NEWLINE>

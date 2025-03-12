@@ -1,0 +1,6 @@
+Given the text:
+{{ bullet_points }}
+Table:
+{{ table }}
+Rewrite the table adding a citation column, using the format [X], indicating the sentence number where that specific information can be found. When unsure use [NA].
+Table with citations:

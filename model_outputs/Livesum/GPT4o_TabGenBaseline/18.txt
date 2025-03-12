@@ -1,0 +1,53 @@
+To generate the final table, let's first outline the table schema to capture all the important statistics of the game based on the live text:
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Yellow Cards
+- Fouls
+- Shots
+- Free Kicks (includes penalties)
+- Offsides
+- Corner Kicks
+
+Now, let's process the text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 1 (Own goal by Player24 of Away Team)
+   - Away Team: 0
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Yellow Cards:**
+   - Home Team: 3 (Player11, Player7, Player5, Player2)
+   - Away Team: 1 (Player24)
+
+4. **Fouls:**
+   - Home Team: 12 (Player10, Player9, Player11, Player7, Player6, Player3, Player4, Player5, Player7)
+   - Away Team: 5 (Player21, Player25, Player23, Player26)
+
+5. **Shots:**
+   - Home Team: 12 (Player11, Player8, Player7, Player9, Player10, Player15)
+   - Away Team: 18 (Player25, Player27, Player29, Player28, Player24, Player20, Player22, Player30)
+
+6. **Free Kicks:**
+   - Home Team: 5 (Player10, Player7, Player5)
+   - Away Team: 8 (Player25, Player21, Player27, Player32)
+
+7. **Offsides:**
+   - Home Team: 1 (Player9)
+   - Away Team: 3 (Player29, Player26, Player27)
+
+8. **Corner Kicks:**
+   - Home Team: 2
+   - Away Team: 12
+
+Now, let's construct the final table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Yellow Cards | Fouls | Shots | Free Kicks | Offsides | Corner Kicks | <NEWLINE>
+| Home Team  | 1     | 0         | 3            | 12    | 12    | 5          | 1        | 2            | <NEWLINE>
+| Away Team  | 0     | 0         | 1            | 5     | 18    | 8          | 3        | 12           | <NEWLINE>

@@ -1,0 +1,41 @@
+To create a summary table of the game statistics, we need to extract the relevant information from the text. Here's a breakdown of the statistics we can gather from the live text:
+
+1. **Goals**: 
+   - Home Team: 0
+   - Away Team: 1 (Player29 scored)
+
+2. **Red Cards**: 
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls**: 
+   - Home Team: Player10, Player11, Player7, Player4, Player18, Player17, Player2, Player3 (8 fouls)
+   - Away Team: Player27 (multiple), Player28 (multiple), Player24, Player26, Player25, Player29, Player23 (9 fouls)
+
+4. **Shots** (Goals, Saved Attempts, Blocked Attempts, Missed Attempts):
+   - Home Team: 
+     - Blocked: Player9, Player11, Player6, Player2, Player7
+     - Missed: Player9 (2), Player10, Player18, Player6
+     - Saved: Player6, Player7
+     - Total Shots: 10
+   - Away Team:
+     - Goal: Player29
+     - Blocked: Player20, Player23, Player27, Player21
+     - Missed: Player27, Player29, Player31, Player26
+     - Saved: Player26
+     - Total Shots: 11
+
+5. **Free Kicks**: 
+   - Home Team: Player7, Player2 (multiple), Player9, Player8, Player6, Player15, Player4, Player17 (8 free kicks)
+   - Away Team: Player24, Player27 (multiple), Player20, Player23, Player31 (6 free kicks)
+
+6. **Yellow Cards**:
+   - Home Team: 0
+   - Away Team: Player31, Player19, Player29 (3 yellow cards)
+
+Now, let's create the table schema and fill it with the extracted data:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | Yellow Cards | <NEWLINE>
+| Home Team  | 0     | 0         | 8     | 10    | 8          | 0            | <NEWLINE>
+| Away Team  | 1     | 0         | 9     | 11    | 6          | 3            | <NEWLINE>

@@ -1,0 +1,27 @@
+To generate a summary table of the game's important statistics, we first need to identify and define the key metrics from the live text. Based on the provided text, the important statistics can be summarized as follows:
+
+1. Goals: Number of goals scored by each team.
+2. Shots: Total number of attempts on goal, including goals, saved attempts, blocked attempts, and missed attempts.
+3. Fouls: Total number of fouls committed by each team, including handball and dangerous play.
+4. Red Cards: Total number of red cards received by each team.
+5. Yellow Cards: Total number of yellow cards received by each team.
+6. Free Kicks: Total number of free kicks earned by each team, including penalties.
+7. Corner Kicks: Total number of corner kicks earned by each team.
+8. Offsides: Total number of offsides called against each team.
+
+Now, let's process the text to fill in these statistics for both the Home Team and the Away Team:
+
+### Final Table:
+| Team       | Goals | Shots | Fouls | Red Cards | Yellow Cards | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+| Home Team  | 4     | 24    | 12    | 0         | 1            | 10         | 4            | 0        | <NEWLINE>
+| Away Team  | 0     | 13    | 11    | 0         | 0            | 15         | 1            | 2        | <NEWLINE>
+
+Explanation of the counts:
+- **Goals**: Home Team scored 4 goals, Away Team scored 0 goals.
+- **Shots**: Counted all goal attempts (goals, saved, blocked, missed) for both teams.
+- **Fouls**: Counted all fouls, including handballs and dangerous plays.
+- **Red Cards**: No red cards were issued to either team.
+- **Yellow Cards**: Home Team received 1 yellow card, Away Team received none.
+- **Free Kicks**: Counted all free kicks earned by each team.
+- **Corner Kicks**: Counted all corner kicks earned by each team.
+- **Offsides**: Counted the number of offsides called against each team.

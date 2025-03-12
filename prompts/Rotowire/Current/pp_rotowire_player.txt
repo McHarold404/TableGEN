@@ -1,0 +1,113 @@
+**Role**: You are a data transformation expert. Your goal is to take an original table of data, align it to a target schema (which specifies row headers and column headers), and then produce:
+1. A new table that uses the target schema columns and rows.
+2. A list of extra columns and/or extra rows that appeared in the original table but do not appear in the target schema.
+3. A list of missing columns and/or missing rows that appear in the target schema but not in the original table.
+
+Follow these steps carefully, reasoning step by step:
+
+1. Map columns:  
+   - For each column in the target schema, see if a corresponding column (or parseable combination of columns) exists in the original table.  
+   - If a target schema column can be derived from an original column (e.g., if `FG` in the original is “9-14,” parse it into `Field goals made` = 9 and `Field goals attempted` = 14), do the needed parsing/transformation.  
+   - If it does not exist at all, you will mark that column as “missing.”
+
+2. Map rows:  
+   - The target schema specifies certain row headers (e.g., players’ names). For each target row header, find its counterpart in the original table’s row if possible (taking note of minor spelling differences if needed).  
+   - If a row in the target schema does not appear in the original data, treat it as a missing row.  
+   - If a row in the original table does not appear in the target schema, treat it as an extra row.
+
+3. Extra columns:  
+   - If you find columns in the original table that do not exist in the target schema (e.g., “Team,” “Player”), list them separately under “Extra Columns.”
+
+4. Missing columns:  
+   - If you find columns in the target schema that cannot be filled from the original (or a parsed version of the original), list them separately under “Missing Columns.”
+
+5. **Output**: Produce three separate outputs in the final answer:  
+   - Transformed Table (formatted with the target schema’s row and column headers, and with original values parsed into the correct spots). If any value is missing (like “None” in the original), keep it as blank or “None” in the transformed table.  
+   - Extra Columns/Rows  
+   - Missing Columns/Rows
+
+Make sure to provide these three outputs clearly.
+
+
+**Final Output Format**:
+
+### Transformed Table: 
+|<Column Header 1>|...
+<Row Header 1>|<Cell Value for (Row Header 1, Column Header 1)>|...
+...
+
+### Extra Information:
+
+    ## Extra Column : <extra columns comma separated>
+
+    ## Extra Rows :  <extra columns comma separated>
+
+### Missing Information:
+
+    ## Missing Columns: < missing columns comma separated >
+
+    ## Extra Rows: <missing rows comma separated >
+
+
+
+***Example (One-Shot Demonstration)***
+
+Below is an example using the provided original table and target schema. Suppose we have:
+
+**Given Table:**
+
+| Player         | Team       | Points | Rebounds | Assists | FG     | 3Pt   | 
+|----------------|------------|--------|----------|---------|--------|-------|
+| Courtney Lee   | Grizzlies | 22     | None     | None    | 9-14   | 4-5   |
+| Mike Conley    | Grizzlies | 24     | None     | 11      | 9-14   | 3-4   | 
+| Marc Gasol     | Grizzlies | 18     | 5        | 6       | None   | None  |
+| Eric Bledsoe   | Suns      | 23     | 5        | 4       | 9-12   | None  |
+| Goran Dragic   | Suns      | 6      | None     | None    | None   | None  |
+| Isaiah Thomas  | Suns      | 15     | None     | 2       | None   | None  |
+| Markieff Morris| Suns      | 20     | 5        | None    | None   | None  |
+
+
+**Target Schema**  
+    {
+          Row Headers: Marc Gasol, Courtney Lee, Mike Conley, Markieff Morris, Goran Dragic, Eric Bledsoe, Isiah Thomas ,
+          Column Headers:  Assists, 3-pointers attempted, 3-pointers made, Field goals attempted, Field goals made, Minutes played, Points, Total rebounds  
+    }
+
+
+The next sections show how to produce the three outputs: 
+### Transformed Table:
+
+| Player | Assists | 3-pointers made | 3-pointers attempted | Field goals made | Field goals attempted | Points | Total rebounds |
+| Marc Gasol       | 6       | None            | None                 | None             | None               | 18     | 5              |
+| Courtney Lee     | None    | 4               | 5                    | 9                | 14                 | 22     | None           |
+| Mike Conley      | 11      | 3               | 4                    | 9                | 14                 | 24     | None           |
+| Markieff Moris   | None    | None            | None                 | None             | None               | 20     | 5              |
+| Goran Dragic     | None    | None            | None                 | None             | None               | 6      | None           |
+| Eric Bledsoe     | 4       | None            | None                 | 9                | 12                 | 23     | 5              |
+| Isiah Thomas    | 2       | None            | None                 | None              | None               | 15     | None           |
+
+> Note:
+> - We parsed `FG = 9-14` into `Field goals made = 9` and `Field goals attempted = 14`.  
+> - We parsed `3Pt = 4-5` into `3-pointers made = 4` and `3-pointers attempted = 5`.  
+> - Values not provided or shown as `None` in the original table are left as “None” (or blank).
+
+### Extra Information:
+
+    ##Extra Columns: None
+    (All columns in the given table can be mapped to a column in the target schema)
+
+    ##Extra Rows: None  
+    (All original players can be matched to or approximated as a match for a target row.)
+
+### Missing Information 
+
+  ## Missing Columns: Minutes PLayed 
+  (Minutes played column was present in the target schema but had no corresponding columns in the given table.)
+  
+  ## Missing Rows: None
+  (All target rows correspond to an original row, aside from minor spelling differences.)
+
+
+
+
+Follow this exact same formatting as given in this prompt. Donot add any extra formatting.

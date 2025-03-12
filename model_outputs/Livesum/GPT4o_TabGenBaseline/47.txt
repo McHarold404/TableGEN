@@ -1,0 +1,31 @@
+To generate a summary table of the game statistics, we need to identify the key statistics mentioned in the live text. These statistics include goals, red cards, fouls, and shots (which include goals, saved attempts, blocked attempts, and missed attempts).
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+
+Now, let's process the text to extract these statistics for each team:
+
+1. **Goals:**
+   - Away Team: 2 goals (Player27, Player25)
+   - Home Team: 1 goal (Player10)
+
+2. **Red Cards:**
+   - Away Team: 1 red card (Player23)
+   - Home Team: 1 red card (Player4, second yellow card)
+
+3. **Fouls:**
+   - Home Team: Player4 (4 times), Player10, Player8, Player2 (2 times), Player6, Player15 (2 times), Player7, Player5, Player13
+     - Total Fouls by Home Team: 12
+   - Away Team: Player27 (3 times), Player22, Player23, Player31, Player21, Player28
+     - Total Fouls by Away Team: 8
+
+4. **Shots:**
+   - Home Team: Player10 (4 attempts), Player9, Player7, Player13
+     - Total Shots by Home Team: 7
+   - Away Team: Player24 (2 attempts), Player26 (2 attempts), Player27 (2 attempts), Player28 (2 attempts), Player22, Player25, Player29
+     - Total Shots by Away Team: 10
+
+### Final Table:
+| Team      | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team | 1     | 1         | 12    | 7     | <NEWLINE>
+| Away Team | 2     | 1         | 8     | 10    | <NEWLINE>

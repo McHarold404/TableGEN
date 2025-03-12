@@ -1,0 +1,32 @@
+To generate the final table, we need to extract and calculate the statistics for both teams based on the provided live text. Here are the steps to achieve that:
+
+1. **Identify and Count Goals**:
+   - Home Team: 2 (both own goals by the Away Team)
+   - Away Team: 0
+
+2. **Identify and Count Red Cards**:
+   - Home Team: 0
+   - Away Team: 0 (No red cards mentioned)
+
+3. **Identify and Count Fouls**:
+   - Home Team: 9 (fouls committed by Player10, Player4, Player5, Player6, Player2, Player9, Player7, Player10, Player4)
+   - Away Team: 10 (fouls committed by Player25, Player26, Player22, Player22, Player26, Player22, Player25, Player26, Player22, Player26)
+
+4. **Identify and Count Shots** (including goals, saved attempts, blocked attempts, and missed attempts):
+   - Home Team: 13 (shots by Player9, Player8, Player7, Player7, Player10, Player6, Player8, Player11, Player11, Player10, Player11, Player10, Player12)
+   - Away Team: 14 (shots by Player27, Player26, Player29, Player29, Player29, Player25, Player27, Player27, Player27, Player27, Player27, Player27, Player20, Player20)
+
+5. **Identify and Count Yellow Cards**:
+   - Home Team: 0
+   - Away Team: 2 (yellow cards for Player22 and Player33)
+
+6. **Identify and Count Free Kicks** (including penalties):
+   - Home Team: 12 (free kicks won by Player11, Player2, Player4, Player8, Player11, Player9, Player7, Player11, Player8, Player11, Player11, Player7)
+   - Away Team: 13 (free kicks won by Player19, Player28, Player27, Player29, Player25, Player21, Player25, Player21, Player26, Player33, Player21, Player26, Player21)
+
+Now, let's construct the final table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Yellow Cards | Free Kicks | <NEWLINE>
+| Home Team  | 2     | 0         | 9     | 13    | 0            | 12         | <NEWLINE>
+| Away Team  | 0     | 0         | 10    | 14    | 2            | 13         | <NEWLINE>

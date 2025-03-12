@@ -1,136 +1,149 @@
-Player26 (Away Team) earns a free kick in their defensive half following a foul by Player7 (Home Team).  
-Player7 (Home Team) receives a yellow card for a rough tackle.  
+The first half of the match begins.  
+Player27 from the Away Team takes a shot from close range.  
+The shot by Player27 from the Away Team is blocked.  
+Player27 from the Away Team takes a shot from the center of the box.  
+The shot by Player27 from the Away Team is blocked with the assistance of Player26 from the Away Team.  
 The Away Team earns a corner kick.  
-Player27 (Away Team) takes a shot from the center of the box.  
-Player20 (Away Team) assists Player27 (Away Team).  
-Player27 (Away Team)'s shot misses to the left.  
-Player10 (Home Team) makes a risky move.  
-Player22 (Away Team) earns a free kick in their own half.  
-Player27 (Away Team) takes a left-footed shot from outside the box.  
-Player28 (Away Team) assists Player27 (Away Team).  
-Player27 (Away Team)'s shot is blocked.  
-Player6 (Home Team) earns a free kick in their own half.  
-Player27 (Away Team) commits a foul.  
-Player8 (Home Team) takes a left-footed shot from outside the box.  
-Player9 (Home Team) assists Player8 (Home Team).  
-Player8 (Home Team)'s shot goes wide to the right.  
-Player25 (Away Team) takes a left-footed shot from outside the box.  
-Player28 (Away Team) assists Player25 (Away Team).  
-Player25 (Away Team)'s shot is blocked after the Away Team's corner kick.  
-Player5 (Home Team) is sidelined due to an injury.  
-The match experiences a delay due to Player5 (Home Team)'s injury.  
-The delay is finished and play is prepared to resume.  
-An offside is called against the Away Team.  
-Player20 (Away Team) attempts a through ball.  
-Player26 (Away Team) is caught offside.  
-Player7 (Home Team) takes a shot from the center of the box.  
-Player8 (Home Team) provides a cross to Player7 (Home Team).  
-Player7 (Home Team)'s shot is too high.  
-Player9 (Home Team) commits a foul.  
-Player21 (Away Team) wins a free kick in their own defensive half.  
-Player21 (Away Team) has a set piece opportunity.  
-Player7 (Home Team) commits a foul.  
-Player25 (Away Team) wins a free kick on the left wing.  
-Player4 (Home Team) earns a free kick in their own half.  
-Player25 (Away Team) commits a foul.  
-Player10 (Home Team) earns a free kick on the right wing after being fouled by Player21 (Away Team).  
-Player21 (Away Team) receives a yellow card for a rough tackle.  
-Player11 (Home Team) attempts a through ball.  
-Player4 (Home Team) is offside.  
-Player26 (Away Team) scores with a left-footed shot from the center of the box.  
-Player21 (Away Team) assists Player26 (Away Team).  
-The Away Team leads 1-0 against the Home Team.  
-Player27 (Away Team) scores with a left-footed shot from the center of the box.  
-Player26 (Away Team) assists Player27 (Away Team).  
-The score is Home Team 0, Away Team 2.  
-Player8 (Home Team) commits a foul.  
-Player28 (Away Team) earns a free kick in their own half.  
-Player11 (Home Team) commits a foul.  
-Player29 (Away Team) wins a free kick in the attacking half.  
+Player24 from the Away Team attempts a pass to Player32 from the Away Team.  
+Player28 from the Away Team is caught in an offside position.  
+Offside is called against the Away Team.  
 The Away Team wins a corner kick.  
-Player9 (Home Team) commits a foul.  
-Player23 (Away Team) earns a free kick in their own half.  
-Player26 (Away Team) fouls Player11 (Home Team).  
-Player11 (Home Team) wins a free kick in their defensive half.  
-Player7 (Home Team) takes a shot from outside the box.  
-Player7 (Home Team)'s shot is blocked.  
-Player29 (Away Team) commits a foul.  
-Player8 (Home Team) earns a free kick in their own defensive half.  
-The Home Team wins a corner kick.  
-Player9 (Home Team) commits a foul.  
-Player26 (Away Team) earns a free kick in their own half.  
-At the break, the Home Team is trailing 0-2 against the Away Team.  
-The second half is underway with the Home Team trailing 0-2 to the Away Team.  
-The Home Team gets a corner kick.  
-Player7 (Home Team) misses a shot with his left foot from outside the box.  
-Player7 (Home Team)'s shot goes high and wide to the left.  
-Player23 (Away Team) attempts a through ball.  
-Player28 (Away Team) is offside for the Away Team.  
-Player9 (Home Team) earns a free kick on the right side of the field.  
-Player22 (Away Team) makes a risky move.  
-Player12 (Home Team) takes a shot from outside the box with their left foot.  
-Player12 (Home Team)'s shot is saved in the center of the goal.  
-Player2 (Home Team) assists Player12 (Home Team).  
-Player12 (Home Team) commits a foul on Player22 (Away Team).  
-Player22 (Away Team) is awarded a free kick in the attacking half.  
-Player10 (Home Team) earns a free kick in the opponent's half.  
-Player26 (Away Team) commits a foul.  
-Player12 (Home Team)'s shot from outside the box is blocked.  
-Player21 (Away Team) attempts a through ball.  
-Player28 (Away Team) is offside for the Away Team.  
-Player29 (Away Team) and Player1 (Home Team) both attempt through balls.  
-Player26 (Away Team) is caught offside.  
-Player10 (Home Team) is caught offside.  
-Player26 (Away Team) wins a free kick in their defensive half after a foul by Player11 (Home Team).  
-Player21 (Away Team) is sidelined due to an injury.  
-The match experiences a delay due to Player21 (Away Team)'s injury.  
-The delay is over and play is set to resume.  
-Player9 (Home Team) commits a foul.  
-Player24 (Away Team) is awarded a free kick in their own defensive half.  
-Player29 (Away Team) takes a shot from outside the box with their left foot.  
-Player29 (Away Team)'s shot is saved in the bottom right corner.  
-Player28 (Away Team) assists Player29 (Away Team).  
-The Home Team is caught offside.  
-Player2 (Home Team) attempts a through ball to Player9 (Home Team).  
-Player11 (Home Team) takes a shot from outside the box.  
-Player11 (Home Team)'s shot is saved in the top left corner.  
-Player7 (Home Team) assists Player11 (Home Team).  
-Player7 (Home Team) earns a free kick in the opponent's half.  
-Player22 (Away Team) commits a foul.  
-Player27 (Away Team) takes a left-footed shot from the center of the box.  
-Player27 (Away Team)'s shot narrowly misses to the left.  
-Player35 (Away Team) assists Player27 (Away Team).  
-Player9 (Home Team) misses a shot to the right from the center of the box.  
-Player12 (Home Team) assists Player9 (Home Team).  
-Player9 (Home Team) scores with a header from the center of the box.  
-Player9 (Home Team)'s header goes to the bottom left corner.  
-Player2 (Home Team) assists Player9 (Home Team).  
-The Home Team now trails the Away Team by one goal.  
-The Away Team wins a corner kick.  
-Player30 (Away Team) causes a delay in the match due to an injury.  
-The delay is over.  
-Player8 (Home Team) takes a left-footed shot from outside the box.  
-Player8 (Home Team)'s shot is saved in the bottom right corner.  
-Player2 (Home Team) assists Player8 (Home Team).  
-The Home Team wins a corner kick.  
-Player10 (Home Team) commits a foul.  
-Player28 (Away Team) wins a free kick in their own defensive half.  
-Player10 (Home Team) receives a yellow card for a rough tackle.  
-Player11 (Home Team) earns a free kick in their own half.  
-Player32 (Away Team) commits a foul.  
-Player9 (Home Team)'s header from the center of the box is saved in the bottom right corner.  
-Player2 (Home Team) assists Player9 (Home Team).  
-Player29 (Away Team) attempts a through ball.  
-Player27 (Away Team) is caught in an offside position for the Away Team.  
-Player29 (Away Team) takes a shot from the right side of the box.  
-Player29 (Away Team)'s shot is saved in the bottom right corner.  
-Player26 (Away Team) assists Player29 (Away Team).  
-Player8 (Home Team) attempts a through ball.  
-Player9 (Home Team) is offside for the Home Team.  
+Player29 from the Away Team takes a right-footed shot from outside the box.  
+The shot by Player29 from the Away Team narrowly misses.  
+Player23 from the Away Team assists Player29 from the Away Team after a corner.  
+Player6 from the Home Team is down with an injury.  
+The injury causes a delay in the match.  
+The delay in the match is finished.  
+The teams are prepared to resume play.  
+Player28 from the Away Team earns a free kick.  
+Player28 from the Away Team is fouled by Player8 from the Home Team on the left wing.  
+Player20 from the Away Team is injured.  
+Player20 from the Away Team causes a delay in the match.  
+The delay caused by Player20's injury has ended.  
+The teams are prepared to resume play.  
+Player26 from the Away Team takes a shot from outside the box.  
+The shot by Player26 from the Away Team is saved in the middle of the goal.  
+Player20 from the Away Team commits a foul.  
+Player7 from the Home Team wins a free kick in their own defensive half.  
+Player21 from the Away Team earns a free kick in their own half.  
+Player9 from the Home Team commits a foul.  
+Player20 from the Away Team attempts a pass to Player28 from the Away Team.  
+Player28 from the Away Team is offside.  
+Player7 from the Home Team takes a right-footed shot from the center of the box.  
+The shot by Player7 from the Home Team is blocked.  
+Player11 from the Home Team assists Player7 from the Home Team.  
+Player11 from the Home Team takes a header from the center of the box.  
+The header by Player11 from the Home Team misses to the left.  
+Player2 from the Home Team provides a cross to Player11 from the Home Team.  
+Player22 from the Away Team commits a foul.  
+Player11 from the Home Team earns a free kick in the opponent's half.  
+Player27 from the Away Team takes a shot from the left side of the box.  
+The shot by Player27 from the Away Team misses the target.  
+Player22 from the Away Team assists Player27 from the Away Team.  
+Player25 from the Away Team earns a free kick in the opponent's half.  
+Player11 from the Home Team commits a foul.  
+Player7 from the Home Team takes a shot from the center of the box.  
+The shot by Player7 from the Home Team is blocked.  
+Player28 from the Away Team earns a free kick in their own half.  
+Player10 from the Home Team fouls Player28 from the Away Team.  
+Player20 from the Away Team is injured.  
+Player20 from the Away Team causes a delay in the match.  
+The delay caused by Player20's injury has ended.  
+The teams are prepared to resume play.  
+Player11 from the Home Team takes a shot from distance.  
+The shot by Player11 from the Home Team goes high and wide to the right.  
+Player10 from the Home Team assists Player11 from the Home Team.  
+Player22 from the Away Team commits a foul.  
+Player7 from the Home Team earns a free kick in the opponent's half.  
+Player6 from the Home Team takes a right-footed shot from the right side of the box.  
+The shot by Player6 from the Home Team misses the goal.  
+Player11 from the Home Team assists Player6 from the Home Team with a cross after a set piece.  
+Player22 from the Away Team earns a free kick in the attacking half.  
+Player7 from the Home Team commits a foul.  
+Player29 from the Away Team commits a foul.  
+Player11 from the Home Team wins a free kick in the attacking half.  
+Player26 from the Away Team takes a shot from outside the box.  
+The shot by Player26 from the Away Team is saved in the top center of the goal.  
+Player21 from the Away Team assists Player26 from the Away Team.  
 The Away Team earns a corner kick.  
-Player26 (Away Team) receives a yellow card.  
-The Home Team finishes the second half with a score of 1.  
-The Away Team finishes the second half with a score of 2.  
-The game is over.  
-The Home Team scores 1 goal.  
-The Away Team scores 2 goals.
+Player21 from the Away Team earns a free kick on the left side of the field.  
+Player11 from the Home Team commits a foul.  
+Player29 from the Away Team takes a shot from the center of the box.  
+The shot by Player29 from the Away Team is blocked by a defender.  
+Player28 from the Away Team sets up Player29 from the Away Team.  
+Player11 from the Home Team takes a shot from outside the box with his left foot.  
+The shot by Player11 from the Home Team is blocked.  
+Player9 from the Home Team assists Player11 from the Home Team.  
+The Home Team is awarded a corner kick.  
+The Home Team earns a corner kick.  
+Player5 from the Home Team attempts a pass to Player32 from the Away Team.  
+Player7 from the Home Team is offside.  
+Offside is called against the Home Team.  
+The score is tied at 0-0 between the Home Team and the Away Team at the end of the first half.  
+The second half begins with the score tied at 0-0 between the Home Team and the Away Team.  
+Player21 from the Away Team earns a free kick in their own half.  
+Player11 from the Home Team fouls Player21 from the Away Team.  
+Player11 from the Home Team receives a yellow card for a foul on Player32 from the Away Team.  
+Player6 from the Home Team takes a left-footed shot from the center of the box.  
+Player9 from the Home Team assists Player6 from the Home Team with a headed pass.  
+The shot by Player6 from the Home Team is blocked.  
+The Home Team obtains a corner kick.  
+Player5 from the Home Team takes a shot from close range.  
+The shot by Player5 from the Home Team is blocked.  
+Player9 from the Home Team takes a right-footed shot from the left side of the six-yard box.  
+The shot by Player9 from the Home Team is saved in the middle of the goal.  
+Player28 from the Away Team earns a free kick on the left side of the field.  
+Player2 from the Home Team commits a foul.  
+Player25 from the Away Team attempts a through pass to Player28 from the Away Team.  
+Player28 from the Away Team is offside.  
+The Home Team wins a corner kick.  
+The Away Team earns a corner kick.  
+Player8 from the Home Team receives a yellow card.  
+Player31 from the Away Team falls to the ground.  
+Player31 from the Away Team appears to intentionally dive.  
+Player31 from the Away Team receives a yellow card.  
+The Home Team earns a corner kick.  
+Player28 from the Away Team earns a free kick in their own half.  
+Player12 from the Home Team commits a foul.  
+The Away Team earns a corner kick.  
+Player27 from the Away Team scores with a close-range header.  
+The Away Team leads 1-0 over the Home Team.  
+Player14 from the Home Team attempts a long-range shot with his right foot.  
+Player14 from the Home Team's shot is high and wide to the right.  
+Player11 from the Home Team assists Player14 from the Home Team.  
+Player31 from the Away Team commits a foul.  
+Player31 from the Away Team fouls Player12 from the Home Team.  
+Player12 from the Home Team is awarded a free kick in their own defensive half.  
+The Away Team wins a corner kick.  
+The Away Team earns a corner kick.  
+Player22 from the Away Team attempts a pass to Player27 from the Away Team.  
+Player27 from the Away Team is offside.  
+Player20 from the Away Team attempts a pass to Player27 from the Away Team.  
+Player27 from the Away Team is offside.  
+Player26 from the Away Team takes a left-footed shot from the center of the box.  
+The shot by Player26 from the Away Team misses the target.  
+Player31 from the Away Team assists Player26 from the Away Team.  
+Player31 from the Away Team scores with a left-footed shot from the center of the box.  
+Player28 from the Away Team assists Player31 from the Away Team.  
+The Away Team leads 3-0 against the Home Team.  
+Player31 from the Away Team commits a foul.  
+Player31 from the Away Team fouls Player9 from the Home Team.  
+Player9 from the Home Team earns a free kick on the left wing.  
+Player9 from the Home Team has a set piece opportunity.  
+Player20 from the Away Team earns a free kick on the right side of the field.  
+Player12 from the Home Team commits a foul.  
+Player12 from the Home Team receives a yellow card for a foul on Player32 from the Away Team.  
+Player26 from the Away Team attempts a pass to Player32 from the Away Team.  
+Player27 from the Away Team is caught offside.  
+Offside is called against the Away Team.  
+Player21 from the Away Team earns a free kick in their own half.  
+Player14 from the Home Team commits a foul.  
+Player26 from the Away Team commits a foul.  
+Player9 from the Home Team wins a free kick on the left wing.  
+Player15 from the Home Team wins a free kick in the defensive half.  
+Player11 from the Home Team takes a close left-footed shot from the center of the box.  
+The shot by Player11 from the Home Team narrowly misses the top left corner.  
+Player7 from the Home Team assists Player11 from the Home Team.  
+The Home Team finishes the second half with a score of 0.  
+The Away Team finishes the second half with a score of 3.  
+The Home Team loses to the Away Team by three goals.

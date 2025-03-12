@@ -1,0 +1,37 @@
+To create the summary table, we need to extract the relevant statistics from the text. Let's break down the statistics:
+
+1. **Goals**: 
+   - Home Team: 3 goals (Player3, Player7, Player9)
+   - Away Team: 3 goals (Own goal by Player5(Home Team), Player28, Player24)
+
+2. **Red Cards**: 
+   - None mentioned.
+
+3. **Fouls**: 
+   - Home Team: Player5, Player11, Player6, Player2, Player4, Player17, Player15, Player13, Player9, Player2 (10 fouls)
+   - Away Team: Player25, Player29 (multiple), Player28, Player24, Player23, Player27 (7 fouls)
+
+4. **Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts)**: 
+   - Home Team: 
+     - Goals: 3
+     - Saved: Player10 (outside box), Player28 (header)
+     - Blocked: Player10 (outside box), Player9 (left side of box), Player27 (outside box), Player20 (outside box)
+     - Missed: Player8 (left side), Player11 (header), Player27 (outside box), Player31 (high), Player24 (high), Player23 (header), Player17 (left side)
+     - Total Shots = 3 goals + 2 saved + 4 blocked + 5 missed = 14
+   - Away Team:
+     - Goals: 3
+     - Saved: Player24 (outside box), Player28 (header)
+     - Blocked: Player29 (outside box), Player27 (outside box), Player20 (outside box)
+     - Missed: Player29 (right-footed), Player24 (center), Player31 (header), Player23 (header)
+     - Total Shots = 3 goals + 2 saved + 3 blocked + 4 missed = 12
+
+5. **Yellow Cards**: 
+   - Home Team: Player2, Player13
+   - Away Team: Player28, Player23, Player20, Player24
+
+Now, let's construct the table.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Yellow Cards | <NEWLINE>
+| Home Team  | 3     | 0         | 10    | 14    | 2            | <NEWLINE>
+| Away Team  | 3     | 0         | 7     | 12    | 4            | <NEWLINE>

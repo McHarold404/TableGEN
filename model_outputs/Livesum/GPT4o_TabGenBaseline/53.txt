@@ -1,0 +1,30 @@
+To generate a table with all the important statistics of the game, we need to identify and count the occurrences of each relevant event for both teams. Let's define the table schema first and then fill it with the data extracted from the live text.
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+
+Now, let's process the text to fill in the table:
+
+1. **Goals**:
+   - Home Team: 1 (Player12 scores)
+   - Away Team: 0
+
+2. **Red Cards**:
+   - No red cards were mentioned for either team.
+
+3. **Fouls**:
+   - Home Team: 9 fouls (Player9, Player6, Player8, Player2, Player3, Player7, Player11, Player2, Player2)
+   - Away Team: 11 fouls (Player25, Player24, Player26, Player23, Player22, Player28, Player24, Player25, Player28, Player27, Player25)
+
+4. **Free Kicks**:
+   - Home Team: 12 free kicks (Player11, Player5, Player6, Player9, Player5, Player9, Player2, Player5, Player3, Player9, Player2, Player9)
+   - Away Team: 8 free kicks (Player22, Player27, Player32, Player29, Player25, Player27, Player33, Player69)
+
+5. **Shots**:
+   - Home Team: 23 shots (Player7, Player10, Player10, Player6, Player9, Player5, Player10, Player9, Player11, Player8, Player9, Player8, Player10, Player6, Player8, Player10, Player12, Player11, Player12, Player11, Player9, Player4)
+   - Away Team: 6 shots (Player29, Player24, Player22, Player29, Player21, Player25)
+
+### Final Table:
+| Team | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+| Home Team | 1 | 0 | 9 | 12 | 23 | <NEWLINE>
+| Away Team | 0 | 0 | 11 | 8 | 6 | <NEWLINE>

@@ -2,6 +2,8 @@ import os
 from datetime import datetime
 import json
 from groq import Groq
+from dotenv import load_dotenv
+from dotenv import *
 
 class LlamaBot:
     def __init__(self, api_key=None, model="llama3-70b-8192", 
@@ -155,36 +157,73 @@ class LlamaBot:
         return results
        
 
-def ask_llama(text, prompt_path=None, api_key=""):
-    # Check if a prompt path is provided and read the prompt text
-    if prompt_path and text:
-        with open(prompt_path, 'r') as file:
-            prompt = file.read().strip()
+import os
+from dotenv import load_dotenv
+import requests
 
+def load_api_key(key):
+    """Load the API key from the environment variable."""
+    load_dotenv()
+    if key == 1:
+        return os.getenv("NOVITA_API_KEY_1")
     else:
-        return ("Error: Prompt or text missing")
-    # Initialize the Llama API client with the provided API key
-    client = Groq(api_key=api_key)  # Ensure Llama client is properly initialized
-
-    # Model configuration - replace 'llama-model-name' with the specific model if needed
-    model_name = "llama3-70b-8192"  # Replace with the actual Llama model identifier
-    
+        return os.getenv("NOVITA_API_KEY_2")
+def load_prompt(prompt_path):
+    """Load the prompt text from the file."""
     try:
-        # Send the prompt to the model
-        chat_completion = client.chat.completions.create(
-            messages=[
-                {
-                    "role" : "system",
-                    "content" : prompt,
-                },
-                {
-                    "role": "user",
-                    "content": text,
-                }
-                
-            ],model=model_name, temperature=0.2,top_p=0.2)
-        # Return the response content
-        return chat_completion.choices[0].message.content
+        with open(prompt_path, 'r') as file:
+            return file.read().strip()
+    except FileNotFoundError:
+        raise ValueError(f"Prompt file not found: {prompt_path}")
 
-    except Exception as e:
-        return f"An error occurred: {str(e)}"
+def ask_llama(text, key, prompt_path=None):
+    """Send a prompt and text to the Llama 3.3-70B model and return the response."""
+    if not text:
+        return "Error: Text missing"
+
+    if prompt_path:
+        prompt = load_prompt(prompt_path)
+    else:
+        return "Error: Prompt or text missing"
+
+    api_key = load_api_key(key = key)
+    if not api_key:
+        return "Error: API key not found"
+
+    # Define the API endpoint and header
+    
+    from openai import OpenAI
+
+    client = OpenAI(
+        base_url="https://api.novita.ai/v3/openai",
+        # Get the Novita AI API Key by referring to: https://novita.ai/docs/get-started/quickstart.html#_2-manage-api-key.
+        api_key= api_key
+    )
+
+    model = "meta-llama/llama-3.1-8b-instruct"
+    stream = False
+    max_tokens = 10000
+
+    chat_completion_res = client.chat.completions.create(
+        model=model,
+        messages=[
+            {
+                "role": "system",
+                "content": prompt,
+            },
+            {
+                "role": "user",
+                "content": text,
+            }
+        ],
+        stream=stream,
+        max_tokens=max_tokens,
+        top_p= 0.1,
+        temperature= 0.1
+    )
+    return chat_completion_res.choices[0].message.content
+
+
+
+
+ 

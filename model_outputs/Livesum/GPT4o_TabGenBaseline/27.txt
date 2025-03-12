@@ -1,0 +1,57 @@
+To generate the final table, we first need to define the table schema based on the statistics mentioned in the live text. The important statistics include Goals, Red Cards, and Fouls. 
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Shots | Free Kicks | Yellow Cards | Corner Kicks | Offsides | Saved Attempts | Blocked Attempts | Missed Attempts | <NEWLINE>
+
+Now, let's process the text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 0
+   - Away Team: 2 (Player28, Player26)
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls:**
+   - Home Team: 10 (Player6 x2, Player3 x2, Player9, Player4, Player5, Player16, Player15)
+   - Away Team: 10 (Player23 x2, Player29, Player19 x2, Player28 x2, Player22, Player25, Player24, Player27, Player34)
+
+4. **Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts):**
+   - Home Team: 4 (Player7 x3, Player3, Player4)
+   - Away Team: 14 (Player28 x2, Player26 x2, Player27 x3, Player23 x2, Player21, Player24, Player25, Player36)
+
+5. **Free Kicks:**
+   - Home Team: 9 (Player9, Player5 x2, Player3 x2, Player4, Player2, Player16, Player14, Player15)
+   - Away Team: 10 (Player27 x2, Player28, Player25, Player36, Player22, Player29, Player24, Player34, Player19)
+
+6. **Yellow Cards:**
+   - Home Team: 3 (Player6, Player5, Player3)
+   - Away Team: 1 (Player20)
+
+7. **Corner Kicks:**
+   - Home Team: 4
+   - Away Team: 9
+
+8. **Offsides:**
+   - Home Team: 3 (Player3, Player9, Player16)
+   - Away Team: 0
+
+9. **Saved Attempts:**
+   - Home Team: 2 (Player7 x2)
+   - Away Team: 4 (Player28, Player27, Player26, Player25)
+
+10. **Blocked Attempts:**
+    - Home Team: 0
+    - Away Team: 3 (Player23, Player26, Player36)
+
+11. **Missed Attempts:**
+    - Home Team: 1 (Player3)
+    - Away Team: 7 (Player27, Player24, Player23 x2, Player28, Player21, Player26)
+
+Now, let's compile these into the final table:
+
+### Final Table:
+| Team | Goals | Red Cards | Fouls | Shots | Free Kicks | Yellow Cards | Corner Kicks | Offsides | Saved Attempts | Blocked Attempts | Missed Attempts | <NEWLINE>
+| Home Team | 0 | 0 | 10 | 4 | 9 | 3 | 4 | 3 | 2 | 0 | 1 | <NEWLINE>
+| Away Team | 2 | 0 | 10 | 14 | 10 | 1 | 9 | 0 | 4 | 3 | 7 | <NEWLINE>

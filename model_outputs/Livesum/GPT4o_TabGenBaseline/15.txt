@@ -1,0 +1,29 @@
+To generate a summary table of the game statistics, we need to identify and count the relevant events from the live text. The important statistics to include in the table are:
+
+1. Goals
+2. Red Cards
+3. Fouls
+4. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Now, let's extract and count these statistics from the text:
+
+- **Goals:**
+  - Home Team: 0
+  - Away Team: 3 (Player24, Player28, Player34)
+
+- **Red Cards:**
+  - Home Team: 0
+  - Away Team: 0
+
+- **Fouls (including handball and dangerous play):**
+  - Home Team: 12 (Player11, Player8, Player4, Player5, Player10, Player6, Player9, Player17)
+  - Away Team: 12 (Player26, Player20, Player29, Player27, Player21)
+
+- **Shots (including goals, saved attempts, blocked attempts, and missed attempts):**
+  - Home Team: 15 (Player11, Player7, Player9, Player10, Player4, Player6, Player17)
+  - Away Team: 15 (Player26, Player29, Player24, Player28, Player20, Player25, Player34)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 12    | 15    | <NEWLINE>
+| Away Team  | 3     | 0         | 12    | 15    | <NEWLINE>

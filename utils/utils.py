@@ -57,49 +57,6 @@ def generate_output_lines(output_path="", start_line=None, end_line=None):
 
 
 
-def read_file(file_path):
-    """
-    Reads a file and returns a dictionary if it's a JSON file,
-    or a list of lines if it's a text file.
-    :param file_path: Path to the file.
-    :return: Dictionary (for JSON) or list of strings (for text).
-    """
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"The file {file_path} does not exist.")
-
-    if file_path.endswith('.json'):
-        # Read and return JSON data as a dictionary
-        with open(file_path, 'r') as file:
-            return json.load(file)
-    else:
-        # Read and return text data as a list of lines
-        with open(file_path, 'r') as file:
-            return file.readlines()
-    
-def write_file(file_path, data):
-    """
-    Writes data to a file. If it's a JSON file, writes data as JSON. 
-    If it's a text file, writes data as lines.
-    :param file_path: Path to the file.
-    :param data: Dictionary for JSON, or list of strings for text files.
-    """
-    file_extension = os.path.splitext(file_path)[1].lower()
-
-    if file_extension == '.json':
-        # Write data as JSON
-        if not isinstance(data, (dict, list)):
-            raise ValueError("For JSON files, data must be a dictionary or list.")
-        with open(file_path, 'w') as file:
-            json.dump(data, file, indent=4)
-    elif file_extension == '.txt':
-        # Write data as text lines
-        if not isinstance(data, list):
-            raise ValueError("For text files, data must be a list of strings.")
-        with open(file_path, 'w') as file:
-            file.writelines(data)
-    else:
-        raise ValueError(f"Unsupported file format: {file_extension}")
-
 
 import pandas as pd
 
@@ -205,3 +162,25 @@ def compare_values(str1: str, str2: str):
                 mismatches.append((row, col, value1, value2))
     
     return mismatches
+
+
+def read_file(file_path, how = "full"):
+    with open(file_path) as f:
+        if how == "full":
+            return f.read()
+        elif how == "line":
+            return f.readlines()
+        else:
+            raise ValueError("Specify how you want to read the file")
+
+def write_to_file(content, file_path):
+    try:
+        with open(file_path,"w") as f:
+            f.write(content)
+        print("File saved ")
+    except Exception as e:
+        print(e)
+        raise ValueError("Incorrect path or contents")
+    return 
+        
+    

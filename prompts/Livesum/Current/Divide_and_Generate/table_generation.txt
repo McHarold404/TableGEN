@@ -1,0 +1,5 @@
+Summarize the contents of the text below in a table.
+{{ input_text }}
+Use the following format.
+Caption: A caption for the table you generate. Can be multiple lines.
+Table: A table in markdown format.

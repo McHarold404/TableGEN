@@ -1,0 +1,31 @@
+To generate the final table, we need to extract the relevant statistics from the text. Let's break down the key statistics:
+
+1. **Goals**: 
+   - Home Team: 1 goal (Player13)
+   - Away Team: 2 goals (Player27 and Player29)
+
+2. **Red Cards**: 
+   - No red cards mentioned for either team.
+
+3. **Fouls**: 
+   - Home Team: 13 fouls (Player9, Player8, Player11, Player7, Player10, Player4, Player3, Player17, Player11(handball))
+   - Away Team: 13 fouls (Player26, Player20(handball), Player24(2 fouls), Player29(2 fouls), Player27(4 fouls), Player31, Player28)
+
+4. **Shots** (including goals, saved attempts, blocked attempts, missed attempts):
+   - Home Team: 19 shots (Player8(2), Player2(2), Player6, Player7, Player3(7), Player10(4), Player11(3), Player13, Player12, Player17)
+   - Away Team: 13 shots (Player28, Player27(4), Player22, Player29(3), Player25(2), Player31)
+
+5. **Yellow Cards**: 
+   - Home Team: 2 yellow cards (Player3, Player11)
+   - Away Team: 4 yellow cards (Player26, Player28, Player24, Player19)
+
+6. **Free Kicks** (including penalties):
+   - Home Team: 16 free kicks (Player9, Player10(2), Player4, Player11(2), Player6, Player7, Player12(2), Player13, Player17, Player3, Player11(handball), Player4, Player12, Player7)
+   - Away Team: 8 free kicks (Player28, Player25, Player29, Player27(3), Player26)
+
+Now, let's compile this information into the final table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Yellow Cards | Free Kicks | <NEWLINE>
+| Home Team  | 1     | 0         | 13    | 19    | 2            | 16         | <NEWLINE>
+| Away Team  | 2     | 0         | 13    | 13    | 4            | 8          | <NEWLINE>

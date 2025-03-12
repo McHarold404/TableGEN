@@ -1,0 +1,31 @@
+To generate the final table, we need to extract and sum up the statistics for both the Home Team and the Away Team based on the provided live text. Here's how we can break it down:
+
+1. **Goals**: Count the number of goals scored by each team.
+2. **Red Cards**: Count the number of red cards received by each team.
+3. **Fouls**: Count the number of fouls committed by each team, including handball and dangerous play.
+4. **Shots**: Count the total number of shots, including goals, saved attempts, blocked attempts, and missed attempts.
+
+Let's process the text to fill in these statistics:
+
+- **Goals**:
+  - Home Team: 2 (Player11 scores twice)
+  - Away Team: 2 (Player26 and Player28 score)
+
+- **Red Cards**: 
+  - Home Team: 0
+  - Away Team: 0
+
+- **Fouls**:
+  - Home Team: 9 (Player11, Player7 twice, Player10 twice, Player15, Player17)
+  - Away Team: 11 (Player29, Player27, Player20, Player25, Player23 twice, Player24, Player35, Player21)
+
+- **Shots**:
+  - Home Team: 9 (Player8 blocked, Player7 saved, Player11 goal, Player11 missed, Player10 missed twice, Player5 missed, Player3 blocked, Player11 goal)
+  - Away Team: 8 (Player28 missed, Player24 blocked, Player26 goal, Player28 blocked, Player28 missed, Player28 goal, Player29 blocked)
+
+Now, let's compile this information into the final table format.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 2     | 0         | 9     | 9     | <NEWLINE>
+| Away Team  | 2     | 0         | 11    | 8     | <NEWLINE>

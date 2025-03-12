@@ -1,0 +1,28 @@
+To generate the final table, we need to extract and count all the relevant statistics from the provided text. Here is the step-by-step breakdown of the statistics:
+
+1. **Goals:**
+   - Home Team: 0
+   - Away Team: 1 (Player28 scored)
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls:**
+   - Home Team: 15 (Player4, Player5, Player6, Player9, Player10, Player12 committed fouls multiple times)
+   - Away Team: 13 (Player28, Player23, Player29, Player20, Player22, Player26, Player25, Player32 committed fouls)
+
+4. **Shots:**
+   - Home Team: 11 (Player10, Player11, Player9, Player3, Player12, Player5, Player14 had shots)
+   - Away Team: 7 (Player22, Player28, Player26, Player32, Player36 had shots)
+
+5. **Free Kicks:**
+   - Home Team: 14 (Earned by Player2, Player3, Player4, Player5, Player7, Player9, Player11)
+   - Away Team: 13 (Earned by Player20, Player22, Player23, Player24, Player25, Player26, Player27, Player28, Player29, Player36)
+
+Now, we can create the final table with the extracted statistics:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | <NEWLINE>
+| Home Team  | 0     | 0         | 15    | 11    | 14         | <NEWLINE>
+| Away Team  | 1     | 0         | 13    | 7     | 13         | <NEWLINE>

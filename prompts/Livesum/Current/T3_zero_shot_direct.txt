@@ -1,0 +1,23 @@
+According to the live text, please generate a summary table counting the number of events of both teams.
+Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card. Penalty is also considered as free kicks.
+
+Let’s do the following things:
+1. Extract all the relevant events from the following
+passage in (player name, team name, event) or (team
+name, event) format.
+2. Integrate these tuples.
+3. Output a table with 2 rows in CSV format given below. 
+
+**Output Format**:
+
+### Final Table:
+| Team | <Column1> | ... | 
+| Home Team | <Cell Value for (Home Team, Column Header 1)> | Value2 | ... | 
+| Away Team |  <Cell Value for (Away Team, Column Header 1)> | ... |
+
+Table name leads with a ###, followed by the table where values are separated by the symbol '|' and rows are separated by '\n'.
+Use '|' as the only separator/delimiter.
+Empty cell values are filled as "None".
+
+Perform these tasks and return the final table in the specified format.
+Pay special attention to the structural integrity. Ensure every row contains exactly the same number of cells as the provided column headers.

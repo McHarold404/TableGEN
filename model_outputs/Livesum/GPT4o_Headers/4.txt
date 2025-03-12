@@ -1,0 +1,22 @@
+To summarize the key events of the football match, we need to identify all relevant data points mentioned in the commentary and create a schema with appropriate column headers. Here is the schema based on the commentary provided:
+
+```json
+{
+  "row_headers": ["Home Team", "Away Team"],
+  "column_headers": [
+    "Team",
+    "Goals Scored",
+    "Fouls Committed",
+    "Yellow Cards",
+    "Free Kicks Earned",
+    "Corner Kicks",
+    "Shots on Target",
+    "Shots Off Target",
+    "Shots Blocked",
+    "Assists",
+    "Penalties Awarded",
+    "Penalties Scored",
+    "Offsides"
+  ]
+}
+```

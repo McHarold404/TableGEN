@@ -1,0 +1,57 @@
+To create the summary table, let's first define the table schema based on the important statistics from the live text:
+
+### Table Schema:
+- Team
+- Goals
+- Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+- Red Cards
+- Yellow Cards
+- Fouls (including handball and dangerous play)
+- Offsides
+- Corner Kicks
+- Free Kicks (including penalties)
+
+Now, let's process the live text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 0
+   - Away Team: 1 (Player28 scored)
+
+2. **Shots:**
+   - Home Team: 
+     - Saved: 2 (Player6, Player8)
+     - Blocked: 9 (Player8, Player6, Player11, Player14, Player14, Player14, Player11, Player8, Player5)
+     - Missed: 3 (Player8, Player14, Player11)
+   - Away Team: 
+     - Saved: 1 (Player29)
+     - Blocked: 2 (Player28, Player27)
+     - Missed: 4 (Player26, Player20, Player27, Player29)
+
+3. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+4. **Yellow Cards:**
+   - Home Team: 2 (Player18, Player8)
+   - Away Team: 1 (Player20)
+
+5. **Fouls:**
+   - Home Team: 11 (Player9, Player3, Player8, Player19, Player8, Player18, Player8, Player5, Player16, Player8, Player18)
+   - Away Team: 6 (Player25, Player20, Player27, Player24, Player27, Player34)
+
+6. **Offsides:**
+   - Home Team: 1 (Player11)
+   - Away Team: 2 (Player28, Player21)
+
+7. **Corner Kicks:**
+   - Home Team: 10
+   - Away Team: 3
+
+8. **Free Kicks:**
+   - Home Team: 10
+   - Away Team: 10
+
+### Final Table:
+| Team       | Goals | Shots | Red Cards | Yellow Cards | Fouls | Offsides | Corner Kicks | Free Kicks | <NEWLINE>
+| Home Team  | 0     | 14    | 0         | 2            | 11    | 1        | 10           | 10         | <NEWLINE>
+| Away Team  | 1     | 7     | 0         | 1            | 6     | 2        | 3            | 10         | <NEWLINE>

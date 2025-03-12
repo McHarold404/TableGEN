@@ -1,0 +1,18 @@
+According to the live text, please count the number of: 1.goals, 2. shots, 3.fouls, 4.yellow cards, 5.red cards, 6.corner kicks, 7.free kicks, and 8.offsides for each team. Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card.
+Penalty is also considered as free kicks.
+
+Output Format and Instructions:
+1. Keep the Home Team and Away Team as row headers in the table.
+2. The first row of the table should contain the headers.
+3. Use "|" as a separator between cells.
+4. Use "<NEWLINE>" literal at the end of every row.
+5. Return the final table with the heading ### Final Table
+
+Here is a sample output format:
+
+### Final Table:
+| Team | Goals | Red Cards | Fouls | Yellow Cards | Shots Taken | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 0 | 13 | 4 | 11 | 9 | 6 | 1 | <NEWLINE>
+| Away Team | 3 | 0 | 9 | 1 | 11 | 13 | 8 | 7 | <NEWLINE>
+
+Please output a table with 2 rows in the specified CSV format according to the following live text:

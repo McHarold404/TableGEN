@@ -1,0 +1,30 @@
+To generate the final table with the important statistics of the game, we need to parse through the provided text and extract relevant information. Here are the statistics we will track:
+
+1. Goals
+2. Red Cards
+3. Fouls
+4. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+### Final Table:
+
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+|------------|-------|-----------|-------|-------| <NEWLINE>
+| Home Team  | 3     | 0         | 14    | 12    | <NEWLINE>
+| Away Team  | 1     | 0         | 16    | 15    | <NEWLINE>
+
+Let's break down how these numbers were calculated:
+
+- **Goals**: 
+  - Home Team: 3 goals (Player11 scored twice, Player9 scored once)
+  - Away Team: 1 goal (Player29 scored once)
+
+- **Red Cards**: 
+  - No red cards were issued to either team.
+
+- **Fouls**: 
+  - Home Team: 14 fouls (committed by Player6, Player10, Player8, Player4, Player7, Player2, Player9, Player3, Player11, and Player6 again)
+  - Away Team: 16 fouls (committed by Player25, Player26, Player22, Player21, Player24, Player31, and Player26 multiple times)
+
+- **Shots**: 
+  - Home Team: 12 shots (including goals, saved attempts by Player10, Player4, Player9, and Player11, blocked attempts by Player4, Player9, and Player7, and missed attempts by Player9, Player7, and Player13)
+  - Away Team: 15 shots (including the goal, blocked attempts by Player26 and Player22, saved attempts by Player22 and Player26, and missed attempts by Player27, Player28, Player26, and Player34)

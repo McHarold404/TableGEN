@@ -1,0 +1,51 @@
+To create a summary table of the game statistics, we need to identify and categorize all relevant events from the live text. Let's outline the table schema first and then fill it with the appropriate data.
+
+### Table Schema:
+| Team | Goals | Red Cards | Yellow Cards | Fouls | Offsides | Shots | Free Kicks | Corner Kicks | Saved Attempts | Blocked Attempts | Missed Attempts | <NEWLINE>
+
+Now, let's extract and count the relevant statistics from the text:
+
+1. **Goals:**
+   - Home Team: 0
+   - Away Team: 1 (Player28 scored)
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Yellow Cards:**
+   - Home Team: 2 (Player15, Player16)
+   - Away Team: 1 (Player23)
+
+4. **Fouls:**
+   - Home Team: 12 (Player7 - 4 fouls, Player10, Player15, Player2, Player16)
+   - Away Team: 11 (Player29, Player28, Player24, Player27 - 2 fouls, Player22, Player25, Player23 - 2 fouls, Player21)
+
+5. **Offsides:**
+   - Home Team: 1 (Player2)
+   - Away Team: 5 (Player26, Player27, Player29 - 3 times)
+
+6. **Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts):**
+   - Home Team: 8
+     - Saved Attempts: 3 (Player10, Player11 - 2 times)
+     - Blocked Attempts: 2 (Player3, Player14)
+     - Missed Attempts: 3 (Player9, Player11 - 2 times)
+   - Away Team: 13
+     - Saved Attempts: 4 (Player27 - 2 times, Player28, Player29)
+     - Blocked Attempts: 1 (Player27)
+     - Missed Attempts: 7 (Player24, Player27, Player29, Player23 - 3 times, Player28)
+
+7. **Free Kicks:**
+   - Home Team: 12 (Player7 - 3 times, Player8, Player3 - 2 times, Player6 - 2 times, Player11, Player9, Player14, Player13)
+   - Away Team: 8 (Player24, Player27, Player25, Player22, Player33, Player31, Player21, Player23)
+
+8. **Corner Kicks:**
+   - Home Team: 3
+   - Away Team: 1
+
+Now, let's fill the table with this information:
+
+### Final Table:
+| Team | Goals | Red Cards | Yellow Cards | Fouls | Offsides | Shots | Free Kicks | Corner Kicks | Saved Attempts | Blocked Attempts | Missed Attempts | <NEWLINE>
+| Home Team | 0 | 0 | 2 | 12 | 1 | 8 | 12 | 3 | 3 | 2 | 3 | <NEWLINE>
+| Away Team | 1 | 0 | 1 | 11 | 5 | 13 | 8 | 1 | 4 | 1 | 7 | <NEWLINE>

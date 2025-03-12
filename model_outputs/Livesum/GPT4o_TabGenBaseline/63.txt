@@ -1,0 +1,32 @@
+To create a summary table of the game statistics, we need to identify and count the relevant actions from the provided text. Here's the step-by-step breakdown of the statistics:
+
+1. **Goals**: 
+   - Home Team: 1 (Player10 scored)
+   - Away Team: 0
+
+2. **Red Cards**: 
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls** (including handball and dangerous play):
+   - Home Team: 15 (Player10 x5, Player2, Player8 x2, Player11, Player6, Player9 x2, Player12)
+   - Away Team: 14 (Player27, Player26, Player24 x2, Player28, Player29, Player20, Player33)
+
+4. **Shots** (includes goals, saved attempts, blocked attempts, and missed attempts):
+   - Home Team: 8 (Player11 x3, Player2, Player10, Player6, Player12)
+   - Away Team: 12 (Player26 x3, Player23, Player24, Player27 x3, Player29, Player28, Player34, Player33)
+
+5. **Free Kicks** (including penalties):
+   - Home Team: 10 (Player5, Player4 x2, Player10 x3, Player9 x2, Player6)
+   - Away Team: 11 (Player28 x2, Player24 x2, Player23, Player19, Player25, Player20, Player34, Player29)
+
+6. **Yellow Cards**:
+   - Home Team: 1 (Player6)
+   - Away Team: 2 (Player26, Player29)
+
+Now, let's structure this information into a table format:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | Yellow Cards | <NEWLINE>
+| Home Team  | 1     | 0         | 15    | 8     | 10         | 1            | <NEWLINE>
+| Away Team  | 0     | 0         | 14    | 12    | 11         | 2            | <NEWLINE>

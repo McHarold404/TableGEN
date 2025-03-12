@@ -1,0 +1,33 @@
+To create a summary table of the game's statistics, we need to extract and categorize the relevant information from the text. Let's analyze the text step by step to gather the statistics for both teams.
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+
+### Extracted Statistics:
+
+1. **Goals:**
+   - Home Team: 4 (Player9, Player7, Player11, Player14)
+   - Away Team: 1 (Player29)
+
+2. **Red Cards:**
+   - No red cards mentioned.
+
+3. **Fouls:**
+   - Home Team: Player6, Player3 (twice), Player2, Player8, Player10, Player7, Player3, Player16
+   - Away Team: Player29 (twice for handball), Player20, Player26 (twice), Player21, Player24, Player32 (twice), Player28, Player30
+   - Total Fouls: Home Team: 8, Away Team: 11
+
+4. **Free Kicks:**
+   - Home Team: Earned by Player11 (twice), Player4, Player7, Player3 (twice), Player13
+   - Away Team: Earned by Player27, Player26 (twice), Player29, Player22, Player26
+   - Total Free Kicks: Home Team: 7, Away Team: 6
+
+5. **Shots:**
+   - Home Team: Player11 (three times), Player9, Player3 (twice), Player10 (four times), Player5, Player8 (three times), Player4, Player7 (four times), Player13 (twice), Player14
+   - Away Team: Player25 (twice), Player23, Player26, Player29 (twice), Player27 (twice), Player32
+   - Total Shots: Home Team: 18, Away Team: 10
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+| Home Team  | 4     | 0         | 8     | 7          | 18    | <NEWLINE>
+| Away Team  | 1     | 0         | 11    | 6          | 10    | <NEWLINE>

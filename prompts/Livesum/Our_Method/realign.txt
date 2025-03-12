@@ -1,0 +1,60 @@
+Given a table of a football game statistics, return a transformed table that contains the following row and columns headers:
+row_headers = [Home Team, Away Team],
+col_headers = [Team, Goals,  Shots,  Fouls,  Yellow Cards,  Red Cards,  Corner Kicks,  Free Kicks,  Offsides]
+
+Follow this algorithm to do the task:
+Step 0: Generate the table in markdown format.
+Step 1. Extract column headers for the given table.
+Step 2. Map all the columns that are directly available.
+Step 3. For the columns that are not directly available, try and infer them from the given table.  For eg. if the match stats table contains "Shots on Target", "Shots off target", sum these numbers to get the final table response. Note that the table might have overlapping information. For eg. if the given tables has columns "Shots", "Shots Blocked", "Shots on Target", directly use the "Shots" column as the other two ("Shots on Target","Shots Blocked") are a subset and would have already been included in the "Shots" column.
+4. If there is no column that can be mapped with the specified format, keep them as 0.
+
+Output Format and Instructions
+1. Keep the Home Team as the first and the Away Team as second row header in the table.
+2. The first row of the table should contain the headers.
+3. Use "|" as a separator between cells.
+4. Every row should be in a separate line
+5. Return the final output with the heading ### Final Table
+
+Here is an illustration:
+
+Given Table: 
+| Team | Goals | Shots | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Won | Penalties Awarded | Penalties Missed | Yellow Cards | Offsides | Corner Kicks | <NEWLINE>
+| Home Team | 0 | 13 | 2 | 7 | 3 | 11 | 15 | 0 | 0 | 1 | 1 | 3 | <NEWLINE>
+| Away Team | 0 | 6 | 3 | 1 | 2 | 17 | 10 | 1 | 1 | 1 | 1 | 2 | <NEWLINE>
+
+Step 0:
+Given Table: 
+| Team | Goals | Shots | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Won | Penalties Awarded | Penalties Missed | Yellow Cards | Red Cards | Offsides | Corner Kicks | <NEWLINE>
+| Home Team | 0 | 13 | 2 | 7 | 3 | 11 | 15 | 0 | 0 | 1 | 1 | 3 | <NEWLINE>
+| Away Team | 0 | 6 | 3 | 1 | 2 | 17 | 10 | 1 | 1 | 1 | 1 | 2 | <NEWLINE>
+
+Step 1:
+Columns of given table:
+Column headers: Team, Goal, Shots, Shots on Target, Shots off Target, Blocked Shots, Fouls Committed, Free Kicks Won, Penalties, Penalties Awarded, Penalties Missed, Yellow Cards, Offsides, Corner Kicks
+
+Step2:
+Mapping columns that are directly available:
+Team : Team
+Goal: Goals
+Shots: Shots ( note that is the shots column wasn't present in the original table, we would add shots on target, shots off target, blocked shots to infer the "Shots" column)
+Fouls : Fouls Committed
+Yellow Cards: Yellow Cards
+Corner Kicks: Corner Kicks
+Free Kicks : Free Kicks Won
+Offsides : Offsides
+
+Step 3:
+The only column left "Red Cards" hasn't been mapped but there is no column that can be matched with it. 
+
+Step4:
+Setting Red Cards column to 0 for both rows.
+
+### Final Table 
+| Team | Goals | Shots | Fouls | Free Kicks | Yellow Cards | Red Cards | Offsides | Corner Kicks | 
+| Home Team | 0 | 13 | 11 | 15 | 1 | 1 | 3 | 
+| Away Team | 0 | 6 | 17 | 10 | 1 | 1 | 2 | 
+
+
+Think step by step and return the final table in the exact specified output format with all the steps. The last step should return the final table with the heading ### Final Table:
+Verify before outputting: Before outputting the final table, check that every row has equal number of cell values. If not, correct the table and then return it.

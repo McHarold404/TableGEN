@@ -1,0 +1,34 @@
+To generate the final table, we need to extract and summarize the following statistics from the provided text: Goals, Red Cards, Fouls, Free Kicks, Shots, and Corner Kicks for both the Home Team and the Away Team. Let's break down the text and count each statistic:
+
+### Step-by-Step Analysis:
+
+1. **Goals:**
+   - Home Team: 4 goals (Player3, Player11 twice, Player8)
+   - Away Team: 0 goals
+
+2. **Red Cards:**
+   - Home Team: 0 red cards
+   - Away Team: 0 red cards
+
+3. **Fouls:**
+   - Home Team: 9 fouls (Player9 twice, Player11, Player4, Player5, Player7, Player8, Player18)
+   - Away Team: 9 fouls (Player25, Player24, Player31, Player36 twice, Player28 twice, Player23)
+
+4. **Free Kicks:**
+   - Home Team: 9 free kicks (resulting from fouls and offsides)
+   - Away Team: 8 free kicks (resulting from fouls and offsides)
+
+5. **Shots:**
+   - Home Team: 20 shots (including goals, blocked shots, saved shots, and missed attempts)
+   - Away Team: 10 shots (including blocked shots, saved shots, and missed attempts)
+
+6. **Corner Kicks:**
+   - Home Team: 10 corner kicks
+   - Away Team: 2 corner kicks
+
+### Final Table:
+
+| Team       | Goals | Red Cards | Fouls | Free Kicks | Shots | Corner Kicks | <NEWLINE>
+|------------|-------|-----------|-------|------------|-------|--------------| <NEWLINE>
+| Home Team  | 4     | 0         | 9     | 9          | 20    | 10           | <NEWLINE>
+| Away Team  | 0     | 0         | 9     | 8          | 10    | 2            | <NEWLINE>

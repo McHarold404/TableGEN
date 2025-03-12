@@ -1,0 +1,38 @@
+You are an expert at defining structural tables from a given live text. Your task is to understand and process each statement of this football match commentory and define the column headers of a table that can be used to summarise all the key events of the game. Follow the instructions given below to complete the task ensuring high accuracy.
+
+INSTRUCTIONS:
+You are given a set of statements which is a live commentory of the football game. You task is to create a schema that can capture all the important overall statistics for the two teams at the end of the game in the table.
+Process all the statements sequentially as they are given a sequential order, i.e (the nth statement occurs after the (n-1)th statement).
+The row headers would be fixed as the two teams (Home Team and Away Team). The columns headers will always contain (Team) under which, the Home Team and Away Team row headers will be placed.
+
+Your goals is to:
+Identify all attributes, entities, and data points mentioned, whether explicitly stated or implicitly implied.
+Determine all necessary row headers and column headers required to represent the data completely.
+The column headers are selected based on the attributes or data points associated with the actions or events carried out by the entities. 
+Do not include any actions or events in the column headers.
+The column headers should only include the values associated as a consequence of those actions or events.
+The headers should be concise and summarized i.e. keep the number of rows and columns as small as possible.
+
+ALGORITHM
+Initialise schema:
+{
+  "row_headers": ["Home Team", "Away Team"],
+  "column_headers": ["Team"]
+}
+For each statement in input:
+  Generate set of column headers required to represent stats in the statement: "column_header_1", "column_header_2".... etc.
+  Update column headers in schema state. (Add new headers if not present, update for better clarity) 
+  After processing all the statements and generating the schema, reiterate and clean the column headers to enhance clarity. Group similar headers together if necessary.
+
+Output Format:
+Provide the headers in a JSON format with two keys: `"row_headers"` and `"column_headers"`.
+Ensure the lists under each key are accurate and comprehensive.
+OUTPUT FORMAT EXAMPLE:
+
+{
+  "row_headers": ["Home Team", "Away Team"],
+  "column_headers": ["Team","Column Header 1", "..."]
+}
+
+Return the final schema in JSON format after processing every statement. Make sure to process all the statements without missing out on any information.
+

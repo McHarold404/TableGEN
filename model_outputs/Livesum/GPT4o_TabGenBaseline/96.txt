@@ -1,0 +1,24 @@
+To create the final table, we will first define the table schema and then extract the relevant statistics from the live text.
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Fouls
+- Shots
+
+Now, let's process the text to fill in the table:
+
+1. **Goals**: As per the text, both teams scored zero goals each.
+2. **Red Cards**: There are no mentions of red cards in the text.
+3. **Fouls**: 
+   - Home Team: Player6, Player7 (twice), Player11, Player10 (twice), Player2 (twice), Player8, Player16 committed fouls. Total = 10 fouls.
+   - Away Team: Player22, Player27 (twice), Player24, Player21, Player28 (twice), Player29, Player26, Player33 committed fouls. Total = 10 fouls.
+4. **Shots**: 
+   - Home Team: Player6 (twice), Player10, Player5, Player3, Player9, Player8, Player16, Player7, Player2 attempted shots. Total = 10 shots.
+   - Away Team: Player29 (four times), Player27 (six times), Player25 (twice), Player20, Player22, Player26 attempted shots. Total = 15 shots.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 10    | 10    | <NEWLINE>
+| Away Team  | 0     | 0         | 10    | 15    | <NEWLINE>

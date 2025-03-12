@@ -1,0 +1,30 @@
+To generate a table encapsulating all the important statistics of the game, we need to identify the key events and metrics from the live text. The following statistics are relevant based on the provided text:
+
+1. Goals
+2. Red Cards
+3. Fouls (including handball and dangerous play)
+4. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Let's process the text to fill in these statistics for both teams:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 3     | 0         | 10    | 16    | <NEWLINE>
+| Away Team  | 0     | 0         | 11    | 17    | <NEWLINE>
+
+**Explanation:**
+
+- **Goals:**
+  - Home Team: 3 goals (Player8 scored twice, Player10 scored once)
+  - Away Team: 0 goals
+
+- **Red Cards:**
+  - No red cards were issued to either team.
+
+- **Fouls:**
+  - Home Team: 10 fouls (Player10, Player7, Player5, Player9, Player4, Player6, Player2 twice, handball by Player8)
+  - Away Team: 11 fouls (Player20, Player27, Player28, Player23, Player25 twice, Player26 handball, Player29, Player24, Player36, Player19)
+
+- **Shots:**
+  - Home Team: 16 shots (1 missed by Player11, 1 saved by the goalkeeper, 1 missed by Player11, 1 missed by Player10, 1 missed by Player7, 1 saved by Player9, 1 missed by Player11, 1 saved by Player6, 1 missed by Player11, 1 missed by Player7, 1 missed by Player7)
+  - Away Team: 17 shots (1 blocked by Player27, 1 missed by Player28, 1 saved by Player29, 1 missed by Player29, 1 blocked by Player25, 1 blocked by Player36, 1 blocked by Player26, 1 missed by Player22, 1 blocked by Player24, 1 missed by Player36, 1 blocked by Player25, 1 blocked by Player24, 1 saved by Player32, 1 missed by Player26, 1 missed by Player21)

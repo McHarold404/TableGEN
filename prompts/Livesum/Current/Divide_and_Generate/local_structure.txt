@@ -1,0 +1,30 @@
+Your task is to check if all the values in a list falls under a category. Go over all the values one by one and check if they belong to the assigned category.
+Use the following format to answer.
+Thought: Reasoning for the answer.
+Answer: Single final answer yes or no.
+Category: {{ category }}
+Values:
+{{ values }}
+Thought:
+There are some words or sentences that describes concept while other describes values associated with them. Values are defined as ordinals, type of job, degree, education level, location, region, date etc.
+Answer No if any word is not a specific value; otherwise answer yes.
+For example:
+Words:
+Delhi
+10
+Cat
+26 May
+Lawyer
+Thought: All the words are specific content words.
+Answer: yes
+Words:
+IBM
+Trucks
+Birth
+Family
+26 May
+Thought: Many words such as Trucks, Family, Birth are concepts without specific values.
+Answer: no
+Words:
+{{ words }}
+Thought:

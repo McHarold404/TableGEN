@@ -1,0 +1,364 @@
+### Initial Table:
+| | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+| Home Team | 1 | 1 | 2 | 4 | 8 | 3 | 3 | 0 | 3 | 3 | <NEWLINE>
+| Away Team | 1 | 3 | 5 | 0 | 4 | 7 | 0 | 1 | 3 | 6 | <NEWLINE>
+
+### Step-by-Step Table Updates:
+
+**Statement 49:**
+- Update: Increment Shots on Target for Home Team by 1, increment Assists for Home Team by 1, increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Shots on Target: 2, Assists: 4, Corner Kicks: 4.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 1 | 2 | 2 | 4 | 8 | 3 | 3 | 0 | 4 | 4 | <NEWLINE>
+  | Away Team | 1 | 3 | 5 | 0 | 4 | 7 | 0 | 1 | 3 | 6 | <NEWLINE>
+
+**Statement 50:**
+- Update: Increment Shots off Target for Home Team by 1, increment Assists for Home Team by 1.
+- Revised State: Home Team Shots off Target: 3, Assists: 5.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 1 | 2 | 3 | 4 | 8 | 3 | 3 | 0 | 4 | 5 | <NEWLINE>
+  | Away Team | 1 | 3 | 5 | 0 | 4 | 7 | 0 | 1 | 3 | 6 | <NEWLINE>
+
+**Statement 51:**
+- No update needed as it is a continuation of the previous statement.
+
+**Statement 52:**
+- Update: Increment Goals for Home Team by 1, increment Assists for Home Team by 1.
+- Revised State: Home Team Goals: 2, Assists: 6.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 3 | 4 | 8 | 3 | 3 | 0 | 4 | 6 | <NEWLINE>
+  | Away Team | 1 | 3 | 5 | 0 | 4 | 7 | 0 | 1 | 3 | 6 | <NEWLINE>
+
+**Statement 53:**
+- Update: Increment Shots on Target for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Shots on Target: 4, Assists: 7.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 3 | 4 | 8 | 3 | 3 | 0 | 4 | 6 | <NEWLINE>
+  | Away Team | 1 | 4 | 5 | 0 | 4 | 7 | 0 | 1 | 3 | 7 | <NEWLINE>
+
+**Statement 54:**
+- Update: Increment Blocked Shots for Away Team by 1, increment Corner Kicks for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Blocked Shots: 1, Corner Kicks: 4, Assists: 8.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 3 | 4 | 8 | 3 | 3 | 0 | 4 | 6 | <NEWLINE>
+  | Away Team | 1 | 4 | 5 | 1 | 4 | 7 | 0 | 1 | 4 | 8 | <NEWLINE>
+
+**Statement 55:**
+- Update: Increment Free Kicks Earned for Away Team by 1.
+- Revised State: Away Team Free Kicks Earned: 8.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 3 | 4 | 8 | 3 | 3 | 0 | 4 | 6 | <NEWLINE>
+  | Away Team | 1 | 4 | 5 | 1 | 4 | 8 | 0 | 1 | 4 | 8 | <NEWLINE>
+
+**Statement 56:**
+- Update: Increment Fouls Committed for Home Team by 1.
+- Revised State: Home Team Fouls Committed: 9.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 3 | 4 | 9 | 3 | 3 | 0 | 4 | 6 | <NEWLINE>
+  | Away Team | 1 | 4 | 5 | 1 | 4 | 8 | 0 | 1 | 4 | 8 | <NEWLINE>
+
+**Statement 57:**
+- Update: Increment Fouls Committed for Home Team by 1, increment Free Kicks Earned for Away Team by 1.
+- Revised State: Home Team Fouls Committed: 10, Away Team Free Kicks Earned: 9.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 3 | 4 | 10 | 3 | 3 | 0 | 4 | 6 | <NEWLINE>
+  | Away Team | 1 | 4 | 5 | 1 | 4 | 9 | 0 | 1 | 4 | 8 | <NEWLINE>
+
+**Statement 58:**
+- Update: Increment Shots off Target for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Shots off Target: 6, Assists: 9.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 3 | 4 | 10 | 3 | 3 | 0 | 4 | 6 | <NEWLINE>
+  | Away Team | 1 | 4 | 6 | 1 | 4 | 9 | 0 | 1 | 4 | 9 | <NEWLINE>
+
+**Statement 59:**
+- Update: Increment Shots off Target for Home Team by 2, increment Assists for Home Team by 2.
+- Revised State: Home Team Shots off Target: 5, Assists: 8.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 4 | 10 | 3 | 3 | 0 | 4 | 8 | <NEWLINE>
+  | Away Team | 1 | 4 | 6 | 1 | 4 | 9 | 0 | 1 | 4 | 9 | <NEWLINE>
+
+**Statement 60:**
+- Update: Increment Free Kicks Earned for Away Team by 1, increment Fouls Committed for Home Team by 1.
+- Revised State: Away Team Free Kicks Earned: 10, Home Team Fouls Committed: 11.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 4 | 11 | 3 | 3 | 0 | 4 | 8 | <NEWLINE>
+  | Away Team | 1 | 4 | 6 | 1 | 4 | 10 | 0 | 1 | 4 | 9 | <NEWLINE>
+
+**Statement 61:**
+- Update: Increment Yellow Cards for Home Team by 1.
+- Revised State: Home Team Yellow Cards: 4.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 4 | 11 | 3 | 4 | 0 | 4 | 8 | <NEWLINE>
+  | Away Team | 1 | 4 | 6 | 1 | 4 | 10 | 0 | 1 | 4 | 9 | <NEWLINE>
+
+**Statement 62:**
+- Update: Increment Blocked Shots for Home Team by 1, increment Assists for Home Team by 1.
+- Revised State: Home Team Blocked Shots: 5, Assists: 9.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 3 | 4 | 0 | 4 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 6 | 1 | 4 | 10 | 0 | 1 | 4 | 9 | <NEWLINE>
+
+**Statement 63:**
+- Update: Increment Shots off Target for Away Team by 1, increment Assists for Away Team by 2.
+- Revised State: Away Team Shots off Target: 7, Assists: 11.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 3 | 4 | 0 | 4 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 7 | 1 | 4 | 10 | 0 | 1 | 4 | 11 | <NEWLINE>
+
+**Statement 64:**
+- Update: Increment Shots off Target for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Shots off Target: 8, Assists: 12.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 3 | 4 | 0 | 4 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 8 | 1 | 4 | 10 | 0 | 1 | 4 | 12 | <NEWLINE>
+
+**Statement 65:**
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 5.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 3 | 4 | 0 | 4 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 8 | 1 | 4 | 10 | 0 | 1 | 5 | 12 | <NEWLINE>
+
+**Statement 66:**
+- Update: Increment Blocked Shots for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Blocked Shots: 2, Assists: 13.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 3 | 4 | 0 | 4 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 8 | 2 | 4 | 10 | 0 | 1 | 5 | 13 | <NEWLINE>
+
+**Statement 67:**
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 6.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 3 | 4 | 0 | 4 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 8 | 2 | 4 | 10 | 0 | 1 | 6 | 13 | <NEWLINE>
+
+**Statement 68:**
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 7.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 3 | 4 | 0 | 4 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 8 | 2 | 4 | 10 | 0 | 1 | 7 | 13 | <NEWLINE>
+
+**Statement 69:**
+- Update: Increment Fouls Committed for Away Team by 1, increment Free Kicks Earned for Home Team by 1.
+- Revised State: Away Team Fouls Committed: 5, Home Team Free Kicks Earned: 4.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 0 | 4 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 8 | 2 | 5 | 10 | 0 | 1 | 7 | 13 | <NEWLINE>
+
+**Statement 70:**
+- Update: Increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Corner Kicks: 5.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 0 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 8 | 2 | 5 | 10 | 0 | 1 | 7 | 13 | <NEWLINE>
+
+**Statement 71:**
+- Update: Increment Offsides for Home Team by 1.
+- Revised State: Home Team Offsides: 1.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 8 | 2 | 5 | 10 | 0 | 1 | 7 | 13 | <NEWLINE>
+
+**Statement 72:**
+- Update: Increment Blocked Shots for Away Team by 1, increment Shots off Target for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Blocked Shots: 3, Shots off Target: 9, Assists: 14.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 9 | 3 | 5 | 10 | 0 | 1 | 7 | 14 | <NEWLINE>
+
+**Statement 73:**
+- Update: Increment Shots off Target for Away Team by 1.
+- Revised State: Away Team Shots off Target: 10.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 10 | 3 | 5 | 10 | 0 | 1 | 7 | 14 | <NEWLINE>
+
+**Statement 74:**
+- Update: Increment Offsides for Away Team by 1.
+- Revised State: Away Team Offsides: 2.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 10 | 3 | 5 | 10 | 0 | 2 | 7 | 14 | <NEWLINE>
+
+**Statement 75:**
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 8.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 4 | 10 | 3 | 5 | 10 | 0 | 2 | 8 | 14 | <NEWLINE>
+
+**Statement 76:**
+- Update: Increment Shots on Target for Away Team by 1, increment Blocked Shots for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Shots on Target: 5, Blocked Shots: 4, Assists: 15.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 5 | 10 | 4 | 5 | 10 | 0 | 2 | 8 | 15 | <NEWLINE>
+
+**Statement 77:**
+- Update: Increment Blocked Shots for Away Team by 1, increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Blocked Shots: 5, Corner Kicks: 9.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 5 | 10 | 5 | 5 | 10 | 0 | 2 | 9 | 15 | <NEWLINE>
+
+**Statement 78:**
+- Update: Increment Blocked Shots for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Blocked Shots: 6, Assists: 16.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 5 | 10 | 6 | 5 | 10 | 0 | 2 | 9 | 16 | <NEWLINE>
+
+**Statement 79 & 80:**
+- No updates needed as they describe a delay in the game.
+
+**Statement 81:**
+- Update: Increment Blocked Shots for Away Team by 1.
+- Revised State: Away Team Blocked Shots: 7.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 5 | 10 | 7 | 5 | 10 | 0 | 2 | 9 | 16 | <NEWLINE>
+
+**Statement 82:**
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 10.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 5 | 10 | 7 | 5 | 10 | 0 | 2 | 10 | 16 | <NEWLINE>
+
+**Statement 83:**
+- Update: Increment Free Kicks Earned for Away Team by 1.
+- Revised State: Away Team Free Kicks Earned: 11.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 11 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 5 | 10 | 7 | 5 | 11 | 0 | 2 | 10 | 16 | <NEWLINE>
+
+**Statement 84:**
+- Update: Increment Fouls Committed for Home Team by 1.
+- Revised State: Home Team Fouls Committed: 12.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 5 | 10 | 7 | 5 | 11 | 0 | 2 | 10 | 16 | <NEWLINE>
+
+**Statement 85:**
+- Update: Increment Shots on Target for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Shots on Target: 6, Assists: 17.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 6 | 10 | 7 | 5 | 11 | 0 | 2 | 10 | 17 | <NEWLINE>
+
+**Statement 86:**
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 11.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 6 | 10 | 7 | 5 | 11 | 0 | 2 | 11 | 17 | <NEWLINE>
+
+**Statement 87:**
+- Update: Increment Blocked Shots for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Blocked Shots: 8, Assists: 18.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 6 | 10 | 8 | 5 | 11 | 0 | 2 | 11 | 18 | <NEWLINE>
+
+**Statement 88:**
+- Update: Increment Shots off Target for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Shots off Target: 11, Assists: 19.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 6 | 11 | 8 | 5 | 11 | 0 | 2 | 11 | 19 | <NEWLINE>
+
+**Statement 89:**
+- Update: Increment Offsides for Away Team by 1.
+- Revised State: Away Team Offsides: 3.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 6 | 11 | 8 | 5 | 11 | 0 | 3 | 11 | 19 | <NEWLINE>
+
+**Statement 90:**
+- Update: Increment Blocked Shots for Away Team by 1, increment Corner Kicks for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Blocked Shots: 9, Corner Kicks: 12, Assists: 20.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 6 | 11 | 9 | 5 | 11 | 0 | 3 | 12 | 20 | <NEWLINE>
+
+**Statement 91:**
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 13.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 6 | 11 | 9 | 5 | 11 | 0 | 3 | 13 | 20 | <NEWLINE>
+
+**Statement 92:**
+- Update: Increment Shots off Target for Away Team by 1, increment Assists for Away Team by 1.
+- Revised State: Away Team Shots off Target: 12, Assists: 21.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 6 | 12 | 9 | 5 | 11 | 0 | 3 | 13 | 21 | <NEWLINE>
+
+**Statement 93:**
+- Update: Increment Shots on Target for Away Team by 1, increment Assists for Away Team by 2.
+- Revised State: Away Team Shots on Target: 7, Assists: 23.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 5 | 9 | <NEWLINE>
+  | Away Team | 1 | 7 | 12 | 9 | 5 | 11 | 0 | 3 | 13 | 23 | <NEWLINE>
+
+**Statement 94:**
+- Update: Increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Corner Kicks: 6.
+- Updated Table:
+  | | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+  | Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 6 | 9 | <NEWLINE>
+  | Away Team | 1 | 7 | 12 | 9 | 5 | 11 | 0 | 3 | 13 | 23 | <NEWLINE>
+
+**Statement 95 & 96:**
+- No updates needed as they describe the conclusion of the match.
+
+### Final Table:
+| | Goals | Shots on Target | Shots off Target | Blocked Shots | Fouls Committed | Free Kicks Earned | Yellow Cards | Offsides | Corner Kicks | Assists | <NEWLINE>
+| Home Team | 2 | 2 | 5 | 5 | 12 | 4 | 4 | 1 | 6 | 9 | <NEWLINE>
+| Away Team | 1 | 7 | 12 | 9 | 5 | 11 | 0 | 3 | 13 | 23 | <NEWLINE>

@@ -1,0 +1,36 @@
+To create the summary table of the game, we need to capture the following statistics:
+
+1. Goals
+2. Red Cards
+3. Fouls
+4. Shots (Goals, Saved Attempts, Blocked Attempts, Missed Attempts)
+5. Free Kicks (including penalties)
+6. Corner Kicks
+7. Offsides
+
+Now, let's extract these statistics from the live text:
+
+- **Goals**: 0 for both teams (as mentioned in the text).
+- **Red Cards**: 
+  - Home Team: 0
+  - Away Team: 1 (Player21 received a second yellow card, which is considered a red card).
+- **Fouls**: 
+  - Home Team: 12 (Player10: 3, Player9: 2, Player7: 2, Player4: 0, Player11: 1, Player6: 1, Player3: 1, Player16: 1, Player8: 0)
+  - Away Team: 9 (Player25: 2, Player29: 2, Player30: 2, Player27: 1, Player21: 2)
+- **Shots**: 
+  - Home Team: 10 (Player10: 1 blocked, Player9: 3 blocked/missed, Player11: 2 blocked, Player8: 1 missed, Player3: 1 missed, Player7: 0, Player6: 0, Player4: 0, Player16: 0)
+  - Away Team: 12 (Player24: 2 saved/missed, Player25: 1 missed, Player28: 1 blocked, Player29: 1 saved, Player20: 2 saved/missed, Player26: 2 missed, Player31: 1 missed, Player30: 1 saved)
+- **Free Kicks**: 
+  - Home Team: 8 (Player7: 1, Player9: 1, Player8: 2, Player3: 1, Player2: 1, Player1: 1, Player15: 1)
+  - Away Team: 12 (Player21: 5, Player27: 2, Player26: 2, Player20: 1, Player29: 1, Player30: 1)
+- **Corner Kicks**: 
+  - Home Team: 6
+  - Away Team: 7
+- **Offsides**: 
+  - Home Team: 3 (Player6: 1, Player10: 1, Player15: 1)
+  - Away Team: 0
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+| Home Team  | 0     | 0         | 12    | 10    | 8          | 6            | 3        | <NEWLINE>
+| Away Team  | 0     | 1         | 9     | 12    | 12         | 7            | 0        | <NEWLINE>

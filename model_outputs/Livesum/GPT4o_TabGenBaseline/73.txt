@@ -1,0 +1,36 @@
+To generate the final table with important statistics, let's first define the table schema:
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Fouls
+- Free Kicks
+- Shots
+
+Now, let's process the text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 0
+   - Away Team: 1 (Player25 scored)
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls:**
+   - Home Team: 14 (Player27, Player6, Player7, Player9, Player10, Player11, Player2, Player3, Player16, Player3, Player16, Player11, Player3, Player16)
+   - Away Team: 6 (Player23, Player20, Player23, Player33, Player29, Player33)
+
+4. **Free Kicks:**
+   - Home Team: 11 (Player6, Player29, Player26, Player25, Player28, Player11, Player2, Player28, Player3, Player16, Player3)
+   - Away Team: 10 (Player6, Player7, Player9, Player10, Player11, Player2, Player5, Player16, Player3, Player5)
+
+5. **Shots:**
+   - Home Team: 18 (Player9, Player10, Player4, Player6, Player10, Player6, Player7, Player9, Player8, Player8, Player14, Player16, Player8, Player8, Player6, Player14, Player5)
+   - Away Team: 14 (Player27, Player28, Player26, Player27, Player33, Player25, Player33, Player26, Player29, Player32, Player33, Player33, Player5)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 14    | 11         | 18    | <NEWLINE>
+| Away Team  | 1     | 0         | 6     | 10         | 14    | <NEWLINE>

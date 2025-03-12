@@ -1,0 +1,48 @@
+To generate the summary table, we need to extract and count the relevant statistics from the provided text. Let's identify the key statistics and then fill in the table.
+
+### Table Schema:
+| Team | Goals | Shots | Red Cards | Yellow Cards | Fouls | Free Kicks | Offsides | Corner Kicks | <NEWLINE>
+
+Now, let's process the text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 1 (Player10 scored)
+   - Away Team: 1 (Player27 scored)
+
+2. **Shots:**
+   - Home Team: Player6 (missed), Player11 (missed), Player10 (goal), Player9 (saved), Player4 (blocked), Player6 (missed), Player9 (blocked), Player10 (missed), Player3 (missed), Player10 (saved), Player9 (missed), Player6 (saved), Player10 (saved), Player8 (missed), Player8 (saved)
+   - Away Team: Player28 (missed), Player29 (missed), Player21 (blocked), Player27 (saved), Player28 (saved), Player27 (goal), Player28 (blocked), Player27 (missed), Player30 (missed)
+   - Total Shots: Home Team = 15, Away Team = 9
+
+3. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+4. **Yellow Cards:**
+   - Home Team: Player9
+   - Away Team: Player22, Player27, Player26, Player24, Player25, Player34
+   - Total Yellow Cards: Home Team = 1, Away Team = 6
+
+5. **Fouls:**
+   - Home Team: Player6, Player11, Player10 (handball), Player4 (3 times), Player5
+   - Away Team: Player26, Player29, Player25 (3 times), Player22, Player27, Player24 (2 times), Player21, Player23 (2 times)
+   - Total Fouls: Home Team = 6, Away Team = 11
+
+6. **Free Kicks:**
+   - Home Team: Earned by Player10, Player4 (3 times), Player5, Player7, Player8 (2 times), Player11, Player9, Player14
+   - Away Team: Earned by Player27, Player28 (2 times), Player22, Player26, Player34, Player32
+   - Total Free Kicks: Home Team = 10, Away Team = 7
+
+7. **Offsides:**
+   - Home Team: Player10, Player11
+   - Away Team: Player28
+   - Total Offsides: Home Team = 2, Away Team = 1
+
+8. **Corner Kicks:**
+   - Home Team: 5
+   - Away Team: 4
+
+### Final Table:
+| Team | Goals | Shots | Red Cards | Yellow Cards | Fouls | Free Kicks | Offsides | Corner Kicks | <NEWLINE>
+| Home Team | 1 | 15 | 0 | 1 | 6 | 10 | 2 | 5 | <NEWLINE>
+| Away Team | 1 | 9 | 0 | 6 | 11 | 7 | 1 | 4 | <NEWLINE>

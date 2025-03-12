@@ -1,0 +1,21 @@
+According to the live text, please generate a table consisting of all the important statistics of the game. 
+Think step by step and generate a summary table summing the statistics of both teams in a step-by-step manner.
+Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card.
+Penalty is also considered as free kicks. 
+
+Output Format and Instructions:
+1. The row headers of the table will be fixed. They are  "Home Team" and "Away Team". 
+2. The first row of the table should contain the headers.
+3. Use "|" as a separator between cells.
+4. Use "<NEWLINE>" literal as the end of every row.
+5. Return the final table with the heading ### Final Table
+
+Here is a sample output format:
+
+### Final Table:
+| Team | Column1 | Column2 | Column3 | <NEWLINE>
+| Home Team | 0 | 0 | 13 | 4 | <NEWLINE>
+| Away Team | 3 | 0 | 9 | 1 | <NEWLINE>
+
+Let’s think step by step! Give the reasoning steps and at last, please output a table with 2 rows in the specified CSV format according to the following live text:
+

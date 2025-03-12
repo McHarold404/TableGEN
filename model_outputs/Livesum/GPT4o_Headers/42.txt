@@ -1,0 +1,22 @@
+To summarize the key events and statistics from the football match commentary, we can create a schema with the following row and column headers:
+
+```json
+{
+  "row_headers": ["Away Team", "Home Team"],
+  "column_headers": [
+    "Goals",
+    "Shots",
+    "Shots on Target",
+    "Shots Off Target",
+    "Blocked Shots",
+    "Assists",
+    "Fouls Committed",
+    "Free Kicks Earned",
+    "Yellow Cards",
+    "Offsides",
+    "Corners"
+  ]
+}
+```
+
+This schema captures the essential statistical elements of the match, including goals, shots, assists, fouls, and set-pieces, providing a comprehensive overview of the game's events for both teams.

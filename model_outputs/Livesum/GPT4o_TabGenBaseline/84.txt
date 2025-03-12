@@ -1,0 +1,47 @@
+To generate the final table, let's first outline the table schema based on the provided text:
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Fouls
+- Shots
+
+Now, let's process the text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 1 goal (Player10)
+   - Away Team: 2 goals (Player28, Player29)
+
+2. **Red Cards:**
+   - No red cards were mentioned for either team.
+
+3. **Fouls:**
+   - Home Team: Fouls by Player8 (2), Player11, Player7, Player16, Player9, Player5 (total 7 fouls)
+   - Away Team: Fouls by Player22, Player27, Player20 (2), Player28, Player21 (total 6 fouls)
+
+4. **Shots (including goals, saved attempts, blocked attempts, and missed attempts):**
+   - Home Team: 
+     - Shots by Player10 (6: blocked, saved, missed, saved, blocked, goal)
+     - Shots by Player5 (2: blocked, missed)
+     - Shot by Player8 (missed)
+     - Shot by Player6 (missed)
+     - Shot by Player16 (missed)
+     - Total: 11 shots
+   - Away Team:
+     - Shots by Player28 (3: saved, saved, goal)
+     - Shots by Player24 (3: missed, saved, blocked)
+     - Shots by Player22 (blocked)
+     - Shots by Player29 (5: missed, missed, saved, blocked, goal)
+     - Shots by Player27 (2: missed, saved)
+     - Shots by Player26 (2: saved, blocked)
+     - Shots by Player21 (blocked)
+     - Shots by Player23 (blocked)
+     - Total: 17 shots
+
+Now, we can construct the final table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 1     | 0         | 7     | 11    | <NEWLINE>
+| Away Team  | 2     | 0         | 6     | 17    | <NEWLINE>

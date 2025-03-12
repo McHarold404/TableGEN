@@ -1,0 +1,64 @@
+To generate the final table, we need to extract and organize the statistics from the provided text. Let's break down the statistics:
+
+1. **Goals**: 
+   - Home Team: 1 goal (Player16's goal)
+   - Away Team: 1 goal (Player35's goal)
+
+2. **Red Cards**: 
+   - Home Team: 1 red card (Player2 received a second yellow card)
+   - Away Team: 0 red cards
+
+3. **Fouls**: 
+   - Home Team: Count the fouls committed by Home Team players.
+     - Player9 fouled Player27 (2 fouls)
+     - Player7 fouled Player27
+     - Player8 fouled Player27
+     - Player2 fouled Player28
+     - Player5 fouled Player28
+     - Player4 committed a foul
+     - Player3 committed a foul
+     - Player10 committed a foul
+     - Total: 9 fouls
+
+   - Away Team: Count the fouls committed by Away Team players.
+     - Player21 fouled Player11
+     - Player20 committed a foul
+     - Player29 fouled Player9
+     - Player26 committed a foul
+     - Player23 fouled Player9
+     - Player24 fouled Player7
+     - Player27 fouled Player9
+     - Player29 fouled Player12
+     - Player20 committed a foul
+     - Total: 9 fouls
+
+4. **Shots** (Goals, Saved Attempts, Blocked Attempts, Missed Attempts):
+   - Home Team:
+     - Missed: Player11, Player10, Player7, Player11, Player9, Player8, Player16
+     - Blocked: Player10, Player35, Player5, Player11, Player16
+     - Saved: Player8, Player11
+     - Goal: Player16
+     - Total: 13 shots
+
+   - Away Team:
+     - Missed: Player33
+     - Blocked: Player21, Player24
+     - Saved: Player29
+     - Goal: Player35
+     - Total: 5 shots
+
+5. **Free Kicks** (Including penalties):
+   - Home Team: Count the number of free kicks earned.
+     - Player11, Player9, Player3, Player7, Player9, Player7, Player8, Player5, Player12
+     - Total: 9 free kicks
+
+   - Away Team: Count the number of free kicks earned.
+     - Player27, Player26, Player29, Player29, Player28
+     - Total: 5 free kicks
+
+Now, let's compile these statistics into the final table.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | <NEWLINE>
+| Home Team  | 1     | 1         | 9     | 13    | 9          | <NEWLINE>
+| Away Team  | 1     | 0         | 9     | 5     | 5          | <NEWLINE>

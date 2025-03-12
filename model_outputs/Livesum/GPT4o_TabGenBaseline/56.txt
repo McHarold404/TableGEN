@@ -1,0 +1,39 @@
+To generate the summary table, let's first define the table schema and then process the text to fill in the statistics:
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Shots | Free Kicks | Offsides | Yellow Cards | <NEWLINE>
+
+Now, let's process the text step by step to fill in the table:
+
+1. **Goals:**
+   - Home Team: 1 (Player5 scored in step 41)
+   - Away Team: 0
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 1 (Player27 received a second yellow card in step 58)
+
+3. **Fouls:**
+   - Home Team: 10 (steps 15, 31, 45, 51, 53, 59, 63, 65, 75)
+   - Away Team: 14 (steps 4, 7, 9, 10, 12, 14, 20, 28, 33, 35, 44, 57, 70)
+
+4. **Shots:**
+   - Home Team: 12 (steps 5, 21, 25, 29, 34, 39, 41, 66, 68, 71, 73, 74)
+   - Away Team: 9 (steps 2, 19, 22, 30, 42, 47, 72)
+
+5. **Free Kicks:**
+   - Home Team: 13 (steps 3, 6, 9, 10, 13, 14, 23, 28, 33, 35, 54, 56, 69)
+   - Away Team: 6 (steps 16, 32, 45, 60, 63, 65)
+
+6. **Offsides:**
+   - Home Team: 4 (steps 8, 38, 43, 49)
+   - Away Team: 3 (steps 20, 50, 72)
+
+7. **Yellow Cards:**
+   - Home Team: 1 (Player6 received a yellow card in step 46)
+   - Away Team: 3 (Player21 in step 11, Player25 in step 36, Player27 in step 55)
+
+### Final Table:
+| Team | Goals | Red Cards | Fouls | Shots | Free Kicks | Offsides | Yellow Cards | <NEWLINE>
+| Home Team | 1 | 0 | 10 | 12 | 13 | 4 | 1 | <NEWLINE>
+| Away Team | 0 | 1 | 14 | 9 | 6 | 3 | 3 | <NEWLINE>

@@ -1,0 +1,320 @@
+To update the given table based on the statements, we need to process each event and adjust the relevant columns for the Home and Away teams. The initial table is:
+
+| | Goals | Shots | Shots on Target | Shots Off Target | Shots Blocked | Corner Kicks | Fouls Committed | Free Kicks Won | Yellow Cards | Offsides | Assists |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Home Team | 1 | 5 | 2 | 3 | 0 | 1 | 11 | 5 | 1 | 1 | 2 |
+| Away Team | 1 | 12 | 6 | 4 | 2 | 6 | 4 | 11 | 0 | 2 | 10 |
+
+Now, let's process each statement:
+
+### Statement 53:
+- Home Team: +1 Free Kick Won
+- Away Team: +1 Foul Committed
+Revised State:
+- Home Team Free Kicks Won: 6
+- Away Team Fouls Committed: 5
+
+### Statement 54:
+- Away Team: +1 Shot, +1 Shot on Target, +1 Assist
+Revised State:
+- Away Team Shots: 13
+- Away Team Shots on Target: 7
+- Away Team Assists: 11
+
+### Statement 55:
+- Away Team: +1 Corner Kick
+Revised State:
+- Away Team Corner Kicks: 7
+
+### Statement 56:
+- Away Team: +1 Shot, +1 Shot Blocked, +1 Assist
+Revised State:
+- Away Team Shots: 14
+- Away Team Shots Blocked: 3
+- Away Team Assists: 12
+
+### Statement 57:
+- Away Team: +1 Shot, +1 Shot Off Target, +1 Assist
+Revised State:
+- Away Team Shots: 15
+- Away Team Shots Off Target: 5
+- Away Team Assists: 13
+
+### Statement 58:
+- Home Team: +1 Shot, +1 Shot Off Target
+Revised State:
+- Home Team Shots: 6
+- Home Team Shots Off Target: 4
+
+### Statement 59:
+- Away Team: +1 Free Kick Won
+Revised State:
+- Away Team Free Kicks Won: 12
+
+### Statement 60:
+- Home Team: +1 Foul Committed
+Revised State:
+- Home Team Fouls Committed: 12
+
+### Statement 61:
+- Away Team: +1 Corner Kick
+Revised State:
+- Away Team Corner Kicks: 8
+
+### Statement 62:
+- Home Team: +1 Foul Committed
+- Away Team: +1 Free Kick Won
+Revised State:
+- Home Team Fouls Committed: 13
+- Away Team Free Kicks Won: 13
+
+### Statement 63:
+- Home Team: +1 Yellow Card
+Revised State:
+- Home Team Yellow Cards: 2
+
+### Statement 64:
+- Away Team: +1 Shot, +1 Shot on Target
+Revised State:
+- Away Team Shots: 16
+- Away Team Shots on Target: 8
+
+### Statement 65:
+- Away Team: +1 Shot, +1 Shot Blocked, +1 Assist
+Revised State:
+- Away Team Shots: 17
+- Away Team Shots Blocked: 4
+- Away Team Assists: 14
+
+### Statement 66:
+- Away Team: +1 Shot, +1 Shot Off Target
+Revised State:
+- Away Team Shots: 18
+- Away Team Shots Off Target: 6
+
+### Statement 67:
+- Home Team: +1 Yellow Card
+Revised State:
+- Home Team Yellow Cards: 3
+
+### Statement 68:
+- Away Team: +1 Corner Kick
+Revised State:
+- Away Team Corner Kicks: 9
+
+### Statement 69:
+- Away Team: +1 Foul Committed
+Revised State:
+- Away Team Fouls Committed: 6
+
+### Statement 70:
+- Home Team: +1 Free Kick Won
+Revised State:
+- Home Team Free Kicks Won: 7
+
+### Statement 71:
+- Away Team: +1 Yellow Card
+Revised State:
+- Away Team Yellow Cards: 1
+
+### Statement 72:
+- Away Team: +1 Shot, +1 Shot on Target, +1 Corner Kick
+Revised State:
+- Away Team Shots: 19
+- Away Team Shots on Target: 9
+- Away Team Corner Kicks: 10
+
+### Statement 73:
+- Home Team: +1 Shot, +1 Shot Off Target
+- Away Team: +1 Free Kick Won
+Revised State:
+- Home Team Shots: 7
+- Home Team Shots Off Target: 5
+- Away Team Free Kicks Won: 14
+
+### Statement 74:
+- Away Team: +1 Free Kick Won
+Revised State:
+- Away Team Free Kicks Won: 15
+
+### Statement 75:
+- Home Team: +1 Foul Committed
+Revised State:
+- Home Team Fouls Committed: 14
+
+### Statement 76:
+- Away Team: +1 Corner Kick
+Revised State:
+- Away Team Corner Kicks: 11
+
+### Statement 77:
+- Away Team: +1 Foul Committed
+- Home Team: +1 Free Kick Won
+Revised State:
+- Away Team Fouls Committed: 7
+- Home Team Free Kicks Won: 8
+
+### Statement 78:
+- Home Team: +1 Shot, +1 Shot on Target, +1 Assist
+Revised State:
+- Home Team Shots: 8
+- Home Team Shots on Target: 3
+- Home Team Assists: 3
+
+### Statement 79:
+- Home Team: +1 Corner Kick
+Revised State:
+- Home Team Corner Kicks: 2
+
+### Statement 80 & 81:
+- No changes to the table.
+
+### Statement 82:
+- Away Team: +1 Shot, +1 Shot Off Target, +1 Assist
+Revised State:
+- Away Team Shots: 20
+- Away Team Shots Off Target: 7
+- Away Team Assists: 15
+
+### Statement 83:
+- Home Team: +1 Shot, +1 Shot Blocked, +1 Assist
+Revised State:
+- Home Team Shots: 9
+- Home Team Shots Blocked: 1
+- Home Team Assists: 4
+
+### Statement 84:
+- Home Team: +1 Foul Committed
+- Away Team: +1 Free Kick Won
+Revised State:
+- Home Team Fouls Committed: 15
+- Away Team Free Kicks Won: 16
+
+### Statement 85:
+- Home Team: +1 Shot, +1 Shot Blocked, +1 Assist
+Revised State:
+- Home Team Shots: 10
+- Home Team Shots Blocked: 2
+- Home Team Assists: 5
+
+### Statement 86:
+- Home Team: +1 Shot, +1 Shot Off Target, +1 Assist
+Revised State:
+- Home Team Shots: 11
+- Home Team Shots Off Target: 6
+- Home Team Assists: 6
+
+### Statement 87:
+- Away Team: +1 Foul Committed
+- Home Team: +1 Free Kick Won
+Revised State:
+- Away Team Fouls Committed: 8
+- Home Team Free Kicks Won: 9
+
+### Statement 88:
+- Away Team: +1 Yellow Card
+Revised State:
+- Away Team Yellow Cards: 2
+
+### Statement 89:
+- Away Team: +1 Free Kick Won
+Revised State:
+- Away Team Free Kicks Won: 17
+
+### Statement 90:
+- Home Team: +1 Foul Committed
+Revised State:
+- Home Team Fouls Committed: 16
+
+### Statement 91:
+- Away Team: +1 Corner Kick
+Revised State:
+- Away Team Corner Kicks: 12
+
+### Statement 92:
+- Home Team: +1 Shot, +1 Shot Blocked, +1 Assist
+Revised State:
+- Home Team Shots: 12
+- Home Team Shots Blocked: 3
+- Home Team Assists: 7
+
+### Statement 93:
+- Home Team: +1 Foul Committed
+- Away Team: +1 Free Kick Won
+Revised State:
+- Home Team Fouls Committed: 17
+- Away Team Free Kicks Won: 18
+
+### Statement 94:
+- Away Team: +1 Shot, +1 Shot Off Target, +1 Assist
+Revised State:
+- Away Team Shots: 21
+- Away Team Shots Off Target: 8
+- Away Team Assists: 16
+
+### Statement 95:
+- Home Team: +1 Shot, +1 Shot on Target
+Revised State:
+- Home Team Shots: 13
+- Home Team Shots on Target: 4
+
+### Statement 96:
+- Home Team: +1 Corner Kick
+Revised State:
+- Home Team Corner Kicks: 3
+
+### Statement 97:
+- Home Team: +1 Shot, +1 Shot Blocked, +1 Assist
+Revised State:
+- Home Team Shots: 14
+- Home Team Shots Blocked: 4
+- Home Team Assists: 8
+
+### Statement 98:
+- Home Team: +1 Shot, +1 Shot Blocked, +1 Assist
+Revised State:
+- Home Team Shots: 15
+- Home Team Shots Blocked: 5
+- Home Team Assists: 9
+
+### Statement 99:
+- Home Team: +1 Shot, +1 Shot Off Target, +1 Assist
+Revised State:
+- Home Team Shots: 16
+- Home Team Shots Off Target: 7
+- Home Team Assists: 10
+
+### Statement 100:
+- Away Team: +1 Shot, +1 Shot Off Target, +1 Assist
+Revised State:
+- Away Team Shots: 22
+- Away Team Shots Off Target: 9
+- Away Team Assists: 17
+
+### Statement 101:
+- Away Team: +1 Free Kick Won
+Revised State:
+- Away Team Free Kicks Won: 19
+
+### Statement 102:
+- Home Team: +1 Foul Committed
+- Away Team: +1 Free Kick Won
+Revised State:
+- Home Team Fouls Committed: 18
+- Away Team Free Kicks Won: 20
+
+### Statement 103:
+- Away Team: +1 Corner Kick
+Revised State:
+- Away Team Corner Kicks: 13
+
+### Statement 104 & 105:
+- No changes to the table, as they are summary statements.
+
+### Final Table:
+| | Goals | Shots | Shots on Target | Shots Off Target | Shots Blocked | Corner Kicks | Fouls Committed | Free Kicks Won | Yellow Cards | Offsides | Assists |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Home Team | 1 | 16 | 4 | 7 | 5 | 3 | 18 | 9 | 3 | 1 | 10 |
+| Away Team | 1 | 22 | 9 | 9 | 4 | 13 | 8 | 20 | 2 | 2 | 17 |
+
+This final table reflects all the updates based on the provided statements.

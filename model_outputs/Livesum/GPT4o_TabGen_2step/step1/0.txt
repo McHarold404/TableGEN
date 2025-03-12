@@ -1,0 +1,337 @@
+To accurately update the table based on the provided statements, we will process each statement sequentially and update the relevant metrics accordingly.
+
+### Initial Table (Empty Table):
+```
+| Team | Goals | Shots | Shots on Target | Shots Blocked | Offsides | Fouls Committed | Free Kicks Earned | Yellow Cards | Corner Kicks | <NEWLINE>
+| Home Team | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+```
+
+### Step-by-Step Updates:
+
+1. **Statement:** "And we're off for the first half."
+   - No updates required.
+
+2. **Statement:** "Player27(Away Team)'s shot from close range is blocked."
+   - Update: Shots for Away Team +1, Shots Blocked for Home Team +1.
+   - Revised State:
+     ```
+     | Home Team | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+     | Away Team | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+     ```
+
+3. **Statement:** "Player27(Away Team)'s shot from the center of the box is blocked with the assistance of Player26(Away Team)."
+   - Update: Shots for Away Team +1, Shots Blocked for Home Team +1.
+   - Revised State:
+     ```
+     | Home Team | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+     | Away Team | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+     ```
+
+4. **Statement:** "The Away Team earns a corner kick."
+   - Update: Corner Kicks for Away Team +1.
+   - Revised State:
+     ```
+     | Home Team | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+     | Away Team | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | <NEWLINE>
+     ```
+
+5. **Statement:** "Offside called against the Away Team as Player24(Away Team) attempts a pass to Player32(Away Team), but Player28(Away Team) is caught in an offside position."
+   - Update: Offsides for Away Team +1.
+   - Revised State:
+     ```
+     | Home Team | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+     | Away Team | 0 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | <NEWLINE>
+     ```
+
+6. **Statement:** "The Away Team wins a corner kick."
+   - Update: Corner Kicks for Away Team +1.
+   - Revised State:
+     ```
+     | Home Team | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+     | Away Team | 0 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 2 | <NEWLINE>
+     ```
+
+7. **Statement:** "Player29(Away Team) narrowly misses with a right-footed shot from outside the box, assisted by Player23(Away Team) after a corner, as Player6(Home Team) is down with an injury causing a delay in the match."
+   - Update: Shots for Away Team +1.
+   - Revised State:
+     ```
+     | Home Team | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+     | Away Team | 0 | 3 | 0 | 0 | 1 | 0 | 0 | 0 | 2 | <NEWLINE>
+     ```
+
+8. **Statement:** "The delay is finished and they are prepared to resume play."
+   - No updates required.
+
+9. **Statement:** "Player28(Away Team) earns a free kick after being fouled by Player8(Home Team) on the left wing."
+   - Update: Free Kicks Earned for Away Team +1, Fouls Committed for Home Team +1.
+   - Revised State:
+     ```
+     | Home Team | 0 | 0 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | <NEWLINE>
+     | Away Team | 0 | 3 | 0 | 0 | 1 | 0 | 1 | 0 | 2 | <NEWLINE>
+     ```
+
+10. **Statement:** "Player20(Away Team) is causing a delay in the match due to an injury."
+    - No updates required.
+
+11. **Statement:** "The delay has ended and they are prepared to resume play."
+    - No updates required.
+
+12. **Statement:** "Player26(Away Team)'s shot from outside the box is saved in the middle of the goal."
+    - Update: Shots for Away Team +1, Shots on Target for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 0 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 4 | 1 | 0 | 1 | 0 | 1 | 0 | 2 | <NEWLINE>
+      ```
+
+13. **Statement:** "Player20(Away Team) commits a foul, resulting in Player7(Home Team) winning a free kick in their own defensive half."
+    - Update: Fouls Committed for Away Team +1, Free Kicks Earned for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 0 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 4 | 1 | 0 | 1 | 1 | 1 | 0 | 2 | <NEWLINE>
+      ```
+
+14. **Statement:** "Player21(Away Team) earns a free kick in their own half."
+    - Update: Free Kicks Earned for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 0 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 4 | 1 | 0 | 1 | 1 | 2 | 0 | 2 | <NEWLINE>
+      ```
+
+15. **Statement:** "Player9(Home Team) commits a foul."
+    - Update: Fouls Committed for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 0 | 0 | 2 | 0 | 2 | 1 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 4 | 1 | 0 | 1 | 1 | 2 | 0 | 2 | <NEWLINE>
+      ```
+
+16. **Statement:** "Player20(Away Team) attempts a pass to Player28(Away Team), but Player28(Away Team) is offside."
+    - Update: Offsides for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 0 | 0 | 2 | 0 | 2 | 1 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 4 | 1 | 0 | 2 | 1 | 2 | 0 | 2 | <NEWLINE>
+      ```
+
+17. **Statement:** "Player7(Home Team)'s right-footed shot from the center of the box was blocked with an assist from Player11(Home Team), while Player11(Home Team)'s header from the center of the box missed to the left with a cross from Player2(Home Team)."
+    - Update: Shots for Home Team +2, Shots Blocked for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 2 | 0 | 0 | 0 | 2 | 1 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 4 | 1 | 1 | 2 | 1 | 2 | 0 | 2 | <NEWLINE>
+      ```
+
+18. **Statement:** "Player22(Away Team) commits a foul."
+    - Update: Fouls Committed for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 2 | 0 | 0 | 0 | 2 | 1 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 4 | 1 | 1 | 2 | 2 | 2 | 0 | 2 | <NEWLINE>
+      ```
+
+19. **Statement:** "Player11(Home Team) earns a free kick in the opponent's half."
+    - Update: Free Kicks Earned for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 2 | 0 | 0 | 0 | 2 | 2 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 4 | 1 | 1 | 2 | 2 | 2 | 0 | 2 | <NEWLINE>
+      ```
+
+20. **Statement:** "Player27(Away Team) misses the target with a shot from the left side of the box, assisted by Player22(Away Team)."
+    - Update: Shots for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 2 | 0 | 0 | 0 | 2 | 2 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 1 | 2 | 2 | 2 | 0 | 2 | <NEWLINE>
+      ```
+
+21. **Statement:** "Player25(Away Team) earns a free kick in the opponent's half."
+    - Update: Free Kicks Earned for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 2 | 0 | 0 | 0 | 2 | 2 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 1 | 2 | 2 | 3 | 0 | 2 | <NEWLINE>
+      ```
+
+22. **Statement:** "Player11(Home Team) commits a foul."
+    - Update: Fouls Committed for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 2 | 0 | 0 | 0 | 3 | 2 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 1 | 2 | 2 | 3 | 0 | 2 | <NEWLINE>
+      ```
+
+23. **Statement:** "Player7(Home Team)'s shot from the center of the box is blocked."
+    - Update: Shots for Home Team +1, Shots Blocked for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 3 | 0 | 0 | 0 | 3 | 2 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 2 | 2 | 2 | 3 | 0 | 2 | <NEWLINE>
+      ```
+
+24. **Statement:** "Player28(Away Team) earns a free kick in their own half after a foul by Player10(Home Team)."
+    - Update: Free Kicks Earned for Away Team +1, Fouls Committed for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 3 | 0 | 0 | 0 | 4 | 2 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 2 | 2 | 2 | 4 | 0 | 2 | <NEWLINE>
+      ```
+
+25. **Statement:** "Player20(Away Team) is causing a delay in the match due to an injury."
+    - No updates required.
+
+26. **Statement:** "Play is about to resume as the delay has ended."
+    - No updates required.
+
+27. **Statement:** "Player11(Home Team)'s shot from distance goes high and wide to the right, with an assist from Player10(Home Team)."
+    - Update: Shots for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 4 | 0 | 0 | 0 | 4 | 2 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 2 | 2 | 2 | 4 | 0 | 2 | <NEWLINE>
+      ```
+
+28. **Statement:** "Player22(Away Team) commits a foul."
+    - Update: Fouls Committed for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 4 | 0 | 0 | 0 | 4 | 2 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 2 | 2 | 3 | 4 | 0 | 2 | <NEWLINE>
+      ```
+
+29. **Statement:** "Player7(Home Team) earns a free kick in the opponent's half."
+    - Update: Free Kicks Earned for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 4 | 0 | 0 | 0 | 4 | 3 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 2 | 2 | 3 | 4 | 0 | 2 | <NEWLINE>
+      ```
+
+30. **Statement:** "Player6(Home Team) misses the goal with a right-footed shot from the right side of the box, assisted by Player11(Home Team) with a cross after a set piece."
+    - Update: Shots for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 5 | 0 | 0 | 0 | 4 | 3 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 2 | 2 | 3 | 4 | 0 | 2 | <NEWLINE>
+      ```
+
+31. **Statement:** "Player22(Away Team) earns a free kick in the attacking half after a foul by Player7(Home Team)."
+    - Update: Free Kicks Earned for Away Team +1, Fouls Committed for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 5 | 0 | 0 | 0 | 5 | 3 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 2 | 2 | 3 | 5 | 0 | 2 | <NEWLINE>
+      ```
+
+32. **Statement:** "Player29(Away Team) commits a foul, resulting in Player11(Home Team) winning a free kick in the attacking half."
+    - Update: Fouls Committed for Away Team +1, Free Kicks Earned for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 5 | 0 | 0 | 0 | 5 | 4 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 5 | 1 | 2 | 2 | 4 | 5 | 0 | 2 | <NEWLINE>
+      ```
+
+33. **Statement:** "Player26(Away Team)'s shot from outside the box is saved in the top center of the goal with an assist from Player21(Away Team)."
+    - Update: Shots for Away Team +1, Shots on Target for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 5 | 0 | 0 | 0 | 5 | 4 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 6 | 2 | 2 | 2 | 4 | 5 | 0 | 2 | <NEWLINE>
+      ```
+
+34. **Statement:** "The Away Team earns a corner kick."
+    - Update: Corner Kicks for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 5 | 0 | 0 | 0 | 5 | 4 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 6 | 2 | 2 | 2 | 4 | 5 | 0 | 3 | <NEWLINE>
+      ```
+
+35. **Statement:** "Player21(Away Team) earns a free kick on the left side of the field."
+    - Update: Free Kicks Earned for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 5 | 0 | 0 | 0 | 5 | 4 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 6 | 2 | 2 | 2 | 4 | 6 | 0 | 3 | <NEWLINE>
+      ```
+
+36. **Statement:** "Player11(Home Team) commits a foul."
+    - Update: Fouls Committed for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 5 | 0 | 0 | 0 | 6 | 4 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 6 | 2 | 2 | 2 | 4 | 6 | 0 | 3 | <NEWLINE>
+      ```
+
+37. **Statement:** "Player29(Away Team)'s shot from the center of the box is blocked by a defender after being set up by Player28(Away Team)."
+    - Update: Shots for Away Team +1, Shots Blocked for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 5 | 0 | 1 | 0 | 6 | 4 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 7 | 2 | 2 | 2 | 4 | 6 | 0 | 3 | <NEWLINE>
+      ```
+
+38. **Statement:** "Player11(Home Team)'s shot from outside the box with his left foot was blocked with the help of Player9(Home Team)."
+    - Update: Shots for Home Team +1, Shots Blocked for Away Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 6 | 0 | 1 | 0 | 6 | 4 | 0 | 0 | <NEWLINE>
+      | Away Team | 0 | 7 | 2 | 3 | 2 | 4 | 6 | 0 | 3 | <NEWLINE>
+      ```
+
+39. **Statement:** "Home team is awarded a corner kick."
+    - Update: Corner Kicks for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 6 | 0 | 1 | 0 | 6 | 4 | 0 | 1 | <NEWLINE>
+      | Away Team | 0 | 7 | 2 | 3 | 2 | 4 | 6 | 0 | 3 | <NEWLINE>
+      ```
+
+40. **Statement:** "The Home Team earns a corner kick."
+    - Update: Corner Kicks for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 6 | 0 | 1 | 0 | 6 | 4 | 0 | 2 | <NEWLINE>
+      | Away Team | 0 | 7 | 2 | 3 | 2 | 4 | 6 | 0 | 3 | <NEWLINE>
+      ```
+
+41. **Statement:** "Offside called against the Home Team as Player5(Home Team) attempts a pass to Player32(Away Team), but Player7(Home Team) is offside."
+    - Update: Offsides for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 6 | 0 | 1 | 1 | 6 | 4 | 0 | 2 | <NEWLINE>
+      | Away Team | 0 | 7 | 2 | 3 | 2 | 4 | 6 | 0 | 3 | <NEWLINE>
+      ```
+
+42. **Statement:** "At the end of the first half, the score is tied at 0-0 between the Home Team and the Away Team."
+    - No updates required.
+
+43. **Statement:** "The second half has started with the score tied at 0-0 between the Home Team and the Away Team."
+    - No updates required.
+
+44. **Statement:** "Player21(Away Team) earns a free kick in their own half after being fouled by Player11(Home Team)."
+    - Update: Free Kicks Earned for Away Team +1, Fouls Committed for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 6 | 0 | 1 | 1 | 7 | 4 | 0 | 2 | <NEWLINE>
+      | Away Team | 0 | 7 | 2 | 3 | 2 | 4 | 7 | 0 | 3 | <NEWLINE>
+      ```
+
+45. **Statement:** "Player11(Home Team) receives a yellow card for a foul on Player32(Away Team)."
+    - Update: Yellow Cards for Home Team +1.
+    - Revised State:
+      ```
+      | Home Team | 0 | 6 | 0 | 1 | 1 | 7 | 4 | 1 | 2 | <NEWLINE>
+      | Away Team | 0 | 7 | 2 | 3 | 2 | 4 | 7 | 0 | 3 | <NEWLINE>
+      ```
+
+### Final Table:
+```
+| Team | Goals | Shots | Shots on Target | Shots Blocked | Offsides | Fouls Committed | Free Kicks Earned | Yellow Cards | Corner Kicks | <NEWLINE>
+| Home Team | 0 | 6 | 0 | 1 | 1 | 7 | 4 | 1 | 2 | <NEWLINE>
+| Away Team | 0 | 7 | 2 | 3 | 2 | 4 | 7 | 0 | 3 | <NEWLINE>
+```

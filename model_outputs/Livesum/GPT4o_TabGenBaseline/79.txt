@@ -1,0 +1,32 @@
+To create the summary table, let's first define the table schema that will encapsulate all the important statistics of the game:
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Fouls
+- Shots
+
+Now, let's process the text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 1 goal (as mentioned in the text, Home Team leads 1-0 and wins 1-0)
+   - Away Team: 0 goals
+
+2. **Red Cards:**
+   - No player received a red card directly, and there were no mentions of second yellow cards leading to a red card. Therefore:
+   - Home Team: 0 red cards
+   - Away Team: 0 red cards
+
+3. **Fouls:**
+   - Home Team: 12 fouls (Player9 x2, Player10 x2, Player5, Player8, Player17 x2, Player3, Player1, Player18, Player9)
+   - Away Team: 13 fouls (Player23 x2, Player29, Player28 x2, Player27, Player24 x2, Player22, Player25 x2, Player35, Player32)
+
+4. **Shots:**
+   - Home Team: 6 shots (Player10 blocked, Player2 saved, Player9 saved, Player6 missed, Player2 blocked, Player8 missed)
+   - Away Team: 12 shots (Player29 missed x3, Player22 missed, Player25 missed, Player27 missed, Player35 missed, Player21 missed, Player25 saved, Player28 saved, Player25 saved, Player35 missed)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 1     | 0         | 12    | 6     | <NEWLINE>
+| Away Team  | 0     | 0         | 13    | 12    | <NEWLINE>

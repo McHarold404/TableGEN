@@ -1,0 +1,194 @@
+### Initial Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 9 | 6 | 1 | 0 | 0 | 7 | 0 | <NEWLINE>
+| Away Team | 0 | 4 | 8 | 3 | 0 | 6 | 5 | 0 | <NEWLINE>
+
+**Statement 47:** "The Home Team wins a corner kick."
+- Update: Increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Corner Kicks: 1.
+
+**Statement 48:** "Player9(Home Team) misses the target with a right-footed shot from outside the box, assisted by Player3(Home Team) after a corner."
+- Update: Increment Shots for Home Team by 1.
+- Revised State: Home Team Shots: 10.
+
+**Statement 49:** "Player28(Away Team)'s shot from the center of the box was saved in the bottom left corner with the help of Player29(Away Team)."
+- Update: Increment Shots for Away Team by 1.
+- Revised State: Away Team Shots: 5.
+
+**Statement 50:** "The Away Team wins a corner kick."
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 7.
+
+**Statement 51:** "Player29(Away Team) scores with a header from the left side of the six-yard box, assisted by Player24(Away Team) with a cross after a corner kick, The Away Team leads 1-0 against the Home Team."
+- Update: Increment Goals for Away Team by 1, increment Shots for Away Team by 1.
+- Revised State: Away Team Goals: 1, Away Team Shots: 6.
+
+**Statement 52:** "Player7(Home Team)'s left footed shot from outside the box was blocked with an assist from Player8(Home Team)."
+- Update: Increment Shots for Home Team by 1.
+- Revised State: Home Team Shots: 11.
+
+**Statement 53:** "Player26(Away Team)'s shot from outside the box is saved in the top right corner with an assist from Player23(Away Team)."
+- Update: Increment Shots for Away Team by 1.
+- Revised State: Away Team Shots: 7.
+
+**Statement 54:** "Player27(Away Team) commits a foul on Player3(Home Team), who wins a free kick in their defensive half."
+- Update: Increment Fouls for Away Team by 1, increment Free Kicks for Home Team by 1.
+- Revised State: Away Team Fouls: 9, Home Team Free Kicks: 8.
+
+**Statement 55:** "Player27(Away Team) receives a yellow card for a rough tackle."
+- Update: Increment Yellow Cards for Away Team by 1.
+- Revised State: Away Team Yellow Cards: 4.
+
+**Statement 56:** "Player20(Away Team) commits a foul, resulting in Player7(Home Team) winning a free kick on the left wing."
+- Update: Increment Fouls for Away Team by 1, increment Free Kicks for Home Team by 1.
+- Revised State: Away Team Fouls: 10, Home Team Free Kicks: 9.
+
+**Statement 57:** "Player20(Away Team) receives a yellow card for a rough tackle."
+- Update: Increment Yellow Cards for Away Team by 1.
+- Revised State: Away Team Yellow Cards: 5.
+
+**Statement 58:** "The Home Team wins a corner kick."
+- Update: Increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Corner Kicks: 2.
+
+**Statement 59:** "Player3(Home Team) misses the goal with a right footed shot from the left side of the six yard box, assisted by Player7(Home Team) with a cross after a corner."
+- Update: Increment Shots for Home Team by 1.
+- Revised State: Home Team Shots: 12.
+
+**Statement 60:** "Player20(Away Team) misses the shot with his right foot from a tough angle on the right, assisted by Player26(Away Team)."
+- Update: Increment Shots for Away Team by 1.
+- Revised State: Away Team Shots: 8.
+
+**Statement 61:** "Player26(Away Team) misses the goal with a right footed shot from the left side of the box, assisted by Player28(Away Team)."
+- Update: Increment Shots for Away Team by 1.
+- Revised State: Away Team Shots: 9.
+
+**Statement 62:** "Player10(Home Team) earns a free kick on the right wing after being fouled by Player23(Away Team)."
+- Update: Increment Fouls for Away Team by 1, increment Free Kicks for Home Team by 1.
+- Revised State: Away Team Fouls: 11, Home Team Free Kicks: 10.
+
+**Statement 63:** "The Home Team earns a corner kick."
+- Update: Increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Corner Kicks: 3.
+
+**Statement 64:** "Player9(Home Team) earns a free kick in their own defensive half following a foul committed by Player24(Away Team)."
+- Update: Increment Fouls for Away Team by 1, increment Free Kicks for Home Team by 1.
+- Revised State: Away Team Fouls: 12, Home Team Free Kicks: 11.
+
+**Statement 65:** "Player19(Away Team) of the Away Team attempts a through ball, but Player29(Away Team) is caught offside."
+- Update: Increment Offsides for Away Team by 1.
+- Revised State: Away Team Offsides: 1.
+
+**Statement 66:** "Player11(Home Team)'s shot from outside the box was off target and missed, with an assist from Player10(Home Team)."
+- Update: Increment Shots for Home Team by 1.
+- Revised State: Home Team Shots: 13.
+
+**Statement 67:** "Player28(Away Team) earns a free kick in their own half."
+- Update: Increment Free Kicks for Away Team by 1.
+- Revised State: Away Team Free Kicks: 6.
+
+**Statement 68:** "Player9(Home Team) commits a foul."
+- Update: Increment Fouls for Home Team by 1.
+- Revised State: Home Team Fouls: 7.
+
+**Statement 69:** "Player9(Home Team) receives a yellow card for a foul."
+- Update: Increment Yellow Cards for Home Team by 1.
+- Revised State: Home Team Yellow Cards: 2.
+
+**Statement 70:** "Player11(Home Team)'s left footed shot from a tough angle on the left was saved in the bottom right corner, with an assist from Player5(Home Team)."
+- Update: Increment Shots for Home Team by 1.
+- Revised State: Home Team Shots: 14.
+
+**Statement 71:** "Player10(Home Team)'s left footed shot from outside the box goes wide to the left, with an assist from Player2(Home Team)."
+- Update: Increment Shots for Home Team by 1.
+- Revised State: Home Team Shots: 15.
+
+**Statement 72:** "Player18(Home Team)'s header from the center of the box was just a tad too high after being assisted by Player2(Home Team) with a cross."
+- Update: Increment Shots for Home Team by 1.
+- Revised State: Home Team Shots: 16.
+
+**Statement 73:** "Player29(Away Team) draws a foul from Player4(Home Team) and earns a free kick in the attacking half."
+- Update: Increment Fouls for Home Team by 1, increment Free Kicks for Away Team by 1.
+- Revised State: Home Team Fouls: 8, Away Team Free Kicks: 7.
+
+**Statement 74:** "Player25(Away Team) attempts a through pass, but Player26(Away Team) is caught offside for the Away Team."
+- Update: Increment Offsides for Away Team by 1.
+- Revised State: Away Team Offsides: 2.
+
+**Statement 75:** "Player21(Away Team) earns a free kick in their own half after being fouled by Player11(Home Team)."
+- Update: Increment Fouls for Home Team by 1, increment Free Kicks for Away Team by 1.
+- Revised State: Home Team Fouls: 9, Away Team Free Kicks: 8.
+
+**Statement 76:** "The home team wins a corner kick."
+- Update: Increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Corner Kicks: 4.
+
+**Statement 77:** "Player19(Away Team) earns a free kick in their own half after a foul by Player4(Home Team)."
+- Update: Increment Fouls for Home Team by 1, increment Free Kicks for Away Team by 1.
+- Revised State: Home Team Fouls: 10, Away Team Free Kicks: 9.
+
+**Statement 78:** "Player22(Away Team) earns a free kick in their own half."
+- Update: Increment Free Kicks for Away Team by 1.
+- Revised State: Away Team Free Kicks: 10.
+
+**Statement 79:** "Player11(Home Team) commits a foul."
+- Update: Increment Fouls for Home Team by 1.
+- Revised State: Home Team Fouls: 11.
+
+**Statement 80:** "Player28(Away Team) commits a foul, resulting in Player2(Home Team) winning a free kick in the attacking half, This leads to a set piece opportunity for Player2(Home Team)'s team."
+- Update: Increment Fouls for Away Team by 1, increment Free Kicks for Home Team by 1.
+- Revised State: Away Team Fouls: 13, Home Team Free Kicks: 12.
+
+**Statement 81:** "Player28(Away Team) receives a yellow card for a rough tackle."
+- Update: Increment Yellow Cards for Away Team by 1.
+- Revised State: Away Team Yellow Cards: 6.
+
+**Statement 82:** "Player20(Away Team) earns a free kick in their own half."
+- Update: Increment Free Kicks for Away Team by 1.
+- Revised State: Away Team Free Kicks: 11.
+
+**Statement 83:** "Player10(Home Team) commits a foul."
+- Update: Increment Fouls for Home Team by 1.
+- Revised State: Home Team Fouls: 12.
+
+**Statement 84:** "Player11(Home Team) commits a foul, resulting in Player25(Away Team) winning a free kick in the attacking half, Paraphrased: Player11(Home Team) fouls Player25(Away Team), who then earns a free kick in the attacking half."
+- Update: Increment Fouls for Home Team by 1, increment Free Kicks for Away Team by 1.
+- Revised State: Home Team Fouls: 13, Away Team Free Kicks: 12.
+
+**Statement 85:** "The goalkeeper saves Player7(Home Team)'s left-footed shot from outside the box in the bottom right corner."
+- Update: Increment Shots for Home Team by 1.
+- Revised State: Home Team Shots: 17.
+
+**Statement 86:** "Player20(Away Team) commits a foul on Player7(Home Team), resulting in a free kick being awarded on the left wing."
+- Update: Increment Fouls for Away Team by 1, increment Free Kicks for Home Team by 1.
+- Revised State: Away Team Fouls: 14, Home Team Free Kicks: 13.
+
+**Statement 87:** "Player20(Away Team) has been given a second yellow card for a rough tackle."
+- Update: Increment Yellow Cards for Away Team by 1, increment Red Cards for Away Team by 1.
+- Revised State: Away Team Yellow Cards: 7, Away Team Red Cards: 1.
+
+**Statement 88:** "Player9(Home Team)'s header from the center of the box is saved by the goalkeeper after a cross from Player7(Home Team)."
+- Update: Increment Shots for Home Team by 1.
+- Revised State: Home Team Shots: 18.
+
+**Statement 89:** "And it's a goal!"
+- No specific team mentioned; context needed to determine which team scored.
+
+**Statement 90:** "The Home Team and Away Team are now tied at 1-1 thanks to Player11(Home Team)'s left-footed shot from the center of the box after a set piece."
+- Update: Increment Goals for Home Team by 1, increment Shots for Home Team by 1.
+- Revised State: Home Team Goals: 1, Home Team Shots: 19.
+
+**Statement 91:** "Player11(Home Team) receives a yellow card for celebrating too much."
+- Update: Increment Yellow Cards for Home Team by 1.
+- Revised State: Home Team Yellow Cards: 3.
+
+**Statement 92:** "The second half concludes with both teams tied at one goal each."
+- No updates needed; summary statement.
+
+**Statement 93:** "The game finishes with both teams scoring one goal each."
+- No updates needed; summary statement.
+
+### Final Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 19 | 13 | 3 | 0 | 4 | 13 | 0 | <NEWLINE>
+| Away Team | 1 | 9 | 14 | 7 | 1 | 7 | 12 | 2 | <NEWLINE>

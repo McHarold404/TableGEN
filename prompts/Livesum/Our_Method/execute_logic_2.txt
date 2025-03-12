@@ -1,0 +1,87 @@
+Objective
+You will process a structured list of updates and revised states to iteratively update a predefined soccer match statistics table. You will receive 2 things: 
+1. A predefined table schema with row headers and column headers
+2. updates and revised states, which must be applied sequentially and validated.
+
+Instructions
+1. Initialize an Empty Table with the row headers and column headers.
+2. All cell values start at 0 initially.
+3. Apply Updates Iteratively:
+    Each update specifies a modification to the table (e.g., "Away Team Shots +1").
+    Apply updates sequentially, updating the corresponding values in the table.
+    Validate Against the Revised State After Each Step:
+    Each update is followed by a Revised State, which specifies the expected values in the updated table.
+4. After all updates have been processed, output the final structured table in the required format.
+
+Input Format
+The input consists of sequentially numbered updates and revised states in the following format:
+
+1. update: None
+revised state: None
+
+2. update: Away Team Shots +1
+revised state: Away Team Shots: 1
+
+3. update: Away Team Shots +1
+revised state: Away Team Shots: 2
+
+4. update: Away Team Corner Kicks +1
+revised state: Away Team Corner Kicks: 1
+
+5. update: Away Team Offsides +1
+revised state: Away Team Offsides: 1
+
+Each entry consists of:
+
+A sequential number.
+An update indicating changes to specific team statistics.
+A Revised State specifying the expected updated values.
+If "update: None", no changes should be applied to the table.
+
+Output Format
+The final output must be structured as follows:
+
+### Final Table:
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Offsides | Red Cards | <NEWLINE>
+| Home Team | 9 | 13 | 4 | 6 | 12 | 0 | 1 | 0 | <NEWLINE>
+| Away Team | 13 | 9 | 1 | 8 | 11 | 3 | 7 | 0 | <NEWLINE>
+
+Formatting Rules:
+Use | to separate cells.
+Use <NEWLINE> as a literal separator for rows.
+Maintain column order and structure exactly as defined.
+Any unaffected values remain at 0.
+Ensure that the final output is fully populated and properly structured.
+
+Example Walkthrough
+Input
+
+1. update: None
+revised state: None
+
+2. update: Away Team Shots +1
+revised state: Away Team Shots: 1
+
+3. update: Away Team Shots +1
+revised state: Away Team Shots: 2
+
+4. update: Away Team Corner Kicks +1
+revised state: Away Team Corner Kicks: 1
+
+
+Processing Steps
+No change applied.
+"Away Team Shots" is incremented by 1 → Validate.
+"Away Team Shots" is incremented by 1 → Validate.
+"Away Team Corner Kicks" is incremented by 1 → Validate.
+
+Final Output
+
+### Final Table:
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Offsides | <NEWLINE>
+| Home Team | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 0 | 0 | 0 | 1 | 2 | 0 | 0 | <NEWLINE>
+
+Final Instructions
+Strictly adhere to the given table schema and formatting rules.
+Apply each update sequentially to given schema and validate against the revised state to return the final table at the end in the specified format.

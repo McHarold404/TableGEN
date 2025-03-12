@@ -1,0 +1,35 @@
+To create the table, we need to extract and count the relevant statistics from the text provided. The statistics we will focus on are:
+
+1. Goals
+2. Red Cards
+3. Fouls
+4. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Let's go through the text and tally these statistics for both the Home Team and the Away Team.
+
+### Step-by-step analysis:
+
+**Goals:**
+- The text indicates that the game ends with a score of 0-0. Thus, both teams have 0 goals.
+
+**Red Cards:**
+- There are no mentions of red cards in the text. Thus, both teams have 0 red cards.
+
+**Fouls:**
+- Home Team: Player8 (2 fouls), Player7 (2 fouls), Player6 (2 fouls), Player2 (1 foul), Player4 (1 foul), Player12 (1 foul).
+  Total fouls by Home Team = 9
+- Away Team: Player22 (2 fouls), Player20 (4 fouls), Player21 (1 foul), Player26 (1 foul), Player27 (1 foul), Player29 (2 fouls), Player25 (2 fouls).
+  Total fouls by Away Team = 13
+
+**Shots:**
+- Home Team: Player8 (3 shots), Player4 (1 shot), Player11 (4 shots), Player6 (3 shots), Player3 (1 shot), Player2 (1 shot), Player12 (1 shot), Player15 (1 shot).
+  Total shots by Home Team = 15
+- Away Team: Player24 (1 shot), Player26 (3 shots), Player23 (1 shot).
+  Total shots by Away Team = 5
+
+Now, let's compile these statistics into the final table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 9     | 15    | <NEWLINE>
+| Away Team  | 0     | 0         | 13    | 5     | <NEWLINE>

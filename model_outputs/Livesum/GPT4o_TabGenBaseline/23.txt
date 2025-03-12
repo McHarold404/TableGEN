@@ -1,0 +1,47 @@
+To generate the final table with the important statistics of the game, let's first outline the table schema:
+
+### Table Schema:
+1. Team
+2. Goals
+3. Red Cards
+4. Fouls
+5. Offsides
+6. Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts)
+7. Free Kicks (Including Penalties)
+8. Yellow Cards
+
+Now, let's process the text to fill in the table:
+
+### Processing the Text:
+
+1. **Goals**:
+   - Home Team: 0
+   - Away Team: 3 (Player22, Player29 twice)
+
+2. **Red Cards**:
+   - Both teams: 0
+
+3. **Fouls**:
+   - Home Team: 10 (Player4 x3, Player7, Player6, Player8 x2, Player2, Player18)
+   - Away Team: 7 (Player23, Player28, Player21, Player26, Player32 x2, Player29)
+
+4. **Offsides**:
+   - Home Team: 5 (Player10 x2, Player2, Player15 x2)
+   - Away Team: 3 (Player27, Player21, Player21)
+
+5. **Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts)**:
+   - Home Team: 14 (Saved: Player10, Player9, Player4, Player15; Blocked: Player10 x2; Missed: Player5, Player9 x3, Player11, Player15; Goals: 0)
+   - Away Team: 10 (Saved: Player29, Player22 x2; Blocked: Player22, Player27; Missed: Player26, Player27, Player23, Player32; Goals: Player22, Player29 x2)
+
+6. **Free Kicks (Including Penalties)**:
+   - Home Team: 6 (Player10, Player5, Player7, Player18, Player8, Player15)
+   - Away Team: 9 (Player22, Player21, Player27 x2, Player31, Player25, Player26, Player32, Player29)
+
+7. **Yellow Cards**:
+   - Home Team: 1 (Player7)
+   - Away Team: 1 (Player23)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Offsides | Shots | Free Kicks | Yellow Cards | <NEWLINE>
+| Home Team  | 0     | 0         | 10    | 5        | 14    | 6          | 1            | <NEWLINE>
+| Away Team  | 3     | 0         | 7     | 3        | 10    | 9          | 1            | <NEWLINE>

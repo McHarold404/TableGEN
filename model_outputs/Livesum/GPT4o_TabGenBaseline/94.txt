@@ -1,0 +1,31 @@
+To create the summary table of the game statistics, we will first identify the key events from the text and organize them into a structured format. The key statistics to track are Goals, Red Cards, Fouls, and Shots. Based on the text, we will count each of these for both the Home Team and the Away Team.
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Shots | 
+
+Now, let's fill in the table by processing the text:
+
+1. **Goals:**
+   - Home Team: 1 goal (Player7)
+   - Away Team: 1 goal (Player29)
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls:**
+   - Home Team: Player8 (3 fouls), Player6 (2 fouls), Player5 (2 fouls), Player11 (1 foul), Player4 (1 foul), Player10 (1 foul), Player18 (1 foul)
+     - Total: 11 fouls
+   - Away Team: Player22 (6 fouls), Player29 (5 fouls), Player25 (4 fouls), Player20 (3 fouls), Player23 (1 foul), Player27 (1 foul), Player28 (1 foul), Player19 (1 foul)
+     - Total: 22 fouls
+
+4. **Shots:**
+   - Home Team: Player7 (6 shots), Player8 (5 shots), Player10 (4 shots), Player18 (4 shots), Player11 (2 shots), Player9 (1 shot), Player3 (1 shot), Player6 (1 shot), Player14 (1 shot), Player12 (1 shot)
+     - Total: 26 shots
+   - Away Team: Player29 (6 shots), Player27 (3 shots), Player28 (3 shots), Player23 (3 shots), Player22 (2 shots), Player20 (2 shots), Player25 (1 shot), Player19 (1 shot), Player32 (1 shot)
+     - Total: 22 shots
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 1     | 0         | 11    | 26    | <NEWLINE>
+| Away Team  | 1     | 0         | 22    | 22    | <NEWLINE>

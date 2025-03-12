@@ -1,0 +1,36 @@
+To create a summary table encapsulating the important statistics of the game, we first need to identify the key statistics from the live text. The statistics to be considered are:
+
+1. Goals
+2. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+3. Red Cards
+4. Fouls (including handball and dangerous play)
+5. Free Kicks (including penalties)
+
+Now, let's process the text to fill in these statistics:
+
+### Home Team:
+- Goals: 2 (Player9 at step 29, Player14 at step 64)
+- Shots: 
+  - Missed: 5 (Player10 at step 3, Player10 at step 22, Player10 at step 34, Player11 at step 51, Player15 at step 65)
+  - Blocked: 7 (Player10 at step 14, Player7 at step 16, Player10 at step 26, Player9 at step 27, Player9 at step 46, Player7 at step 61, Player17 at step 63)
+  - Saved: 6 (Player7 at step 7, Player10 at step 15, Player6 at step 17, Player11 at step 39, Player7 at step 49, Player5 at step 54)
+- Red Cards: 0 
+- Fouls: 10 (Player6 at step 6, Player2 at step 10, Player2 at step 11, Player5 at step 13, Player9 at step 20, Player3 at step 21, Player8 at step 36, Player6 at step 42, Player7 at step 45, Player4 at step 59)
+- Free Kicks: 7 (Player8 at step 5, Player5 at step 33, Player5 at step 36, Player6 at step 42, Player7 at step 45, Player5 at step 54, Player15 at step 66)
+
+### Away Team:
+- Goals: 0
+- Shots: 
+  - Missed: 2 (Player31 at step 43, Player31 at step 56)
+  - Blocked: 3 (Player29 at step 23, Player29 at step 37, Player25 at step 53)
+  - Saved: 2 (Player29 at step 24, Player21 at step 35)
+- Red Cards: 0
+- Fouls: 4 (Player20 at step 4, Player25 at step 32, Player21 at step 66)
+- Free Kicks: 8 (Player29 at step 9, Player28 at step 12, Player22 at step 19, Player27 at step 41, Player26 at step 45, Player26 at step 58, Player26 at step 60, Player26 at step 66)
+
+Now, let's compile this information into the final table:
+
+### Final Table:
+| Team       | Goals | Shots | Red Cards | Fouls | Free Kicks | <NEWLINE>
+| Home Team  | 2     | 18    | 0         | 10    | 7          | <NEWLINE>
+| Away Team  | 0     | 7     | 0         | 4     | 8          | <NEWLINE>

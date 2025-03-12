@@ -1,0 +1,94 @@
+To generate the final table, we will extract and summarize the statistics from the provided text. We'll focus on the following key statistics: Goals, Red Cards, Fouls, and Shots (including Goals, Saved Attempts, Blocked Attempts, and Missed Attempts).
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+
+### Extracted Statistics:
+1. **Goals:**
+   - Home Team: 0
+   - Away Team: 3
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls:**
+   - Home Team: 
+     - Player27 fouled Player4 (1)
+     - Player8 (1)
+     - Player7 (1)
+     - Player4 (1)
+     - Player2 (1)
+     - Player6 (1)
+     - Player9 (1)
+     - Player8 (penalty) (1)
+     - Player2 (1)
+     - Player5 (1)
+     - Player10 (1)
+     - Player4 (1)
+     - Player3 (1)
+     - Player5 (1)
+     - Player4 (1)
+     - Player5 (1)
+     - Player4 (1)
+     - Total: 17
+
+   - Away Team:
+     - Player23 (handball) (1)
+     - Player29 (1)
+     - Player24 (1)
+     - Player28 (1)
+     - Player25 (1)
+     - Player22 (1)
+     - Player27 (1)
+     - Player25 (1)
+     - Player22 (1)
+     - Player30 (1)
+     - Player26 (1)
+     - Total: 11
+
+4. **Shots:**
+   - Home Team: 
+     - Player4 (miss) (1)
+     - Player2 (miss) (1)
+     - Player3 (saved) (1)
+     - Player3 (miss) (1)
+     - Player8 (miss) (1)
+     - Player9 (blocked) (1)
+     - Player4 (miss) (1)
+     - Player4 (blocked) (1)
+     - Player3 (blocked) (1)
+     - Player7 (blocked) (1)
+     - Player8 (saved) (1)
+     - Player9 (saved) (1)
+     - Player9 (miss) (1)
+     - Player7 (blocked) (1)
+     - Player13 (saved) (1)
+     - Player4 (saved) (1)
+     - Player9 (miss) (1)
+     - Player9 (blocked) (1)
+     - Player13 (blocked) (1)
+     - Player9 (blocked) (1)
+     - Player6 (blocked) (1)
+     - Total: 21
+
+   - Away Team:
+     - Player21 (miss) (1)
+     - Player20 (miss) (1)
+     - Player29 (penalty goal) (1)
+     - Player28 (saved) (1)
+     - Player25 (goal) (1)
+     - Player27 (blocked) (1)
+     - Player28 (miss) (1)
+     - Player25 (miss) (1)
+     - Player21 (blocked) (1)
+     - Player27 (saved) (1)
+     - Player30 (miss) (1)
+     - Player28 (goal) (1)
+     - Player30 (miss) (1)
+     - Total: 13
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 17    | 21    | <NEWLINE>
+| Away Team  | 3     | 0         | 11    | 13    | <NEWLINE>

@@ -1,0 +1,19 @@
+To generate a summary table of the game statistics, we need to first establish a table schema that encapsulates all the important statistics. Based on the live text, the key statistics to capture are:
+
+1. Goals
+2. Red Cards
+3. Fouls
+4. Free Kicks
+5. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+| Home Team  | 1     | 0         | 13    | 10         | 14    | <NEWLINE>
+| Away Team  | 2     | 0         | 10    | 10         | 16    | <NEWLINE>
+
+**Explanation:**
+- **Goals:** The Home Team scored 1 goal, and the Away Team scored 2 goals.
+- **Red Cards:** No red cards were issued to either team.
+- **Fouls:** The Home Team committed 13 fouls, while the Away Team committed 10 fouls.
+- **Free Kicks:** Both teams had 10 free kicks each, including penalties.
+- **Shots:** The Home Team had a total of 14 shots, and the Away Team had 16 shots, which includes goals, saved attempts, blocked attempts, and missed attempts.

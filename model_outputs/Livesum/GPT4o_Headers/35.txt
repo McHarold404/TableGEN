@@ -1,0 +1,19 @@
+```json
+{
+  "row_headers": ["Away Team", "Home Team"],
+  "column_headers": [
+    "Goals",
+    "Fouls Committed",
+    "Free Kicks Earned",
+    "Shots Taken",
+    "Shots on Target",
+    "Shots Blocked",
+    "Shots Missed",
+    "Assists",
+    "Corner Kicks",
+    "Yellow Cards",
+    "Handballs",
+    "Injuries"
+  ]
+}
+```

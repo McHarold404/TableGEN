@@ -1,0 +1,36 @@
+Let's break down the important statistics from the live text:
+
+1. **Goals**:
+   - Home Team: 1 goal (Player9)
+   - Away Team: 2 goals (including an own goal by Player4 of the Home Team and Player32)
+
+2. **Shots**:
+   - Home Team: Blocked attempts (7), Saved attempts (2), Missed attempts (5), Goals (1) = Total 15
+   - Away Team: Blocked attempts (4), Saved attempts (3), Missed attempts (5), Goals (2) = Total 14
+
+3. **Red Cards**:
+   - Home Team: 0
+   - Away Team: 0
+
+4. **Fouls**:
+   - Home Team: 5 (Player2, Player7 with handball, Player10, Player8, Player6)
+   - Away Team: 6 (Player25, Player29, Player28, Player27, Player23, Player28 again)
+
+5. **Free Kicks**:
+   - Home Team: 7 (Player4 earns 2, Player10 earns 1, Player6 earns 1, and others from fouls)
+   - Away Team: 4 (Player24 earns 1, and others from fouls)
+
+6. **Offsides**:
+   - Home Team: 1 (Player9)
+   - Away Team: 3 (Player25, Player27, Player34)
+
+7. **Corner Kicks**:
+   - Home Team: 10
+   - Away Team: 6
+
+Now, let's compile these statistics into the final table:
+
+### Final Table:
+| Team       | Goals | Shots | Red Cards | Fouls | Free Kicks | Offsides | Corner Kicks | <NEWLINE>
+| Home Team  | 1     | 15    | 0         | 5     | 7          | 1        | 10           | <NEWLINE>
+| Away Team  | 2     | 14    | 0         | 6     | 4          | 3        | 6            | <NEWLINE>

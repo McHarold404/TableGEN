@@ -1,4 +1,4 @@
 {
-  "row_headers": ["Player1 (Home Team)", "Player2 (Home Team)", "Player4 (Home Team)", "Player5 (Home Team)", "Player6 (Home Team)", "Player7 (Home Team)", "Player8 (Home Team)", "Player9 (Home Team)", "Player10 (Home Team)", "Player11 (Home Team)", "Player12 (Home Team)", "Player20 (Away Team)", "Player21 (Away Team)", "Player22 (Away Team)", "Player23 (Away Team)", "Player24 (Away Team)", "Player25 (Away Team)", "Player26 (Away Team)", "Player27 (Away Team)", "Player28 (Away Team)", "Player29 (Away Team)", "Player30 (Away Team)", "Player32 (Away Team)", "Player35 (Away Team)"],
-  "column_headers": ["Goals", "Assists", "Yellow Cards", "Fouls Committed", "Free Kicks Earned", "Shots Taken", "Shots Saved", "Shots Blocked", "Offsides", "Injuries", "Corner Kicks"]
+    "row_headers": ["Home Team", "Away Team"],
+    "column_headers": ["Goals", "Red Cards", "Fouls", "Yellow Cards", "Shots Taken", "Free Kicks", "Corner Kicks", "Offsides"]
 }

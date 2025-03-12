@@ -1,0 +1,31 @@
+To create the summary table of the game statistics, we first need to identify and count the relevant events for each team based on the live text provided. Let's break it down step by step:
+
+### Table Schema:
+1. Team
+2. Goals
+3. Red Cards
+4. Fouls
+5. Shots
+
+Now, let's process the text to fill in these details:
+
+- **Goals:**
+  - Home Team: 1 goal (Player10's free kick)
+  - Away Team: 0 goals
+
+- **Red Cards:**
+  - Home Team: 0 red cards
+  - Away Team: 0 red cards
+
+- **Fouls:**
+  - Home Team: 5 fouls (Player6, Player11, Player7, Player5, Player10)
+  - Away Team: 10 fouls (Player25, Player24, Player20, Player23, Player31, Player24, Player25, Player36, Player31, Player20)
+
+- **Shots (including goals, saved attempts, blocked attempts, and missed attempts):**
+  - Home Team: 8 shots (Player10 missed, Player10 saved, Player10 saved, Player11 missed, Player10 missed, Player10 goal, Player8 blocked)
+  - Away Team: 12 shots (Player23 missed, Player25 blocked, Player26 missed, Player29 saved, Player28 missed, Player31 saved, Player23 missed, Player26 missed, Player31 blocked, Player24 blocked, Player36 missed, Player25 missed)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 1     | 0         | 5     | 8     | <NEWLINE>
+| Away Team  | 0     | 0         | 10    | 12    | <NEWLINE>

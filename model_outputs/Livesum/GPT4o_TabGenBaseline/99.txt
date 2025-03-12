@@ -1,0 +1,56 @@
+To generate the final table, let's first define the table schema that can encapsulate all the important statistics of the game:
+
+### Table Schema:
+| Team       | Goals | Red Cards | Yellow Cards | Fouls | Shots | Offsides | Corners | Free Kicks | Saved Attempts | Blocked Attempts | Missed Attempts | 
+|------------|-------|-----------|--------------|-------|-------|----------|---------|------------|----------------|------------------|-----------------|
+
+Now, let's process the text to fill the table:
+
+1. **Goals:**
+   - Home Team: 0
+   - Away Team: 1 (Player29 scored)
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Yellow Cards:**
+   - Home Team: 3 (Player6, Player7, Player11)
+   - Away Team: 2 (Player26, Player20, Player28)
+
+4. **Fouls:**
+   - Home Team: 9 (Player8, Player5, Player7, Player10, Player14)
+   - Away Team: 10 (Player26, Player21, Player28, Player25, Player20, Player23)
+
+5. **Shots:**
+   - Home Team: 22 (including goals, saved, blocked, and missed attempts)
+   - Away Team: 16 (including goals, saved, blocked, and missed attempts)
+
+6. **Offsides:**
+   - Home Team: 2 (Player11 twice)
+   - Away Team: 1 (Player29)
+
+7. **Corners:**
+   - Home Team: 7
+   - Away Team: 8
+
+8. **Free Kicks:**
+   - Home Team: 10 (resulting from fouls committed by the Away Team)
+   - Away Team: 9 (resulting from fouls committed by the Home Team)
+
+9. **Saved Attempts:**
+   - Home Team: 5
+   - Away Team: 3
+
+10. **Blocked Attempts:**
+    - Home Team: 5
+    - Away Team: 4
+
+11. **Missed Attempts:**
+    - Home Team: 12
+    - Away Team: 8
+
+### Final Table:
+| Team       | Goals | Red Cards | Yellow Cards | Fouls | Shots | Offsides | Corners | Free Kicks | Saved Attempts | Blocked Attempts | Missed Attempts | <NEWLINE>
+| Home Team  | 0     | 0         | 3            | 9     | 22    | 2        | 7       | 10         | 5              | 5                | 12              | <NEWLINE>
+| Away Team  | 1     | 0         | 2            | 10    | 16    | 1        | 8       | 9          | 3              | 4                | 8               | <NEWLINE>

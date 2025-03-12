@@ -1,0 +1,36 @@
+To generate the final table, let's first outline the schema for the table that will capture all the important statistics of the game. We'll consider the following statistics:
+
+1. Goals
+2. Red Cards
+3. Fouls
+4. Offsides
+5. Shots (Goals, Saved Attempts, Blocked Attempts, Missed Attempts)
+6. Free Kicks (including Penalties)
+7. Corner Kicks
+
+Now, let's process the text to fill in these statistics for the Home Team and the Away Team:
+
+### Home Team:
+- Goals: 3 (Player6, Player10, Player9)
+- Red Cards: 0
+- Fouls: 9 (Player9, Player2, Player4, Player7, Player10, Player14, Player8, Player2, Player9)
+- Offsides: 4 (Player9, Player10, Player9, Player16)
+- Shots: 21 (Goals: 3, Saved: 5, Blocked: 3, Missed: 10)
+- Free Kicks: 8
+- Corner Kicks: 11
+
+### Away Team:
+- Goals: 0
+- Red Cards: 0
+- Fouls: 10 (Player27, Player25, Player29, Player26, Player27, Player26, Player29, Player26, Player21, Player25)
+- Offsides: 2 (Player27, Player25)
+- Shots: 9 (Saved: 3, Blocked: 1, Missed: 5)
+- Free Kicks: 9
+- Corner Kicks: 0
+
+Now, we will create the final table with these statistics:
+
+### Final Table:
+| Team      | Goals | Red Cards | Fouls | Offsides | Shots | Free Kicks | Corner Kicks | <NEWLINE>
+| Home Team | 3     | 0         | 9     | 4        | 21    | 8          | 11           | <NEWLINE>
+| Away Team | 0     | 0         | 10    | 2        | 9     | 9          | 0            | <NEWLINE>

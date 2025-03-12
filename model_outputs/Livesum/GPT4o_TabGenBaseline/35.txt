@@ -1,0 +1,45 @@
+To create a summary table of the game's important statistics, we need to identify and categorize the relevant events from the live text. 
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Fouls
+
+Let's extract and count these statistics from the provided text:
+
+1. **Goals**:
+   - Home Team: 2 (Player10, Player18)
+   - Away Team: 2 (Player26, Player27)
+
+2. **Red Cards**:
+   - No red cards were mentioned for either team.
+
+3. **Fouls** (including handballs and dangerous play):
+   - Home Team: 
+     - Player2 (2 fouls)
+     - Player10 (1 foul)
+     - Player9 (1 foul)
+     - Player8 (2 fouls, including handball)
+     - Player5 (1 foul)
+     - Player4 (1 foul, handball)
+     - Player11 (1 foul)
+     - Player12 (2 fouls)
+     - Player18 (2 fouls, including dangerous play)
+     - Player7 (1 foul, handball)
+     - Total Fouls: 14
+   - Away Team:
+     - Player21 (2 fouls)
+     - Player23 (2 fouls)
+     - Player25 (3 fouls)
+     - Player29 (1 foul)
+     - Player26 (2 fouls)
+     - Player24 (2 fouls)
+     - Total Fouls: 12
+
+Now, let's fill in the table with these statistics:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | <NEWLINE>
+| Home Team  | 2     | 0         | 14    | <NEWLINE>
+| Away Team  | 2     | 0         | 12    | <NEWLINE>

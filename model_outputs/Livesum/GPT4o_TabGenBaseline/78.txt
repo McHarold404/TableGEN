@@ -1,0 +1,43 @@
+To generate the final table, we will first establish the schema for the table and then parse through the text to fill in the statistics for both teams.
+
+### Table Schema:
+| Team | Goals | Red Cards | Yellow Cards | Shots | Shots on Target | Fouls | Free Kicks | Offsides | <NEWLINE>
+
+Now, let's fill in the table based on the provided text:
+
+1. **Goals:**
+   - Home Team: 0
+   - Away Team: 2 (Player28 and Player29 scored)
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Yellow Cards:**
+   - Home Team: 1 (Player11)
+   - Away Team: 2 (Player20, Player24)
+
+4. **Shots:**
+   - Home Team: 14 (Player11 twice, Player4 twice, Player6 twice, Player9, Player10 twice, Player16 twice, Player17 twice, Player13)
+   - Away Team: 7 (Player28, Player24, Player29, Player33 twice)
+
+5. **Shots on Target:**
+   - Home Team: 5 (Player11 twice, Player9, Player13, Player17)
+   - Away Team: 4 (Player28, Player29, Player33 twice)
+
+6. **Fouls:**
+   - Home Team: 10 (Player7 four times, Player6 twice, Player9 twice, Player11, Player13)
+   - Away Team: 11 (Player26 twice, Player24 four times, Player25 twice, Player22, Player20, Player34)
+
+7. **Free Kicks:**
+   - Home Team: 13 (Player2 twice, Player8, Player9, Player5, Player6 twice, Player7, Player10, Player13, Player16, Player17, Player11)
+   - Away Team: 10 (Player22, Player23 twice, Player24 twice, Player25, Player26, Player28 twice, Player29)
+
+8. **Offsides:**
+   - Home Team: 1 (Player10)
+   - Away Team: 2 (Player24, Player29)
+
+### Final Table:
+| Team | Goals | Red Cards | Yellow Cards | Shots | Shots on Target | Fouls | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 0 | 1 | 14 | 5 | 10 | 13 | 1 | <NEWLINE>
+| Away Team | 2 | 0 | 2 | 7 | 4 | 11 | 10 | 2 | <NEWLINE>

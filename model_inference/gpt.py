@@ -8,7 +8,7 @@ from dotenv import *
 
 
 class GPT4MiniBot:
-    def __init__(self, api_key="", model="gpt-4o-mini", 
+    def __init__(self,model="gpt-4o-mini", 
                  data_path=None, prompt_path=None, output_path=None, file_name=None, 
                  meta_data=None, limit_rows=None, start_line=None, end_line=None, data_string=None):
         load_dotenv()
@@ -146,7 +146,7 @@ class GPT4MiniBot:
         return results
 
 
-def ask_chatgpt(text: str, prompt_path=None):
+def ask_chatgpt(text: str, prompt_path=None,temperature = 0.1,model_name = "gpt-4o"):
     # Check if a prompt path is provided and read prompt text
     load_dotenv()
     api_key =os.getenv("OPENAI_API_KEY")
@@ -158,16 +158,65 @@ def ask_chatgpt(text: str, prompt_path=None):
         return "Error: no data given"
 
     # Model configuration - replace 'gpt-4' with the specific model if needed
-    model_name = "gpt-4o-mini"  # or "gpt-3.5-turbo" if you want a different model
+    #input = text + prompt
     # Send the prompt to the model
     response = client.chat.completions.create(
     model=model_name,
     messages=[
-        {'role' : "system" , "content" : prompt },
+        {'role' : "system" , "content" : prompt},
         {'role': "user" , "content": text}
     ],
-    temperature=0.1,
-    top_p=0.1
+    temperature=temperature,
+    #top_p=0.1
+    )
+        
+    # Return the response content
+    return response.choices[0].message.content
+
+
+
+def ask_chatgpt_assistant_inline(instruct:str, text: str,prev_output:str,temperature = 0.5, model_name = "gpt-4o"):
+    # Check if a prompt path is provided and read prompt text
+    load_dotenv()
+    api_key =os.getenv("OPENAI_API_KEY")
+    client = OpenAI(api_key = api_key)
+    # Model configuration - replace 'gpt-4' with the specific model if needed
+    #input = text + prompt
+     # or "gpt-3.5-turbo" if you want a different model
+    # Send the prompt to the model
+    response = client.chat.completions.create(
+    model=model_name,
+    messages=[
+        {'role' : "user" , "content" : text},
+        {'role': "assistant" , "content": prev_output},
+        {'role': "user","content": instruct}
+    ],
+    temperature=temperature,
+    #top_p=0.1
+    )
+        
+    # Return the response content
+    return response.choices[0].message.content
+
+
+
+def ask_chatgpt_inline(text: str, prompt: str,temperature = 0.1):
+    # Check if a prompt path is provided and read prompt text
+    load_dotenv()
+    api_key =os.getenv("OPENAI_API_KEY")
+    client = OpenAI(api_key = api_key)
+    # Model configuration - replace 'gpt-4' with the specific model if needed
+    #input = text + prompt
+    model_name = "gpt-4o"  # or "gpt-3.5-turbo" if you want a different model
+    # Send the prompt to the model
+    response = client.chat.completions.create(
+    model=model_name,
+    messages=[
+        {'role' : "system" , "content" : prompt},
+        {'role': "user" , "content": text}
+    ],
+    temperature=temperature,
+    #top_p=0.1
     )
         
     # Return the response content

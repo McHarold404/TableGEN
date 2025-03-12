@@ -1,0 +1,27 @@
+To create a summary table of important statistics from the game, we need to identify and categorize the key events mentioned in the live text. Let's outline the table schema first:
+
+### Table Schema:
+1. Team
+2. Goals
+3. Shots (Including goals, saved attempts, blocked attempts, and missed attempts)
+4. Fouls (Including handball and dangerous play)
+5. Red Cards
+
+Now, let's process the text to fill in the table:
+
+1. **Home Team:**
+   - Goals: 2 (Player14 from penalty, Player11 from open play)
+   - Shots: 6 (Player7 missed, Player8 missed, Player11 saved, Player2 saved, Player11 blocked, Player9 missed)
+   - Fouls: 10 (Player7, Player11 x3, Player6, Player2, Player5 x2, Player15)
+   - Red Cards: 0
+
+2. **Away Team:**
+   - Goals: 0
+   - Shots: 14 (Player29 missed, Player29 saved, Player21 blocked, Player28 missed, Player28 blocked x2, Player25 blocked, Player29 missed, Player27 saved, Player28 missed, Player25 saved, Player20 blocked, Player25 missed, Player23 missed)
+   - Fouls: 11 (Player26, Player22 x2, Player28 x2, Player25 x2, Player21 x2, Player34, Player35)
+   - Red Cards: 0
+
+### Final Table:
+| Team       | Goals | Shots | Fouls | Red Cards | <NEWLINE>
+| Home Team  | 2     | 6     | 10    | 0         | <NEWLINE>
+| Away Team  | 0     | 14    | 11    | 0         | <NEWLINE>

@@ -1,0 +1,69 @@
+To construct a table summarizing the statistics of the game, we need to identify and count relevant events from the live text. The important statistics include:
+
+- Goals
+- Red Cards
+- Fouls (including handball and dangerous play)
+- Free Kicks (including penalties)
+- Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Let's process the text to fill in these statistics:
+
+### Processing the Text:
+
+1. **Goals:**
+   - Home Team: 1 goal (Player7 scored from a penalty)
+   - Away Team: 0 goals
+
+2. **Red Cards:**
+   - Home Team: 0 red cards
+   - Away Team: 0 red cards
+
+3. **Fouls:**
+   - Home Team:
+     - Player3: 3 fouls
+     - Player11: 1 foul
+     - Player4: 2 fouls
+     - Player6: 1 foul
+     - Player9: 2 fouls
+     - Player10: 1 foul
+     - Player7: 1 foul
+   - Total for Home Team: 11 fouls
+
+   - Away Team:
+     - Player27: 2 fouls
+     - Player22: 2 fouls
+     - Player28: 2 fouls
+     - Player26: 1 foul
+     - Player30: 1 foul
+     - Player24: 1 foul (handball)
+     - Player32: 1 foul
+   - Total for Away Team: 10 fouls
+
+4. **Free Kicks:**
+   - Home Team: 11 free kicks
+   - Away Team: 10 free kicks
+
+5. **Shots:**
+   - Home Team:
+     - Player9: 2 missed, 1 saved
+     - Player4: 1 saved
+     - Player8: 1 saved
+     - Player2: 1 missed
+     - Player10: 1 missed
+     - Total: 7 shots
+
+   - Away Team:
+     - Player25: 1 missed, 1 blocked
+     - Player27: 1 saved, 1 blocked
+     - Player28: 1 missed
+     - Player29: 1 missed
+     - Player31: 1 missed
+     - Player35: 1 missed
+     - Total: 8 shots
+
+### Final Table:
+
+| Team       | Goals | Red Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+|------------|-------|-----------|-------|------------|-------| <NEWLINE>
+| Home Team  | 1     | 0         | 11    | 11         | 7     | <NEWLINE>
+| Away Team  | 0     | 0         | 10    | 10         | 8     | <NEWLINE>

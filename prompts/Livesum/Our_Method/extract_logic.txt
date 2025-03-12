@@ -1,0 +1,57 @@
+
+Instruction: According to the live text, please count the number of different events for the home and team table. Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card. Penalty is also considered as free kicks. Follow these instructions
+
+Task: Given a set of atomic statements and a predefined table schema, identify the operation to be done to the table for each statement.
+
+
+For each statement provided:
+Identify which row(s) and which column(s) need to be updated for each statement.
+Determine the exact update for each relevant cell 
+Display the revised state of all cells that changed immediately after each statement.
+
+
+*Output Format*:
+
+Total Atomic Statement to be processed : <Total Atomic Statements>
+
+*Updates from ATOMIC STATEMENTs*:
+
+1. Statement Processed : <ATOMIC STATEMENT 1> 
+    Update: <ROW>, <COLUMN> <PREVIOUS CELL VALUE> to <NEW CELL VALUE>
+    Revised State: <ROW>  <COLUMN> <Revised Cell Value>
+
+2. Statement Processed: <ATOMIC STATEMENT 2>
+    Update:  <ROW>, <COLUMN>  <PREVIOUS CELL VALUE> to <NEW CELL VALUE>
+
+... for only and all the cells updates for each statement till the last atomic statement.
+
+
+** Sample Illustration**
+
+Table Schema:
+    {
+        "row_headers": ["Home Team", "Away Team"],
+        "col_headers": ["Free Kicks", "Fouls", "Yellow Cards", "Corner Kicks", "Shots", "Goals"]
+    }
+
+Atomic Statements:
+Player26 (Away Team) earns a free kick in their defensive half as Player7 (Home Team) commits a foul. Player7 (Home Team) receives a yellow card for a rough tackle.
+
+Output for Illustration:
+
+Total Atomic Statement to be processed : 2
+
+1. Statement: Player26 (Away Team) earns a free kick in their defensive half as Player7 (Home Team) commits a foul.
+Updates: Away Team Free Kicks 0 to 1, Home Team Fouls 0 to 1
+Revised State: Away Team Free Kicks: 1, Home Team Fouls: 1
+
+2.Statement: Player7 (Home Team) receives a yellow card for a rough tackle.
+Updates: Home Team Yellow Cards 0 to 1
+Revised State: Home Team Yellow Cards: 1
+
+
+
+Return the updates to be done to the table based on the given statements and table schema: 
+
+
+

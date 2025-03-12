@@ -1,0 +1,299 @@
+Initial Table (Empty Table):
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+Step 1: "The game is starting with the first half."
+- No relevant updates to the table.
+
+Step 2: "Player7(Home Team)'s left footed shot from outside the box was just a little too high, despite the assist from Player11(Home Team)."
+- Update: Add 1 to Shots for Home Team, 1 to Shots Off Target for Home Team, 1 to Assists for Home Team.
+- Revised State: Home Team Shots: 1, Shots Off Target: 1, Assists: 1.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 1 | Not found | Not found | 1 | 1 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+Step 3: "Player25(Away Team) commits a foul."
+- Update: Add 1 to Fouls Committed for Away Team.
+- Revised State: Away Team Fouls Committed: 1.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 1 | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 1 | Not found | Not found | 1 | 1 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+Step 4: "Player11(Home Team) earns a free kick in the opponent's half."
+- Update: Add 1 to Free Kicks Earned for Home Team.
+- Revised State: Home Team Free Kicks Earned: 1.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 1 | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 1 | Not found | Not found | 1 | 1 | Not found | Not found | 1 | Not found | Not found | Not found | <NEWLINE>
+
+Step 5: "Player10(Home Team)'s left footed shot from outside the box has been blocked."
+- Update: Add 1 to Shots for Home Team, 1 to Shots Blocked for Home Team.
+- Revised State: Home Team Shots: 2, Shots Blocked: 1.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 1 | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 2 | Not found | 1 | 1 | 1 | Not found | Not found | 1 | Not found | Not found | Not found | <NEWLINE>
+
+Step 6: "The Home Team wins a corner kick."
+- Update: Add 1 to Corner Kicks for Home Team.
+- Revised State: Home Team Corner Kicks: 1.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 1 | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 2 | Not found | 1 | 1 | 1 | Not found | Not found | 1 | Not found | Not found | 1 | <NEWLINE>
+
+Step 7: "The Home Team wins a corner kick."
+- Update: Increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Corner Kicks: 2.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 1 | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 2 | Not found | 1 | 1 | 1 | Not found | Not found | 1 | Not found | Not found | 2 | <NEWLINE>
+
+Step 8: "Player10(Home Team)'s left footed shot from outside the box is saved in the center of the goal with an assist from Player9(Home Team)."
+- Update: Add 1 to Shots for Home Team, 1 to Shots on Target for Home Team, 1 to Assists for Home Team.
+- Revised State: Home Team Shots: 3, Shots on Target: 1, Assists: 2.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 1 | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 3 | 1 | 1 | 1 | 2 | Not found | Not found | 1 | Not found | Not found | 2 | <NEWLINE>
+
+Step 9: "Player9(Home Team) fouls Player29(Away Team) on the right wing, resulting in a free kick being awarded."
+- Update: Add 1 to Fouls Committed for Home Team, 1 to Free Kicks Earned for Away Team.
+- Revised State: Home Team Fouls Committed: 1, Away Team Free Kicks Earned: 1.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 1 | Not found | 1 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 3 | 1 | 1 | 1 | 2 | 1 | Not found | 1 | Not found | Not found | 2 | <NEWLINE>
+
+Step 10: "Player22(Away Team) earns a free kick in their own half."
+- Update: Add 1 to Free Kicks Earned for Away Team.
+- Revised State: Away Team Free Kicks Earned: 2.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 1 | Not found | 2 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 3 | 1 | 1 | 1 | 2 | 1 | Not found | 1 | Not found | Not found | 2 | <NEWLINE>
+
+Step 11: "Player6(Home Team) commits a foul."
+- Update: Add 1 to Fouls Committed for Home Team.
+- Revised State: Home Team Fouls Committed: 2.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 1 | Not found | 2 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 3 | 1 | 1 | 1 | 2 | 2 | Not found | 1 | Not found | Not found | 2 | <NEWLINE>
+
+Step 12: "Player24(Away Team) commits a foul."
+- Update: Add 1 to Fouls Committed for Away Team.
+- Revised State: Away Team Fouls Committed: 2.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 2 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 3 | 1 | 1 | 1 | 2 | 2 | Not found | 1 | Not found | Not found | 2 | <NEWLINE>
+
+Step 13: "Player5(Home Team) earns a free kick on the left side of the field."
+- Update: Add 1 to Free Kicks Earned for Home Team.
+- Revised State: Home Team Free Kicks Earned: 2.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 2 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 3 | 1 | 1 | 1 | 2 | 2 | Not found | 2 | Not found | Not found | 2 | <NEWLINE>
+
+Step 14: "Player6(Home Team)'s shot from outside the box is blocked."
+- Update: Add 1 to Shots for Home Team, 1 to Shots Blocked for Home Team.
+- Revised State: Home Team Shots: 4, Shots Blocked: 2.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 2 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 4 | 1 | 2 | 1 | 2 | 2 | Not found | 2 | Not found | Not found | 2 | <NEWLINE>
+
+Step 15: "The Home Team wins a corner kick."
+- Update: Increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Corner Kicks: 3.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 2 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 4 | 1 | 2 | 1 | 2 | 2 | Not found | 2 | Not found | Not found | 3 | <NEWLINE>
+
+Step 16: "Player9(Home Team)'s shot from outside the box with his left foot is blocked after an assist from Player7(Home Team)."
+- Update: Add 1 to Shots for Home Team, 1 to Shots Blocked for Home Team, 1 to Assists for Home Team.
+- Revised State: Home Team Shots: 5, Shots Blocked: 3, Assists: 3.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 2 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 5 | 1 | 3 | 1 | 3 | 2 | Not found | 2 | Not found | Not found | 3 | <NEWLINE>
+
+Step 17: "Player26(Away Team) earns a free kick in their own half after being fouled by Player8(Home Team)."
+- Update: Add 1 to Free Kicks Earned for Away Team, 1 to Fouls Committed for Home Team.
+- Revised State: Away Team Free Kicks Earned: 3, Home Team Fouls Committed: 3.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 3 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 5 | 1 | 3 | 1 | 3 | 3 | Not found | 2 | Not found | Not found | 3 | <NEWLINE>
+
+Step 18: "Player27(Away Team) earns a free kick on the left side of the field."
+- Update: Add 1 to Free Kicks Earned for Away Team.
+- Revised State: Away Team Free Kicks Earned: 4.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 4 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 5 | 1 | 3 | 1 | 3 | 3 | Not found | 2 | Not found | Not found | 3 | <NEWLINE>
+
+Step 19: "Player2(Home Team) commits a foul."
+- Update: Add 1 to Fouls Committed for Home Team.
+- Revised State: Home Team Fouls Committed: 4.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 4 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 5 | 1 | 3 | 1 | 3 | 4 | Not found | 2 | Not found | Not found | 3 | <NEWLINE>
+
+Step 20: "Player9(Home Team)'s attempt from outside the box goes over the crossbar, with an assist from Player10(Home Team)."
+- Update: Add 1 to Shots for Home Team, 1 to Shots Off Target for Home Team, 1 to Assists for Home Team.
+- Revised State: Home Team Shots: 6, Shots Off Target: 2, Assists: 4.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 4 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 6 | 1 | 3 | 2 | 4 | 4 | Not found | 2 | Not found | Not found | 3 | <NEWLINE>
+
+Step 21: "Player5(Home Team)'s left-footed shot from the left side of the box is saved in the bottom left corner, assisted by Player3(Home Team), resulting in a corner kick for the Home Team."
+- Update: Add 1 to Shots for Home Team, 1 to Shots on Target for Home Team, 1 to Assists for Home Team, 1 to Corner Kicks for Home Team.
+- Revised State: Home Team Shots: 7, Shots on Target: 2, Assists: 5, Corner Kicks: 4.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 2 | Not found | 4 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 7 | 2 | 3 | 2 | 5 | 4 | Not found | 2 | Not found | Not found | 4 | <NEWLINE>
+
+Step 22: "Player23(Away Team) commits a foul."
+- Update: Add 1 to Fouls Committed for Away Team.
+- Revised State: Away Team Fouls Committed: 3.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 3 | Not found | 4 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 7 | 2 | 3 | 2 | 5 | 4 | Not found | 2 | Not found | Not found | 4 | <NEWLINE>
+
+Step 23: "Player7(Home Team) earns a free kick on the right side of the field."
+- Update: Add 1 to Free Kicks Earned for Home Team.
+- Revised State: Home Team Free Kicks Earned: 3.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 3 | Not found | 4 | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 7 | 2 | 3 | 2 | 5 | 4 | Not found | 3 | Not found | Not found | 4 | <NEWLINE>
+
+Step 24: "Player23(Away Team) receives a yellow card for a rough challenge."
+- Update: Add 1 to Yellow Cards for Away Team.
+- Revised State: Away Team Yellow Cards: 1.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 3 | Not found | 4 | Not found | 1 | Not found | <NEWLINE>
+| Home Team | Not found | 7 | 2 | 3 | 2 | 5 | 4 | Not found | 3 | Not found | Not found | 4 | <NEWLINE>
+
+Step 25: "Player10(Home Team)'s left footed shot from outside the box was blocked with an assist from Player2(Home Team)."
+- Update: Add 1 to Shots for Home Team, 1 to Shots Blocked for Home Team, 1 to Assists for Home Team.
+- Revised State: Home Team Shots: 8, Shots Blocked: 4, Assists: 6.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 3 | Not found | 4 | Not found | 1 | Not found | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 4 | Not found | 3 | Not found | Not found | 4 | <NEWLINE>
+
+Step 26: "The Away Team wins a corner kick."
+- Update: Add 1 to Corner Kicks for Away Team.
+- Revised State: Away Team Corner Kicks: 1.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 3 | Not found | 4 | Not found | 1 | 1 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 4 | Not found | 3 | Not found | Not found | 4 | <NEWLINE>
+
+Step 27: "Player22(Away Team) commits a foul."
+- Update: Add 1 to Fouls Committed for Away Team.
+- Revised State: Away Team Fouls Committed: 4.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 4 | Not found | 4 | Not found | 1 | 1 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 4 | Not found | 3 | Not found | Not found | 4 | <NEWLINE>
+
+Step 28: "Player11(Home Team) earns a free kick in the opponent's half."
+- Update: Add 1 to Free Kicks Earned for Home Team.
+- Revised State: Home Team Free Kicks Earned: 4.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 4 | Not found | 4 | Not found | 1 | 1 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 4 | Not found | 4 | Not found | Not found | 4 | <NEWLINE>
+
+Step 29: "Player22(Away Team) receives a yellow card for a rough tackle."
+- Update: Add 1 to Yellow Cards for Away Team.
+- Revised State: Away Team Yellow Cards: 2.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | 4 | Not found | 4 | Not found | 2 | 1 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 4 | Not found | 4 | Not found | Not found | 4 | <NEWLINE>
+
+Step 30: "Player29(Away Team)'s shot from the center of the box was too high with his right foot, despite the assist from Player22(Away Team)."
+- Update: Add 1 to Shots for Away Team, 1 to Shots Off Target for Away Team, 1 to Assists for Away Team.
+- Revised State: Away Team Shots: 1, Shots Off Target: 1, Assists: 1.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | 1 | Not found | Not found | 1 | 1 | 4 | Not found | 4 | Not found | 2 | 1 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 4 | Not found | 4 | Not found | Not found | 4 | <NEWLINE>
+
+Step 31: "The Home Team earns a corner kick."
+- Update: Add 1 to Corner Kicks for Home Team.
+- Revised State: Home Team Corner Kicks: 5.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | 1 | Not found | Not found | 1 | 1 | 4 | Not found | 4 | Not found | 2 | 1 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 4 | Not found | 4 | Not found | Not found | 5 | <NEWLINE>
+
+Step 32: "Player29(Away Team) earns a free kick on the left side of the field."
+- Update: Add 1 to Free Kicks Earned for Away Team.
+- Revised State: Away Team Free Kicks Earned: 5.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | 1 | Not found | Not found | 1 | 1 | 4 | Not found | 5 | Not found | 2 | 1 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 4 | Not found | 4 | Not found | Not found | 5 | <NEWLINE>
+
+Step 33: "Player3(Home Team) commits a foul."
+- Update: Add 1 to Fouls Committed for Home Team.
+- Revised State: Home Team Fouls Committed: 5.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | 1 | Not found | Not found | 1 | 1 | 4 | Not found | 5 | Not found | 2 | 1 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 5 | Not found | 4 | Not found | Not found | 5 | <NEWLINE>
+
+Step 34: "Player28(Away Team) commits a foul resulting in a corner kick for the Away Team."
+- Update: Add 1 to Fouls Committed for Away Team, 1 to Corner Kicks for Away Team.
+- Revised State: Away Team Fouls Committed: 5, Corner Kicks: 2.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | 1 | Not found | Not found | 1 | 1 | 5 | Not found | 5 | Not found | 2 | 2 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 5 | Not found | 4 | Not found | Not found | 5 | <NEWLINE>
+
+Step 35: "Player9(Home Team) earns a free kick in their own half."
+- Update: Add 1 to Free Kicks Earned for Home Team.
+- Revised State: Home Team Free Kicks Earned: 5.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | 1 | Not found | Not found | 1 | 1 | 5 | Not found | 5 | Not found | 2 | 2 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 5 | Not found | 5 | Not found | Not found | 5 | <NEWLINE>
+
+Step 36: "Player25(Away Team) commits a foul, giving Player9(Home Team) a free kick in their defensive half."
+- Update: Add 1 to Fouls Committed for Away Team, 1 to Free Kicks Earned for Home Team.
+- Revised State: Away Team Fouls Committed: 6, Home Team Free Kicks Earned: 6.
+
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | 1 | Not found | Not found | 1 | 1 | 6 | Not found | 5 | Not found | 2 | 2 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 5 | Not found | 6 | Not found | Not found | 5 | <NEWLINE>
+
+Step 37: "At the end of the first half, the score is tied at 0-0 between the Home Team and the Away Team."
+- No relevant updates to the table.
+
+Step 38: "The second half is underway with the score tied at 0-0 between the Home Team and the Away Team."
+- No relevant updates to the table.
+
+### Final Table:
+| | Goals | Shots | Shots on Target | Shots Blocked | Shots Off Target | Assists | Fouls Committed | Fouls Suffered | Free Kicks Earned | Free Kicks Conceded | Yellow Cards | Corner Kicks | <NEWLINE>
+| Away Team | Not found | 1 | Not found | Not found | 1 | 1 | 6 | Not found | 5 | Not found | 2 | 2 | <NEWLINE>
+| Home Team | Not found | 8 | 2 | 4 | 2 | 6 | 5 | Not found | 6 | Not found | Not found | 5 | <NEWLINE>

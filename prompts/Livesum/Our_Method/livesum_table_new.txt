@@ -1,0 +1,76 @@
+You are an expert in converting unstructured text into structured tables.
+
+TASK: You are given a empty table in json format with the row and column headers and set of statements that describe the actions of a football game as the game goes on. 
+Process the statements as a time-series of actions and update/add table values by following these instructions:
+
+
+
+INSTRUCTIONS:
+Process every statement one by one and update the values of the tables as you process the statement. The action described in the statement should be reflected in the table. Follow this algorthm to perform the task.
+
+Pseudo code of the algorthm:
+    for statement in atomic_statements:
+        row, col = LLM(identify correct row and cell header.) # identify where can this information be added in the table.
+        table[row][col] = LLM (update value) # if value exists, update value, otherwise add value.
+
+The atomic statements are in an orderly sequence. i.e. nth statement would occur after (n-1)th statement.
+If a particular column value for a row is not present in the statements, set it to "Not found".
+
+Ensure Structural Integrity:
+Include all information from the input without omissions.
+Maintain uniform data formats across the table.
+Do not change any row or column headers. Do not append any extra headers.
+Do not add any extra rows or columns that cannot be inferred from the the data.
+Remove any rows or columns that do not contain data to enhance clarity.
+
+Formatting Guidelines:
+Use the pipe symbol `|` to separate cells.
+Use `<NEWLINE>` to separate lines.
+If needed, separate tables with `<TABLE END>`
+
+Final Output Requirements:
+Maintain structural integrity with each table having rows matching the headers precisely.
+Ensure data consistency by placing information under the correct columns.
+Include all relevant data from the input statements without omissions.
+Properly format cells with | and separate rows with <NEWLINE>.
+The output should NOT be a temporal table.
+The output should be a table summarized after processing all of the atomic statements.
+
+
+Output Format:
+|  | <COLUMN HEADER 1> | <COLUMN HEADER 2> | ...
+| <ROW HEADER 1> | ...
+| <ROW HEADER 2> | ...
+
+
+Sample Illustration:
+Text: 
+First half begins.  
+Player26 (Away Team) earns a free kick in their defensive half.  
+Player7 (Home Team) commits a foul.  
+Player7 (Home Team) receives a yellow card for a rough tackle.  
+The Away Team earns a corner kick.  
+Player27 (Away Team) shoots from the center of the box.   
+At the break, the Home Team is trailing 0-2 against the Away Team.  
+The second half begins with the Home Team trailing 0-2 against the Away Team.  
+Player9 (Home Team) earns a free kick on the right side of the field.  
+Player22 (Away Team) makes a risky move.  
+Player12 (Home Team) shoots from outside the box with their left foot.  
+Player12 (Home Team)'s shot is saved in the center of the goal.  
+Player2 (Home Team) assists Player12 (Home Team).  
+The game is over.  
+The Home Team scores 1 goal.  
+The Away Team scores 2 goals.
+
+Table Schema:
+{
+    row_headers = ["Home Team", "Away Team","Player 26 (Away Team)","Player 7(Home Team)","Player 27(Away Team)","Player 9(Home Team)","Player 22(Away Team)"]
+    col_headers = ["Free kicks","Yellow car]
+}
+
+Output Table:
+Player 26 earns a free kick from outside the goal pos
+
+
+Return only the formatted tables without any reasoning, commentary, or additional text.
+

@@ -1,0 +1,319 @@
+### Initial Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 5 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 6 | 3 | 1 | 0 | 5 | 7 | 1 | <NEWLINE>
+
+Step-by-Step Table Updates:
+
+Statement 43: "The Away Team wins a corner kick."
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 6.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 5 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 6 | 3 | 1 | 0 | 6 | 7 | 1 | <NEWLINE>
+
+Statement 44: "Player29(Away Team)'s attempt from outside the box is blocked with Player20(Away Team) providing the assist."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 7.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 5 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 7 | 3 | 1 | 0 | 6 | 7 | 1 | <NEWLINE>
+
+Statements 45 & 46: No update is needed as they are narrative statements.
+
+Statement 47: "Player29(Away Team) of the Away Team attempts a through ball, but Player26(Away Team) is caught offside during the corner kick."
+- Update: Increment Offsides for Away Team by 1.
+- Revised State: Away Team Offsides: 2.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 5 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 7 | 3 | 1 | 0 | 6 | 7 | 2 | <NEWLINE>
+
+Statement 48: "The Away Team wins a corner kick."
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 7.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 5 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 7 | 3 | 1 | 0 | 7 | 7 | 2 | <NEWLINE>
+
+Statement 49: "Player27(Away Team) attempts a left-footed shot from outside the box but narrowly misses to the left with an assist from Player22(Away Team)."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 8.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 5 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 8 | 3 | 1 | 0 | 7 | 7 | 2 | <NEWLINE>
+
+Statement 50: "Player9(Home Team) misses a header from the center of the box to the right after and Player11(Home Team) assisted with a cross."
+- Update: Add 1 to Shots for Home Team.
+- Revised State: Home Team Shots: 6.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 6 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 8 | 3 | 1 | 0 | 7 | 7 | 2 | <NEWLINE>
+
+Statement 51: "Player7(Home Team)'s left footed shot from outside the box was blocked with an assist from Player4(Home Team)."
+- Update: Add 1 to Shots for Home Team.
+- Revised State: Home Team Shots: 7.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | 7 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 8 | 3 | 1 | 0 | 7 | 7 | 2 | <NEWLINE>
+
+Statement 52: "Player24(Away Team) from the Away Team accidentally scored a goal for the Home Team, making the score 1-0."
+- Update: Add 1 to Goals for Home Team.
+- Revised State: Home Team Goals: 1.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 7 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 8 | 3 | 1 | 0 | 7 | 7 | 2 | <NEWLINE>
+
+Statement 53: "Player11(Home Team) misses the target with a high and wide shot from outside the box."
+- Update: Add 1 to Shots for Home Team.
+- Revised State: Home Team Shots: 8.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 8 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 8 | 3 | 1 | 0 | 7 | 7 | 2 | <NEWLINE>
+
+Statement 54: "Player28(Away Team)'s shot from the center of the box is blocked."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 9.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 8 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 9 | 3 | 1 | 0 | 7 | 7 | 2 | <NEWLINE>
+
+Statement 55: "Player29(Away Team)'s right footed shot from outside the box is saved in the bottom right corner, resulting in a corner kick for the Away Team."
+- Update: Add 1 to Shots for Away Team, increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Shots: 10, Away Team Corner Kicks: 8.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 8 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 10 | 3 | 1 | 0 | 8 | 7 | 2 | <NEWLINE>
+
+Statement 56: "Player24(Away Team) misses the header to the right after a cross from Player26(Away Team) following a corner."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 11.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 8 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 11 | 3 | 1 | 0 | 8 | 7 | 2 | <NEWLINE>
+
+Statement 57: "Player27(Away Team)'s shot from the center of the box is blocked after being assisted by Player28(Away Team) with a cross, resulting in a corner kick for the Away Team."
+- Update: Add 1 to Shots for Away Team, increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Shots: 12, Away Team Corner Kicks: 9.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 8 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 12 | 3 | 1 | 0 | 9 | 7 | 2 | <NEWLINE>
+
+Statement 58: "Player20(Away Team) attempted a right-footed shot from outside the box but it was slightly too high, with an assist from Player30(Away Team)."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 13.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 8 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 13 | 3 | 1 | 0 | 9 | 7 | 2 | <NEWLINE>
+
+Statement 59: "The Away Team earns a corner kick."
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 10.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 8 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 13 | 3 | 1 | 0 | 10 | 7 | 2 | <NEWLINE>
+
+Statement 60: "Player7(Home Team)'s left-footed shot from outside the box just misses to the right after being set up by Player9(Home Team) during a quick counterattack."
+- Update: Add 1 to Shots for Home Team.
+- Revised State: Home Team Shots: 9.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 9 | 7 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 13 | 3 | 1 | 0 | 10 | 7 | 2 | <NEWLINE>
+
+Statement 61: "Player3(Home Team) commits a foul."
+- Update: Increment Fouls for Home Team by 1.
+- Revised State: Home Team Fouls: 8.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 9 | 8 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 13 | 3 | 1 | 0 | 10 | 7 | 2 | <NEWLINE>
+
+Statement 62: "Player32(Away Team) earns a free kick on the right side of the field."
+- Update: Increment Free Kicks for Away Team by 1.
+- Revised State: Away Team Free Kicks: 8.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 9 | 8 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 13 | 3 | 1 | 0 | 10 | 8 | 2 | <NEWLINE>
+
+Statement 63: "Player24(Away Team) misses the header from the center of the box, it was too high, Player30(Away Team) assisted with a cross after a set piece."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 14.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 9 | 8 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 14 | 3 | 1 | 0 | 10 | 8 | 2 | <NEWLINE>
+
+Statement 64: "Player30(Away Team)'s shot from the center of the box with his right foot misses to the left, with an assist from Player32(Away Team)."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 15.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 9 | 8 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 15 | 3 | 1 | 0 | 10 | 8 | 2 | <NEWLINE>
+
+Statement 65: "Player30(Away Team)'s attempt from outside the box was blocked by the defender after being assisted by Player29(Away Team), while Player29(Away Team)'s shot from the center of the box was saved by the goalkeeper in the top center of the goal."
+- Update: Add 2 to Shots for Away Team.
+- Revised State: Away Team Shots: 17.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 9 | 8 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 17 | 3 | 1 | 0 | 10 | 8 | 2 | <NEWLINE>
+
+Statement 66: "Player29(Away Team) attempts a pass to Player33(Away Team), but Player27(Away Team) is offside."
+- Update: Increment Offsides for Away Team by 1.
+- Revised State: Away Team Offsides: 3.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 9 | 8 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 17 | 3 | 1 | 0 | 10 | 8 | 3 | <NEWLINE>
+
+Statement 67: "Player9(Home Team) strikes the left post with a left-footed shot from the left side of the box, assisted by Player8(Home Team) after a quick break."
+- Update: Add 1 to Shots for Home Team.
+- Revised State: Home Team Shots: 10.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 10 | 8 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 17 | 3 | 1 | 0 | 10 | 8 | 3 | <NEWLINE>
+
+Statement 68: "Player10(Home Team)'s left footed shot from the left side of the box goes wide to the right."
+- Update: Add 1 to Shots for Home Team.
+- Revised State: Home Team Shots: 11.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 11 | 8 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 17 | 3 | 1 | 0 | 10 | 8 | 3 | <NEWLINE>
+
+Statement 69: "Player22(Away Team)'s left-footed shot from outside the box, assisted by Player30(Away Team), misses to the right following a foul by Player5(Home Team)."
+- Update: Add 1 to Shots for Away Team, increment Fouls for Home Team by 1.
+- Revised State: Away Team Shots: 18, Home Team Fouls: 9.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 11 | 9 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 18 | 3 | 1 | 0 | 10 | 8 | 3 | <NEWLINE>
+
+Statement 70: "Player27(Away Team) earns a free kick on the left side of the field."
+- Update: Increment Free Kicks for Away Team by 1.
+- Revised State: Away Team Free Kicks: 9.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 11 | 9 | 2 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 18 | 3 | 1 | 0 | 10 | 9 | 3 | <NEWLINE>
+
+Statement 71: "Player5(Home Team) receives a yellow card for a foul on Player33(Away Team)."
+- Update: Increment Yellow Cards for Home Team by 1.
+- Revised State: Home Team Yellow Cards: 3.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 11 | 9 | 3 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 18 | 3 | 1 | 0 | 10 | 9 | 3 | <NEWLINE>
+
+Statement 72: "Player7(Home Team) commits a foul."
+- Update: Increment Fouls for Home Team by 1.
+- Revised State: Home Team Fouls: 10.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 11 | 10 | 3 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 18 | 3 | 1 | 0 | 10 | 9 | 3 | <NEWLINE>
+
+Statement 73: "Player21(Away Team) earns a free kick in their own half."
+- Update: Increment Free Kicks for Away Team by 1.
+- Revised State: Away Team Free Kicks: 10.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 11 | 10 | 3 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 18 | 3 | 1 | 0 | 10 | 10 | 3 | <NEWLINE>
+
+Statement 74: "Player22(Away Team)'s left footed shot from outside the box was blocked with an assist from Player32(Away Team)."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 19.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 11 | 10 | 3 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 19 | 3 | 1 | 0 | 10 | 10 | 3 | <NEWLINE>
+
+Statement 75: "Player7(Home Team)'s shot from the right side of the box is saved in the center of the goal, after being assisted by Player4(Home Team)."
+- Update: Add 1 to Shots for Home Team.
+- Revised State: Home Team Shots: 12.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 12 | 10 | 3 | 0 | 1 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 19 | 3 | 1 | 0 | 10 | 10 | 3 | <NEWLINE>
+
+Statement 76: "Player15(Home Team)'s right footed shot from outside the box is saved in the top right corner, assisted by Player4(Home Team), resulting in a corner kick for the Home Team."
+- Update: Add 1 to Shots for Home Team, increment Corner Kicks for Home Team by 1.
+- Revised State: Home Team Shots: 13, Home Team Corner Kicks: 2.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 13 | 10 | 3 | 0 | 2 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 19 | 3 | 1 | 0 | 10 | 10 | 3 | <NEWLINE>
+
+Statement 77: "Player10(Home Team) misses the target with a shot from the left side of the box, assisted by Player9(Home Team)."
+- Update: Add 1 to Shots for Home Team.
+- Revised State: Home Team Shots: 14.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 14 | 10 | 3 | 0 | 2 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 19 | 3 | 1 | 0 | 10 | 10 | 3 | <NEWLINE>
+
+Statement 78: "The Away Team wins a corner kick."
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 11.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 14 | 10 | 3 | 0 | 2 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 19 | 3 | 1 | 0 | 11 | 10 | 3 | <NEWLINE>
+
+Statement 79: "The Away Team earns a corner kick."
+- Update: Increment Corner Kicks for Away Team by 1.
+- Revised State: Away Team Corner Kicks: 12.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 14 | 10 | 3 | 0 | 2 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 19 | 3 | 1 | 0 | 12 | 10 | 3 | <NEWLINE>
+
+Statement 80: "Player20(Away Team)'s header from the center of the box was blocked by the defense after being set up by Player30(Away Team)'s cross."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 20.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 14 | 10 | 3 | 0 | 2 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 20 | 3 | 1 | 0 | 12 | 10 | 3 | <NEWLINE>
+
+Statement 81: "Player27(Away Team) misses the target with a high and wide shot from the left side of the box."
+- Update: Add 1 to Shots for Away Team.
+- Revised State: Away Team Shots: 21.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 14 | 10 | 3 | 0 | 2 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 21 | 3 | 1 | 0 | 12 | 10 | 3 | <NEWLINE>
+
+Statement 82: "Player2(Home Team) receives a yellow card."
+- Update: Increment Yellow Cards for Home Team by 1.
+- Revised State: Home Team Yellow Cards: 4.
+- Updated Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 14 | 10 | 4 | 0 | 2 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 21 | 3 | 1 | 0 | 12 | 10 | 3 | <NEWLINE>
+
+Statements 83 & 84: No update is needed as they are narrative statements.
+
+### Final Table:
+| | Goals | Shots | Fouls | Yellow Cards | Red Cards | Corner Kicks | Free Kicks | Offsides | <NEWLINE>
+| Home Team | 1 | 14 | 10 | 4 | 0 | 2 | 3 | 1 | <NEWLINE>
+| Away Team | 0 | 21 | 3 | 1 | 0 | 12 | 10 | 3 | <NEWLINE>

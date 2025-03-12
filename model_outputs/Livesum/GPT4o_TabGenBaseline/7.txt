@@ -1,0 +1,33 @@
+To create a summary table of the important statistics from the game, we need to first determine the relevant statistics to track. Based on the live text, we will focus on the following statistics:
+
+1. Goals
+2. Red Cards
+3. Yellow Cards
+4. Fouls
+5. Free Kicks
+6. Shots (which includes goals, saved attempts, blocked attempts, and missed attempts)
+
+Now, let's process the text to fill in these statistics for both teams:
+
+### Home Team:
+- **Goals**: 0
+- **Red Cards**: 1 (Player6)
+- **Yellow Cards**: 1 (Player4)
+- **Fouls**: 14 (Players 6, 10, 5, 8, 4, 16, 3, 14, 16, 8)
+- **Free Kicks**: 14 (from fouls committed by Away Team)
+- **Shots**: 7 (Player16 misses, Player3 saved, Player10 blocked, Player7 saved, Player13 blocked, Player10 saved, Player13 blocked)
+
+### Away Team:
+- **Goals**: 2 (Player28, Player27)
+- **Red Cards**: 0
+- **Yellow Cards**: 3 (Players 20, 26, 27)
+- **Fouls**: 17 (Players 23, 29, 20, 20, 26, 29, 21, 26, 26, 29, 27, 25, 29, 24, 36)
+- **Free Kicks**: 13 (from fouls committed by Home Team)
+- **Shots**: 20 (Player22 saved, Player26 saved, Player26 blocked, Player28 goal, Player27 missed, Player21 saved, Player29 missed, Player27 saved, Player28 missed, Player28 missed, Player28 crossbar, Player27 saved, Player21 blocked, Player27 goal, Player27 blocked, Player21 saved, Player31 blocked, Player36 missed, Player36 saved, Player31 blocked)
+
+Now, let's create the final table:
+
+### Final Table:
+| Team        | Goals | Red Cards | Yellow Cards | Fouls | Free Kicks | Shots | <NEWLINE>
+| Home Team   | 0     | 1         | 1            | 14    | 14         | 7     | <NEWLINE>
+| Away Team   | 2     | 0         | 3            | 17    | 13         | 20    | <NEWLINE>

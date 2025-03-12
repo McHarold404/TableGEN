@@ -1,0 +1,20 @@
+To create a summary table encapsulating all the important statistics of the game, we need to identify and count the relevant events from the provided live text. The key statistics to consider are goals, shots (including goals, saved attempts, blocked attempts, and missed attempts), red cards, yellow cards, fouls (including handball and dangerous play), offsides, corner kicks, and free kicks (including penalties).
+
+### Table Schema:
+| Team | Goals | Shots | Red Cards | Yellow Cards | Fouls | Offsides | Corner Kicks | Free Kicks | <NEWLINE>
+
+Now, let's process the text to fill in the table:
+
+1. **Goals**: Home Team - 3 (Player11, Player4, Player11), Away Team - 0
+2. **Shots**: Home Team - 20 (Goals: 3, Saved Attempts: 6, Blocked Attempts: 4, Missed Attempts: 7), Away Team - 14 (Goals: 0, Saved Attempts: 4, Blocked Attempts: 3, Missed Attempts: 7)
+3. **Red Cards**: Home Team - 0, Away Team - 2 (Player21, Player20)
+4. **Yellow Cards**: Home Team - 1 (Player6), Away Team - 4 (Player20, Player26, Player21, Player23)
+5. **Fouls**: Home Team - 10 (Player9, Player5, Player8, Player10, Player7, Player6, Player4, Player15, Player9, Player10), Away Team - 14 (Player20, Player28, Player26, Player21, Player27, Player23, Player24, Player20)
+6. **Offsides**: Home Team - 3 (Player11, Player10, Player18), Away Team - 1 (Player27)
+7. **Corner Kicks**: Home Team - 10, Away Team - 6
+8. **Free Kicks**: Home Team - 12 (including 1 penalty), Away Team - 11
+
+### Final Table:
+| Team | Goals | Shots | Red Cards | Yellow Cards | Fouls | Offsides | Corner Kicks | Free Kicks | <NEWLINE>
+| Home Team | 3 | 20 | 0 | 1 | 10 | 3 | 10 | 12 | <NEWLINE>
+| Away Team | 0 | 14 | 2 | 4 | 14 | 1 | 6 | 11 | <NEWLINE>

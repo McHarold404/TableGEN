@@ -1,0 +1,27 @@
+To create the summary table, let's first identify and count the important statistics for both teams from the provided text. The statistics we are interested in are:
+
+1. Goals
+2. Red Cards
+3. Fouls (including handball and dangerous play)
+4. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Now, let's go through the text and tally these statistics:
+
+### Home Team:
+- Goals: 4 (Lines 62, 65, 84, 85)
+- Red Cards: 0
+- Fouls: 12 (Lines 3, 13, 16, 17, 20, 33, 35, 57, 66, 79, 81, 83)
+- Shots: 10 (Lines 5, 28, 40, 49, 51, 53, 62, 65, 78, 84, 85)
+
+### Away Team:
+- Goals: 0
+- Red Cards: 1 (Line 64)
+- Fouls: 15 (Lines 8, 9, 11, 26, 30, 33, 34, 39, 46, 55, 56, 60, 63, 74, 75, 83, 86)
+- Shots: 6 (Lines 12, 18, 23, 24, 45, 48)
+
+Now, let's construct the table with these statistics:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 4     | 0         | 12    | 10    | <NEWLINE>
+| Away Team  | 0     | 1         | 15    | 6     | <NEWLINE>

@@ -1,0 +1,115 @@
+You are an expert in converting unstructured text into structured tables. Your task is to process a series of atomic statements describing a soccer game and update a pre-defined table schema. Follow the steps below to ensure accurate and complete table updates.
+
+TASK DESCRIPTION
+You are given:
+
+Input Statements: A sequence of soccer game events (atomic statements).
+Table Schema: A json object with row headers (entities like players or teams) and column headers (attributes like free kicks, goals, fouls, etc.).
+
+Your goal is to:
+Process each statement one by one.
+Identify the correct set of row and column headers and cells to update based on the statement.
+Update or add values to the table accordingly.
+
+ALGORITHM
+For each statement in the input:
+Identify Row and Column:
+    Determine which set of row and columns headers have to be updated based on this table.
+    There can be one or more updates to be done to the table based on the statement. For eg. if in a football match a foul leads to a free-kick, both the foul and free-kick column will have to be updated.
+    Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card.
+
+Update the Table:
+    If the cell value exists, update it (e.g., increment by 1 for fouls, goals, etc.).
+    If no value exists, add the value to the cell (e.g., set it to 1 for a first event).
+Handle Missing Data:
+
+If a column value is not present in the statements, keep it as 0.
+Structural Integrity:
+
+Do not add or remove any rows or columns unless explicitly instructed by the data.
+Ensure uniformity in the format of data across the table.
+Formatting Rules:
+Use | to separate cells and <NEWLINE> to separate rows.
+If needed, separate multiple tables with <TABLE END>.
+
+Final Output:
+
+Summarize all actions in the table after processing all statements.
+Ensure the table is concise, well-structured, and contains all information from the input.
+EXAMPLE INPUT & OUTPUT
+
+Input Statements:
+
+Input Statements:
+1.Player26 (Away Team) earns a free kick in their defensive half as Player7 (Home Team) commits a foul.
+2.Player7 (Home Team) receives a yellow card for a rough tackle.
+3.The Away Team earns a corner kick.
+4.Player27 (Away Team) shoots from the center of the box, scoring the first goal for his team.
+5.Player 9 (Home Team) commits a foul resulting in Player26 (Away Team) earning a free kick. 
+
+Table Schema:
+{
+    "row_headers": ["Home Team", "Away Team"],
+    "col_headers": ["Free Kicks", "Fouls", "Yellow Cards", "Corner Kicks", "Shots", "Goals", "Assists", "Saves"]
+}
+
+Step-by-Step Table Updates
+
+Initial Table (Empty Table):
+
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Assists | Saves | <NEWLINE>
+| Home Team | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+
+Step 1: "Player26 (Away Team) earns a free kick in their defensive half as Player7 (Home Team) commits a foul."
+
+Update: Add 1 to Free Kicks for Away Team and add 1 to foul to Home Team.
+Revised state: Away Team Free Kicks: 1, Home Team Fouls: 1
+
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Assists | Saves | <NEWLINE>
+| Home Team | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+
+
+
+Step 2: "Player7 (Home Team) receives a yellow card for a rough tackle."
+Update: Add 1 to Yellow Cards for Home Team.
+Revised State: Home Team Yellow Cards: 1.
+
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Assists | Saves | <NEWLINE>
+| Home Team | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+
+
+Step 3: "The Away Team earns a corner kick."
+Update: Add 1 to Corner Kicks for Away Team.
+Revised State: Away Team Corner Kicks: 1.
+
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Assists | Saves | <NEWLINE>
+| Home Team | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | <NEWLINE>
+
+Step 4: "Player27 (Away Team) shoots from the center of the box, scoring the first goal for his team."
+
+Update: Add 1 to Shots for Away Team, 1 Goal to Away Team 
+Revised State: Away Team Shots 1, Away Team Goals 1.
+
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Assists | Saves | <NEWLINE>
+| Home Team | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 1 | 0 | 0 | 1 | 1 | 1 | 0 | 0 | <NEWLINE>
+
+
+Step 5: "Player 9 (Home Team) commits a foul resulting in Player26 (Away Team) earning a free kick."
+
+Update: Increment Free Kicks for Away Team by 1, increment Fouls for Home Team by 1.
+Revised State: Away Team Free Kicks:2, Home Team Fouls:2. 
+
+### Final Table:
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Assists | Saves | <NEWLINE>
+| Home Team | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 2 | 0 | 0 | 1 | 1 | 1 | 0 | 0 | <NEWLINE>
+
+Final instructions:
+Follow these guidelines to generate tables and return the final state of the table after processing all the statements. Ensure all sentences are processed and for every statement return the update and revised state of the updated cells as shown in the example. Return the final table in the specified format starting with ### Final Table.
+
+

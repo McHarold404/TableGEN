@@ -1,0 +1,45 @@
+To generate a summary table of the game statistics, we need to encapsulate key statistics such as goals, red cards, fouls, shots, free kicks, corner kicks, yellow cards, and offsides. Let's first define the table schema and then fill it in step by step based on the provided text.
+
+### Table Schema:
+| Team | Goals | Red Cards | Fouls | Shots | Free Kicks | Corner Kicks | Yellow Cards | Offsides | <NEWLINE>
+
+Now, let's process the text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 0 (No goals scored)
+   - Away Team: 2 (Player27 and Player26 scored)
+
+2. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 1 (Player24 received a second yellow card)
+
+3. **Fouls:**
+   - Home Team: 10 (Player10, Player9 (2), Player7 (2), Player2, Player8, Player6, Player18, Player5)
+   - Away Team: 13 (Player27 (4), Player25, Player21 (2), Player22, Player24 (3), Player30, Player29, Player23, Player33)
+
+4. **Shots:**
+   - Home Team: 13 (Player7 (2), Player6 (2), Player9 (2), Player10, Player8, Player4 (2), Player5 (2), Player18, Player14)
+   - Away Team: 11 (Player24, Player26 (2), Player22 (2), Player29 (2), Player23, Player28, Player27, Player22)
+
+5. **Free Kicks:**
+   - Home Team: 10 (Resulting from fouls committed by Away Team)
+   - Away Team: 11 (Resulting from fouls committed by Home Team)
+
+6. **Corner Kicks:**
+   - Home Team: 7 (Mentioned directly in the text)
+   - Away Team: 6 (Mentioned directly in the text)
+
+7. **Yellow Cards:**
+   - Home Team: 1 (Player8)
+   - Away Team: 3 (Player30, Player24, Player33)
+
+8. **Offsides:**
+   - Home Team: 1 (Player9)
+   - Away Team: 1 (Player27)
+
+Now, let's construct the table:
+
+### Final Table:
+| Team | Goals | Red Cards | Fouls | Shots | Free Kicks | Corner Kicks | Yellow Cards | Offsides | <NEWLINE>
+| Home Team | 0 | 0 | 10 | 13 | 10 | 7 | 1 | 1 | <NEWLINE>
+| Away Team | 2 | 1 | 13 | 11 | 11 | 6 | 3 | 1 | <NEWLINE>

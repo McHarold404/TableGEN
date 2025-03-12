@@ -3,20 +3,21 @@ import google.generativeai as genai
 import time 
 from datetime import datetime
 import json
-
 import os
 import json
 from datetime import datetime
 import time  # For rate limiting
+from dotenv import load_dotenv
+from dotenv import *
 import google.generativeai as genai  # Assumed to be the client library for Gemini AI
 
 class GeminiBot:
     def __init__(self, api_key=None, model_name="gemini-1.5-flash", 
                  data_path=None, prompt_path=None, meta_data=None, file_name=None, 
                  limit_rows=None, output_path=None, start_line=None, end_line=None, data_string=None):
-        self.api_key = api_key or os.getenv("GOOGLE_AI_API_KEY")
+        self.api_key = api_key or os.getenv("GEMINI_KEY")
         if not self.api_key:
-            raise ValueError("API key is required. Set it in the constructor or as an environment variable 'GOOGLE_AI_API_KEY'")
+            raise ValueError("API key is required. Set it in the constructor or as an environment variable 'GEMINI_KEY'")
         genai.configure(api_key=self.api_key)
         self.model_name = model_name
         self.data_path = data_path
@@ -161,9 +162,40 @@ class GeminiBot:
         return results
 
 
-def ask_gemini(text : str, prompt_path : str =None, api_key=""):
+def ask_gemini(text : str, prompt_path : str =None, key = 1,model_name = "gemini-1.5-flash"):
+    
     # Import necessary module for GenerativeModel if not already done
-
+    load_dotenv()
+    if key == 1:
+        api_key = os.getenv("GEMINI_KEY")
+    elif key == 2:
+        api_key = os.getenv("GEMINI_KEY_2")
+    elif key == 3:
+        api_key = os.getenv("GEMINI_KEY_3")
+    elif key == 4:
+        api_key = os.getenv("GEMINI_KEY_4")
+    elif key == 5:
+        api_key = os.getenv("GEMINI_KEY_5")
+    elif key == 6:
+        api_key = os.getenv("GEMINI_KEY_6")
+    elif key == 7:
+        api_key = os.getenv("GEMINI_KEY_7")
+    elif key == 8:
+        api_key = os.getenv("GEMINI_KEY_8")
+    elif key == 9:
+        api_key = os.getenv("GEMINI_KEY_9")
+    elif key == 10:
+        api_key = os.getenv("GEMINI_KEY_10")
+    elif key == 11:
+        api_key = os.getenv("GEMINI_KEY_11")
+    elif key == 12:
+        api_key = os.getenv("GEMINI_KEY_12")
+    elif key == 13:
+        api_key = os.getenv("GEMINI_KEY_13")
+    elif key == 14:
+        api_key = os.getenv("GEMINI_KEY_14")
+    else:
+        raise ValueError("No key specified")
     # Check if a prompt path is provided and read prompt text
     if prompt_path and text:
         with open(prompt_path, 'r') as file:
@@ -173,17 +205,18 @@ def ask_gemini(text : str, prompt_path : str =None, api_key=""):
 
     # Initialize the GenerativeModel with the required configuration
     generation_config = {
-        "temperature": 1,
-        "top_p": 0.95,
-        "top_k": 64,
-        "max_output_tokens": 8192,
+        "temperature": 0,
+        "top_p": 1.0,
         "response_mime_type": "text/plain",
     }
     genai.configure(api_key=api_key)
     try:
         # Instantiate the model
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",  # replace with actual model name
+            model_name=model_name,  # replace with actual model name
+            # The `generation_config` dictionary in the GeminiBot class and the ask_gemini function is
+            # used to configure the generation settings for the GenerativeModel. It contains the
+            # following key-value pairs:
             generation_config=generation_config,
             system_instruction= prompt
         )
@@ -191,7 +224,7 @@ def ask_gemini(text : str, prompt_path : str =None, api_key=""):
         # Start a chat session
         chat_session = model.start_chat(history=[])
         # Get the response by sending the prompt
-        response = chat_session.send_message(prompt)
+        response = chat_session.send_message(text)
         return response.text
 
     except Exception as e:

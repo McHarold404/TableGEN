@@ -1,0 +1,28 @@
+To create the summary table, we'll first identify the important statistics from the text:
+
+1. **Goals**: 
+   - Home Team: 0
+   - Away Team: 2 (Player28 and Player31)
+
+2. **Red Cards**: 
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls**: 
+   - Home Team: 12 (Player6 x3, Player7 x2, Player3 x2, Player4 x2, Player9, Player10, Player2)
+   - Away Team: 11 (Player20 x2, Player23 x2, Player26, Player28, Player25 x2, Player27, Player31, Player30)
+
+4. **Shots** (Goals + Saved Attempts + Blocked Attempts + Missed Attempts):
+   - Home Team: 14 (Player4 x2, Player10 x4, Player6 x2, Player9, Player8 x2, Player15, Player2)
+   - Away Team: 13 (Player29 x3, Player28 x2, Player27 x3, Player25, Player31, Player26, Player20)
+
+5. **Free Kicks** (including penalties):
+   - Home Team: 9 (Player11 x2, Player9, Player3, Player6, Player4, Player2, Player8, Player10)
+   - Away Team: 13 (Player29 x2, Player25 x3, Player27 x2, Player28, Player31, Player30 x2, Player21, Player20)
+
+Now, let's create the table schema and fill it with the statistics:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Free Kicks | <NEWLINE>
+| Home Team  | 0     | 0         | 12    | 14    | 9          | <NEWLINE>
+| Away Team  | 2     | 0         | 11    | 13    | 13         | <NEWLINE>

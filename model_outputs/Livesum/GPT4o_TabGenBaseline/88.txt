@@ -1,0 +1,45 @@
+To generate the final table, we need to extract and count the relevant statistics for both the Home Team and the Away Team from the provided text. Here's the step-by-step breakdown:
+
+1. **Goals**: 
+   - Home Team: 1 goal (from Player9)
+   - Away Team: 0 goals
+
+2. **Shots (including goals, saved attempts, blocked attempts, and missed attempts)**:
+   - Home Team: 
+     - Blocked: Player8, Player11, Player11, Player7, Player11, Player5, Player6, Player3, Player5
+     - Saved: Player8, Player11, Player10
+     - Missed: Player10, Player5, Player3
+     - Goals: Player9
+     - Total: 12 shots
+   - Away Team:
+     - Blocked: Player27, Player29, Player29, Player26
+     - Saved: Player27
+     - Missed: Player24, Player23, Player27, Player28
+     - Total: 9 shots
+
+3. **Red Cards**: 
+   - Both teams: 0 red cards
+
+4. **Yellow Cards**:
+   - Home Team: Player3, Player8, Player5, Player11, Player6
+   - Away Team: Player20, Player23
+   - Total Yellow Cards: Home Team: 5, Away Team: 2
+
+5. **Fouls (including handball and dangerous play)**:
+   - Home Team: Player11, Player10, Player3, Player8, Player5, Player2, Player6, Player11 (handball), Player6
+   - Total: 9 fouls
+   - Away Team: Player29, Player27, Player22, Player26, Player23, Player20, Player25, Player28, Player35, Player26
+   - Total: 10 fouls
+
+6. **Free Kicks**:
+   - Home Team: Player2, Player11, Player10, Player8, Player6, Player7, Player8, Player6, Player7, Player13
+   - Total: 10 free kicks
+   - Away Team: Player26, Player23, Player20, Player25, Player29, Player26, Player28, Player23, Player25, Player35
+   - Total: 10 free kicks
+
+Now, let's put these statistics into a table format:
+
+### Final Table:
+| Team       | Goals | Shots | Red Cards | Yellow Cards | Fouls | Free Kicks | <NEWLINE>
+| Home Team  | 1     | 12    | 0         | 5            | 9     | 10         | <NEWLINE>
+| Away Team  | 0     | 9     | 0         | 2            | 10    | 10         | <NEWLINE>

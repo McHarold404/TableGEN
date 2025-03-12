@@ -1,0 +1,37 @@
+To create a summary table of the game's important statistics, we first need to identify and count the relevant events from the live text. Here is the schema for the table that we will use:
+
+### Table Schema:
+- Team
+- Goals
+- Red Cards
+- Fouls
+- Shots
+- Free Kicks
+
+Now, let's process the text to fill the table:
+
+1. **Goals:**
+   - Home Team: 4 goals (Events 2, 17, 30, 47)
+   - Away Team: 1 goal (Event 63)
+
+2. **Red Cards:**
+   - No red cards were mentioned in the text.
+
+3. **Fouls:**
+   - Home Team: 9 fouls (Events 14, 27, 29, 36, 40, 50, 54, 56, 69)
+   - Away Team: 11 fouls (Events 3, 9, 21, 24, 31, 37, 43, 48, 60, 62, 67)
+
+4. **Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts):**
+   - Home Team: 13 shots (Goals: 4, Saved: 5 [Events 5, 11, 16, 55, 58, 66], Blocked: 2 [Events 19, 22], Missed: 1 [Event 12])
+   - Away Team: 8 shots (Goals: 1, Saved: 2 [Events 41, 55], Blocked: 1 [Event 59], Missed: 4 [Events 51, 61, 66])
+
+5. **Free Kicks:**
+   - Home Team: 11 free kicks (Events 4, 9, 25, 32, 38, 57, 65, 68)
+   - Away Team: 12 free kicks (Events 13, 26, 28, 35, 39, 49, 54, 60, 62)
+
+Now, let's construct the final table:
+
+### Final Table:
+| Team      | Goals | Red Cards | Fouls | Shots | Free Kicks | <NEWLINE>
+| Home Team | 4     | 0         | 9     | 13    | 11         | <NEWLINE>
+| Away Team | 1     | 0         | 11    | 8     | 12         | <NEWLINE>

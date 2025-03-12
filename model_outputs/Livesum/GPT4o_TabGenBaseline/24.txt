@@ -1,0 +1,50 @@
+To summarize the game statistics, let's first create a table schema that includes all the important statistics:
+
+### Table Schema:
+- Team
+- Goals
+- Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+- Red Cards
+- Fouls (including handball and dangerous play)
+- Free Kicks (including penalties)
+
+Now, let's process the text to fill in the table:
+
+1. **Goals:**
+   - Home Team: 3 goals (Player2, Player9, Player6)
+   - Away Team: 1 goal (Player29)
+
+2. **Shots:**
+   - Home Team: 
+     - Blocked: Player10 (twice), Player11, Player2, Player7 (twice), Player10, Player14
+     - Saved: Player9, Player10, Player14
+     - Missed: Player9, Player10, Player18, Player4, Player10
+     - Total Shots: 15
+   - Away Team:
+     - Blocked: Player28, Player25
+     - Saved: Player22, Player25
+     - Missed: Player28, Player22, Player28, Player29, Player36
+     - Total Shots: 10
+
+3. **Red Cards:**
+   - Home Team: 0
+   - Away Team: 0
+
+4. **Fouls:**
+   - Home Team: Player10, Player6, Player3, Player9, Player5, Player7, Player14
+   - Total Fouls: 7
+   - Away Team: Player25, Player26, Player23, Player36
+   - Total Fouls: 8
+
+5. **Free Kicks:**
+   - Home Team: Player11, Player7, Player10, Player3, Player5, Player8, Player10
+   - Total Free Kicks: 7
+   - Away Team: Player29, Player28, Player26, Player35, Player21
+   - Total Free Kicks: 5
+
+Now, let's present the final table with these statistics:
+
+### Final Table:
+| Team       | Goals | Shots | Red Cards | Fouls | Free Kicks | <NEWLINE>
+| Home Team  | 3     | 15    | 0         | 7     | 7          | <NEWLINE>
+| Away Team  | 1     | 10    | 0         | 8     | 5          | <NEWLINE>

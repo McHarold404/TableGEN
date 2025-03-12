@@ -1,0 +1,60 @@
+To create a summary table of the match statistics, we need to identify and count the relevant events from the text. Here's a breakdown of the events:
+
+1. **Goals:**
+   - Home Team: 1 goal scored by Player5.
+   - Away Team: 3 goals scored by Player25 (3 goals).
+
+2. **Red Cards:**
+   - No red cards were issued in the match.
+
+3. **Fouls:**
+   - Home Team: 
+     - Player3 (2 fouls)
+     - Player7 (2 fouls)
+     - Player9 (1 foul)
+     - Player2 (1 foul)
+     - Player4 (1 foul)
+     - Player5 (2 fouls)
+     - Player11 (1 foul)
+     - Player10 (1 foul)
+   - Total fouls by Home Team: 11
+   - Away Team:
+     - Player24 (1 foul)
+     - Player26 (4 fouls including handball)
+     - Player20 (2 fouls)
+     - Player22 (1 foul)
+     - Player25 (1 foul)
+     - Player28 (1 foul)
+     - Player39 (1 foul)
+     - Player34 (1 foul)
+   - Total fouls by Away Team: 11
+
+4. **Free Kicks:**
+   - Home Team: 11 free kicks earned (fouls committed by Away Team).
+   - Away Team: 11 free kicks earned (fouls committed by Home Team).
+
+5. **Yellow Cards:**
+   - Home Team: 
+     - Player7 (1 yellow card)
+     - Player11 (1 yellow card)
+   - Away Team: 
+     - Player26 (1 yellow card)
+
+6. **Shots:**
+   - Home Team:
+     - Player10 (1 missed attempt)
+     - Player11 (2 missed attempts, 1 blocked attempt)
+     - Player16 (1 saved attempt)
+     - Player5 (1 goal)
+   - Total shots by Home Team: 5
+   - Away Team:
+     - Player27 (4 attempts: 1 saved, 1 blocked, 2 missed)
+     - Player26 (2 missed, 2 saved)
+     - Player25 (3 goals, 3 blocked, 1 missed)
+     - Player23 (1 missed)
+   - Total shots by Away Team: 11
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Free Kicks | Yellow Cards | Shots | <NEWLINE>
+| Home Team  | 1     | 0         | 11    | 11         | 2            | 5     | <NEWLINE>
+| Away Team  | 3     | 0         | 11    | 11         | 1            | 11    | <NEWLINE>

@@ -1,0 +1,39 @@
+To create a summary table of the important statistics from the game, we need to identify key metrics from the provided text. Let's break down the stats:
+
+1. **Goals**: 
+   - Home Team: 0
+   - Away Team: 1
+
+2. **Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts)**:
+   - Home Team: 
+     - Missed: 7 (Player11 x2, Player2, Player4, Player7 x2, Player10)
+     - Blocked: 1 (Player13)
+     - Total Shots: 7 + 1 = 8
+   - Away Team:
+     - Goal: 1 (Player33)
+     - Missed: 5 (Player20, Player21, Player28 x2, Player24)
+     - Blocked: 4 (Player24, Player28 x2, Player33)
+     - Total Shots: 1 + 5 + 4 = 10
+
+3. **Red Cards**: 
+   - Home Team: 0
+   - Away Team: 0
+
+4. **Yellow Cards**: 
+   - Home Team: 1 (Player10, Player5)
+   - Away Team: 2 (Player23, Player33, Player28)
+
+5. **Fouls (Handball and Dangerous Play included)**:
+   - Home Team: 8 (Player6, Player9 x2, Player3, Player10, Player13, Player5, Player7, Player14)
+   - Away Team: 9 (Player26 x2, Player28, Player23 x2, Player29, Player24, Player33)
+
+6. **Free Kicks (Penalties included)**:
+   - Home Team: 8
+   - Away Team: 10
+
+Now, let's create the table schema and populate it with these statistics.
+
+### Final Table:
+| Team       | Goals | Shots | Red Cards | Yellow Cards | Fouls | Free Kicks | <NEWLINE>
+| Home Team  | 0     | 8     | 0         | 2            | 8     | 8          | <NEWLINE>
+| Away Team  | 1     | 10    | 0         | 3            | 9     | 10         | <NEWLINE>

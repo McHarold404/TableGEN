@@ -1,0 +1,18 @@
+Please output a table with 2 rows in the given format according to the given live text:
+Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card. Penalty is also considered as free kicks. 
+
+Output Format and Instructions:
+1. Keep the Home Team and Away Team as row headers in the table.
+2. The first row of the table should contain the headers.
+3. Use "|" as a separator between cells.
+4. Use "<NEWLINE>" literal as the end of every row.
+5. Return the final table with the headeing ### Final Table
+
+Here is a sample output form:
+### Final Table:
+| Team | Column1 | Column2 | Column3 | <NEWLINE>
+| Home Team | 0 | 0 | 13 | <NEWLINE>
+| Away Team | 3 | 0 | 9 | <NEWLINE>
+
+Please output a table with 2 rows in the specified format according to the following given text:
+

@@ -1,4 +1,5 @@
 import numpy as np
+import json
 import pandas as pd
 import re
 SEP = "|"
@@ -17,6 +18,14 @@ SEP = "|"
 #     if one_line:
 #         text = text.replace("\n", " <NEWLINE> ")
 #     return text
+
+def paragraph_to_numbered_sentences(paragraph): ## For livesum dataset
+    # Split paragraph into sentences using regular expressions to handle various punctuation
+    sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?|\!)\s', paragraph)
+    
+    # Number each sentence and store it in a list
+    numbered_sentences = [f"{i+1}. {sentence.strip()}" for i, sentence in enumerate(sentences) if sentence.strip()]
+    return numbered_sentences
 
 
 def separate_tables(output_text): ## Function to separate player table and team table in the rotowire dataset.
@@ -63,6 +72,58 @@ def separate_tables(output_text): ## Function to separate player table and team 
         tables[current_table_name] = '\n'.join(current_table_content)
 
     return tables
+
+def extract_tables_from_responses_path(ai_responses):
+    """
+    Extracts named tables from AI responses based on '<ENDTABLE>' or '<TABLE END>' markers.
+
+    Parameters:
+    - ai_responses: List of dictionaries, each containing at least a 'response' key.
+
+    Returns:
+    - A list of dictionaries, each with 'data_point' and extracted tables.
+    """
+    with open(ai_responses) as f:
+        output = json.load(f)
+    extracted_tables = []
+    cnt = 0
+    
+    for response_dict in output:
+        data_point = cnt
+        cnt += 1
+        response_text = response_dict['response']
+
+        # Replace all variations of '<NEWLINE>' with actual newline characters
+        response = re.sub(r'\s*<NEWLINE>\s*', '\n', response_text).strip()
+        
+        # Uncomment the following line to debug the processed response
+        # print(f"Data Point {data_point} Response:\n{response}\n{'-'*50}")
+        
+        # Dictionary to hold all extracted tables for this response
+        tables = {}
+        
+        # Updated pattern to match table names with spaces and handle both end markers
+        table_pattern = r'([\w\s]+):\s*\n((?:\|.*\n?)+?)(?:<ENDTABLE>|<TABLE END>)'
+
+        # Find all tables in the response
+        matches = list(re.finditer(table_pattern, response, re.MULTILINE))
+        
+        if not matches:
+            print(f"No matches found for data_point {data_point}. Check response format.")
+        
+        for match in matches:
+            table_name = match.group(1).strip()
+            table_content = match.group(2).strip()
+            tables[table_name] = table_content
+            print(f"Table '{table_name}' found for data_point {data_point}")
+
+        # Append extracted tables along with data_point to results
+        extracted_tables.append({
+            'data_point': data_point,
+            **tables
+        })
+
+    return extracted_tables
 
 def extract_tables_from_responses(ai_responses):
     """
@@ -113,7 +174,6 @@ def extract_tables_from_responses(ai_responses):
         })
 
     return extracted_tables
-
 
 
 

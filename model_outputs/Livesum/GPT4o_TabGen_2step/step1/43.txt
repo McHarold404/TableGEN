@@ -1,0 +1,203 @@
+To process the given statements and update the table according to the schema, we'll go through each statement, identify the relevant actions, and update the table accordingly. Let's begin:
+
+### Initial Table:
+
+| | Goals | Shots on Target | Shots Off Target | Blocked Shots | Assists | Fouls Committed | Free Kicks Earned | Yellow Cards | Red Cards | Corner Kicks | Offsides | Injuries | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+#### Step-by-Step Updates:
+
+1. **Statement**: "Player21(Away Team) commits a foul resulting in Player11(Home Team) winning a free kick on the left wing."
+   - **Update**: Increment Fouls Committed for Away Team by 1, increment Free Kicks Earned for Home Team by 1.
+   - **Revised State**: Away Team Fouls Committed: 1, Home Team Free Kicks Earned: 1.
+
+2. **Statement**: "The Home Team wins a corner kick."
+   - **Update**: Increment Corner Kicks for Home Team by 1.
+   - **Revised State**: Home Team Corner Kicks: 1.
+
+3. **Statement**: "Player11(Home Team) misses the header from the center of the box, assisted by Player2(Home Team) with a cross."
+   - **Update**: Increment Shots Off Target for Home Team by 1, increment Assists for Home Team by 1.
+   - **Revised State**: Home Team Shots Off Target: 1, Home Team Assists: 1.
+
+4. **Statement**: "Player20(Away Team) commits a foul."
+   - **Update**: Increment Fouls Committed for Away Team by 1.
+   - **Revised State**: Away Team Fouls Committed: 2.
+
+5. **Statement**: "Player9(Home Team) earns a free kick in the opponent's half."
+   - **Update**: Increment Free Kicks Earned for Home Team by 1.
+   - **Revised State**: Home Team Free Kicks Earned: 2.
+
+6. **Statement**: "The Home Team earns a corner kick."
+   - **Update**: Increment Corner Kicks for Home Team by 1.
+   - **Revised State**: Home Team Corner Kicks: 2.
+
+7. **Statement**: "Player9(Home Team) fouls Player27(Away Team), who wins a free kick in their defensive half."
+   - **Update**: Increment Fouls Committed for Home Team by 1, increment Free Kicks Earned for Away Team by 1.
+   - **Revised State**: Home Team Fouls Committed: 1, Away Team Free Kicks Earned: 1.
+
+8. **Statement**: "Player10(Home Team)'s header from the center of the box goes wide to the right."
+   - **Update**: Increment Shots Off Target for Home Team by 1.
+   - **Revised State**: Home Team Shots Off Target: 2.
+
+9. **Statement**: "Player10(Home Team)'s shot from outside the box was blocked."
+   - **Update**: Increment Blocked Shots for Home Team by 1.
+   - **Revised State**: Home Team Blocked Shots: 1.
+
+10. **Statement**: "The Home Team wins a corner kick."
+    - **Update**: Increment Corner Kicks for Home Team by 1.
+    - **Revised State**: Home Team Corner Kicks: 3.
+
+11. **Statement**: "Player8(Home Team)'s header from the center of the box is saved by the goalkeeper."
+    - **Update**: Increment Shots on Target for Home Team by 1.
+    - **Revised State**: Home Team Shots on Target: 1.
+
+12. **Statement**: "Player7(Home Team) fouls Player27(Away Team), who wins a free kick in their defensive half."
+    - **Update**: Increment Fouls Committed for Home Team by 1, increment Free Kicks Earned for Away Team by 1.
+    - **Revised State**: Home Team Fouls Committed: 2, Away Team Free Kicks Earned: 2.
+
+13. **Statement**: "Player11(Home Team) is currently experiencing a delay in the match due to an injury."
+    - **Update**: Increment Injuries for Home Team by 1.
+    - **Revised State**: Home Team Injuries: 1.
+
+14. **Statement**: "Player7(Home Team) receives a yellow card for a rough tackle."
+    - **Update**: Increment Yellow Cards for Home Team by 1.
+    - **Revised State**: Home Team Yellow Cards: 1.
+
+15. **Statement**: "The Home Team wins a corner kick."
+    - **Update**: Increment Corner Kicks for Home Team by 1.
+    - **Revised State**: Home Team Corner Kicks: 4.
+
+16. **Statement**: "The Home Team wins a corner kick."
+    - **Update**: Increment Corner Kicks for Home Team by 1.
+    - **Revised State**: Home Team Corner Kicks: 5.
+
+17. **Statement**: "Player8(Home Team) commits a foul on Player27(Away Team), who wins a free kick."
+    - **Update**: Increment Fouls Committed for Home Team by 1, increment Free Kicks Earned for Away Team by 1.
+    - **Revised State**: Home Team Fouls Committed: 3, Away Team Free Kicks Earned: 3.
+
+18. **Statement**: "Player27(Away Team) earns a free kick in the opponent's half."
+    - **Update**: Increment Free Kicks Earned for Away Team by 1.
+    - **Revised State**: Away Team Free Kicks Earned: 4.
+
+19. **Statement**: "Player7(Home Team) commits a foul."
+    - **Update**: Increment Fouls Committed for Home Team by 1.
+    - **Revised State**: Home Team Fouls Committed: 4.
+
+20. **Statement**: "Player29(Away Team) commits a foul."
+    - **Update**: Increment Fouls Committed for Away Team by 1.
+    - **Revised State**: Away Team Fouls Committed: 3.
+
+21. **Statement**: "Player3(Home Team) earns a free kick in their own half."
+    - **Update**: Increment Free Kicks Earned for Home Team by 1.
+    - **Revised State**: Home Team Free Kicks Earned: 3.
+
+22. **Statement**: "Player26(Away Team) earns a free kick in their own half."
+    - **Update**: Increment Free Kicks Earned for Away Team by 1.
+    - **Revised State**: Away Team Free Kicks Earned: 5.
+
+23. **Statement**: "Player5(Home Team) commits a foul."
+    - **Update**: Increment Fouls Committed for Home Team by 1.
+    - **Revised State**: Home Team Fouls Committed: 5.
+
+24. **Statement**: "Player25(Away Team) commits a foul."
+    - **Update**: Increment Fouls Committed for Away Team by 1.
+    - **Revised State**: Away Team Fouls Committed: 4.
+
+25. **Statement**: "Player9(Home Team) earned a free kick in their own defensive half."
+    - **Update**: Increment Free Kicks Earned for Home Team by 1.
+    - **Revised State**: Home Team Free Kicks Earned: 4.
+
+26. **Statement**: "The Home Team wins a corner kick."
+    - **Update**: Increment Corner Kicks for Home Team by 1.
+    - **Revised State**: Home Team Corner Kicks: 6.
+
+27. **Statement**: "Player7(Home Team) misses the target with a right-footed shot from outside the box."
+    - **Update**: Increment Shots Off Target for Home Team by 1.
+    - **Revised State**: Home Team Shots Off Target: 3.
+
+28. **Statement**: "The Home Team wins a corner kick."
+    - **Update**: Increment Corner Kicks for Home Team by 1.
+    - **Revised State**: Home Team Corner Kicks: 7.
+
+29. **Statement**: "Player11(Home Team)'s shot with his right foot from the center of the box following a corner goes over the goal."
+    - **Update**: Increment Shots Off Target for Home Team by 1.
+    - **Revised State**: Home Team Shots Off Target: 4.
+
+30. **Statement**: "Player2(Home Team) fouls Player28(Away Team) on the left wing, resulting in a free kick."
+    - **Update**: Increment Fouls Committed for Home Team by 1, increment Free Kicks Earned for Away Team by 1.
+    - **Revised State**: Home Team Fouls Committed: 6, Away Team Free Kicks Earned: 6.
+
+31. **Statement**: "Player2(Home Team) receives a yellow card for a rough tackle."
+    - **Update**: Increment Yellow Cards for Home Team by 1.
+    - **Revised State**: Home Team Yellow Cards: 2.
+
+32. **Statement**: "Player21(Away Team)'s header from the center of the box is blocked."
+    - **Update**: Increment Blocked Shots for Away Team by 1.
+    - **Revised State**: Away Team Blocked Shots: 1.
+
+33. **Statement**: "Player10(Home Team)'s left footed shot from outside the box is blocked."
+    - **Update**: Increment Blocked Shots for Home Team by 1.
+    - **Revised State**: Home Team Blocked Shots: 2.
+
+34. **Statement**: "Player26(Away Team) commits a foul."
+    - **Update**: Increment Fouls Committed for Away Team by 1.
+    - **Revised State**: Away Team Fouls Committed: 5.
+
+35. **Statement**: "Player11(Home Team) earns a free kick on the left side of the field."
+    - **Update**: Increment Free Kicks Earned for Home Team by 1.
+    - **Revised State**: Home Team Free Kicks Earned: 5.
+
+36. **Statement**: "Player26(Away Team) receives a yellow card for a rough tackle."
+    - **Update**: Increment Yellow Cards for Away Team by 1.
+    - **Revised State**: Away Team Yellow Cards: 1.
+
+37. **Statement**: "The Home Team wins a corner kick."
+    - **Update**: Increment Corner Kicks for Home Team by 1.
+    - **Revised State**: Home Team Corner Kicks: 8.
+
+38. **Statement**: "Player29(Away Team) commits a foul."
+    - **Update**: Increment Fouls Committed for Away Team by 1.
+    - **Revised State**: Away Team Fouls Committed: 6.
+
+39. **Statement**: "Player3(Home Team) earns a free kick in their own half."
+    - **Update**: Increment Free Kicks Earned for Home Team by 1.
+    - **Revised State**: Home Team Free Kicks Earned: 6.
+
+40. **Statement**: "Player23(Away Team) commits a foul on Player9(Home Team), who earns a free kick on the right wing."
+    - **Update**: Increment Fouls Committed for Away Team by 1, increment Free Kicks Earned for Home Team by 1.
+    - **Revised State**: Away Team Fouls Committed: 7, Home Team Free Kicks Earned: 7.
+
+41. **Statement**: "Player25(Away Team) receives a yellow card."
+    - **Update**: Increment Yellow Cards for Away Team by 1.
+    - **Revised State**: Away Team Yellow Cards: 2.
+
+42. **Statement**: "Player27(Away Team) earns a free kick in their own half after being fouled by Player9(Home Team)."
+    - **Update**: Increment Fouls Committed for Home Team by 1, increment Free Kicks Earned for Away Team by 1.
+    - **Revised State**: Home Team Fouls Committed: 7, Away Team Free Kicks Earned: 7.
+
+43. **Statement**: "Player9(Home Team) receives a yellow card for a foul."
+    - **Update**: Increment Yellow Cards for Home Team by 1.
+    - **Revised State**: Home Team Yellow Cards: 3.
+
+44. **Statement**: "Player24(Away Team) commits a foul, resulting in Player7(Home Team) winning a free kick."
+    - **Update**: Increment Fouls Committed for Away Team by 1, increment Free Kicks Earned for Home Team by 1.
+    - **Revised State**: Away Team Fouls Committed: 8, Home Team Free Kicks Earned: 8.
+
+45. **Statement**: "Player8(Home Team) commits a foul, leading to Player27(Away Team) winning a free kick."
+    - **Update**: Increment Fouls Committed for Home Team by 1, increment Free Kicks Earned for Away Team by 1.
+    - **Revised State**: Home Team Fouls Committed: 8, Away Team Free Kicks Earned: 8.
+
+46. **Statement**: "Player8(Home Team) receives a yellow card for a rough tackle."
+    - **Update**: Increment Yellow Cards for Home Team by 1.
+    - **Revised State**: Home Team Yellow Cards: 4.
+
+47. **Statement**: "The Away Team earns a corner kick."
+    - **Update**: Increment Corner Kicks for Away Team by 1.
+    - **Revised State**: Away Team Corner Kicks: 1.
+
+### Final Table:
+
+| | Goals | Shots on Target | Shots Off Target | Blocked Shots | Assists | Fouls Committed | Free Kicks Earned | Yellow Cards | Red Cards | Corner Kicks | Offsides | Injuries | <NEWLINE>
+| Away Team | Not found | Not found | Not found | 1 | Not found | 8 | 8 | 2 | Not found | 1 | Not found | Not found | <NEWLINE>
+| Home Team | Not found | 1 | 4 | 2 | 1 | 8 | 8 | 4 | Not found | 8 | Not found | 1 | <NEWLINE>

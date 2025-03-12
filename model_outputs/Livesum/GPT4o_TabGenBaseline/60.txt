@@ -1,0 +1,36 @@
+To generate the final table, we need to extract and calculate the statistics from the live text. Let's break down the information step by step:
+
+### Table Schema:
+1. Team
+2. Goals
+3. Red Cards
+4. Fouls
+5. Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts)
+6. Yellow Cards
+7. Free Kicks (including Penalties)
+8. Corner Kicks
+
+### Extracted Statistics:
+
+**Home Team:**
+- Goals: 1 (Player11 scored in event 24)
+- Red Cards: 0
+- Fouls: 10 (events 11, 13, 20, 38, 49, 57, 59, 68)
+- Shots: 13 (events 8, 14, 17, 23, 24, 27, 28, 31, 35, 42, 63, 66)
+- Yellow Cards: 1 (Player5 in event 61)
+- Free Kicks: 14 (events 7, 22, 26, 41, 43, 46, 51, 53, 55, 64, 66, 73)
+- Corner Kicks: 7 (events 9, 14, 29, 30, 55, 73)
+
+**Away Team:**
+- Goals: 1 (Player35 scored in event 44)
+- Red Cards: 0
+- Fouls: 11 (events 6, 15, 21, 24, 28, 40, 46, 50, 52, 54, 64, 65)
+- Shots: 10 (events 2, 4, 18, 34, 39, 44, 45, 47)
+- Yellow Cards: 1 (Player21 in event 16)
+- Free Kicks: 13 (events 10, 12, 20, 38, 46, 50, 52, 54, 56, 58, 67)
+- Corner Kicks: 4 (events 3, 5, 34)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | Yellow Cards | Free Kicks | Corner Kicks | <NEWLINE>
+| Home Team  | 1     | 0         | 10    | 13    | 1            | 14         | 7            | <NEWLINE>
+| Away Team  | 1     | 0         | 11    | 10    | 1            | 13         | 4            | <NEWLINE>

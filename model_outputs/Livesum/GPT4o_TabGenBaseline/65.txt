@@ -1,0 +1,73 @@
+To create a summary table of the game's statistics, we need to consider the following categories based on the provided text:
+
+1. Goals
+2. Red Cards
+3. Fouls (including handball and dangerous play)
+4. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Now, let's extract and count the relevant statistics from the text:
+
+### Goals
+- Home Team: 0
+- Away Team: 2
+
+### Red Cards
+- Home Team: 0
+- Away Team: 0
+
+### Fouls
+- Home Team: 
+  - Player7 commits a foul.
+  - Player5 commits a foul.
+  - Player2 receives a yellow card (counted as a foul).
+  - Player11 commits a foul.
+  - Player15 commits a foul.
+  - Player5 commits a foul (again).
+  - Player18 commits a foul.
+  - Player8 commits a foul.
+  - Player8 commits a foul (again) and receives a yellow card (counted as a foul).
+  Total fouls by Home Team: 9
+
+- Away Team:
+  - Player27 commits a foul.
+  - Player24 commits a foul.
+  - Player24 commits a foul (again).
+  - Player25 commits a foul.
+  Total fouls by Away Team: 4
+
+### Shots
+- Home Team:
+  - Player6's attempt saved (1).
+  - Player11's header blocked (2).
+  - Player8's shot blocked (3).
+  - Player2's shot blocked (4).
+  - Player11's header misses (5).
+  - Player10's shot blocked (6).
+  - Player15's shot misses (7).
+  - Player5's shot blocked (8).
+  - Player18's shot saved (9).
+  - Player6's shot blocked (10).
+  - Player15's shot misses (11).
+  - Player9's shot blocked (12).
+  - Player9's shot misses (13).
+  Total shots by Home Team: 13
+
+- Away Team:
+  - Player20's shot blocked (1).
+  - Player29's shot misses (2).
+  - Player20's shot off target (3).
+  - Player29's shot misses (4).
+  - Player26's shot saved (5).
+  - Player27's shot saved (6).
+  - Player26's shot blocked (7).
+  - Player25's shot misses (8).
+  - Player26's shot blocked (9).
+  - Player29's shot saved (10).
+  - Player36's shot saved (11).
+  - Player35's shot misses (12).
+  Total shots by Away Team: 12
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 9     | 13    | <NEWLINE>
+| Away Team  | 2     | 0         | 4     | 12    | <NEWLINE>

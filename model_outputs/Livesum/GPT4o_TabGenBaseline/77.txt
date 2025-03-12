@@ -1,0 +1,29 @@
+To create a summary table of the match statistics, we need to define the table schema first. The table will include the following columns:
+
+1. Team
+2. Goals
+3. Red Cards
+4. Fouls
+5. Shots (including goals, saved attempts, blocked attempts, and missed attempts)
+
+Now, let's process the text to fill in the table:
+
+- **Goals:**
+  - Home Team: 2 (Player5 and Player11 scored)
+  - Away Team: 2 (Player26 and Player28 scored)
+
+- **Red Cards:**
+  - No red cards were mentioned for either team.
+
+- **Fouls:**
+  - Home Team: 6 (fouls by Player6, Player2, Player3, Player15, Player10, Player12)
+  - Away Team: 10 (fouls by Player25, Player21, Player28, Player23, Player22, Player24, Player36, Player26, Player25 (penalty))
+
+- **Shots:**
+  - Home Team: 26 (shots by Player7, Player10, Player4, Player5, Player6, Player2, Player11, Player16, Player12)
+  - Away Team: 15 (shots by Player26, Player27, Player23, Player29, Player24, Player28)
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 2     | 0         | 6     | 26    | <NEWLINE>
+| Away Team  | 2     | 0         | 10    | 15    | <NEWLINE>

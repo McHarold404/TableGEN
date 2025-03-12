@@ -1,0 +1,86 @@
+### Final Table:
+| | Goals | Red Cards | Fouls | Yellow Cards | Shots Taken | Free Kicks | Corner Kicks | Offsides | <NEWLINE>
+| Home Team | 0 | Not found | 9 | 3 | 13 | 9 | 2 | 2 | <NEWLINE>
+| Away Team | 1 | Not found | 11 | 3 | 14 | 9 | 7 | 2 | <NEWLINE>
+
+**Explanation of Updates:**
+
+1. **Shots Taken:**
+   - Player20(Away Team) misses a shot: Away Team Shots Taken +1.
+   - Player11(Home Team) misses a shot: Home Team Shots Taken +1.
+   - Player21(Away Team) misses a header: Away Team Shots Taken +1.
+   - Player10(Home Team)'s shot is blocked: Home Team Shots Taken +1.
+   - Player11(Home Team) misses a shot: Home Team Shots Taken +1.
+   - Player24(Away Team)'s shot is blocked: Away Team Shots Taken +1.
+   - Player28(Away Team)'s shot is blocked: Away Team Shots Taken +1.
+   - Player28(Away Team) misses a header: Away Team Shots Taken +1.
+   - Player28(Away Team)'s shot is blocked: Away Team Shots Taken +1.
+   - Player2(Home Team) misses a header: Home Team Shots Taken +1.
+   - Player4(Home Team) misses a header: Home Team Shots Taken +1.
+   - Player28(Away Team)'s shot hits the post: Away Team Shots Taken +1.
+   - Player33(Away Team) scores a goal: Away Team Shots Taken +1.
+   - Player7(Home Team) misses a shot: Home Team Shots Taken +1.
+   - Player7(Home Team) misses a shot: Home Team Shots Taken +1.
+   - Player13(Home Team)'s header is blocked: Home Team Shots Taken +1.
+   - Player28(Away Team) misses a shot: Away Team Shots Taken +1.
+   - Player7(Home Team) misses a shot: Home Team Shots Taken +1.
+
+2. **Fouls:**
+   - Player6(Home Team) commits a foul: Home Team Fouls +1.
+   - Player26(Away Team) commits a foul: Away Team Fouls +1.
+   - Player9(Home Team) commits a foul: Home Team Fouls +1.
+   - Player26(Away Team) commits a foul: Away Team Fouls +1.
+   - Player28(Away Team) commits a foul: Away Team Fouls +1.
+   - Player23(Away Team) commits a foul: Away Team Fouls +1.
+   - Player3(Home Team) commits a foul: Home Team Fouls +1.
+   - Player29(Away Team) commits a foul: Away Team Fouls +1.
+   - Player10(Home Team) commits a foul: Home Team Fouls +1.
+   - Player23(Away Team) commits a foul: Away Team Fouls +1.
+   - Player24(Away Team) commits a foul: Away Team Fouls +1.
+   - Player28(Away Team) commits a foul: Away Team Fouls +1.
+   - Player5(Home Team) commits a foul: Home Team Fouls +1.
+   - Player7(Home Team) commits a foul: Home Team Fouls +1.
+   - Player14(Home Team) commits a foul: Home Team Fouls +1.
+
+3. **Free Kicks:**
+   - Player27(Away Team) earns a free kick: Away Team Free Kicks +1.
+   - Player11(Home Team) earns a free kick: Home Team Free Kicks +1.
+   - Player8(Home Team) earns a free kick: Home Team Free Kicks +1.
+   - Player29(Away Team) earns a free kick: Away Team Free Kicks +1.
+   - Player10(Home Team) earns a free kick: Home Team Free Kicks +1.
+   - Player4(Home Team) earns a free kick: Home Team Free Kicks +1.
+   - Player6(Home Team) earns a free kick: Home Team Free Kicks +1.
+   - Player28(Away Team) earns a free kick: Away Team Free Kicks +1.
+   - Player25(Away Team) earns a free kick: Away Team Free Kicks +1.
+   - Player21(Away Team) earns a free kick: Away Team Free Kicks +1.
+   - Player26(Away Team) earns a free kick: Away Team Free Kicks +1.
+   - Player13(Home Team) earns a free kick: Home Team Free Kicks +1.
+   - Player7(Home Team) earns a free kick: Home Team Free Kicks +1.
+   - Player33(Away Team) earns a free kick: Away Team Free Kicks +1.
+   - Player3(Home Team) earns a free kick: Home Team Free Kicks +1.
+   - Player2(Home Team) earns a free kick: Home Team Free Kicks +1.
+
+4. **Corner Kicks:**
+   - Away Team earns a corner kick: Away Team Corner Kicks +1.
+   - Away Team earns a corner kick: Away Team Corner Kicks +1.
+   - Home Team earns a corner kick: Home Team Corner Kicks +1.
+   - Away Team earns a corner kick: Away Team Corner Kicks +1.
+   - Away Team earns a corner kick: Away Team Corner Kicks +1.
+   - Away Team earns a corner kick: Away Team Corner Kicks +1.
+   - Home Team earns a corner kick: Home Team Corner Kicks +1.
+
+5. **Offsides:**
+   - Player10(Home Team) is caught offside: Home Team Offsides +1.
+   - Player24(Away Team) is caught offside: Away Team Offsides +1.
+   - Player7(Home Team) is caught offside: Home Team Offsides +1.
+   - Player28(Away Team) is caught offside: Away Team Offsides +1.
+
+6. **Yellow Cards:**
+   - Player23(Away Team) receives a yellow card: Away Team Yellow Cards +1.
+   - Player10(Home Team) receives a yellow card: Home Team Yellow Cards +1.
+   - Player33(Away Team) receives a yellow card: Away Team Yellow Cards +1.
+   - Player28(Away Team) receives a yellow card: Away Team Yellow Cards +1.
+   - Player5(Home Team) receives a yellow card: Home Team Yellow Cards +1.
+
+7. **Goals:**
+   - Player33(Away Team) scores a goal: Away Team Goals +1.

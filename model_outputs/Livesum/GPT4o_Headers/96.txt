@@ -1,0 +1,25 @@
+Based on the sequential processing of the statements, the following schema can be used to summarize all the key events and statistics of the football match:
+
+```json
+{
+  "row_headers": ["Away Team", "Home Team"],
+  "column_headers": [
+    "Goals",
+    "Fouls Committed",
+    "Free Kicks Won",
+    "Set Piece Opportunities",
+    "Shots",
+    "Shots on Target",
+    "Shots Blocked",
+    "Shots Off Target",
+    "Assists",
+    "Offsides",
+    "Yellow Cards",
+    "Corner Kicks",
+    "Saves",
+    "Injuries"
+  ]
+}
+```
+
+This schema captures the key statistics and events from the commentary, ensuring that all significant aspects of the match are represented.

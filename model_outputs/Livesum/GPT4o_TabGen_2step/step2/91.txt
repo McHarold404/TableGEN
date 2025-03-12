@@ -1,0 +1,55 @@
+### Final Table:
+
+| | Goals Scored | Assists | Shots | Shots on Target | Shots Off Target | Shots Blocked | Fouls Committed | Free Kicks Earned | Corner Kicks Earned | Yellow Cards | Offsides | Injuries | <NEWLINE>
+| Home Team | 1 | 5 | 11 | 1 | 7 | 3 | 10 | 13 | 9 | 2 | 3 | 2 | <NEWLINE>
+| Away Team | 1 | 3 | 14 | 2 | 8 | 4 | 11 | 14 | 5 | 1 | 3 | 1 | <NEWLINE>
+
+### Explanation of Updates:
+
+- **Statement 56**: Increment Fouls Committed for Home Team by 1 (total 7), increment Free Kicks Earned for Away Team by 1 (total 7).
+- **Statement 57**: Increment Injuries for Away Team by 1 (total 1).
+- **Statement 59**: Increment Corner Kicks Earned for Home Team by 1 (total 6).
+- **Statement 60**: Increment Free Kicks Earned for Home Team by 1 (total 10).
+- **Statement 61**: Increment Fouls Committed for Away Team by 1 (total 11).
+- **Statement 62**: Increment Fouls Committed for Home Team by 1 (total 8), increment Free Kicks Earned for Away Team by 1 (total 8).
+- **Statement 63**: Increment Shots for Away Team by 1 (total 8), increment Shots Off Target for Away Team by 1 (total 5).
+- **Statement 64**: Increment Free Kicks Earned for Away Team by 1 (total 9).
+- **Statement 65**: Increment Shots for Away Team by 1 (total 9), increment Shots on Target for Away Team by 1 (total 2).
+- **Statement 66**: Increment Fouls Committed for Away Team by 1 (total 12).
+- **Statement 67**: Increment Injuries for Home Team by 1 (total 2).
+- **Statement 69**: Increment Shots for Away Team by 1 (total 10), increment Shots Off Target for Away Team by 1 (total 6).
+- **Statement 70**: Increment Fouls Committed for Home Team by 1 (total 9), increment Free Kicks Earned for Away Team by 1 (total 10).
+- **Statement 71**: Increment Corner Kicks Earned for Away Team by 1 (total 3).
+- **Statement 72**: Increment Fouls Committed for Away Team by 1 (total 13).
+- **Statement 73**: Increment Shots for Away Team by 1 (total 11), increment Shots Blocked for Away Team by 1 (total 3).
+- **Statement 74**: Increment Injuries for Home Team by 1 (total 3).
+- **Statement 76**: Increment Offsides for Away Team by 1 (total 2).
+- **Statement 77**: Increment Offsides for Home Team by 1 (total 2).
+- **Statement 78**: Increment Shots for Home Team by 1 (total 10), increment Shots on Target for Home Team by 1 (total 1), increment Corner Kicks Earned for Home Team by 1 (total 7).
+- **Statement 79**: Increment Shots for Home Team by 1 (total 11), increment Shots Blocked for Home Team by 1 (total 3).
+- **Statement 80**: Increment Corner Kicks Earned for Away Team by 1 (total 4).
+- **Statement 81**: Increment Fouls Committed for Away Team by 1 (total 14), increment Free Kicks Earned for Home Team by 1 (total 11).
+- **Statement 82**: Increment Yellow Cards for Away Team by 1 (total 2).
+- **Statement 83**: Increment Fouls Committed for Away Team by 1 (total 15), increment Free Kicks Earned for Home Team by 1 (total 12).
+- **Statement 84**: Increment Shots for Away Team by 1 (total 12), increment Shots Blocked for Away Team by 1 (total 4), increment Corner Kicks Earned for Away Team by 1 (total 5).
+- **Statement 85**: Increment Offsides for Home Team by 1 (total 3).
+- **Statement 86**: Increment Fouls Committed for Home Team by 1 (total 10).
+- **Statement 87**: Increment Free Kicks Earned for Away Team by 1 (total 11).
+- **Statement 88**: Increment Yellow Cards for Home Team by 1 (total 1).
+- **Statement 89**: Increment Shots for Away Team by 1 (total 13).
+- **Statement 90**: Increment Corner Kicks Earned for Home Team by 1 (total 8).
+- **Statement 91**: Increment Shots for Away Team by 1 (total 14), increment Shots Off Target for Away Team by 1 (total 7).
+- **Statement 92**: Increment Free Kicks Earned for Home Team by 1 (total 13).
+- **Statement 93**: Increment Fouls Committed for Away Team by 1 (total 16).
+- **Statement 94**: Increment Fouls Committed for Home Team by 1 (total 11).
+- **Statement 95**: Increment Free Kicks Earned for Away Team by 1 (total 12).
+- **Statement 96**: Increment Yellow Cards for Home Team by 1 (total 2).
+- **Statement 97**: Increment Shots for Home Team by 1 (total 12), increment Shots Off Target for Home Team by 1 (total 6).
+- **Statement 98**: Increment Offsides for Away Team by 1 (total 3).
+- **Statement 99**: Increment Shots for Away Team by 1 (total 15), increment Shots Off Target for Away Team by 1 (total 8).
+- **Statement 100**: Increment Corner Kicks Earned for Away Team by 1 (total 6).
+- **Statement 101**: Increment Free Kicks Earned for Home Team by 1 (total 14).
+- **Statement 102**: Increment Fouls Committed for Away Team by 1 (total 17).
+- **Statement 103**: Increment Offsides for Away Team by 1 (total 4).
+- **Statement 104**: Increment Fouls Committed for Home Team by 1 (total 12), increment Free Kicks Earned for Away Team by 1 (total 13).
+- **Statement 105**: Increment Goals Scored for Away Team by 1 (total 1), increment Assists for Away Team by 1 (total 3).

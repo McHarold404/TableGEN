@@ -1,0 +1,257 @@
+Let's process each statement one by one and update the table accordingly.
+
+**Initial Table (Empty Table):**
+
+| | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+| Away Team | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+| Home Team | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+**Step-by-Step Updates:**
+
+1. "The game is underway with the start of the first half."
+   - No updates to the table.
+
+2. "Player10(Home Team) is awarded a free kick in the attacking half after a foul by Player28(Away Team)."
+   - Update: Add 1 to Free Kicks Earned for Home Team and 1 to Fouls Committed for Away Team.
+   
+   | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+   | Away Team | Not found | 1 | Not found | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+   | Home Team | Not found | Not found | 1 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+3. "Player2(Home Team) commits a foul."
+   - Update: Add 1 to Fouls Committed for Home Team.
+   
+   | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+   | Away Team | Not found | 1 | Not found | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+   | Home Team | Not found | 1 | 1 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+4. "Player29(Away Team) earns a free kick on the left side of the field."
+   - Update: Add 1 to Free Kicks Earned for Away Team.
+   
+   | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+   | Away Team | Not found | 1 | 1 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+   | Home Team | Not found | 1 | 1 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+5. "Player9(Home Team) commits a foul."
+   - Update: Increment Fouls Committed for Home Team by 1.
+   
+   | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+   | Away Team | Not found | 1 | 1 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+   | Home Team | Not found | 2 | 1 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+6. "Player24(Away Team) and Player26(Away Team) earn a free kick in the opponent's half."
+   - Update: Increment Free Kicks Earned for Away Team by 1.
+   
+   | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+   | Away Team | Not found | 1 | 2 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+   | Home Team | Not found | 2 | 1 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+7. "Player7(Home Team) earns a free kick in the opponent's half after being fouled by Player24(Away Team)."
+   - Update: Increment Free Kicks Earned for Home Team by 1 and Fouls Committed for Away Team by 1.
+   
+   | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+   | Away Team | Not found | 2 | 2 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+   | Home Team | Not found | 2 | 2 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+
+8. "Player2(Home Team) misses the target with a high right-footed shot from outside the box on a direct free kick."
+   - Update: Add 1 to Shots Off Target for Home Team.
+   
+   | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+   | Away Team | Not found | 2 | 2 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+   | Home Team | Not found | 2 | 2 | Not found | 1 | Not found | Not found | Not found | Not found | <NEWLINE>
+
+9. "Player9(Home Team) misses the target with a close shot from outside the box, assisted by Player8(Home Team)."
+   - Update: Increment Shots Off Target for Home Team by 1 and add 1 to Assists for Player8(Home Team).
+   
+   | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+   | Away Team | Not found | 2 | 2 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+   | Home Team | Not found | 2 | 2 | Not found | 2 | 1 | Not found | Not found | Not found | <NEWLINE>
+
+10. "Player7(Home Team)'s shot with his left foot from the center of the box was saved in the bottom right corner, with an assist from Player8(Home Team)."
+    - Update: Add 1 to Shots On Target for Home Team and increment Assists for Player8(Home Team) by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 2 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+    | Home Team | Not found | 2 | 2 | 1 | 2 | 2 | Not found | Not found | Not found | <NEWLINE>
+
+11. "Home Team earns a corner kick."
+    - Update: Add 1 to Corner Kicks for Home Team.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 2 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+    | Home Team | Not found | 2 | 2 | 1 | 2 | 2 | 1 | Not found | Not found | <NEWLINE>
+
+12. "Player2(Home Team) misses the header to the left from the center of the box after a cross from Player8(Home Team) following a corner."
+    - Update: Increment Shots Off Target for Home Team by 1 and increment Assists for Player8(Home Team) by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 2 | Not found | Not found | Not found | Not found | Not found | Not found | <NEWLINE>
+    | Home Team | Not found | 2 | 2 | 1 | 3 | 3 | 1 | Not found | Not found | <NEWLINE>
+
+13. "Player29(Away Team) attempts a pass, but Player21(Away Team) is offside."
+    - Update: Add 1 to Offsides for Away Team.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 2 | Not found | Not found | Not found | Not found | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 2 | 2 | 1 | 3 | 3 | 1 | Not found | Not found | <NEWLINE>
+
+14. "Player25(Away Team)'s left footed shot from outside the box is saved in the bottom right corner."
+    - Update: Add 1 to Shots On Target for Away Team.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 2 | 1 | Not found | Not found | Not found | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 2 | 2 | 1 | 3 | 3 | 1 | Not found | Not found | <NEWLINE>
+
+15. "Player3(Home Team) commits a foul, resulting in Player25(Away Team) winning a free kick in the attacking half."
+    - Update: Increment Fouls Committed for Home Team by 1 and Free Kicks Earned for Away Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 3 | 1 | Not found | Not found | Not found | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 3 | 2 | 1 | 3 | 3 | 1 | Not found | Not found | <NEWLINE>
+
+16. "The Away Team wins a corner kick."
+    - Update: Add 1 to Corner Kicks for Away Team.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 3 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 3 | 2 | 1 | 3 | 3 | 1 | Not found | Not found | <NEWLINE>
+
+17. "Player10(Home Team)'s right footed shot from outside the box is saved in the top right corner, resulting in a corner kick for the Home Team."
+    - Update: Add 1 to Shots On Target for Home Team and increment Corner Kicks for Home Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 3 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 3 | 2 | 2 | 3 | 3 | 2 | Not found | Not found | <NEWLINE>
+
+18. "Player5(Home Team)'s header from the center of the box was close but missed to the left, assisted by Player8(Home Team) with a cross after a corner."
+    - Update: Increment Shots Off Target for Home Team by 1 and increment Assists for Player8(Home Team) by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 3 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 3 | 2 | 2 | 4 | 4 | 2 | Not found | Not found | <NEWLINE>
+
+19. "Player2(Home Team) misses the goal with a high and wide shot from the right side of the box, assisted by Player9(Home Team)."
+    - Update: Increment Shots Off Target for Home Team by 1 and add 1 to Assists for Player9(Home Team).
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 3 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 3 | 2 | 2 | 5 | 5 | 2 | Not found | Not found | <NEWLINE>
+
+20. "Player27(Away Team) passes the ball to Player16(Home Team)."
+    - No updates to the table.
+
+21. "Player8(Home Team)'s attempt from outside the box, assisted by Player11(Home Team), is saved in the bottom right corner, while Player9(Home Team)'s shot from the center is saved in the center of the goal."
+    - Update: Increment Shots On Target for Home Team by 2 and increment Assists for Player11(Home Team) by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 3 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 3 | 2 | 4 | 5 | 6 | 2 | Not found | Not found | <NEWLINE>
+
+22. "Player19(Away Team) is causing a delay in the match due to an injury."
+    - No updates to the table.
+
+23. "The delay is finished and they are prepared to resume play."
+    - No updates to the table.
+
+24. "Player3(Home Team) commits a foul."
+    - Update: Increment Fouls Committed for Home Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 3 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 4 | 2 | 4 | 5 | 6 | 2 | Not found | Not found | <NEWLINE>
+
+25. "Player25(Away Team) earns a free kick on the right side of the field."
+    - Update: Increment Free Kicks Earned for Away Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 4 | 2 | 4 | 5 | 6 | 2 | Not found | Not found | <NEWLINE>
+
+26. "Player7(Home Team) earns a free kick in their own half."
+    - Update: Increment Free Kicks Earned for Home Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 2 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 4 | 3 | 4 | 5 | 6 | 2 | Not found | Not found | <NEWLINE>
+
+27. "Player21(Away Team) commits a foul."
+    - Update: Increment Fouls Committed for Away Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 3 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 4 | 3 | 4 | 5 | 6 | 2 | Not found | Not found | <NEWLINE>
+
+28. "The Home Team wins a corner kick."
+    - Update: Increment Corner Kicks for Home Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 3 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | Not found | 4 | 3 | 4 | 5 | 6 | 3 | Not found | Not found | <NEWLINE>
+
+29. "And it's a goal!"
+    - No specific player mentioned, but the next statement clarifies.
+
+30. "The Home Team now leads 1-0 against the Away Team, Player7(Home Team) takes a left-footed shot from the center of the box into the top left corner, assisted by Player4(Home Team) with a cross."
+    - Update: Add 1 to Goals for Home Team, increment Shots On Target for Home Team by 1, and add 1 to Assists for Player4(Home Team).
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 3 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | 1 | 4 | 3 | 5 | 5 | 7 | 3 | Not found | Not found | <NEWLINE>
+
+31. "Player29(Away Team) commits a foul."
+    - Update: Increment Fouls Committed for Away Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 4 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | 1 | 4 | 3 | 5 | 5 | 7 | 3 | Not found | Not found | <NEWLINE>
+
+32. "Player7(Home Team) earns a free kick on the right side of the field."
+    - Update: Increment Free Kicks Earned for Home Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 4 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | 1 | 4 | 4 | 5 | 5 | 7 | 3 | Not found | Not found | <NEWLINE>
+
+33. "The Home Team wins a corner kick."
+    - Update: Increment Corner Kicks for Home Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 4 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | 1 | 4 | 4 | 5 | 5 | 7 | 4 | Not found | Not found | <NEWLINE>
+
+34. "Player11(Home Team) misses the goal with a right footed shot from outside the box, assisted by Player4(Home Team)."
+    - Update: Increment Shots Off Target for Home Team by 1 and increment Assists for Player4(Home Team) by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 4 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | 1 | 4 | 4 | 5 | 6 | 8 | 4 | Not found | Not found | <NEWLINE>
+
+35. "Player21(Away Team) commits a foul."
+    - Update: Increment Fouls Committed for Away Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 5 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | 1 | 4 | 4 | 5 | 6 | 8 | 4 | Not found | Not found | <NEWLINE>
+
+36. "Player11(Home Team) wins a free kick in the attacking half, leading to a corner kick for the Home Team."
+    - Update: Increment Free Kicks Earned for Home Team by 1 and increment Corner Kicks for Home Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 5 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | 1 | 4 | 5 | 5 | 6 | 8 | 5 | Not found | Not found | <NEWLINE>
+
+37. "Offside called on Player2(Home Team) as Player8(Home Team) attempts a pass to Player16(Home Team)."
+    - Update: Increment Offsides for Home Team by 1.
+    
+    | | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+    | Away Team | Not found | 5 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+    | Home Team | 1 | 4 | 5 | 5 | 6 | 8 | 5 | 1 | Not found | <NEWLINE>
+
+38. "Player8(Home Team)'s shot from the right side of the box is blocked with the help of Player9(Home Team)."
+    - No updates to the table as the shot was blocked.
+
+### Final Table:
+
+| | Goals | Fouls Committed | Free Kicks Earned | Shots On Target | Shots Off Target | Assists | Corner Kicks | Offsides | Penalties Conceded | <NEWLINE>
+| Away Team | Not found | 5 | 4 | 1 | Not found | Not found | 1 | 1 | Not found | <NEWLINE>
+| Home Team | 1 | 4 | 5 | 5 | 6 | 8 | 5 | 1 | Not found | <NEWLINE>

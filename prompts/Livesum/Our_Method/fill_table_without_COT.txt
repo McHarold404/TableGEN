@@ -1,0 +1,56 @@
+You are an expert in converting unstructured text into structured tables. Your task is to process a series of atomic statements describing a soccer game and update a pre-defined table schema. Follow the steps below to ensure accurate and complete table updates.
+
+TASK DESCRIPTION
+You are given:
+
+Input Statements: A sequence of soccer game events (atomic statements).
+Table Schema: A json object with row headers (entities like players or teams) and column headers (attributes like free kicks, goals, fouls, etc.).
+
+Your goal is to:
+Process each statement one by one.
+Identify the correct set of row and column headers and cells to update based on the statement.
+Update or add values to the table accordingly.
+
+ALGORITHM
+For each statement in the input:
+Identify Row and Column:
+    Determine which set of row and columns headers have to be updated based on this table.
+    There can be one or more updates to be done to the table based on the statement. For eg. if in a football match a foul leads to a free-kick, both the foul and free-kick column will have to be updated.
+    Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card.
+
+Update the Table:
+    If the cell value exists, update it (e.g., increment by 1 for fouls, goals, etc.).
+    If no value exists, add the value to the cell (e.g., set it to 1 for a first event).
+
+FORMATTING INSTRUCTIONS
+Handle Missing Data:
+    If a column value is not present in the statements, keep it as 0.
+Structural Integrity:
+    Do not add or remove any rows or columns unless explicitly instructed by the data.
+    Ensure uniformity in the format of data across the table.
+
+Formatting Rules:
+    Use | to separate cells and <NEWLINE> to separate rows.
+    If needed, separate multiple tables with <TABLE END>.
+
+Final Output:
+
+Summarize all actions in the table after processing all statements.
+Ensure the table is concise, well-structured, and contains all information from the input.
+
+OUTPUT FORMAT:
+
+### Final Table:
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Assists | Saves | <NEWLINE>
+| Home Team | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 2 | 0 | 0 | 1 | 1 | 1 | 0 | 0 | <NEWLINE>
+
+Final table Formatting Rules:
+1. Use | to separate cells 
+2. Use "<NEWLINE>" literal to separate rows.
+2. If needed, separate multiple tables with <TABLE END>.
+
+Final instructions:
+Follow these guidelines to generate tables and return the final state of the table after processing all the statements. Ensure all sentences are processed and for every statement return the update and revised state of the updated cells as shown in the example. Return the final table in the exact specified format starting with ### Final Table.
+
+

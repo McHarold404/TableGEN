@@ -1,0 +1,44 @@
+To summarize the important statistics from the game, we will create a table with the following schema:
+
+| Team | Goals | Red Cards | Fouls | Free Kicks | Shots | Corner Kicks | Offsides | Yellow Cards | <NEWLINE>
+
+Now, let's extract and calculate the statistics from the provided text:
+
+1. **Goals**:
+   - Home Team: 2 (Player11, Player14)
+   - Away Team: 0
+
+2. **Red Cards**:
+   - Home Team: 0
+   - Away Team: 0
+
+3. **Fouls** (including handballs and dangerous plays):
+   - Home Team: Player11, Player10 (handball), Player7, Player4, Player3, Player5, Player2, Player6 (Total: 8)
+   - Away Team: Player27, Player29, Player28 (Total: 3)
+
+4. **Free Kicks** (including penalties):
+   - Home Team: 6 (earned by Player10, Player3, Player6, Player1, Player7)
+   - Away Team: 11 (earned by Player26, Player29, Player24, Player20, Player27, Player35)
+
+5. **Shots** (includes goals, saved attempts, blocked attempts, and missed attempts):
+   - Home Team: 15 (Player11, Player10, Player9, Player6, Player14, Player2, Player3)
+   - Away Team: 7 (Player28, Player25, Player27, Player35, Player29, Player31)
+
+6. **Corner Kicks**:
+   - Home Team: 8
+   - Away Team: 7
+
+7. **Offsides**:
+   - Home Team: 2 (Player9, Player11)
+   - Away Team: 1 (Player28)
+
+8. **Yellow Cards**:
+   - Home Team: 1 (Player11)
+   - Away Team: 0
+
+Now, let's populate the table with these statistics.
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Free Kicks | Shots | Corner Kicks | Offsides | Yellow Cards | <NEWLINE>
+| Home Team  | 2     | 0         | 8     | 6          | 15    | 8            | 2        | 1            | <NEWLINE>
+| Away Team  | 0     | 0         | 3     | 11         | 7     | 7            | 1        | 0            | <NEWLINE>

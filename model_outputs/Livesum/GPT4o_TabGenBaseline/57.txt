@@ -1,0 +1,24 @@
+To create a summary table of the game's important statistics, we need to extract and count the relevant events from the provided text. Let's break down the events:
+
+1. Goals:
+   - Home Team: 0
+   - Away Team: 3 (Player26, Player34, Player23)
+
+2. Red Cards:
+   - Home Team: 0
+   - Away Team: 1 (Player22 received a second yellow card)
+
+3. Fouls:
+   - Home Team: 10 (Player11, Player4, Player7, Player8, Player5, Player9, Player7, Player11, Player11, Player9)
+   - Away Team: 13 (Player27, Player26, Player28, Player22, Player28, Player25, Player36, Player20, Player25, Player20, Player22, Player21, Player32)
+
+4. Shots (Goals + Saved Attempts + Blocked Attempts + Missed Attempts):
+   - Home Team: 15 (Player10 saved, Player6 saved, Player9 blocked, Player4 missed, Player9 missed, Player11 missed, Player9 blocked, Player4 blocked, Player7 missed, Player7 saved, Player7 saved, Player4 blocked)
+   - Away Team: 16 (Player23 missed, Player26 saved, Player29 missed, Player28 blocked, Player29 missed, Player22 missed, Player32 missed, Player29 blocked, Player25 missed, Player29 saved)
+
+Now, let's format this information into a table:
+
+### Final Table:
+| Team       | Goals | Red Cards | Fouls | Shots | <NEWLINE>
+| Home Team  | 0     | 0         | 10    | 15    | <NEWLINE>
+| Away Team  | 3     | 1         | 13    | 16    | <NEWLINE>

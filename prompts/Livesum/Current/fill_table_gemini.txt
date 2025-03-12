@@ -1,0 +1,122 @@
+You are an expert in converting unstructured text into structured tables. Your task is to process a series of atomic statements describing the events of a football game and update a set of pre-defined table schemas. 
+Note that goals and saved attempts and blocked attempts and missed attempts are considered shots. Handball and dangerous play are also considered foul. The second yellow card is also considered a red card. Penalty is also considered as free kicks.
+
+***TASK***:
+**Given**:
+*Statements*: A sequence of atomic statements.
+*Schema*: A json object of row headers and column headers of a table.
+
+**Your goal is to**:
+Process each statement one by one.
+Identify the correct set of row and column headers and the cell at that index to update based on the statement.
+Update, set values to the table accordingly.
+
+***OUTPUT FORMAT***:
+<REASONING STEPS>
+
+### Final Table:
+| <Column Header 1> | ... |
+| <Row Header 1> | <Cell Value for (Row Header 1, Column Header 1)> | ... |
+...
+
+
+***REASONING STEPS***:
+Follow the given algorithm thoroughly,
+
+**ALGORITHM**
+For each statement in the input:
+    Identify Row and Column:
+        Determine which set of row and columns headers have to be updated based on this table.
+        Note that goals and saved attempts and blocked attempts and missed attempts are considered shots.
+        Handball and dangerous play are also considered foul.
+        The second yellow card is also considered a red card.
+        Penalty is also considered as free kicks.
+    Update the Table:   
+        If the cell value exists, update it (e.g., increment by 1 for events given in the statements).
+        If no value exists, add the value to the cell (e.g., set it to 1 for a first event).
+
+
+**Sample Input**:
+
+Suppose your given the following input:
+
+Input Statements:
+    1.Player26 (Away Team) earns a free kick in their defensive half as Player7 (Home Team) commits a foul.
+    2.Player7 (Home Team) receives a yellow card for a rough tackle.
+    3.The Away Team earns a corner kick.
+    4.Player27 (Away Team) shoots from the center of the box, scoring the first goal for his team.
+    5.Player 9 (Home Team) commits a foul resulting in Player26 (Away Team) earning a free kick. 
+
+Schema:
+    {
+        "row_headers": ["Home Team", "Away Team"],
+        "col_headers": ["Free Kicks", "Fouls", "Yellow Cards", "Corner Kicks", "Shots", "Goals"]
+    }
+
+**Step 1**:
+
+Initial Table (Empty Table):
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | Assists | Saves | <NEWLINE>
+| Home Team | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+| Away Team | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | <NEWLINE>
+
+**Step 2**:
+*Statement processed*: 
+1. Player26 (Away Team) earns a free kick in their defensive half as Player7 (Home Team) commits a foul.
+*Updates*: 
+    Add 1 to Free Kicks for Away Team, add 1 to foul to Home Team.
+    Revised state: Away Team Free Kicks: 1, Home Team Fouls: 1
+
+*Statements processed*:
+2. Player7 (Home Team) receives a yellow card for a rough tackle.
+*Updates*:
+    Update: Add 1 to Yellow Cards for Home Team.
+    Revised State: Home Team Yellow Cards: 1.
+
+*Statements processed*:
+3. The Away Team earns a corner kick.
+*Updates*:
+    Update: Add 1 to Corner Kicks for Away Team.
+    Revised State: Away Team Corner Kicks: 1.
+
+*Statements processed*:
+4. Player27 (Away Team) shoots from the center of the box, scoring the first goal for his team.
+*Updates*:
+    Update: Add 1 to Shots for Away Team, Add 1 Goal to Away Team 
+    Revised State: Away Team Shots 1, Away Team Goals 1.
+
+*Statements processed*:
+5. Player 9 (Home Team) commits a foul resulting in Player26 (Away Team) earning a free kick.
+*Updates*:
+    Update: Add 1 to Free Kicks for Away Team, 1 Foul to Home Team.
+    Revised State: Away Team Free Kicks:2, Home Team Fouls:2. 
+
+### Final Table:
+| Team | Free Kicks | Fouls | Yellow Cards | Corner Kicks | Shots | Goals | 
+| Home Team | 0 | 2 | 1 | 0 | 0 | 0 | 
+| Away Team | 2 | 0 | 0 | 1 | 1 | 1 | 
+
+***Ensure the number of column headers and number of cells in each row are the same. Otherwise the table does not make sense.
+
+***FINAL CHECKLIST***:
+Do not generate the final table directly in any case. 
+Show the Update and Revised State for every statement processed in the output.
+No need to generate the intermediate table states, only the *Updates* and the *Revised State* are required for every statement in the *REASONING STEPS*.
+Ensure all sentences are processed and for every statement return the update and revised state of the updated cells. Return the final table in the exact specified format starting with ### Final Table.
+Ensure the table is concise, well-structured, and contains all information from the input.
+
+***Final Output Instructions***:
+1. Handle Missing Data:
+    If a column value is not present in the statements, keep it as None.
+2. Structural Integrity:
+    Do not add or remove any rows or columns unless explicitly instructed by the data.
+    Ensure uniformity in the format of data across the table.
+3. Formatting Rules:
+    Pay special attention to the structural integrity. Ensure every row contains exactly the same number of cells as the provided column headers.
+    Use | to separate cells 
+    Use "<NEWLINE>" literal to separate rows.
+    If needed, separate multiple tables with <TABLE END>.
+4. All *REASONING STEPS* as printed.
+    Ensure the *reasoning steps* for ALL THE STATEMENTS are printed. Donot miss the reasoning steps for any statements.
+
+Provide the *OUTPUT* with *REASONING STEPS* (*Step1* and *Step2*) in the specified format only.
