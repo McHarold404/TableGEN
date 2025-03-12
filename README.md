@@ -1,4 +1,4 @@
-# Livesum Table Generation Project
+# Schema Guided Text-to-Table Generation
 
 This project focuses on converting unstructured textual data into structured tables using state-of-the-art models like GPT, Gemini, and Llama. Our approach, **Map&Make (M&M)**, is a structured summarization framework that **dynamically infers table schema** rather than relying on predefined templates. It follows a **three-step process** that extracts key information, structures it into a schema, and fills the tables accurately.
 
