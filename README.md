@@ -110,6 +110,9 @@ The repository is organized into the following directories:
 - **`utils/`**  
   Includes utility functions used across multiple scripts for **data loading, text processing, and visualization**.
 
+- **`Jupyter Notebooks`**  
+  Jupyter Notebooks to visualise sample-wise generated tables, qualitative analysis.
+
 
 ---
 
