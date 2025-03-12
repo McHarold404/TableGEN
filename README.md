@@ -1,4 +1,4 @@
-# Map & Make: Schema Guided Text to-Table Generation
+# Livesum Table Generation Project
 
 This project focuses on converting unstructured textual data into structured tables using state-of-the-art models like GPT, Gemini, and Llama. Our approach, **Map&Make (M&M)**, is a structured summarization framework that **dynamically infers table schema** rather than relying on predefined templates. It follows a **three-step process** that extracts key information, structures it into a schema, and fills the tables accurately.
 
@@ -9,11 +9,9 @@ This project focuses on converting unstructured textual data into structured tab
 - [Approach](#approach)
 - [Datasets](#datasets)
 - [Setup](#setup)
-- [Usage](#usage)
-  - [Generating Atomic Statements and Headers](#generating-atomic-statements-and-headers)
-  - [Generating Tables](#generating-tables)
-  - [Evaluating Results](#evaluating-results)
 - [Evaluation Methods](#evaluation-methods)
+- [Comparison Strategies](#comparison-strategies)
+- [Insights](#insights)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -65,8 +63,8 @@ Each dataset presents unique challenges in schema induction and table constructi
 
 1. **Clone the Repository:**
     ```bash
-    git clone <repository_url>
-    cd <repository_name>
+    git clone https://github.com/McHarold404/TableGEN.git
+    cd TableGEN
     ```
 
 2. **Install Dependencies:**
@@ -76,40 +74,7 @@ Each dataset presents unique challenges in schema induction and table constructi
 
 3. **Configure Environment Variables:**
     - Create a `.env` file in the root directory.
-    - Add the necessary environment variables required for the project.
-
----
-
-## Usage
-
-### Generating Atomic Statements and Headers
-
-To generate atomic statements and headers using the Gemini model:
-
-```bash
-python batch_scripts/Gemini_Livesum_generate_schema_and_atomic.py
-```
-
-### Generating Tables
-
-To generate tables from atomic statements:
-
-```bash
-python batch_scripts/GPT_Livesum_TabGen_1step.py --model_dir <model_dir> --model_name <model_name>
-```
-
-For a two-step generation process:
-
-```bash
-python batch_scripts/GPT_Livesum_TabGen_2step.py --model_dir <model_dir> --model_name <model_name>
-```
-
-### Evaluating Results
-
-Run the following notebooks for evaluation:
-
-- `eval/livesum_eval.ipynb`
-- `eval/livesum.ipynb`
+    - Add the necessary environment variables (API keys for LLMs (Gemini, GPT, Llama)) required for the project.
 
 ---
 
@@ -133,12 +98,57 @@ These metrics ensure comprehensive evaluation across **accuracy, completeness, a
 
 ---
 
-## Contributing
+## Comparison Strategies
 
-Contributions are welcome! To contribute:
+To benchmark the **Map&Make (M&M) framework**, we compare it against the following strategies:
 
-- Open an issue or submit a pull request.
-- Follow the project’s guidelines and adhere to the code style.
+1. **Text-Tuple-Table (T3)**
+   - Converts input text into structured tuples (**subject-object-verb** or **subject-attribute-value**).
+   - Generates tables based on extracted tuples.
+   - Originally designed for predefined schemas, later adapted for schema-agnostic settings.
+
+2. **Few-Shot Chain-of-Thought (CoT) Prompting**
+   - Uses few-shot learning to generate tables.
+   - Employs step-by-step reasoning to ensure logical coherence.
+   - Improves over Zero-Shot prompting but struggles with schema variability.
+
+3. **Divide & Generate (Planned Addition)**
+   - Splits input text into smaller, more manageable chunks.
+   - Independently processes each segment before integrating the results.
+   - Expected to improve schema induction and minimize hallucinations.
+
+4. **Supervised Fine-Tuning (Planned Addition)**
+   - Involves fine-tuning LLMs on labeled table-generation datasets.
+   - Aims to enhance table fidelity by reinforcing specific formatting rules.
+   - Requires a large volume of training data and extensive model tuning.
+
+These approaches provide a **comprehensive benchmark** for evaluating M&M’s effectiveness in **text-to-table conversion**.
+
+---
+
+## Insights
+
+The **Map&Make (M&M) framework** significantly outperformed existing methods in **text-to-table generation** across both **Rotowire and Livesum datasets**. Key findings include:
+
+1. **Better Information Coverage**  
+   - M&M outperformed **Zero-Shot and One-Shot CoT baselines** by **up to 32%** in accuracy (CHRF) and **42% in structured correctness (TabEval)**.
+   - Compared to prior methods like **Text-Tuple-Table (T3)**, M&M achieved **higher row and column coverage**.
+
+2. **Reduction in Hallucination and Missing Information**  
+   - Hallucinated columns were reduced by **up to 60%**, ensuring a **higher fidelity** in table generation.
+   - M&M’s schema induction strategy improved **correct entity mappings**, reducing missing values in Rotowire tables.
+
+3. **Improved Event Aggregation in Livesum**  
+   - **Error rates (ER%) decreased by 35%** in a zero-shot setting and **55% in one-shot settings**.
+   - **RMSE (Root Mean Squared Error) improved by up to 57%**, ensuring better numerical consistency in **live commentary event tracking**.
+
+4. **Generalization Across Large Texts**  
+   - M&M maintained performance stability **even with larger input text**, unlike **standard CoT prompting**, which showed degradation.
+   - Schema extraction remained consistent across **multi-table formats** in Rotowire and **single evolving table structures** in Livesum.
+
+5. **Adaptability Across LLMs**  
+   - Performance gains were observed across **GPT-4o, Gemini 2.0, and Llama-3.3 70B**.
+   - **Gemini 2.0 exhibited a slight edge in structured correctness**, while **GPT-4o excelled in information coverage**.
 
 ---
 
@@ -148,5 +158,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-*Note: Replace placeholders `<repository_url>`, `<repository_name>`, and `<model_dir>` with your actual details before using.*
-```
+This version **clarifies the benchmarking strategies** used to compare M&M with **alternative approaches**, while maintaining a clean, structured, and easy-to-read format. 🚀 Let me know if you'd like any refinements!
