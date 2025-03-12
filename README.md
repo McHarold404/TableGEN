@@ -1,4 +1,4 @@
-# Schema Guided Text-to-Table Generation
+# Livesum Table Generation Project
 
 This project focuses on converting unstructured textual data into structured tables using state-of-the-art models like GPT, Gemini, and Llama. Our approach, **Map&Make (M&M)**, is a structured summarization framework that **dynamically infers table schema** rather than relying on predefined templates. It follows a **three-step process** that extracts key information, structures it into a schema, and fills the tables accurately.
 
@@ -9,6 +9,7 @@ This project focuses on converting unstructured textual data into structured tab
 - [Approach](#approach)
 - [Datasets](#datasets)
 - [Setup](#setup)
+- [Project Structure](#project-structure)
 - [Evaluation Methods](#evaluation-methods)
 - [Comparison Strategies](#comparison-strategies)
 - [Insights](#insights)
@@ -78,6 +79,51 @@ Each dataset presents unique challenges in schema induction and table constructi
 
 ---
 
+## Project Structure
+
+The repository is organized into the following directories:
+
+- **`batch_scripts/`**  
+  Contains scripts for different **table generation methods** using models like **GPT, Gemini, and Llama**. Includes **schema extraction, atomic statement generation, and one-step/two-step table generation**.
+
+- **`corrections/`**  
+  Stores correction files, such as **mappings for player names** to ensure consistency in datasets like Rotowire.
+
+- **`data/`**  
+  Holds raw and processed **dataset files**, as well as notebooks for **data analysis**.
+
+- **`data_building/`**  
+  Contains **data definition files** and scripts for creating structured datasets from unstructured text.
+
+- **`eval/`**  
+  Includes evaluation scripts and Jupyter notebooks for **benchmarking** the generated tables using metrics like **Exact Match (EM), CHRF, BERTScore, and TabEval**.
+
+- **`metrics/`**  
+  Stores scripts used to compute different **quantitative evaluation metrics** for generated tables.
+
+- **`model_inference/`**  
+  Contains helper functions and scripts to **run inference** using trained LLM models.
+
+- **`model_outputs/`**  
+  Stores the **outputs of generated tables** for different models and configurations.
+
+- **`outputs/`**  
+  Contains logs and debugging information, including the **process logs**.
+
+- **`post_processing/`**  
+  Scripts for **refining and cleaning** generated tables after inference.
+
+- **`prompts/`**  
+  Stores prompt templates used for **LLM-based table generation**, structured as zero-shot, few-shot, or CoT.
+
+- **`utils/`**  
+  Includes utility functions used across multiple scripts for **data loading, text processing, and visualization**.
+
+- **Notebooks (`.ipynb` files)**  
+  Various Jupyter notebooks for **visualizing and analyzing results**, including **vizzler.ipynb, vizzer-analysis.ipynb**, and others.
+
+---
+
 ## Evaluation Methods
 
 We employ **both reference-based and referenceless evaluation metrics** to assess the quality of generated tables.
@@ -103,26 +149,11 @@ These metrics ensure comprehensive evaluation across **accuracy, completeness, a
 To benchmark the **Map&Make (M&M) framework**, we compare it against the following strategies:
 
 1. **Text-Tuple-Table (T3)**
-   - Converts input text into structured tuples (**subject-object-verb** or **subject-attribute-value**).
-   - Generates tables based on extracted tuples.
-   - Originally designed for predefined schemas, later adapted for schema-agnostic settings.
-
 2. **Few-Shot Chain-of-Thought (CoT) Prompting**
-   - Uses few-shot learning to generate tables.
-   - Employs step-by-step reasoning to ensure logical coherence.
-   - Improves over Zero-Shot prompting but struggles with schema variability.
-
 3. **Divide & Generate (Planned Addition)**
-   - Splits input text into smaller, more manageable chunks.
-   - Independently processes each segment before integrating the results.
-   - Expected to improve schema induction and minimize hallucinations.
-
 4. **Supervised Fine-Tuning (Planned Addition)**
-   - Involves fine-tuning LLMs on labeled table-generation datasets.
-   - Aims to enhance table fidelity by reinforcing specific formatting rules.
-   - Requires a large volume of training data and extensive model tuning.
 
-These approaches provide a **comprehensive benchmark** for evaluating M&M’s effectiveness in **text-to-table conversion**.
+Each of these methods provides **a different perspective on schema extraction, table fidelity, and information accuracy**.
 
 ---
 
@@ -131,24 +162,12 @@ These approaches provide a **comprehensive benchmark** for evaluating M&M’s ef
 The **Map&Make (M&M) framework** significantly outperformed existing methods in **text-to-table generation** across both **Rotowire and Livesum datasets**. Key findings include:
 
 1. **Better Information Coverage**  
-   - M&M outperformed **Zero-Shot and One-Shot CoT baselines** by **up to 32%** in accuracy (CHRF) and **42% in structured correctness (TabEval)**.
-   - Compared to prior methods like **Text-Tuple-Table (T3)**, M&M achieved **higher row and column coverage**.
-
 2. **Reduction in Hallucination and Missing Information**  
-   - Hallucinated columns were reduced by **up to 60%**, ensuring a **higher fidelity** in table generation.
-   - M&M’s schema induction strategy improved **correct entity mappings**, reducing missing values in Rotowire tables.
-
 3. **Improved Event Aggregation in Livesum**  
-   - **Error rates (ER%) decreased by 35%** in a zero-shot setting and **55% in one-shot settings**.
-   - **RMSE (Root Mean Squared Error) improved by up to 57%**, ensuring better numerical consistency in **live commentary event tracking**.
-
 4. **Generalization Across Large Texts**  
-   - M&M maintained performance stability **even with larger input text**, unlike **standard CoT prompting**, which showed degradation.
-   - Schema extraction remained consistent across **multi-table formats** in Rotowire and **single evolving table structures** in Livesum.
-
 5. **Adaptability Across LLMs**  
-   - Performance gains were observed across **GPT-4o, Gemini 2.0, and Llama-3.3 70B**.
-   - **Gemini 2.0 exhibited a slight edge in structured correctness**, while **GPT-4o excelled in information coverage**.
+
+These insights validate **Map&Make as a robust, schema-agnostic table generation framework**.
 
 ---
 
@@ -156,6 +175,4 @@ The **Map&Make (M&M) framework** significantly outperformed existing methods in 
 
 This project is licensed under the [MIT License](LICENSE).
 
----
 
-This version **clarifies the benchmarking strategies** used to compare M&M with **alternative approaches**, while maintaining a clean, structured, and easy-to-read format. 🚀 Let me know if you'd like any refinements!
